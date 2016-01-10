@@ -1,0 +1,88 @@
+	
+	<div class="container-fluid"	
+
+		<div class="row" id="webform-panel1">
+			<div class="container">
+			<div class="jumbotron" id="jumbo-contacto">
+				<h1>CONTACTO</h1>
+				<p>Si necesitas información no dudes en comunicarte con nosotros. Cumplimenta el formulario de abajo.</p>
+				<h6>Agradecemos tu contacto.</h6><p>
+				<p><a class="btn btn-warning btn-lg" href="#contacto" role="button">Formulario</a></p>
+			</div>
+			</div>
+		</div>
+	
+		<!-- CONTACTO =================================================================================== -->
+		<div class="container" id="contacto">
+			<div class="row">
+				<div class="row text-center">
+					<h3>Formulario</h3>
+					<h5>Rémitenos tus datos mediante este formulario, y añade los comentarios que creas oportunos.</h5>
+				</div>
+				<form class="form-horizontal" method="post" action="/contactos/webcreate">
+		  			<div class="col-md-3">
+		  				<div class="form-group">
+		    				<label for="nombre" class="col-sm-2 control-label">Nombre</label>	
+							<input type="text" class="form-control" id="nombre" name="nombre" required placeholder="nombre"/>
+						</div>
+						<div class="form-group">
+		   					<label for="alias" class="col-sm-2 control-label">Alias</label>
+							<input type="text" class="form-control" id="alias" name="alias" placeholder="alias"/>
+						</div>
+		  			</div>
+		  			<div class="col-md-3">
+						<div class="form-group">
+		    				<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+		    				<input type="email" class="form-control" id="email" name="email" required placeholder="eMail"/>
+						</div>
+						<div class="form-group">
+		   					<label for="inputPassword3" class="col-sm-2 control-label">Email</label>
+		   					<input type="email" class="form-control" id="emailok" name="emailok" required placeholder="eMail confirm"/>
+						</div>
+		  			</div>
+		  			<div class="col-md-3">
+						<div class="form-group">
+		   					<label for="inputEmail3" class="col-sm-2 control-label">Teléfono</label>
+							<input type="text" class="form-control" id="telf" name="telefono" pattern="[0-9]{9}" required placeholder="teléfono"/>
+						</div>
+						<div class="form-group">
+		    				<label for="inputPassword3" class="col-sm-2 control-label">Marca</label>
+							<input type="text" class="form-control" id="marca" name="marca" placeholder="marca"/>
+						</div>
+			  		</div>
+			  		<div class="col-md-3">
+						<div class="form-group">
+		   					<label for="inputEmail3" class="col-sm-2 control-label">Ciudad</label>
+							<input type="text" class="form-control" id="ciudad" name="ciudad" required placeholder="ciudad"/>
+						</div>
+						<div class="form-group">
+		    				<label for="inputPassword3" class="col-sm-2 control-label">Provincia</label>
+							<input type="text" class="form-control" id="provincia" name="provincia" required placeholder="provincia"/>
+						</div>
+			  		</div>
+			  		<div class="row" style="margin-left: auto; margin-right: auto">
+						<div class="col-md-8">
+							<div class="form-group">
+			    				<label for="inputPassword3" class="col-sm-2 control-label">Comentarios</label>
+			    				<textarea class="form-control" id="comentario" name="comentario" rows="6" style="width: 109%; max-width: 888px" placeholder="aquí tus comentarios"></textarea>
+
+							</div>
+				        </div>
+				        <div class="col-md-4">
+					        <div class="form-group text-center">
+					      		<p><p>
+					      		<label>
+					          		<input type="checkbox" id="lopd" name="lopd" required><small> Acepto la <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#panel-lopd">política de privacidad</a></small></input>
+					          	</label>
+					        </div>
+					        <div class="form-group text-center">
+					        	<button type="submit" class="btn btn-info">Solicitar información</button>
+						 	</div>
+					 	</div>	
+		   			</div>
+				</form>
+			</div>
+		</div>
+
+				
+	</div>

@@ -1,0 +1,226 @@
+
+	@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+	body {
+/*		background: url(/images/fondo01.jpg) no-repeat fixed center; */
+		background-color: rgba(242, 242, 242, 0.8);
+		font-family: 'Lato', Calibri, Arial, sans-serif;
+		text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    	padding-bottom: 0;
+	}
+
+	ol, ul {
+		list-style: none;
+	}
+
+	#contacto {
+		background-color: 	rgba(88, 88, 88, 0.8);
+		width: 				100%;
+		max-height: 		80%;
+		min-height: 		500px;
+		padding-left: 		8%;
+		padding-right: 		5%;
+		font-color: 		#2E2E2E;
+		position: 			relative;
+		overflow: 			hidden;
+		display: 			-webkit-flex;
+		display: 			flex;
+		-webkit-flex-direction: 	column;
+		flex-direction: 			column;
+		-webkit-justify-content: 	space-around;
+		justify-content: 			space-around;
+		border: 					none !important;
+	}
+
+	.form-group input {
+		max-width: 90%;
+	}
+
+	#panel1 {
+		background: url(/images/brooklyn.jpg) no-repeat fixed center;
+		height: 	100vh;
+		overflow: 	hidden;
+	}
+
+	#panel2 {
+		height: 	100vh;
+		overflow: 	hidden;
+	}
+
+	#panel3 {
+		background: url(/images/bigcitynight.jpg) no-repeat fixed center;
+		height: 	100vh;
+		overflow: 	hidden;
+	}
+
+	#panel4 {
+		height: 	100vh;
+		overflow:	hidden;
+	}
+
+	.banda {
+		position: relative;
+
+		width: 100%;
+		height: 100%;
+		background-color: rgba(46, 46, 46, 0.7);
+	}
+
+
+
+
+	#menu-inbar  {
+		position: relative;
+		width: 100%;
+		margin-top: 50px;
+		margin-bottom: 20px;
+	}
+
+
+	#menu-inbar .col-md-1 a {
+		position: relative;
+
+		font-size: 20px;
+		left: 50%;
+		padding-top: 30px;
+		text-decoration: none;
+
+	}
+
+	#menu-inbar .col-md-1 a:hover {
+		border-top: 2px solid #999999;
+	}
+
+
+
+
+
+	#pie {
+		background-color: 	rgba(0, 0, 0, 0.9);
+		width: 				100%;
+		min-height: 		400px;
+		padding-left: 		8%;
+		padding-right: 		5%;
+		color: 				white;
+		position: 			absolute;
+		overflow: 			hidden;
+		display: 			-webkit-flex;
+		display: 			flex;
+		-webkit-flex-direction: 	column;
+		flex-direction: 			column;
+		-webkit-justify-content: 	space-around;
+		justify-content: 			space-around;
+		border: 					none !important;
+	}
+
+	.fullscreen-bg {
+		position: 	absolute;
+		overflow: 	hidden;
+  		z-index: 	-100;
+  		height: 	100vh;
+	}
+
+	.fullscreen-bg__video {
+  		position: 	relative;
+  		width: 		100%;
+  		height: 	100vh;
+	}
+
+	.img-logo-sm {
+		margin-left: 15%;
+	}
+
+	.img-logo-sm img {
+		width: 30px; 
+		height: 100%;
+		margin-bottom: 5px;
+	}
+
+	.rrss-pie{
+		display: inline-block;
+	}
+
+	#webform-panel1 {
+		background: url(/images/calle.jpg) no-repeat fixed center;
+		height: 	100vh;
+		overflow: 	hidden;
+	}
+
+	#jumbo-contacto {
+		background-color: 	rgba(238, 238, 238, 0.3);
+		color: black;
+		margin-top: 20vh;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 700px;
+		text-align: center;
+
+	}
+
+	@media (min-aspect-ratio: 16/9) {
+  		.fullscreen-bg__video {
+	    	height: 	300%;
+	    	top: 		-100%;
+  		}
+	}
+
+	@media (max-aspect-ratio: 16/9) {
+  		.fullscreen-bg__video {
+    		width: 		300%;
+    		left: 		-100%;
+  		}
+ 	}
+
+	@media handheld, only screen and (max-width: 767px) {
+		.ocultar-movil{
+			display: none;
+		}
+		.col-pie {
+			border-bottom: 1px solid #999999;
+		}
+		#menu-inbar .col-md-1 a:hover {
+			border-top: none;
+		}
+	}
+
+	@media only screen and (max-width: 1023px) {
+		.ocultar-movil{
+			display: none;
+		}
+		.col-pie {
+			border-bottom: 1px solid #999999;
+		}
+		#menu-inbar .col-md-1 a:hover {
+			border-top: none;
+		}
+	}
+
+	iframe {
+		display: 	block;
+		margin: 	auto;
+		padding: 	0;
+		width: 		90%;
+	}
+
+	#front-panel, #quizes-panel, #temas-panel, #showbytema-panel, #stats-panel, #db-panel {
+		background-color: 	rgba(238, 238, 238, 0.6);
+		box-shadow: 		10px 10px 5px #D7D7D7;
+	}
+
+	.comment-row {
+		width: 				100%;
+		margin-top: 		15px;
+		margin-bottom: 		10px;
+		background-color: 	rgba(238, 238, 238, 0.4);
+		box-shadow: 		5px 5px 5px #D7D7D7;
+	}
+
+	.comment-panel {
+
+		background-color: 	rgba(238, 238, 238, 0.4);
+		border-bottom: 		1px solid #D8D8D8;
+	}
+
+	#login, #new-edit {
+		max-width: 			960px;
+	}
