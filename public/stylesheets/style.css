@@ -8,17 +8,17 @@
 	}
 	.ac-container label{
 		font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
-		padding: 15px 10px 40px 10%;
-		position: relative;
-		z-index: 20;
-		display: block;
-		height: 80px;
-		cursor: pointer;
-		color: #777;
+		padding    : 15px 10px 40px 10%;
+		position   : relative;
+		z-index    : 20;
+		display    : block;
+		height     : 80px;
+		cursor     : pointer;
+		color      : #777;
 		text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
 		line-height: 33px;
-		font-size: 19px;
-		box-shadow: 
+		font-size  : 19px;
+		box-shadow : 
 			0px 0px 0px 1px rgba(155,155,155,0.3), 
 			1px 0px 0px 0px rgba(255,255,255,0.9) inset, 
 			0px 2px 2px rgba(0,0,0,0.1);
@@ -30,8 +30,8 @@
 
 	.ac-container input:checked + label,
 	.ac-container input:checked + label:hover{
-		background: #c6e1ec;
-		color: #3d7489;
+		background : #c6e1ec;
+		color      : #3d7489;
 		text-shadow: 0px 1px 1px rgba(255,255,255, 0.6);
 		box-shadow: 
 			0px 0px 0px 1px rgba(155,155,155,0.3), 
@@ -40,12 +40,12 @@
 
 	.ac-container label:hover:after,
 	.ac-container input:checked + label:hover:after{
-		content: '';
-		position: absolute;
-		width: 24px;
-		height: 24px;
-		right: 13px;
-		top: 7px;
+		content   : '';
+		position  : absolute;
+		width     : 24px;
+		height    : 24px;
+		right     : 13px;
+		top       : 7px;
 		background: transparent url(../images/arrow_down.png) no-repeat center center;	
 	}
 
@@ -58,37 +58,37 @@
 	}
 
 	.ac-container article {
-		background: rgba(255, 255, 255, 0.5);
-		margin-top: -1px;
-		overflow: hidden;
-		height: 0px;
-		position: relative;
-		z-index: 10;
+		background        : rgba(255, 255, 255, 0.5);
+		margin-top        : -1px;
+		overflow          : hidden;
+		height            : 0px;
+		position          : relative;
+		z-index           : 10;
 		-webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
-		-moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
-		-o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
-		-ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
-		transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+		-moz-transition   : height 0.3s ease-in-out, box-shadow 0.6s linear;
+		-o-transition     : height 0.3s ease-in-out, box-shadow 0.6s linear;
+		-ms-transition    : height 0.3s ease-in-out, box-shadow 0.6s linear;
+		transition        : height 0.3s ease-in-out, box-shadow 0.6s linear;
 	}
 
 	.ac-container article p {
-		font-style: italic;
-		color: #000;
-		line-height: 23px;
-		font-size: 18px;
-		padding-left: 10%;
+		font-style   : italic;
+		color        : #000;
+		line-height  : 23px;
+		font-size    : 18px;
+		padding-left : 10%;
 		padding-right: 10%;
-		padding-top: 10px;
+		padding-top  : 10px;
 	/*	text-shadow: 1px 1px 1px rgba(255,255,255,0.8); */
 	}
 
 	.ac-container input:checked ~ article{
 		-webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
-		-moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
-		-o-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
-		-ms-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
-		transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
-		box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
+		-moz-transition   : height 0.5s ease-in-out, box-shadow 0.1s linear;
+		-o-transition     : height 0.5s ease-in-out, box-shadow 0.1s linear;
+		-ms-transition    : height 0.5s ease-in-out, box-shadow 0.1s linear;
+		transition        : height 0.5s ease-in-out, box-shadow 0.1s linear;
+		box-shadow        : 0px 0px 0px 1px rgba(155,155,155,0.3);
 	}
 
 	.ac-container input:checked ~ article.ac-small{
@@ -210,24 +210,24 @@
 	/* RRHH Accordion Style =========================================================== */
 
 	.va-container{
-		width: 		100%;
+		width   : 	100%;
 		position: 	relative;
-		margin: 	40px auto 40px auto;
+		margin  : 	40px auto 40px auto;
 	}
 
 	.va-wrapper{
-		width: 		100%;
-		height:		100%;
-		position:	relative;
-		overflow:	hidden;
+		width     : 100%;
+		height    :	100%;
+		position  :	relative;
+		overflow  :	hidden;
 		background:	#000;
 	}
 
 	.va-slice{
-		cursor:		pointer;
+		cursor  :	pointer;
 		position:	absolute;
-		width:		100%;
-		left:		0px;
+		width   :	100%;
+		left    :	0px;
 		overflow:	hidden;
 	}
 
@@ -282,55 +282,55 @@
 		background-color:#002144;
 	}
 	.va-title{
-		font-family: 	'Open Sans Condensed', sans-serif;
-		text-transform: uppercase;
-		font-size: 		50px;
-		margin-left: 	20px;
-		color: 			#fff;
-		text-shadow: 	0px 0px 1px white;
+		font-family   :'Open Sans Condensed', sans-serif;
+		text-transform:uppercase;
+		font-size     :50px;
+		margin-left   :20px;
+		color         :#fff;
+		text-shadow   :0px 0px 1px white;
 	}
 	.va-content{
-		display:none;
+		display    :none;
 		margin-left:25px;
 	}
 	.va-slice p{
-		font-size: 22px;
-		font-style: italic;
+		font-size  : 22px;
+		font-style : italic;
 		font-family:Georgia, serif;
 	}
 	.va-slice ul{
 		margin-top:20px;
 	}
 	.va-slice ul li{
-		float:left;
+		float :left;
 		margin:0px 2px;
 	}
 	.va-slice ul li a{
-		color:#000;
-		background:#eede2f;
-		padding:3px 6px;
-		font-size:14px;
-		font-family:'PT Sans', sans-serif;
+		color         :#000;
+		background    :#eede2f;
+		padding       :3px 6px;
+		font-size     :14px;
+		font-family   :'PT Sans', sans-serif;
 		text-transform:uppercase;
 	}
 	.va-slice ul li a:hover{
-		background:#000;
-		color:#fff;
+		background :#000;
+		color      :#fff;
 		text-shadow:none;
 	}
 	.va-nav span{
-		width:40px;
-		height:25px;
-		background:transparent url(../images/prev.png) no-repeat center center;
-		position:absolute;
-		top:-35px;
-		left:50%;
+		width      :40px;
+		height     :25px;
+		background :transparent url(../images/prev.png) no-repeat center center;
+		position   :absolute;
+		top        :-35px;
+		left       :50%;
 		margin-left:-20px;
 		text-indent:-9000px;
-		opacity:0.7;
-		cursor:pointer;
-		display:none;
-		z-index:100;
+		opacity    :0.7;
+		cursor     :pointer;
+		display    :none;
+		z-index    :100;
 	}
 	.va-nav span.va-nav-next{
 		background-image:url(../images/next.png);
@@ -346,40 +346,40 @@
 
 	.more ul{
 		text-transform:uppercase;
-		font-size:13px;
-		padding:50px 0px 30px 0px;
-		height:30px;
-		clear:both;
-		width:1000px;
-		margin:10px auto 0 auto;
-		color:#000;
+		font-size     :13px;
+		padding       :50px 0px 30px 0px;
+		height        :30px;
+		clear         :both;
+		width         :1000px;
+		margin        :10px auto 0 auto;
+		color         :#000;
 	}
 	.more ul li{
-		float:left;
+		float :left;
 		margin:0px 2px;
 	}
 	.more ul li.selected a,
 	.more ul li.selected a:hover{
-		background:#000;
-		color:#fff;
+		background :#000;
+		color      :#fff;
 		text-shadow:none;
 	}
 	.more ul li a{
-		text-shadow:1px 1px 1px #fff;
-		color:#555;
-		background:#f7f7f7;
-		padding:3px 6px;
-		-moz-box-shadow:1px 1px 2px #aaa;
+		text-shadow       :1px 1px 1px #fff;
+		color             :#555;
+		background        :#f7f7f7;
+		padding           :3px 6px;
+		-moz-box-shadow   :1px 1px 2px #aaa;
 		-webkit-box-shadow:1px 1px 2px #aaa;
-		box-shadow:1px 1px 2px #aaa;
+		box-shadow        :1px 1px 2px #aaa;
 	}
 	.more ul li a:hover{
-		background:#000;
-		color:#fff;
+		background :#000;
+		color      :#fff;
 		text-shadow:none;
 	}
 	.content{
-		width:100%;
+		width   :100%;
 		position:relative;
 	}
 
@@ -388,34 +388,34 @@
 
 	.wrapper{
 		position: relative;
-		width: 100%;
+		width   : 100%;
 	}
 	.wrapper p{
-		clear: both;
-		font-size: 24px;
+		clear      : both;
+		font-size  : 24px;
 		line-height: 40px;
-		text-align: center;
+		text-align : center;
 	}
 
 	.ei-slider{
-		position: relative;
-		width: 100%;
-		height: 93vh;
-		margin-left: 0;
+		position    : relative;
+		width       : 100%;
+		height      : 93vh;
+		margin-left : 0;
 		margin-right: 0;
-		padding: 0;
+		padding     : 0;
 	}
 
 	.ei-slider-loading{
-		width: 100%;
-		height: 100%;
-		position: absolute;
-		top: 0px;
-		left: 0px;
-		z-index:999;
-		background: rgba(0,0,0,0.9);
-		color: #fff;
-		text-align: center;
+		width      : 100%;
+		height     : 100%;
+		position   : absolute;
+		top        : 0px;
+		left       : 0px;
+		z-index    :999;
+		background : rgba(0,0,0,0.9);
+		color      : #fff;
+		text-align : center;
 		line-height: 400px;
 	}
 
@@ -428,11 +428,11 @@
 
 	.ei-slider-large li{
 		position: absolute;
-		top: 0px;
-		left: 0px;
+		top     : 0px;
+		left    : 0px;
 		overflow: hidden;
-		height: 100%;
-		width: 100%;
+		height  : 100%;
+		width   : 100%;
 	}
 
 	.ei-slider-large li img {
@@ -440,55 +440,55 @@
 	}
 
 	.ei-title{
-		position: absolute;
-		right: 50%;
+		position    : absolute;
+		right       : 50%;
 		margin-right: 13%;
-		top: 30%;
+		top         : 30%;
 	}
 	.ei-title h2, .ei-title h3{
 		text-align: right;
 	}
 	.ei-title h2{
-		font-size: 40px;
+		font-size  : 40px;
 		line-height: 50px;
 		font-family: 'Playfair Display', serif;
-		font-style: italic;
-		color: #b5b5b5;
+		font-style : italic;
+		color      : #b5b5b5;
 	}
 	.ei-title h3{
-		font-size: 70px;
-		line-height: 70px;
-		font-family: 'Open Sans Condensed', sans-serif;
+		font-size     : 70px;
+		line-height   : 70px;
+		font-family   : 'Open Sans Condensed', sans-serif;
 		text-transform: uppercase;
-		color: #000;
+		color         : #000;
 	}
 	.ei-slider-thumbs{
-		height: 13px;
-		margin: 0 auto;
+		height  : 13px;
+		margin  : 0 auto;
 		position: relative;
 	}
 	.ei-slider-thumbs li{
 		position: relative;
-		float: left;
-		height: 100%;
+		float   : left;
+		height  : 100%;
 	}
 	.ei-slider-thumbs li.ei-slider-element{
-		top: 0px;
-		left: 0px;
-		position: absolute;
-		height: 100%;
-		z-index: 10;
+		top        : 0px;
+		left       : 0px;
+		position   : absolute;
+		height     : 100%;
+		z-index    : 10;
 		text-indent: -9000px;
-		background: #000;
-		background: rgba(0,0,0,0.9);
+		background : #000;
+		background : rgba(0,0,0,0.9);
 	}
 	.ei-slider-thumbs li a{
-		display: block;
+		display    : block;
 		text-indent: -9000px;
-		background: #666 ;
-		width: 100%;
-		height: 100%;
-		cursor: pointer;
+		background : #666 ;
+		width      : 100%;
+		height     : 100%;
+		cursor     : pointer;
 		-webkit-box-shadow: 
 	        0px 1px 1px 0px rgba(0,0,0,0.3), 
 	        0px 1px 0px 1px rgba(255,255,255,0.5);
@@ -499,25 +499,25 @@
 	        0px 1px 1px 0px rgba(0,0,0,0.3), 
 	        0px 1px 0px 1px rgba(255,255,255,0.5);
 		-webkit-transition: background 0.2s ease;
-	    -moz-transition: background 0.2s ease;
-	    -o-transition: background 0.2s ease;
-	    -ms-transition: background 0.2s ease;
-	    transition: background 0.2s ease;
+		-moz-transition   : background 0.2s ease;
+		-o-transition     : background 0.2s ease;
+		-ms-transition    : background 0.2s ease;
+		transition        : background 0.2s ease;
 	}
 	.ei-slider-thumbs li a:hover{
 		background-color: #f0f0f0;
 	}
 	.ei-slider-thumbs li img{
-		position: absolute;
-		bottom: 0px;
-		opacity: 0;
-		z-index: 999;
-		max-width: 100%;
+		position          : absolute;
+		bottom            : 0px;
+		opacity           : 0;
+		z-index           : 999;
+		max-width         : 100%;
 		-webkit-transition: all 0.4s ease;
-	    -moz-transition: all 0.4s ease;
-	    -o-transition: all 0.4s ease;
-	    -ms-transition: all 0.4s ease;
-	    transition: all 0.4s ease;
+		-moz-transition   : all 0.4s ease;
+		-o-transition     : all 0.4s ease;
+		-ms-transition    : all 0.4s ease;
+		transition        : all 0.4s ease;
 		-webkit-box-reflect: 
 	        below 0px -webkit-gradient(
 	            linear, 
@@ -530,32 +530,32 @@
 		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	}
 	.ei-slider-thumbs li:hover img{
-		opacity: 1;
-		bottom: 13px;
+		opacity   : 1;
+		bottom    : 13px;
 		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 	}
 	@media screen and (max-width: 830px) {
 		.ei-title{
-			position: absolute;
-			right: 0px;
+			position    : absolute;
+			right       : 0px;
 			margin-right: 0px;
-			width: 100%;
-			text-align: center;
-			top: auto;
-			bottom: 10px;
-			background: #fff;
-			background: rgba(255, 255, 255, 0.3);
-			padding: 5px 0;
+			width       : 100%;
+			text-align  : center;
+			top         : auto;
+			bottom      : 10px;
+			background  : #fff;
+			background  : rgba(255, 255, 255, 0.3);
+			padding     : 5px 0;
 		}
 		.ei-title h2, .ei-title h3{
 			text-align: center;
 		}
 		.ei-title h2{
-			font-size: 20px;
+			font-size  : 20px;
 			line-height: 24px;
 		}
 		.ei-title h3{
-			font-size: 30px;
+			font-size  : 30px;
 			line-height: 40px;
 		}
 	}

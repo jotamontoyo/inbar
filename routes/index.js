@@ -52,16 +52,16 @@
 	router.delete('/quizes/:quizId(\\d+)',				sessionController.loginRequired, quizController.ownershipRequired, quizController.destroy);
 	router.get('/quizes/statistics',					statisticsController.calculate, statisticsController.show);
 	router.get('/quizes/:quizId(\\d+)/image', 			quizController.image);												// se dispara cuando se carga una img en el formulario show
-	router.get('/quizes/page',                     		quizController.page);	
+	router.get('/quizes/page',                     		quizController.page);
 	router.post('/quizes/uploadimg',                    quizController.uploadimg);
-	router.get('/quizes?search',                    	quizController.search);	
+	router.get('/quizes?search',                    	quizController.search);
 
 	// Definición de rutas de comments
 	router.get('/quizes/:quizId(\\d+)/comments/new',							commentController.new);						// carga formulario /quizes/:quizId(\\d+)/comments/new y dispara el controlador new de comment_Controller
 	router.post('/quizes/:quizId(\\d+)/comments',								commentController.create);					// dispara controlador create cuando el boton <enviar> del formulario /comments/new.ejs
-	router.get('/quizes/:quizId(\\d+)/comments/:commentId(\\d+)/publish',   	sessionController.loginRequired, commentController.ownershipRequired, commentController.publish);	//   
-	router.get('/quizes/:quizId(\\d+)/comments/:commentId(\\d+)/unpublish',   	sessionController.loginRequired, commentController.ownershipRequired, commentController.unpublish);	//   
-	router.get('/quizes/:quizId(\\d+)/comments/:commentId(\\d+)/destroy',   	sessionController.loginRequired, commentController.ownershipRequired, commentController.destroy);	//   
+	router.get('/quizes/:quizId(\\d+)/comments/:commentId(\\d+)/publish',   	sessionController.loginRequired, commentController.ownershipRequired, commentController.publish);	//
+	router.get('/quizes/:quizId(\\d+)/comments/:commentId(\\d+)/unpublish',   	sessionController.loginRequired, commentController.ownershipRequired, commentController.unpublish);	//
+	router.get('/quizes/:quizId(\\d+)/comments/:commentId(\\d+)/destroy',   	sessionController.loginRequired, commentController.ownershipRequired, commentController.destroy);	//
 
 	// Definición de rutas de proveedor
 	router.get('/proveedores',			 					sessionController.loginRequired, proveedorController.index);			// accede a la lista completa de proveedores
@@ -82,10 +82,10 @@
 	router.get('/contactos/:contactoId(\\d+)/edit',			sessionController.loginRequired, contactoController.edit);				// carga formulario proveedores/proveedores:Id(\\d+)/edit y dispara el controlador edit de proveedorController
 	router.put('/contactos/:contactoId(\\d+)',				sessionController.loginRequired, contactoController.update);			// dispara controlador update cuando el boton <salvar> del formulario edit.js
 	router.delete('/contactos/:contactoId(\\d+)',			sessionController.loginRequired, contactoController.destroy);
-	
+
 	router.get('/temas',			 						quizController.showtemas);
 	router.get('/temas/:tema', 								quizController.showbytema);
-	
+
 	router.get('/profile/author', function(req, res) {
 		res.render('profile/author', {title: 'Autor', errors: []});						// visualiza el autor
 	});
@@ -96,7 +96,4 @@
 
 	router.get('/db/index',								sessionController.loginRequired, dbController.show);
 
-	module.exports = router;	
-	
-	
-	
+	module.exports = router;

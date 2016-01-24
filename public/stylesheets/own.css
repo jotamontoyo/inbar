@@ -4,9 +4,9 @@
 	body {
 /*		background: url(/images/fondo01.jpg) no-repeat fixed center; */
 		background-color: rgba(242, 242, 242, 0.8);
-		font-family: 'Lato', Calibri, Arial, sans-serif;
-		text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
-    	padding-bottom: 0;
+		font-family     : 'Lato', Calibri, Arial, sans-serif;
+		text-shadow     : 0 1px 0 rgba(255, 255, 255, 0.8);
+		padding-bottom  : 0;
 	}
 
 	ol, ul {
@@ -61,8 +61,8 @@
 	.banda {
 		position: relative;
 
-		width: 100%;
-		height: 100%;
+		width           : 100%;
+		height          : 100%;
 		background-color: rgba(46, 46, 46, 0.7);
 	}
 
@@ -70,16 +70,16 @@
 
 
 	#menu-inbar  {
-		position: relative;
-		width: 100%;
-		margin-top: 50px;
+		position     : relative;
+		width        : 100%;
+		margin-top   : 50px;
 		margin-bottom: 20px;
 	}
 
 
 	#menu-inbar .col-md-1 a {
 		position: relative;
-
+		
 		font-size: 20px;
 		left: 50%;
 		padding-top: 30px;
@@ -147,13 +147,13 @@
 	}
 
 	#jumbo-contacto {
-		background-color: 	rgba(238, 238, 238, 0.3);
-		color: black;
-		margin-top: 20vh;
-		margin-left: auto;
-		margin-right: auto;
-		max-width: 700px;
-		text-align: center;
+		background-color: rgba(238, 238, 238, 0.3);
+		color           : black;
+		margin-top      : 20vh;
+		margin-left     : auto;
+		margin-right    : auto;
+		max-width       : 700px;
+		text-align      : center;
 
 	}
 
