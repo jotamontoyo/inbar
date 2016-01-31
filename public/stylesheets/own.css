@@ -79,7 +79,7 @@
 
 	#menu-inbar .col-md-1 a {
 		position: relative;
-		
+
 		font-size: 20px;
 		left: 50%;
 		padding-top: 30px;
@@ -131,8 +131,8 @@
 	}
 
 	.img-logo-sm img {
-		width: 30px; 
-		height: 100%;
+		width:         30px;
+		height:        100%;
 		margin-bottom: 5px;
 	}
 
@@ -159,8 +159,8 @@
 
 	@media (min-aspect-ratio: 16/9) {
   		.fullscreen-bg__video {
-	    	height: 	300%;
-	    	top: 		-100%;
+	    	height: 300%;
+	    	top: -100%;
   		}
 	}
 

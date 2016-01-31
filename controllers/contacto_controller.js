@@ -76,8 +76,8 @@
 		}).catch(function(error) {next(error)});
 	};
 
-	exports.webcreate = function(req, res) {											// POST /quizes/create
-		var contacto = models.Contacto.build( 											// crea el objeto proveedor, lo construye con buid() metodo de sequilize
+	exports.webcreate = function(req, res) {											// POST /contacto/webcreate
+		var contacto = models.Contacto.build( 											// crea el objeto contacto, lo construye con buid() metodo de sequilize
 			{nombre: "Nombre", alias: "Alias", email: "eMail", emailok: "eMailok", telefono: "Teléfono", marca: "Marca", ciudad: "Ciudad", provincia: "Provincia", comentario: "Comentario", lopd: false, revisado: false}		// asigna literales a los campos para que se vea el texto en el <input> cuando creemos el formulario
 		);
 		contacto.nombre = req.body.nombre;
