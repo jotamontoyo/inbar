@@ -67,10 +67,11 @@
 	}
 
 	#panel-franquicias {
-		background: url(/images/brooklyn.jpg) no-repeat fixed center;
+/*		background: url(/images/brooklyn.jpg) no-repeat fixed center; */
 		height: 	auto;
 		overflow: 	hidden;
 	}
+
 
 	#menu-inbar  {
 		position     : relative;
