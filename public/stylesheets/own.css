@@ -66,8 +66,11 @@
 		background-color: rgba(46, 46, 46, 0.7);
 	}
 
-
-
+	#panel-franquicias {
+		background: url(/images/brooklyn.jpg) no-repeat fixed center;
+		height: 	auto;
+		overflow: 	hidden;
+	}
 
 	#menu-inbar  {
 		position     : relative;

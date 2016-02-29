@@ -17,6 +17,13 @@
 	<link rel="stylesheet" type="text/css" href="/stylesheets/mypath.css"/>
 	<link rel="stylesheet" type="text/css" href="/stylesheets/animate.css"/>
 
+	<link rel="stylesheet" type="text/css" href="/stylesheets/flexslider.css">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/jquery.fancybox.css">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/responsive.css">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/font-icon.css">
+
+
 	<!-- PARA CARRUSEL MULTISLIDE ======================================================================== -->
 	<link rel="stylesheet" type="text/css" href="/stylesheets/general.css" />
 	<link rel="stylesheet" type="text/css" href="/stylesheets/elastislide.css" />
@@ -42,6 +49,14 @@
 	<script type="text/javascript" src="/js/gmaps.js"></script>
 	<script type="text/javascript" src="/js/geoRoutes.js"></script>
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+
+	<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript" src="js/retina.min.js"></script>
+	<script type="text/javascript" src="js/modernizr.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 
 	<!-- VARIABLES DEL BOTON FB ============================================================================ -->
 	<meta property="og:url"                content="https://indoorbar.herokuapp.com/" />
@@ -76,11 +91,12 @@
 	</script>
 
 	<!-- NAVBAR =========================================================================================================== -->
+<!--
 	<div class="container-fluid">
 		<nav class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
+<!--				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
@@ -88,10 +104,10 @@
 						<span class="icon-bar"></span>
 					</button>
 					<!-- <a class="navbar-brand" href="#">Brand</a> -->
-					<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">Jota Montoyo</button>
+	<!--				<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">Jota Montoyo</button>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	<!--			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
 						<li class="active"><a href="/">Inicio <span class="sr-only">(current)</span></a></li>
 						<li><a href="/inbar">inBAR </a></li>
@@ -126,9 +142,27 @@
 						</div>
 					</ul>
 				</div><!-- /.navbar-collapse -->
-			</div><!-- /.container-fluid -->
-		</nav>
+	<!--		</div><!-- /.container-fluid -->
+<!--		</nav>
 	</div>
+-->
+
+	<!--header navigation -->
+    <header id="header">
+  	<div class="header-content clearfix"> <a class="logo" href="#"><img src="images/floxy/logo.png" alt=""></a>
+  	  <nav class="navigation" role="navigation">
+  		<ul class="primary-nav">
+  		  <li><a href="#intro">Intro</a></li>
+  		  <li><a href="#services">Services</a></li>
+  		  <li><a href="#works">Works</a></li>
+  		  <li><a href="#teams">Our Team</a></li>
+  		  <li><a href="#testimonials">Testimonials</a></li>
+  		  <li><a href="#contact">Contact</a></li>
+  		</ul>
+  	  </nav>
+  	  <a href="#" class="nav-toggle">Menu<span></span></a> </div>
+    </header>
+    <!--header navigation -->
 
 	<!-- CUERPO PRINCIPAL. RENDERIZA VISTAS =============================================================================== -->
 	<div class="container-fluid">
