@@ -103,11 +103,17 @@ ul li {
 	 Header
 -------------------------------------------------------------------------------*/
 #header {
+	margin-top: 10px;
 	position: fixed;
 	width: 100%;
 	max-height: 110px;
 	z-index: 999;
 	background-color: rgba(164, 164, 164, 0.8);
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+
 }
 #header .header-content {
 	margin: 0 auto;
@@ -124,6 +130,7 @@ ul li {
 }
 #header.fixed {												/* cuando scroll */
 	background-color: rgba(164, 164, 164, 0.5);
+	margin-top: 0px;
 }
 #header.fixed .header-content {
 	border-bottom: 0;
@@ -306,12 +313,16 @@ ul li {
 	background-size: cover;
 
 	height: 100vh;
+	min-height: 700px;
 }
 .banner-btn {
 	opacity: 0.5;
 }
 .banner-text {
-	padding-top: 33%;
+	margin-top: 600px;
+	margin-left: 40%;
+
+	position: absolute;
 }
 .banner-text h1 {
 	color: #fff;
@@ -356,12 +367,14 @@ ul li {
 	margin-top: 30px;
 }
 /* ------------------------------------------------------------------------------
-	 Services
+	 Services -  TIENES UN LOCAL -
 -------------------------------------------------------------------------------*/
 .service-section {
 	padding-top: 100px;
+	background: url(../images/floxy/tienesunlocal.png) no-repeat center center;
 }
 .services {
+
 	margin-bottom: 50px;
 }
 .services-content {
@@ -537,9 +550,13 @@ ul li {
 	font-weight: 600;
 	text-transform: uppercase;
 }
+
+/*
 .quote .btn {
 	margin-top: 30px;
 }
+*/
+
 /* ------------------------------------------------------------------------------
 	 Footer
 -------------------------------------------------------------------------------*/

@@ -1,4 +1,4 @@
-		
+
 	process.env.DATABASE_URL = "postgres://wkynqiclysfccj:iMCFhKF6YugPeZHlso97feJvPq@ec2-54-83-52-144.compute-1.amazonaws.com:5432/dbe85ilvgjskdq?ssl=true"; // URL HerokuPostgres
 	process.env.DATABASE_STORAGE = "quiz.sqlite";
 	process.env.PASSWORD_ENCRYPTION_KEY= "asdfghjklzxcvbnmqwertyuiop"
@@ -6,7 +6,7 @@
 	var express = require('express');
 	var busboy = require('connect-busboy'); //middleware for form/file upload
 	var path = require('path');
-	
+
 	var favicon = require('serve-favicon');
 	var logger = require('morgan');
 	var cookieParser = require('cookie-parser');
@@ -45,7 +45,7 @@
 		res.locals.session = req.session;						// Hacer visible req.session en las vistas
 		next();
 	});
-	
+
 	app.use(function(req, res, next) {
 		if (req.session.user) {
 			if (Date.now() - req.session.user.lastRequestTime > 4*60*1000) {
