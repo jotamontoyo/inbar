@@ -1,117 +1,65 @@
 
 <div class="container">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	<form class="form-horizontal">         	
-		<div class="form-group">
-
-			<h3>Parte nº: <%= quiz.id %> </h3>
-			<h3>Motivo: <%= quiz.pregunta %> </h3>
-			<h3>Proveedor: <%= quiz.proveedor %> </h3>
-			<h3>Status: <%= quiz.proceso %> </h3>
-			
-			
-
+	<div class="form-group">
+		<label for="preg" class="col-sm-2 control-label">Nombre:</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" id="nombre" name="contacto[nombre]" value="<%= contacto.nombre %>" placeholder="nombre"/>
 		</div>
-	</form>
+	</div>
 
-	<form class="form-horizontal" method="get" action="/quizes/<%= quiz.id %>/image">         	
-		<div class="form-group">
-			<%if (quiz.image) {%>
-				<img class="img-responsive" src="/quizes/<%=quiz.id%>/image">  
-			<%}%>
+	<div class="form-group">
+		<label for="preg" class="col-sm-2 control-label">Alias:</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" id="alias" name="contacto[alias]" value="<%= contacto.alias %>" placeholder="alias"/>
 		</div>
-	</form>
+	</div>
 
-	<div class="container" style="max-width: 660px">
-
-		<p><strong>Comentarios:</strong></p>
-		<div class="panel panel-default table-responsive">
-			<table class="table table-hover">
-				<% for (var index in quiz.comments) {%>
-					<tr>
-						<% if (!session.user && quiz.comments[index].publicado) {%>
-							<td class="comment-panel">
-								<div class="container-fluid">
-									<textarea class="form-control comment-row" rows="5"><%=quiz.comments[index].texto%></textarea>
-								</div>
-								<div class="container-fluid">
-									<h6><span class="badge">#<%=quiz.comments[index].id%></span>
-									<small><%=quiz.comments[index].createdAt.toLocaleString()%></small></h6>
-								</div>
-							</td>
-						<%}%>
-						<% if (session.user) {%>
-							<td class="comment-panel">
-								<div class="container-fluid">
-									<% if ((session.user.isAdmin || (session.user && quiz.UserId === session.user.id))) {%>
-										<textarea class="form-control comment-row" rows="5"><%=quiz.comments[index].texto%></textarea>
-										<h6><span class="badge">#<%=quiz.comments[index].id%></span>
-										<small><%=quiz.comments[index].createdAt.toLocaleString()%></small>
-									<%} else if (quiz.comments[index].publicado) {%>
-										<textarea class="form-control comment-row" rows="5"><%=quiz.comments[index].texto%></textarea>
-										<h6><span class="badge">#<%=quiz.comments[index].id%></span>
-										<small><%=quiz.comments[index].createdAt.toLocaleString()%></small>
-									<%}%>
-								</div>
-								<div class="container-fluid">
-									<%if ((session.user.isAdmin || (session.user && quiz.UserId === session.user.id))) {%>
-							 			<%if (!quiz.comments[index].publicado) {%>
-											<a href="/quizes/<%= quiz.id %>/comments/<%=quiz.comments[index].id%>/publish">
-												<button class="btn btn-success btn-xs" data-toggle="tooltip" data-placement="top" title="Publicar">
-													<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-												</button>
-											</a>
-										<%} else if	(quiz.comments[index].publicado) {%>
-											<a href="/quizes/<%= quiz.id %>/comments/<%=quiz.comments[index].id%>/unpublish">
-												<button class="btn btn-warning btn-xs" data-toggle="tooltip" data-placement="top" title="Ocultar">
-													<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
-												</button>
-											</a>
-										<%}%>
-										<a href="/quizes/<%= quiz.id %>/comments/<%=quiz.comments[index].id%>/destroy">
-											<button class="btn btn-danger btn-xs" data-toggle="tooltip" data-placement="top" title="Eliminar">
-												<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
-											</button>
-										</a>
-										<a href="mailto:jotamontoyo@hotmail.es?cc=jotamontoyo@hotmail.es&bcc=jotamontoyo@hotmail.es&subject=Incidencia/Reclamacion&body=https://incipro.herokuapp.com/quizes/<%=quiz.id %>" target="_top">
-											<button class="btn btn-success btn-xs" data-toggle="tooltip" data-placement="top" title="Enviar a proveedor">
-												<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-											</button>
-										</a></h6>
-									<%}%>			
-								</div>
-							</td>
-						<%}%>
-					</tr>
-				<%}%>
-			</table>
+	<div class="form-group">
+		<label for="preg" class="col-sm-2 control-label">eMail:</label>
+		<div class="col-sm-10">
+			<input type="email" class="form-control" id="email" name="contacto[email]" value="<%= contacto.email %>" placeholder="eMail"/>
 		</div>
+	</div>
 
-		<p><a href="/quizes/<%= quiz.id %>/comments/new"><button type="button" class="btn btn-primary">
-			<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Nuevo comentario</button></a>
-		</p>
+	<div class="form-group">
+		<label for="preg" class="col-sm-2 control-label">eMail:</label>
+		<div class="col-sm-10">
+			<input type="email" class="form-control" id="emailok" name="contacto[emailok]" value="<%= contacto.emailok %>" placeholder="eMail confirm"/>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label for="preg" class="col-sm-2 control-label">Teléfono:</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" id="telf" name="contacto[telefono]" value="<%= contacto.telefono %>" placeholder="teléfono"/>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label for="preg" class="col-sm-2 control-label">Marca:</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" id="marca" name="contacto[marca]" value="<%= contacto.marca %>" placeholder="marca"/>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label for="preg" class="col-sm-2 control-label">Ciudad:</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" id="ciudad" name="contacto[ciudad]" value="<%= contacto.ciudad %>" placeholder="ciudad"/>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label for="preg" class="col-sm-2 control-label">Provincia:</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" id="provincia" name="contacto[provincia]" value="<%= contacto.provincia %>" placeholder="provincia"/>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label for="inputPassword3" class="col-sm-2 control-label">Comentarios:</label>
+		<textarea class="form-control" id="comentario" name="contacto[comentario]" rows="6" value="<%= contacto.comentario %>" style="width: 109%; max-width: 888px" placeholder="aquí tus comentarios"></textarea>
 
 	</div>
 

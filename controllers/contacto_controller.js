@@ -70,6 +70,14 @@
 		};
 	};
 
+	exports.show = function(req, res) {											// GET /contactos/:id
+		models.Contacto.find({
+			where: 		{id: req.contacto.id}
+		}).then(function(contacto) {
+			res.render('contactos/show', {contacto: req.contacto, errors: []});				// renderiza la vista /quizes/show del quizId selecionado con load find()
+		});																								// req.quiz: instancia de quiz cargada con autoload
+	};
+
 	exports.destroy = function(req, res) {
 		req.contacto.destroy().then(function() {
 			res.redirect('/contactos');

@@ -75,7 +75,7 @@
 	// Definición de rutas de contacto
 	router.get('/contactos',			 					sessionController.loginRequired, contactoController.index);				// accede a la lista completa de proveedores
 	router.get('/contactos/webform',			 			contactoController.webform);											// muestra la vista webform
-//	router.get('/contactos/:contactoId(\\d+)',				contactoController.show);												// accede a una pregunta en concreto. envia al proveedorController la peticion GET con el parametro proveedorId (indice)
+	router.get('/contactos/:contactoId(\\d+)',				contactoController.show);												// accede a una pregunta en concreto. envia al proveedorController la peticion GET con el parametro proveedorId (indice)
 	router.get('/contactos/new',							sessionController.loginRequired, contactoController.new);				// carga el formulario /proveedores/new si sessionController.loginRequired()
 	router.post('/contactos/create',						sessionController.loginRequired, contactoController.create);			// dispara controlador create cuando el boton <salvar> del formulario tanto del index ppral como de la vista webform
 	router.post('/contactos/webcreate',						contactoController.webcreate);											// dispara controlador webcreate cuando el boton <salvar> del formulario new.js

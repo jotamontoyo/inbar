@@ -80,9 +80,9 @@
 		overflow: 	hidden;
 	}
 
-	#panel-inicio {
-		background: url(/images/floxy/inicio.png) no-repeat center center;
-		height: 	auto;
+	#inicio {
+
+		height: 	100vh;
 		overflow: 	hidden;
 	}
 
