@@ -1,5 +1,5 @@
 
-<div class="form-group">
+<div class="form-group" style="margin-top: 120px">
 	<label for="preg" class="col-sm-2 control-label">Nombre:</label>
 	<div class="col-sm-10">
 		<input type="text" class="form-control" id="nombre" name="contacto[nombre]" value="<%= contacto.nombre %>" placeholder="nombre"/>
@@ -56,9 +56,18 @@
 </div>
 
 <div class="form-group">
-	<label for="inputPassword3" class="col-sm-2 control-label">Comentarios:</label>
-	<textarea class="form-control" id="comentario" name="contacto[comentario]" rows="6" value="<%= contacto.comentario %>" style="width: 109%; max-width: 888px" placeholder="aquí tus comentarios"></textarea>
+	<label for="preg" class="col-sm-2 control-label">Revisado:</label>
+	<div class="col-sm-10">
+		<select class="form-control" id="revisado" name="contacto[revisado]">
+			<option value=true <%if (contacto.revisado){%> selected <%}%>>Revisado</option>
+			<option value=false <%if (!contacto.revisado){%> selected <%}%>>Pendiente</option>
+		</select>
+	</div>
+</div>
 
+<div class="form-group">
+	<label for="preg" class="col-sm-2 control-label">Comentarios:</label>
+	<textarea class="form-control" id="comentario" name="contacto[comentario]" rows="6" value="<%= contacto.comentario %>" style="width: 109%; max-width: 888px" placeholder="aquí tus comentarios"><%= contacto.comentario %></textarea>
 </div>
 
 <div class="form-group">

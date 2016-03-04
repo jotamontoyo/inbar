@@ -1,4 +1,4 @@
-	
+
 <div class="container-fluid">
 
 	<h4>Contactos</h4><br>
@@ -39,6 +39,11 @@
 									</button>
 								</form>
 							</td>
+							<% if (!contactos[i].revisado) {%>
+								<td><span class="glyphicon glyphicon-alert" aria-hidden="true"></span></td>
+							<%} else {%>
+								<td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+							<%}%>
 						<%}%>
 					</tr>
 				<% } %>
@@ -49,6 +54,6 @@
 	<% if (session.user.isAdmin) { %>
 		<p><a href="/contactos/new"><button type="button" class="btn btn-primary">
 			<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Crear Contacto</button></a></p>
-	<% } %>	
+	<% } %>
 
 </div>

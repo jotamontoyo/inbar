@@ -1,5 +1,5 @@
 
-<div class="container">
+<div class="container" style="margin-top: 120px">
 
 	<div class="form-group">
 		<label for="preg" class="col-sm-2 control-label">Nombre:</label>
@@ -58,9 +58,8 @@
 	</div>
 
 	<div class="form-group">
-		<label for="inputPassword3" class="col-sm-2 control-label">Comentarios:</label>
-		<textarea class="form-control" id="comentario" name="contacto[comentario]" rows="6" value="<%= contacto.comentario %>" style="width: 109%; max-width: 888px" placeholder="aquí tus comentarios"></textarea>
-
+		<label for="preg" class="col-sm-2 control-label">Comentarios:</label>
+		<textarea class="form-control" id="comentario" name="contacto[comentario]" rows="6" value="<%= contacto.comentario %>" style="width: 109%; max-width: 888px" placeholder="aquí tus comentarios"><%= contacto.comentario %></textarea>
 	</div>
 
 </div>

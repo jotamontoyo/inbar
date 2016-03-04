@@ -38,7 +38,7 @@
 			res.render('contactos/new', {contacto: contacto, errors: errores});
 		} else {
 			contacto 																// save: guarda en DB campos
-			.save({fields: ["nombre", "alias", "email", "emailok", "telefono", "marca", "ciudad", "provincia"]})
+			.save({fields: ["nombre", "alias", "email", "emailok", "telefono", "marca", "ciudad", "provincia", "comentario"]})
 			.then(function() {res.redirect('/contactos')});
 		};
 	};
@@ -57,6 +57,8 @@
 		req.contacto.marca = req.body.contacto.marca;
 		req.contacto.ciudad = req.body.contacto.ciudad;
 		req.contacto.provincia = req.body.contacto.provincia;
+		req.contacto.comentario = req.body.contacto.comentario;
+		req.contacto.revisado = req.body.contacto.revisado;
 		var errors = req.contacto.validate();
 		if (errors) {
 			var i = 0;
@@ -65,7 +67,7 @@
 			res.render('contactos/edit', {contacto: req.contacto, errors: errores});
 		} else {
 			req.contacto 															// save: guarda en DB campos
-			.save({fields: ["nombre", "alias", "email", "emailok", "telefono", "marca", "ciudad", "provincia"]})
+			.save({fields: ["nombre", "alias", "email", "emailok", "telefono", "marca", "ciudad", "provincia", "comentario", "revisado"]})
 			.then(function() {res.redirect('/contactos')});
 		};
 	};
@@ -97,6 +99,7 @@
 		contacto.ciudad = req.body.ciudad;
 		contacto.provincia = req.body.provincia;
 		contacto.comentario = req.body.comentario;
+		contacto.revisado = false;
 		if (req.body.lopd) {contacto.lopd = true};
 		var errors = contacto.validate();											// objeto errors no tiene then(
 		if (errors) {
