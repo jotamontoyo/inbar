@@ -38,7 +38,7 @@
 			res.render('contactos/new', {contacto: contacto, errors: errores});
 		} else {
 			contacto 																// save: guarda en DB campos
-			.save({fields: ["nombre", "alias", "email", "emailok", "telefono", "marca", "ciudad", "provincia", "comentario"]})
+			.save({fields: ["nombre", "alias", "email", "emailok", "telefono", "marca", "ciudad", "provincia", "comentario", "revisado"]})
 			.then(function() {res.redirect('/contactos')});
 		};
 	};
