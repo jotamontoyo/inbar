@@ -110,10 +110,18 @@
 		} else {
 			contacto 																// save: guarda en DB campos
 			.save({fields: ["nombre", "alias", "email", "emailok", "telefono", "marca", "ciudad", "provincia", "comentario", "lopd", "revisado"]})
-			.then(function() {res.redirect('/')});
+			.then(function() {
+				res.redirect('/contactos/enviado');
+//				res.redirect('/');
+			});
 		};
 	};
 
 	exports.webform = function(req, res) {
 		res.render('contactos/webform.ejs', {errors: []});
+	};
+
+	exports.enviado = function(req, res) {
+//		res.redirect('/');
+		res.render('contactos/enviado.ejs', {errors: []});
 	};
