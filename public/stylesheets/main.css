@@ -75,9 +75,9 @@ a:hover, a:focus {
 	transition: background-color, color, 0.3s;
 }
 body {
-	font-family: "Source Sans Pro";
+/*	font-family: "Source Sans Pro";
 	font-weight: 400;
-	color: #6c7279;
+	color: #6c7279; */
 }
 ul, ol {
 	margin: 0;
@@ -373,7 +373,7 @@ ul li {
 -------------------------------------------------------------------------------*/
 .service-section {
 	padding-top: 100px;
-	background: url(../images/floxy/tienesunlocal2.png) no-repeat center center;
+/*	background: url(/images/floxy/elsol-desenf.png) no-repeat center center; */
 }
 .services {
 
