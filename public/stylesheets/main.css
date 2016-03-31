@@ -347,6 +347,7 @@ ul li {
 /* ------------------------------------------------------------------------------
 	 Intro
 -------------------------------------------------------------------------------*/
+/*
 .intro {
 	background-color: #e9eaed;
 	position: relative;
@@ -367,13 +368,18 @@ ul li {
 	font-style: normal;
 	font-weight: 400;
 	margin-top: 30px;
-}
+}	*/
+
 /* ------------------------------------------------------------------------------
 	 Services -  TIENES UN LOCAL -
 -------------------------------------------------------------------------------*/
+
 .service-section {
+	height: 620px;
+/*	background-color: black; */
+	color: white;
 	padding-top: 100px;
-/*	background: url(/images/floxy/elsol-desenf.png) no-repeat center center; */
+	background: url(/images/floxy/elsol-desenf.png) no-repeat center center;
 }
 .services {
 
