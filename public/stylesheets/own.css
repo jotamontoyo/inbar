@@ -43,7 +43,7 @@
 		max-width: 90%;
 	}
 
-	#panel1 {
+/*	#panel1 {
 		background: url(/images/brooklyn.jpg) no-repeat fixed center;
 		height: 	100vh;
 		overflow: 	hidden;
@@ -75,9 +75,9 @@
 
 	#panel-franquicias {
 /*		background: url(/images/brooklyn.jpg) no-repeat fixed center; */
-		height: 	auto;
+/*		height: 	auto;
 		overflow: 	hidden;
-	}
+	} */
 
 	#inicio {
 	/*	background: url(/images/floxy/tienesunlocal2.png) no-repeat center center;*/
@@ -88,11 +88,13 @@
 	}
 
 	#elegir_modelo {
-		height: 720px;
+		min-height: 570px;
+		margin-bottom: 50px;
+		position: relative;
 	}
 
 	#elegir_modelo img {
-		max-width: 100%;
+		width: 100%;
 		height: auto;
 		position: relative;
 		-webkit-box-shadow: 10px 10px 24px -2px rgba(0,0,0,0.6);
@@ -101,7 +103,7 @@
 	}
 
 	.img-modelo {
-		max-width: 400px;
+		max-width: 500px;
 	}
 
 /*	#elegir_modelo img:hover {
@@ -116,33 +118,23 @@
 	} */
 
 
+	#servicios {
+		height: auto;
+		position: relative;
+		background-color: #088A29;
+		color: white;
+		padding: 100px 20px 100px 30px;
+/*		padding-bottom: 100px;
+		padding-left: 50px; */
 
-/*	#modelo1 {
-		background: rgba(254,254,254,1);
-		background: -moz-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(209,209,209,1) 63%, rgba(209,209,209,1) 99%, rgba(226,226,226,1) 100%);
-		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(254,254,254,1)), color-stop(63%, rgba(209,209,209,1)), color-stop(99%, rgba(209,209,209,1)), color-stop(100%, rgba(226,226,226,1)));
-		background: -webkit-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(209,209,209,1) 63%, rgba(209,209,209,1) 99%, rgba(226,226,226,1) 100%);
-		background: -o-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(209,209,209,1) 63%, rgba(209,209,209,1) 99%, rgba(226,226,226,1) 100%);
-		background: -ms-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(209,209,209,1) 63%, rgba(209,209,209,1) 99%, rgba(226,226,226,1) 100%);
-		background: linear-gradient(to bottom, rgba(254,254,254,1) 0%, rgba(209,209,209,1) 63%, rgba(209,209,209,1) 99%, rgba(226,226,226,1) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#e2e2e2', GradientType=0 );
-		height: 520px;
-/*		border: 1px solid rgba(254,254,254,1); */
-	} /*
+/*		background: url(/images/floxy/elsol-desenf.png) no-repeat fixed center; */
+	}
 
-	#modelo2 {
-		background: rgba(254,254,254,1);
-		background: -moz-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(209,209,209,1) 63%, rgba(209,209,209,1) 99%, rgba(226,226,226,1) 100%);
-		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(254,254,254,1)), color-stop(63%, rgba(209,209,209,1)), color-stop(99%, rgba(209,209,209,1)), color-stop(100%, rgba(226,226,226,1)));
-		background: -webkit-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(209,209,209,1) 63%, rgba(209,209,209,1) 99%, rgba(226,226,226,1) 100%);
-		background: -o-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(209,209,209,1) 63%, rgba(209,209,209,1) 99%, rgba(226,226,226,1) 100%);
-		background: -ms-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(209,209,209,1) 63%, rgba(209,209,209,1) 99%, rgba(226,226,226,1) 100%);
-		background: linear-gradient(to bottom, rgba(254,254,254,1) 0%, rgba(209,209,209,1) 63%, rgba(209,209,209,1) 99%, rgba(226,226,226,1) 100%);
-		height: 520px;
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#e2e2e2', GradientType=0 );
-/* 		border: 1px solid rgba(254,254,254,1);*/
-/*	}  */
-
+	.servicios-contenido {
+		padding: 0 15px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
 
 	#menu-inbar  {
 		position     : relative;
@@ -206,7 +198,7 @@
 	}
 
 	.img-logo-sm img {
-		width:         30px;
+		width:         50px;
 		height:        100%;
 		margin-bottom: 5px;
 	}
@@ -255,7 +247,7 @@
 		.ocultar-movil{
 			display: none;
 		}
-		.col-pie {
+		.col-pie, .servicios-contenido {
 			border-bottom: 1px solid #999999;
 		}
 		#menu-inbar .col-md-1 a:hover {
@@ -267,7 +259,7 @@
 		.ocultar-movil{
 			display: none;
 		}
-		.col-pie {
+		.col-pie, .servicios-contenido{
 			border-bottom: 1px solid #999999;
 		}
 		#menu-inbar .col-md-1 a:hover {
