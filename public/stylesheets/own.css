@@ -79,6 +79,16 @@
 		overflow: 	hidden;
 	} */
 
+	.preload * {
+/*		visibility: hidden;
+		-webkit-transition: none !important;
+		-moz-transition: none !important;
+		-ms-transition: none !important;
+		-o-transition: none !important; */
+
+
+	}
+
 	#inicio {
 	/*	background: url(/images/floxy/tienesunlocal2.png) no-repeat center center;*/
 		height: 	100vh;
@@ -87,10 +97,19 @@
 
 	}
 
+	/* ELEGIR MODELO ======================================================================== */
+
 	#elegir_modelo {
 		min-height: 570px;
 		margin-bottom: 50px;
 		position: relative;
+
+/*		-webkit-transition: all 0.4s ease-in-out 0.5s;
+		-moz-transition   : all 0.4s ease-in-out 0.5s;
+		-o-transition     : all 0.4s ease-in-out 0.5s;
+		-ms-transition    : all 0.4s ease-in-out 0.5s;
+		transition        : all 0.4s ease-in-out 0.5s; */
+
 	}
 
 	#elegir_modelo img {
@@ -117,6 +136,7 @@
 
 	} */
 
+	/* SERVICIOS ======================================================================= */
 
 	#servicios {
 		height: auto;
@@ -135,6 +155,8 @@
 		margin-top: 30px;
 		margin-bottom: 30px;
 	}
+
+	/* MENU INBAR ======================================================================================= */
 
 	#menu-inbar  {
 		position     : relative;
@@ -160,7 +182,7 @@
 
 
 
-
+	/* PIE =================================================================================== */
 
 	#pie {
 		background-color: 	rgba(0, 0, 0, 0.8);
@@ -195,12 +217,13 @@
 
 	.img-logo-sm {
 		margin-left: 15%;
+		margin-bottom: 15px;
 	}
 
 	.img-logo-sm img {
 		width:         50px;
 		height:        100%;
-		margin-bottom: 5px;
+		align-content: middle;
 	}
 
 	.rrss-pie{

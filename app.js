@@ -15,6 +15,7 @@
 	var methodOverride = require('method-override');
 	var session = require('express-session');
 
+
 	var routes = require('./routes/index');
 
 	var app = express();
@@ -28,7 +29,7 @@
 	app.use(logger('dev'));
 	app.use(bodyParser.json());
 	app.use(bodyParser.urlencoded({extended: true}));
-	app.use(cookieParser('incipro'));								// semilla que llevara la cookie
+	app.use(cookieParser('inbar'));								// semilla que llevara la cookie
 	app.use(session());
 	app.use(methodOverride('_method'));				// para utilizar en edit.ejs y encapsular el post como put
 	app.use(busboy());
