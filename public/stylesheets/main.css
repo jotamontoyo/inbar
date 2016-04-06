@@ -317,8 +317,9 @@ ul li {
 	height: 100vh;
 	min-height: 700px;
 }
+
 .banner-btn {
-	opacity: 0.5;
+	color: 	rgb(255, 153, 64);
 }
 .banner-text {
 	margin-top: 600px;

@@ -1,8 +1,12 @@
 
     <!-- inicio =================================================================================================================== -->
     <div class="container-fluid" id="inicio">
+        <% if (!session.user) { %>
+            <a href="/login">Login&nbsp;</a>
+        <%}%>
         <div class="row" style="margin-top: 100px">
             <div class="col-md-12 text-center">
+
                 <img class="animated bounce" src="images/floxy/logo-inbar2.png" alt="Generic placeholder image" width="240">
                 <hr>
                 <nav role="navigation"> <a href="#elegir_modelo" class="banner-btn">Abre tu franquicia</a></nav>
@@ -445,7 +449,7 @@
                 </div>
 
                 <div class="col-md-6 col-sm-6 col-xs-12">
-                    <h5>prueba</h5>
+                    <h3>CONTACTO</h3>
                     <div class="col-md-6 col-sm-6 col-xs-12">
                         <div class="form-group">
                             <label for="nombre">Nombre</label>
@@ -476,9 +480,9 @@
                         <div class="form-group">
                             <label for="inputPassword3">Marca</label>
                             <select class="form-control" id="marca" name="marca">
-                                <option value=""></option>
+                                <option value="Todas">Todas</option>
                     			<option value="Sol">Sol</option>
-                    			<option value="Mediterraneo">Mediterráneo</option>
+                    			<option value="Mediterráneo">Mediterráneo</option>
 
                     		</select>
                         </div>

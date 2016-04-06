@@ -103,9 +103,9 @@
 	</script>
 
 	<!-- NAVBAR =========================================================================================================== -->
-		<% if (!session.user) { %>
+<!--		<% if (!session.user) { %>				lo pongo en index para que carge con el background-image
 			<a href="/login">Login&nbsp;</a>
-		<%}%>
+		<%}%> -->
 		<% if (session.user) { %>
 			<nav class="navbar navbar-default">		<!-- id="header" para aplicar el css -->
 				<div class="container-fluid">
@@ -142,7 +142,7 @@
 							<button type="submit" class="btn btn-default" value="Enviar">Submit</button>
 						</form>  -->
 						<ul class="nav navbar-nav navbar-right">
-							<div class="form-group" style="color: white">
+							<div class="form-group" style="color: black">
 								<%if(!session.user){%>
 									<li><a href="/user">Sign up</a> - <a href="/login">Login&nbsp;</a></li>
 								<%}else{%>
