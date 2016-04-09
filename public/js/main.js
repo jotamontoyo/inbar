@@ -38,7 +38,7 @@ $(document).ready(function() {
 	  	var $el = $(this)
 	    	id = $el.attr('href');
 		$('html, body').animate({
-			scrollTop: $(id).offset().top - 75
+			scrollTop: $(id).offset().top
 		}, 500);
 	  return false;
 	});
@@ -48,7 +48,7 @@ $(document).ready(function() {
 		$(this).toggleClass('close-nav');
 		nav.toggleClass('open');
 		return false;
-	});	
+	});
 	nav.find('a').on('click', function() {
 		$('.nav-toggle').toggleClass('close-nav');
 		nav.toggleClass('open');

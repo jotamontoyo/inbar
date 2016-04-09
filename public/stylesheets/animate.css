@@ -15,6 +15,13 @@
     animation-fill-mode:         both;
 }
 
+.slow-animated {
+    -webkit-animation-duration:  2s;
+    animation-duration:          2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode:         both;
+}
+
 .fast-animated {
     -webkit-animation-duration:  0.1s;
     animation-duration:          0.1s;

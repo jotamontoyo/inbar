@@ -1,46 +1,66 @@
 
     <!-- inicio =================================================================================================================== -->
-    <div class="container-fluid" id="inicio">
+    <div class="container-fluid text-center" id="inicio">
         <% if (!session.user) { %>
             <a href="/login">Login&nbsp;</a>
         <%}%>
-        <div class="row" style="margin-top: 100px">
-            <div class="col-md-12 text-center">
-
-                <img class="animated bounce" src="images/floxy/logo-inbar2.png" alt="Generic placeholder image" width="240">
-                <hr>
-                <nav role="navigation"> <a href="#elegir_modelo" class="banner-btn">Abre tu franquicia</a></nav>
+        <div class="center-block" style="margin-top:50px">
+            <img src="images/floxy/logo-inbar3.png" alt="Generic placeholder image" width="240">
+            <hr>
+        </div>
+        <div class="row slow-animated fadeIn">
+            <div class="col-md-2 menu-inicio">
+                <nav role="navigation"> <a href="#inicio" class="banner-btn">Inicio</a></nav>
+            </div>
+            <div class="col-md-2 menu-inicio">
+                <nav role="navigation"> <a href="#elegir" class="banner-btn">Abre tu franquicia</a></nav>
+            </div>
+            <div class="col-md-2 menu-inicio">
+                <nav role="navigation"> <a href="#elegir" class="banner-btn">¿Tienes un local?</a></nav>
+            </div>
+            <div class="col-md-2 menu-inicio">
+                <nav role="navigation"> <a href="#contacto2" class="banner-btn">Contáctanos</a></nav>
+            </div>
+            <div class="col-md-2 menu-inicio">
+                <nav role="navigation"> <a href="#elegir" class="banner-btn">Blog</a></nav>
+            </div>
+            <div class="col-md-2 menu-inicio">
+                <nav role="navigation"> <a href="#elegir" class="banner-btn">ESP / ENG</a></nav>
             </div>
         </div>
     </div>
-    <br><br>
+
 
     <!-- ELEGIR MODELO =================================================================================================================== -->
     <div class="container-fluid preload" name="elegir" id="elegir">
-        <div class="row" id="elegir_modelo">
-            <h3 class="text-center"><i class="fa fa-group"> Elije tu modelo</i></h3>
+        <div class="row img-logo-sm" style="margin-left: 0;">
             <br>
+            <h3 class="text-center"><img class="img-circle" src="/images/floxy/logo-inbar.png" data-src="holder.js/100x100/auto" alt="Generic placeholder image"> Elije tu modelo</img></h3>
+        </div>
+        <div class="row" id="elegir_modelo">
             <div class="col-md-6 col-sm-6">
-                <h3 class="text-center">SOL</h4>
+                <h2 class="text-center">SOL</h2>
                 <h6 class="text-center">Afterwork drinks</h6>
+                <br>
                 <div class="img-modelo center-block">
                     <img class="img-responsive" src="images/floxy/modelo-elsol.png" alt="">
                 </div>
-                <br><br>
+                <br>
                 <div class="center-block" style="cursor: pointer; width:40px;">
-                    <a class="btn btn-default"
+                    <a class="button"
                         data-toggle="modal"
                         data-target="#panel-elsol"><i class="fa fa-plus"></i> Info
                     </a>
                 </div>
             </div>
             <div class="col-md-6 col-sm-6">
-                <h3 class="text-center">MED</h4>
+                <h2 class="text-center">MED</h2>
                 <h6 class="text-center">Mediterráneo</h6>
+                <br>
                 <div class="img-modelo center-block">
                     <img class="img-responsive" src="images/floxy/modelo-med.png" alt="">
                 </div>
-                <br><br>
+                <br>
                 <div class="center-block" style="cursor: pointer; width:40px;">
                     <a type="button"
                         data-toggle="modal"
@@ -61,7 +81,7 @@
 
 
     </div>
-    <br><br>
+
 
     <!-- FRANQUICIAS ======================================================================================================================= -->
 <!--    <section id="intro" class="section intro no-padding">
@@ -145,7 +165,7 @@
         </div>
     </section> -->
 
-
+    <!-- SERVICIOS =============================================================================================== -->
     <div class="container-fluid" id="servicios">
         <div class="container">
             <div class="col-md-4 col-sm-6"> <i class="fa fa-area-chart fa-2x"></i>
@@ -187,35 +207,36 @@
         </div>
     </div>
 
-    <div class="container center-block" style="height:auto; margin-top:100px; margin-bottom:80px;">
 
-        <!-- Marketing messaging and featurettes  ================================================== -->
+    <!-- Marketing messaging and featurettes  =============================================================================== -->
+<!--    <div class="container center-block" style="height:auto; margin-top:100px; margin-bottom:80px;">
+
 		<div class="marketing">
 			<!-- Three columns of text below the carousel -->
-			<div class="row">
+<!--			<div class="row">
 				<div class="col-lg-4">
 					<img class="img-circle animated tada" src="images/firstslide.jpg" alt="Generic placeholder image" width="140" height="140">
 					<h2>Heading</h2>
 					<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
 					<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
 				</div><!-- /.col-lg-4 -->
-			    <div class="col-lg-4">
+<!--			    <div class="col-lg-4">
 					<img class="img-circle animated tada" src="images/tabano.jpg" alt="Generic placeholder image" width="140" height="140">
 					<h2>Prácticas</h2>
 					<p>Estas son las prácticas que he ido realizando en diferentes cursos, tanto aquellos realizados online como los que he hecho por mi cuenta mediante manuales.</p>
 					<p><a class="btn btn-default" href="practicas.html" role="button">View details &raquo;</a></p>
 				</div><!-- /.col-lg-4 -->
-				<div class="col-lg-4">
+<!--				<div class="col-lg-4">
 					<img class="img-circle animated tada" src="images/lago.jpg" alt="Generic placeholder image" width="140" height="140">
 					<h2>Heading</h2>
 					<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
 					<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
 				</div><!-- /.col-lg-4 -->
-			</div><!-- /.row -->
-        </div>
+<!--			</div><!-- /.row -->
+<!--        </div>
 
     </div>
-
+-->
 
 
 
@@ -456,27 +477,29 @@
                             <input type="text" class="form-control" id="nombre" name="nombre" required="required" placeholder="nombre"/>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12">
+<!--                    <div class="col-md-6 col-sm-6 col-xs-12">
                         <div class="form-group">
                             <label for="alias">Alias</label>
                             <input type="text" class="form-control" id="alias" name="alias" placeholder="alias"/>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="col-md-6 col-sm-6 col-xs-12">
                         <div class="form-group">
                             <label for="inputEmail3">Email</label>
                             <input type="email" class="form-control" id="email" name="email" required placeholder="eMail"/>
                         </div>
-                        <div class="form-group">
+<!--                        <div class="form-group">
                             <label for="inputPassword3">Email</label>
                             <input type="email" class="form-control" id="emailok" name="emailok" required placeholder="eMail confirm"/>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-12">
                         <div class="form-group">
                             <label for="inputEmail3">Teléfono</label>
                             <input type="text" class="form-control" id="telf" name="telefono" pattern="[0-9]{9}" required placeholder="teléfono"/>
                         </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
                         <div class="form-group">
                             <label for="inputPassword3">Marca</label>
                             <select class="form-control" id="marca" name="marca">
@@ -492,6 +515,8 @@
                             <label for="inputEmail3">Ciudad</label>
                             <input type="text" class="form-control" id="ciudad" name="ciudad" required placeholder="ciudad"/>
                         </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
                         <div class="form-group">
                             <label for="inputPassword3">Provincia</label>
                             <input type="text" class="form-control" id="provincia" name="provincia" required placeholder="provincia"/>
@@ -521,7 +546,7 @@
     </div>
 
 
-
+<!--
 
     <div class="container-fluid" id="contacto" name="contacto">
         <div class="row">
@@ -547,7 +572,7 @@
                 <h3>dsfgsdfgsdfg sdfgsdfgsdfg sdfg sdfg sd sdfg sdfg sdfgsdfg sdfgsdfg d sdf sdf dgfsdf d </h3>
                 <h5>dsfgsdfgsdfg sdfgsdfgsdfg sdfg sdfg sd sdfg sdfg sdfgsdfg sdfgsdfg d sdf sdf dgfsdf d </h5>
             </div> -->
-        </div>
+<!--        </div>
         <div class="row">
             <form class="form-horizontal" method="post" action="/contactos/webcreate">
                 <div class="col-md-3 col-sm-6 col-xs-12">
@@ -619,6 +644,9 @@
             </form>
         </div>
     </div>
+-->
+
+
 
 <!-- Get a quote section -->
 

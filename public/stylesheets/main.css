@@ -151,6 +151,7 @@ ul li {
 }
 .navigation {
 	float: right;
+
 }
 .navigation li {
 	display: inline-block;
@@ -319,7 +320,8 @@ ul li {
 }
 
 .banner-btn {
-	color: 	rgb(255, 153, 64);
+	color: 	rgb(255, 255, 255);
+	font-size: 23px;
 }
 .banner-text {
 	margin-top: 600px;
