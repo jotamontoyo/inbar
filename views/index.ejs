@@ -2,19 +2,22 @@
     <!-- inicio =================================================================================================================== -->
     <div class="container-fluid text-center" id="inicio">
         <div id="page">
-            <ul class="cb-slideshow">
+
+            <ul class="cb-slideshow" id="img-inicio">
                 <li><span></span><div><h3>re·lax·a·tion</h3></div></li>
                 <li><span></span><div><h3>qui·e·tude</h3></div></li>
                 <li><span></span><div><h3>bal·ance</h3></div></li>
-                <li><span>Image 04</span><div><h3>e·qua·nim·i·ty</h3></div></li>
-                <li><span>Image 05</span><div><h3>com·po·sure</h3></div></li>
-                <li><span>Image 06</span><div><h3>se·ren·i·ty</h3></div></li>
+                <li><span></span><div><h3>e·qua·nim·i·ty</h3></div></li>
+                <li><span></span><div><h3>com·po·sure</h3></div></li>
+                <li><span></span><div><h3>se·ren·i·ty</h3></div></li>
             </ul>
 
-            <div class="row center-block" style="position:absolute; top:100px; width: 100%">
+            <div class="row center-block" style="position:absolute; top:0px; width: 100%">
                 <% if (!session.user) { %>
                     <a href="/login">Login&nbsp;</a>
                 <%}%>
+            </div>
+            <div class="row center-block" style="position:absolute; top:100px; width: 100%">
                 <img src="images/floxy/logo-inbar3.png" alt="Generic placeholder image" width="240">
                 <hr>
             </div>
