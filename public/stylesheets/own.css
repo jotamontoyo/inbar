@@ -68,6 +68,12 @@
 		max-width: 90%;
 	}
 
+	.container-fluid {
+	    padding: 0px;
+		overflow: hidden;
+
+	}
+
 /*	#panel1 {
 		background: url(/images/brooklyn.jpg) no-repeat fixed center;
 		height: 	100vh;
@@ -115,15 +121,15 @@
 	}
 
 	#inicio {
-		background: url(/images/floxy/inbarasset.png) no-repeat fixed center;
-		height: 	auto;
-		min-height: 100vh;
+/*		background: url(/images/floxy/inbarasset.png) no-repeat fixed center; */
+		background-color: #BDBDBD;
+		height: 	720px;
+/*		min-height: 100vh; */
 		overflow: 	hidden;
 
 	}
 
 	.menu-inicio {
-
 
 	}
 
@@ -138,7 +144,7 @@
 
 	#elegir_modelo {
 
-		min-height: 76vh;
+		min-height: 75vh;
 		margin-bottom: 50px;
 		position: relative;
 

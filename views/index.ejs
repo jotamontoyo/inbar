@@ -1,33 +1,47 @@
 
     <!-- inicio =================================================================================================================== -->
     <div class="container-fluid text-center" id="inicio">
-        <% if (!session.user) { %>
-            <a href="/login">Login&nbsp;</a>
-        <%}%>
-        <div class="center-block" style="margin-top:50px">
-            <img src="images/floxy/logo-inbar3.png" alt="Generic placeholder image" width="240">
-            <hr>
+        <div id="page">
+            <ul class="cb-slideshow">
+                <li><span></span><div><h3>re·lax·a·tion</h3></div></li>
+                <li><span></span><div><h3>qui·e·tude</h3></div></li>
+                <li><span></span><div><h3>bal·ance</h3></div></li>
+                <li><span>Image 04</span><div><h3>e·qua·nim·i·ty</h3></div></li>
+                <li><span>Image 05</span><div><h3>com·po·sure</h3></div></li>
+                <li><span>Image 06</span><div><h3>se·ren·i·ty</h3></div></li>
+            </ul>
+
+            <div class="row center-block" style="position:absolute; top:100px; width: 100%">
+                <% if (!session.user) { %>
+                    <a href="/login">Login&nbsp;</a>
+                <%}%>
+                <img src="images/floxy/logo-inbar3.png" alt="Generic placeholder image" width="240">
+                <hr>
+            </div>
+            <div class="row text-center" style="position:absolute; top:620px; width: 100%">
+                <div class="col-md-2 menu-inicio">
+                    <nav role="navigation"> <a href="#inicio" class="banner-btn">Inicio</a></nav>
+                </div>
+                <div class="col-md-2 menu-inicio">
+                    <nav role="navigation"> <a href="#elegir" class="banner-btn">Abre tu franquicia</a></nav>
+                </div>
+                <div class="col-md-2 menu-inicio">
+                    <nav role="navigation"> <a href="#elegir" class="banner-btn">¿Tienes un local?</a></nav>
+                </div>
+                <div class="col-md-2 menu-inicio">
+                    <nav role="navigation"> <a href="#contacto2" class="banner-btn">Contáctanos</a></nav>
+                </div>
+                <div class="col-md-2 menu-inicio">
+                    <nav role="navigation"> <a href="#elegir" class="banner-btn">Blog</a></nav>
+                </div>
+                <div class="col-md-2 menu-inicio">
+                    <nav role="navigation"> <a href="#elegir" class="banner-btn">ESP / ENG</a></nav>
+                </div>
+
+            </div>
+
         </div>
-        <div class="row slow-animated fadeIn">
-            <div class="col-md-2 menu-inicio">
-                <nav role="navigation"> <a href="#inicio" class="banner-btn">Inicio</a></nav>
-            </div>
-            <div class="col-md-2 menu-inicio">
-                <nav role="navigation"> <a href="#elegir" class="banner-btn">Abre tu franquicia</a></nav>
-            </div>
-            <div class="col-md-2 menu-inicio">
-                <nav role="navigation"> <a href="#elegir" class="banner-btn">¿Tienes un local?</a></nav>
-            </div>
-            <div class="col-md-2 menu-inicio">
-                <nav role="navigation"> <a href="#contacto2" class="banner-btn">Contáctanos</a></nav>
-            </div>
-            <div class="col-md-2 menu-inicio">
-                <nav role="navigation"> <a href="#elegir" class="banner-btn">Blog</a></nav>
-            </div>
-            <div class="col-md-2 menu-inicio">
-                <nav role="navigation"> <a href="#elegir" class="banner-btn">ESP / ENG</a></nav>
-            </div>
-        </div>
+
     </div>
 
 
