@@ -1,5 +1,6 @@
 
 	var models = require('../models/models.js');
+//	var sa = require('sweetalert');
 
 	exports.load = function(req, res, next, contactoId) {			// autoload. solo se ejecuta si en la peticion GET existe un :proveedorId. ayuda a factorizar el codigo del resto de controladores
 		models.Contacto.find({										// carga de registro proveedorId
@@ -122,6 +123,8 @@
 	};
 
 	exports.enviado = function(req, res) {
-//		res.redirect('/');
+
 		res.render('contactos/enviado.ejs', {errors: []});
+
+//		res.redirect('/');
 	};
