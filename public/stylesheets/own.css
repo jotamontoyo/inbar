@@ -64,7 +64,7 @@
 		border: 					none !important;
 	}
 
-	.form-group  input, select {
+	.form-group input, select {
 		max-width: 90%;
 	}
 
@@ -73,6 +73,26 @@
 		overflow: hidden;
 
 	}
+	#panel-elsol {
+
+
+	}
+
+	#modal-elsol, #modal-mediterraneo {
+		width: auto;
+		margin: 0;
+	}
+
+	.modal-cuerpo {
+		padding: 0;
+
+	}
+
+	.modal-cuerpo img {
+/*		max-height: 100vh; */
+
+	}
+
 
 /*	#panel1 {
 		background: url(/images/brooklyn.jpg) no-repeat fixed center;
@@ -161,6 +181,7 @@
 		width: 100%;
 		height: auto;
 		position: relative;
+		cursor: pointer;
 		-webkit-box-shadow: 10px 10px 24px -2px rgba(0,0,0,0.6);
 		-moz-box-shadow: 10px 10px 24px -2px rgba(0,0,0,0.6);
 		box-shadow: 10px 10px 24px -2px rgba(0,0,0,0.6);
@@ -359,6 +380,8 @@
 	#front-panel, #quizes-panel, #temas-panel, #showbytema-panel, #stats-panel, #db-panel {
 		background-color: 	rgba(238, 238, 238, 0.6);
 		box-shadow: 		10px 10px 5px #D7D7D7;
+		overflow: 			visible;
+		max-width: 			95%;
 	}
 
 	.comment-row {

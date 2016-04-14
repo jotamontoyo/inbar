@@ -113,6 +113,7 @@
 			.save({fields: ["nombre", "alias", "email", "emailok", "telefono", "marca", "ciudad", "provincia", "comentario", "lopd", "revisado"]})
 			.then(function() {
 				res.redirect('/contactos/enviado');
+
 //				res.redirect('/');
 			});
 		};
