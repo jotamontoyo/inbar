@@ -13,6 +13,7 @@
 	var proveedorController = require('../controllers/proveedor_controller');
 	var invitadoController = require('../controllers/invitado_controller');
 	var contactoController = require('../controllers/contacto_controller');
+	var languageController = require('../controllers/language_controler');
 
 	router.get('/', function (req, res) {													/* GET home page. */
 		res.render('index', {title: 'inBar', errors: []});									// cuando renderice la vista index.ejs le pasa el objeto title: 'Quiz'
@@ -83,6 +84,9 @@
 	router.put('/contactos/:contactoId(\\d+)',				sessionController.loginRequired, contactoController.update);			// dispara controlador update cuando el boton <salvar> del formulario edit.js
 	router.delete('/contactos/:contactoId(\\d+)',			sessionController.loginRequired, contactoController.destroy);
 	router.get('/contactos/enviado',	 					contactoController.enviado);											// vista de formulario enviado
+
+	router.get('/languages/sp',	 							languageController.sp);													// vista del idioma en
+	router.get('/languages/en',	 							languageController.en);													// vista del idioma en
 
 	router.get('/temas',			 						quizController.showtemas);
 	router.get('/temas/:tema', 								quizController.showbytema);
