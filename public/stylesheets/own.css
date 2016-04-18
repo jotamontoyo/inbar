@@ -64,6 +64,17 @@
 		border-bottom: 				2px solid #fff;
 	}
 
+	#idioma {
+		position: relative;
+/*		select#idioma option[value="Español"] {
+			background: url(/images/floxy/logo-inbar.png) no-repeat center center;
+		};
+		select#idioma option[value="English"] {
+			background: url(/images/floxy/logo-inbar.png);
+		}; */
+	}
+
+
 	.form-group input, select {
 		max-width: 90%;
 	}
@@ -78,13 +89,14 @@
 
 	}
 
+	/* MODALS ==================================================================== */
 	#modal-elsol, #modal-mediterraneo {
 		width: auto;
 		margin: 0;
 	}
 
 	.modal-cuerpo {
-		padding: 0;
+/*		padding: 0; */
 
 	}
 
