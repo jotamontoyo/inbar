@@ -46,7 +46,11 @@
 		background-color: 	rgba(0, 0, 0, 1);
 	/*	background: url(/images/floxy/bg-contacto.jpg) no-repeat center center; */
 		width: 				100%;
-		height: 			100%;
+
+/*		height: 			100%; */
+		height: 			100vh;
+
+
 		vertical-align: 	middle;
 	/*	max-height: 		80%; */
 		min-height: 		500px;
@@ -153,9 +157,15 @@
 	}
 
 	#inicio {
-/*		background: url(/images/floxy/inbarasset.png) no-repeat fixed center; */
+/*		background: url(/images/floxy/inbarasset4.png) no-repeat fixed center; */
 /*		background-color: #BDBDBD; */
-		height: 	720px;
+
+
+/*		height: 	720px; */
+		height: 	100vh;
+
+
+
 /*		min-height: 100vh; */
 		overflow: 	hidden;
 
@@ -170,7 +180,9 @@
 	#elegir {
 		background-color: #fff;
 		color: #000;
-		height: auto;
+
+/*		height: auto; */
+		height: 100vh;
 
 	}
 
@@ -192,15 +204,18 @@
 	#elegir_modelo img {
 		width: 100%;
 		height: auto;
+
 		position: relative;
 		cursor: pointer;
-		-webkit-box-shadow: 10px 10px 24px -2px rgba(0,0,0,0.6);
-		-moz-box-shadow: 10px 10px 24px -2px rgba(0,0,0,0.6);
-		box-shadow: 10px 10px 24px -2px rgba(0,0,0,0.6);
+
 	}
 
 	.img-modelo {
 		max-width: 500px;
+		padding-left: 20px;
+		padding-right: 20px;
+
+
 	}
 
 /*	#elegir_modelo img:hover {
@@ -217,7 +232,11 @@
 	/* SERVICIOS ======================================================================= */
 
 	#servicios {
-		height: auto;
+/*		height: auto; */
+		height: 100vh;
+
+
+
 		position: relative;
 		background-color: #088A29;
 		color: white;
@@ -232,6 +251,15 @@
 		padding: 0 15px;
 		margin-top: 30px;
 		margin-bottom: 30px;
+	}
+
+
+
+	/* SECCION MARKETING ================================================================================ */
+	#personas {
+		height: 100vh;
+		background: url(/images/floxy/fondo-mkt.jpg) no-repeat center center;
+		color: #000;
 	}
 
 	/* MENU INBAR ======================================================================================= */
@@ -265,6 +293,9 @@
 	#pie {
 		background-color: 	rgba(0, 0, 0, 1);
 		width: 				100%;
+
+		height: 100vh;
+
 		min-height: 		400px;
 		padding-left: 		8%;
 		padding-right: 		5%;
@@ -354,10 +385,10 @@
 		#menu-inbar .col-md-1 a:hover {
 			border-top: none;
 		}
-		#inicio {
+/*		#inicio {
 			height: auto;
 			background: url(/images/floxy/inbarasset.png) no-repeat fixed center;
-		}
+		} */
 		#img-inicio {
 			visibility: hidden;
 		}
@@ -373,10 +404,10 @@
 		#menu-inbar .col-md-1 a:hover {
 			border-top: none;
 		}
-		#inicio {
+/*		#inicio {
 			height: auto;
 			background: url(/images/floxy/inbarasset.png) no-repeat fixed center;
-		}
+		} */
 		#img-inicio {
 			visibility: hidden;
 		}

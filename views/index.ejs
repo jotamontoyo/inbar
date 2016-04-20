@@ -3,14 +3,18 @@
     <div class="container-fluid text-center" id="inicio">
         <div id="page">
 
-            <ul class="cb-slideshow" id="img-inicio">
+<!--            <ul class="cb-slideshow" id="img-inicio">
                 <li><span></span><div><h3>re·lax·a·tion</h3></div></li>
                 <li><span></span><div><h3>qui·e·tude</h3></div></li>
                 <li><span></span><div><h3>bal·ance</h3></div></li>
                 <li><span></span><div><h3>e·qua·nim·i·ty</h3></div></li>
                 <li><span></span><div><h3>com·po·sure</h3></div></li>
                 <li><span></span><div><h3>se·ren·i·ty</h3></div></li>
-            </ul>
+            </ul> -->
+
+            <div class="row">
+                <img src="/images/floxy/inbarasset4.png" alt="" />
+            </div>
 
             <div class="row center-block" style="position:absolute; top:0px; width: 100%">
                 <% if (!session.user) { %>
@@ -19,13 +23,10 @@
             </div>
 
            <div class="row" style="position:absolute; top:10px; width: auto; right:40px;">
-
                 <li class="dropdown" style="list-style:none">
-
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-close-others="true">
                        <img id="img-pais" src="/images/flags/Spain-32.png"/>
                     </a>
-
                      <ul class="dropdown-menu pull-right" id="lista-idiomas">
                         <li class="disabled" id="sp">
                             <a href="#">
@@ -43,13 +44,13 @@
                             <a href="#">
                                 <img src="/images/flags/France-32.png" />
                                 <span>François</span>
-                        </a>
+                            </a>
                         </li>
                         <li id="gr">
                             <a href="#">
                                 <img src="/images/flags/Germany-32.png" />
                                 <span>German</span>
-                        </a>
+                            </a>
                         </li>
                     </ul>
                 </li>
@@ -61,7 +62,7 @@
             </div>
 
             <div class="row text-center" style="position:absolute; top:620px; width: 100%">
-                <div class="col-md-2 menu-inicio">
+                <div class="col-md-2 col-sm- col-xs- menu-inicio">
                     <nav role="navigation"> <a href="#inicio" class="banner-btn">Inicio</a></nav>
                 </div>
                 <div class="col-md-2 menu-inicio">
@@ -100,7 +101,7 @@
                     <a class="button"
                         data-toggle="modal"
                         data-target="#panel-elsol">
-                            <img class="img-responsive" src="images/floxy/modelo-elsol.png" alt="">
+                            <img class="img-responsive" src="images/floxy/modelo-after.png" alt="">
                     </a>
                 </div>
                 <br>
@@ -272,7 +273,7 @@
 
 
     <!-- Marketing messaging and featurettes  =============================================================================== -->
-    <div class="container center-block" id="personas" style="height:auto; padding-top:100px; padding-bottom:80px;">
+    <div class="container-fluid center-block" id="personas" style="padding-top:100px; padding-bottom:80px;">
 
 		<div class="marketing">
 			<!-- Three columns of text below the carousel -->
