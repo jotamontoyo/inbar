@@ -9,15 +9,15 @@
             $('html, body').animate({
                 scrollTop: iScroll
             }, 1000);
-        }
+        };
 
         $(window).scroll(function() {
             var iScroll = $(window).scrollTop();
 /*            if (iScroll == 0) {
                 myInterval = setInterval(AutoScroll, 5000);
-            } */
+            }; */
             if (iScroll + $(window).height() == $(document).height()) {
                 clearInterval(myInterval);
-            }
+            };
         });
     });
