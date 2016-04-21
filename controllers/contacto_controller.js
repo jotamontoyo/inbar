@@ -98,7 +98,7 @@
 		contacto.telefono = req.body.telefono;
 		contacto.marca = req.body.marca;
 		contacto.ciudad = req.body.ciudad;
-		contacto.provincia = req.body.provincia; 
+		contacto.provincia = req.body.provincia;
 		contacto.comentario = req.body.comentario;
 		contacto.revisado = false;
 		if (req.body.lopd) {contacto.lopd = true};
@@ -128,4 +128,5 @@
 		res.render('contactos/enviado.ejs', {errors: []});
 
 //		res.redirect('/');
+//		res.render('/', {errors: []});
 	};

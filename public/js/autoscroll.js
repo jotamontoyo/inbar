@@ -16,8 +16,15 @@
 /*            if (iScroll == 0) {
                 myInterval = setInterval(AutoScroll, 5000);
             }; */
+
             if (iScroll + $(window).height() == $(document).height()) {
                 clearInterval(myInterval);
             };
+            $(window).on('click', function() {
+                clearInterval(myInterval)
+            });
+            $(window).resize(function() {
+                clearInterval(myInterval)
+            });
         });
     });
