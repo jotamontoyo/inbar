@@ -9,6 +9,11 @@
             $('html, body').animate({
                 scrollTop: iScroll
             }, 1000);
+
+//            $('#elegir').fadeIn('slow');
+//            $('#elegir').css('visibility', 'visible');
+
+
         };
 
         $(window).scroll(function() {
@@ -26,5 +31,20 @@
             $(window).resize(function() {
                 clearInterval(myInterval)
             });
+            $(window).on('wheel', function() {
+                clearInterval(myInterval)
+            });
         });
+
+        function Animar(id) {
+            alert('si');
+            $('#elegir').fadeIn(3000, function() {
+                $( "span" ).fadeIn( 100 );
+                $('#elegir').css('visibility', 'visible');
+            });
+        };
+
+
+
+
     });

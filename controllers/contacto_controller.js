@@ -124,7 +124,7 @@
 	};
 
 	exports.enviado = function(req, res) {
-
+		res.redirect('/');
 		res.render('contactos/enviado.ejs', {errors: []});
 
 //		res.redirect('/');

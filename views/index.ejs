@@ -1,7 +1,7 @@
 
     <!-- inicio =================================================================================================================== -->
     <div class="container-fluid text-center animated fadeIn" id="inicio">
-        <div id="page">
+        <div id="">
 
 <!--            <ul class="cb-slideshow" id="img-inicio">
                 <li><span></span><div><h3>re·lax·a·tion</h3></div></li>
@@ -22,7 +22,70 @@
                 <%}%>
             </div>
 
-           <div class="row" style="position:absolute; top:10px; width: auto; right:40px;">
+            <div class="row text-center navbar" id="menu-inicio" >
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <i class="fa fa-bars fa-2x"></i>
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav" style="width: 100%; margin-left: 3px;">
+                            <div class="col-md-2">
+                                <li><nav role="navigation"> <a href="#elegir">Abre tu franquicia</a></nav></li>
+                            </div>
+                            <div class="col-md-2">
+                                <li><nav role="navigation"> <a href="#elegir">¿Tienes un local?</a></nav></li>
+                            </div>
+                            <div class="col-md-2">
+                                <li><nav role="navigation"> <a href="#personas">Quiénes somos</a></nav></li>
+                            </div>
+                            <div class="col-md-2">
+                                <li><nav role="navigation"> <a href="#contacto2">Contáctanos</a></nav></li>
+                            </div>
+                            <div class="col-md-2">
+                                <li><nav role="navigation"> <a href="#elegir">Blog</a></nav></li>
+                            </div>
+                            <div class="col-md-2">
+                                <li><nav role="navigation"> <a href="#elegir">FQ</a></nav></li>
+                            </div>
+                        </ul>
+
+                    </div> <!-- /.navbar-collapse -->
+                </div>
+            </div>
+
+
+<!--            <div>
+
+                <div class="col-md-2 col-sm-6 col-xs-6 menu-inicio-item">
+                    <nav role="navigation"> <a href="#elegir" class="banner-btn">Abre tu franquicia</a></nav>
+                </div>
+                <div class="col-md-2 col-sm-6 col-xs-6 menu-inicio-item">
+                    <nav role="navigation"> <a href="#elegir" class="banner-btn">¿Tienes un local?</a></nav>
+                </div>
+                <div class="col-md-2 col-sm-6 col-xs-6 menu-inicio-item">
+                    <nav role="navigation"> <a href="#personas" class="banner-btn">Quiénes somos</a></nav>
+                </div>
+                <div class="col-md-2 col-sm-6 col-xs-6 menu-inicio-item">
+                    <nav role="navigation"> <a href="#contacto2" class="banner-btn">Contáctanos</a></nav>
+                </div>
+
+                <div class="col-md-2 col-sm-6 col-xs-6 menu-inicio-item">
+                    <nav role="navigation"> <a href="#elegir" class="banner-btn">Blog</a></nav>
+                </div>
+                <div class="col-md-2 col-sm-6 col-xs-12 menu-inicio-item">
+                    <nav role="navigation"> <a href="#elegir" class="banner-btn">FQ</a></nav>
+                </div>
+            </div> -->
+
+           <div class="row" style="position:absolute; top:10px; width: auto; right:30px;">
                 <li class="dropdown" style="list-style:none">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-close-others="true">
                        <img id="img-pais" src="/images/flags/Spain-32.png"/>
@@ -56,31 +119,12 @@
                 </li>
             </div>
 
-            <div class="row center-block" style="position:relative; top:100px; width: 100%">
+            <div class="row center-block" style="position:relative; top:50px; width: 100%">
                 <img src="images/floxy/logo-inbar3.png" alt="Generic placeholder image" width="240">
-                <hr>
+
             </div>
 
-            <div class="row text-center" style="position:relative; margin-top:100px; width: 100%">
-                <div class="col-md-2 col-sm- col-xs- ">
-                    <nav role="navigation"> <a href="#inicio" class="banner-btn">Inicio</a></nav>
-                </div>
-                <div class="col-md-2">
-                    <nav role="navigation"> <a href="#elegir" class="banner-btn">Abre tu franquicia</a></nav>
-                </div>
-                <div class="col-md-2">
-                    <nav role="navigation"> <a href="#elegir" class="banner-btn">¿Tienes un local?</a></nav>
-                </div>
-                <div class="col-md-2">
-                    <nav role="navigation"> <a href="#contacto2" class="banner-btn">Contáctanos</a></nav>
-                </div>
-                <div class="col-md-2">
-                    <nav role="navigation"> <a href="#personas" class="banner-btn">Quiénes somos</a></nav>
-                </div>
-                <div class="col-md-2">
-                    <nav role="navigation"> <a href="#elegir" class="banner-btn">Blog</a></nav>
-                </div>
-            </div>
+
 
         </div>
 
@@ -88,12 +132,12 @@
 
 
     <!-- ELEGIR MODELO =================================================================================================================== -->
-    <div class="container-fluid preload" name="elegir" id="elegir">
+    <div class="container-fluid preload" name="elegir" id="elegir" onscroll="Animar(id)">
         <div class="row img-logo-sm" style="margin-left: 0;">
             <br>
             <h3 class="text-center"><img class="img-circle" src="/images/floxy/logo-inbar.png" data-src="holder.js/100x100/auto" alt="Generic placeholder image"> Elije tu modelo</img></h3>
         </div>
-        <div class="row" id="elegir_modelo">
+        <div class="row" id="elegir-modelo">
             <div class="col-md-6 col-sm-6">
                 <h2 class="text-center">SOL</h2>
                 <h6 class="text-center">Afterwork drinks</h6>
