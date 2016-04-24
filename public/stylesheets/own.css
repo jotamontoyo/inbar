@@ -94,7 +94,7 @@
 		width: 45px;
 		height: 45px;
 		background-color: rgba(256, 256, 256, 0.6);
-		right: 13px;
+		right: 9px;
 	}
 
 	.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {		/* cambia color de las opciones del menu-inicio despues del click */
@@ -180,7 +180,7 @@
 /*		background-color: #BDBDBD; */
 /*		height: 	720px; */
 		height: 	100vh;
-		min-height: 620px;
+		min-height: 520px;
 /*		min-height: 100vh; */
 		overflow: 	hidden;
 	}
@@ -188,9 +188,10 @@
 	#menu-inicio {
 		width: 100%;
 		height: 40px;
-		margin-top:50px;
-		margin-left: 5px;
-		position:relative;
+/*		margin-left: 5px; */
+		margin: 0;
+		margin-top: 50px;
+		position: relative;
 /* 		background-color: rgba(129, 190, 247, 0.5); */
 		z-index: 3;
 	};
@@ -210,6 +211,8 @@
 		padding-bottom: 20px;
 /*		border-bottom: 1px solid #999999; */
 	}
+
+
 
 
 	#logo-inicio {
@@ -435,6 +438,7 @@
   		}
  	}
 
+	/* CONTROL FORMATO PANTALLA ================================================================================= */
 	@media handheld, only screen and (max-width: 767px) {
 		.ocultar-movil{
 			display: none;
@@ -443,10 +447,42 @@
 			border-bottom: 1px solid #999999;
 		}
 		#menu-inicio-items {
-			background-color: rgba(0, 0, 0, 0.7);
-			border-top: 1px solid #999999;
+
+/*			background-color: rgba(0, 0, 0, 1);
+/*			border-top: 1px solid #999999;
+			border-bottom: 1px solid #999999; */
+		}
+		.menu-inicio-item {
+			background: rgba(212,228,239,1);
+			background: -moz-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+			background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(212,228,239,1)), color-stop(100%, rgba(134,174,204,1)));
+			background: -webkit-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+			background: -o-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+			background: -ms-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+			background: linear-gradient(to bottom, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e4ef', endColorstr='#86aecc', GradientType=0 );
+		}
+		.menu-inicio-item:nth-child(1) {
 			border-bottom: 1px solid #999999;
 		}
+		.menu-inicio-item:nth-child(2) {
+			border-bottom: 1px solid #999999;
+		}
+		.menu-inicio-item:nth-child(3) {
+			border-bottom: 1px solid #999999;
+		}
+		.menu-inicio-item:nth-child(4) {
+			border-bottom: 1px solid #999999;
+		}
+		.menu-inicio-item:nth-child(5) {
+			border-bottom: 1px solid #999999;
+		}
+		#logo-inicio {
+			top: 100px;
+			transform: scale(0.8);
+		}
+
+
 		#menu-inbar .col-md-1 a:hover {
 			border-top: none;
 		}
@@ -467,12 +503,42 @@
 			border-bottom: 1px solid #999999;
 		}
 		#menu-inicio-items {
-			background-color: rgba(0, 0, 0, 0.7);
-			border-top: 1px solid #999999;
+
+/*			background-color: rgba(0, 0, 0, 1);
+/*			border-top: 1px solid #999999;
+			border-bottom: 1px solid #999999; */
+		}
+		.menu-inicio-item {
+			background: rgba(212,228,239,1);
+			background: -moz-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+			background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(212,228,239,1)), color-stop(100%, rgba(134,174,204,1)));
+			background: -webkit-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+			background: -o-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+			background: -ms-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+			background: linear-gradient(to bottom, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e4ef', endColorstr='#86aecc', GradientType=0 );
+		}
+		.menu-inicio-item:nth-child(1) {
+			border-bottom: 1px solid #999999;
+		}
+		.menu-inicio-item:nth-child(2) {
+			border-bottom: 1px solid #999999;
+		}
+		.menu-inicio-item:nth-child(3) {
+			border-bottom: 1px solid #999999;
+		}
+		.menu-inicio-item:nth-child(4) {
+			border-bottom: 1px solid #999999;
+		}
+		.menu-inicio-item:nth-child(5) {
 			border-bottom: 1px solid #999999;
 		}
 		#menu-inbar .col-md-1 a:hover {
 			border-top: none;
+		}
+		#logo-inicio {
+			top: 100px;
+			transform: scale(0.8);
 		}
 /*		#inicio {
 			height: auto;
