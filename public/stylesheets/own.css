@@ -90,15 +90,14 @@
 	}
 
 
-
-	.navbar-toggle {					/* color boton toggle del menu-inicio */
+	.navbar-toggle {									/* color boton toggle del menu-inicio */
 		width: 45px;
 		height: 45px;
 		background-color: rgba(256, 256, 256, 0.6);
 		right: 13px;
 	}
 
-	.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {		/* cambia color de las opciones del menu despues del click */
+	.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {		/* cambia color de las opciones del menu-inicio despues del click */
 		background-color: transparent;
 	}
 
@@ -108,10 +107,10 @@
 		font-size: 16px;
 	}
 
-	#panel-elsol {
+
+		align-content: middle;
 
 
-	}
 
 	/* MODALS ==================================================================== */
 	#modal-elsol, #modal-mediterraneo {
@@ -175,25 +174,18 @@
 
 
 	}
-
+	/* INICIO ========================================================================================= */
 	#inicio {
 		background: url(/images/floxy/inbarasset4.png) no-repeat fixed center;
 /*		background-color: #BDBDBD; */
-
-
 /*		height: 	720px; */
 		height: 	100vh;
-
-
-
+		min-height: 680px;
 /*		min-height: 100vh; */
 		overflow: 	hidden;
-
 	}
 
 	#menu-inicio {
-
-
 		width: 100%;
 		height: auto;
 		margin-top:50px;
@@ -203,10 +195,34 @@
 		z-index: 3;
 	};
 
-	#menu-inicio-content {
+	#menu-inicio-content {				/* para usar en menu fijo en pie de navegador */
 		position: relative;
 		z-index: 2;
 	}
+
+	#menu-inicio-items {
+		position: relative;
+
+	}
+
+	#logo-inicio {
+		width: 100%;
+
+		top: 150px;
+
+		margin-left: 15px;
+		position: absolute;
+
+	}
+
+	#logo-inicio img {
+		max-width: 240px;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+
 
 	/* ELEGIR MODELO ======================================================================== */
 
@@ -419,10 +435,10 @@
 		.col-pie, .servicios-contenido {
 			border-bottom: 1px solid #999999;
 		}
-/*		.menu-inicio-item {
-
+		#menu-inicio-items {
+			background-color: rgba(0, 0, 0, 0.7);
 			border: 1px solid #999999;
-		} */
+		}
 		#menu-inbar .col-md-1 a:hover {
 			border-top: none;
 		}
@@ -442,9 +458,10 @@
 		.col-pie, .servicios-contenido {
 			border-bottom: 1px solid #999999;
 		}
-/*		.menu-inicio-item {
+		#menu-inicio-items {
+			background-color: rgba(0, 0, 0, 0.7);
 			border: 1px solid #999999;
-		} */
+		}
 		#menu-inbar .col-md-1 a:hover {
 			border-top: none;
 		}
