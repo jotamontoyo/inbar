@@ -124,10 +124,10 @@
 	}
 
 	#modal-elegir-franquicia {
-		max-width: 600px;
+		max-width: 400px;
 		margin-top: 110px;
 
-		color: #fff;
+		color:		 		rgb(218, 165, 32);
 		position: relative;
 
 	}
@@ -146,13 +146,15 @@
 	}
 
 	.modal-franquicia-item {
-		margin-top: 15px;
+		margin-top: 		15px;
+
 
 	}
 
 	.modal-franquicia-item img {
 		margin-left: auto;
 		margin-right: auto;
+		cursor: pointer;
 	}
 
 	.modal-cuerpo {
@@ -247,9 +249,12 @@
 		padding-top: 20px;
 		padding-bottom: 20px;
 /*		border-bottom: 1px solid #999999; */
+
 	}
 
-
+	.menu-inicio-item a {
+		cursor: pointer;
+	}
 
 
 	#logo-inicio {
