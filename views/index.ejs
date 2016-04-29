@@ -21,26 +21,44 @@
                 <%}%>
             </div>
 
-            <div class="row text-center navbar" id="menu-inicio" >
-                <div class="container">
+            <nav class="row text-center navbar" id="menu-inicio">		<!-- id="header" para aplicar el css -->
+				<div class="container">
 
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-inicio-items">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-inicio-items">
                             <i class="fa fa-bars fa-2x"></i>
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
 
-                    </div>
-
-                    <div class="collapse navbar-collapse" id="menu-inicio-items">
-                        <ul class="nav navbar-nav" style="width: 100%; margin-left: 0px;">
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="menu-inicio-items">
+						<ul class="nav navbar-nav" style="width: 100%">
 
                             <div class="col-md-2 menu-inicio-item animated fadeIn">
-                                <li><nav role="navigation"> <a data-toggle="modal" data-target="#panel-elegir-franquicia">
-                                    <img class="icon icon_16" src="/images/icons/Active-Directory-16.png" style="padding-bottom: 4px"> Abre tu franquicia</a></nav>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Abre tu franquicia <span class="caret"></span></a>
+                                    <ul class="dropdown-menu animated fadeIn">
+                                        <li class="item-bg-black">
+                                            <a class="button" data-toggle="modal" data-target="#panel-elsol">
+                								<img class="img-responsive animated fadeIn" src="/images/floxy/logo-elsol.png" alt="Third slide">
+                						    </a>
+                                        </li>
+                                        <li class="item-bg-black">
+                                            <a class="button" data-toggle="modal" data-target="#panel-after">
+                    								<img class="img-responsive animated fadeIn" src="/images/floxy/logo-med.png" alt="Third slide">
+                						    </a>
+                                        </li>
+                                        <li class="item-bg-black">
+                                            <a class="button" data-toggle="modal" data-target="#panel-mediterraneo">
+                								<img class="img-responsive animated fadeIn" src="/images/floxy/logo-cafe.png" alt="Third slide">
+                						    </a>
+                                        </li>
+                                    </ul>
                                 </li>
                             </div>
 
@@ -59,12 +77,49 @@
                             <div class="col-md-2 menu-inicio-item animated fadeIn">
                                 <li><nav role="navigation"> <a href="#elegir"><img class="icon icon_16" src="/images/icons/Help-16.png" style="padding-bottom: 3px"> FAQ</a></nav></li>
                             </div>
+						</ul>
+					</div> <!-- /.navbar-collapse -->
+				</div>
+			</nav>
 
+<!--            <div class="row text-center navbar" id="menu-inicio" >
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-inicio-items">
+                            <i class="fa fa-bars fa-2x"></i>
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                    </div>
+                    <div class="collapse navbar-collapse" id="menu-inicio-items">
+                        <ul class="nav navbar-nav" style="width: 100%; margin-left: 0px;">
+                            <div class="col-md-2 menu-inicio-item animated fadeIn">
+                                <li><nav role="navigation"> <a data-toggle="modal" data-target="#panel-elegir-franquicia">
+                                    <img class="icon icon_16" src="/images/icons/Active-Directory-16.png" style="padding-bottom: 4px"> Abre tu franquicia</a></nav>
+                                </li>
+                            </div>
+                            <div class="col-md-2 menu-inicio-item animated fadeIn">
+                                <li><nav role="navigation"> <a href="#elegir"><img class="icon icon_16" src="/images/icons/Idea-Bank-16.png" style="padding-bottom: 3px"> ¿Tienes un local?</a></nav></li>
+                            </div>
+                            <div class="col-md-2 menu-inicio-item animated fadeIn">
+                                <li><nav role="navigation"> <a href="#personas"><img class="icon icon_16" src="/images/icons/Businessman-16.png" style="padding-bottom: 3px"> Quiénes somos</a></nav></li>
+                            </div>
+                            <div class="col-md-2 menu-inicio-item animated fadeIn">
+                                <li><nav role="navigation"> <a href="#contacto2"><img class="icon icon_16" src="/images/icons/Email-16.png" style="padding-bottom: 3px"> Contáctanos</a></nav></li>
+                            </div>
+                            <div class="col-md-2 menu-inicio-item animated fadeIn">
+                                <li><nav role="navigation"> <a href="#elegir"><img class="icon icon_16" src="/images/icons/Address-Book-16.png" style="padding-bottom: 3px"> Blog</a></nav></li>
+                            </div>
+                            <div class="col-md-2 menu-inicio-item animated fadeIn">
+                                <li><nav role="navigation"> <a href="#elegir"><img class="icon icon_16" src="/images/icons/Help-16.png" style="padding-bottom: 3px"> FAQ</a></nav></li>
+                            </div>
                         </ul>
-
                     </div> <!-- /.navbar-collapse -->
-                </div>
-            </div>
+<!--                </div>
+            </div> -->
 
            <div class="row" style="position:absolute; top:10px; width: auto; right:30px;">
                 <li class="dropdown" style="list-style:none;">
