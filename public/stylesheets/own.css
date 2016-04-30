@@ -66,7 +66,7 @@
 		border-bottom: 				2px solid #fff;
 	}
 
-	#lista-idiomas {
+	#lista-idiomas, .item-bg-black {
 		background: rgba(212,228,239,1);
 		background: -moz-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
 		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(212,228,239,1)), color-stop(100%, rgba(134,174,204,1)));
@@ -104,8 +104,16 @@
 		padding: 0px;
 	}
 
-	.navbar-collapse, .col-md-2 {
-		padding-right: 0px;
+	.navbar-collapse {
+
+
+
+/*		margin-right: 0px;
+		padding-right: 0px; */
+
+
+
+
 	}
 
 	li nav a {
@@ -120,6 +128,7 @@
 
 
 	/* MODALS ==================================================================== */
+
 	#panel-elegir-franquicia, #panel-mediterraneo, #panel-elsol, #panel-after {
 		padding-left: 0px;
 	}
@@ -151,7 +160,7 @@
 	/* ====================================================================================================*/
 
 
-	#modal-content-menu-franquicia, #modal-content-mediterraneo, #modal-content-elsol, #modal-content-after, .item-bg-black {
+	#modal-content-menu-franquicia, #modal-content-mediterraneo, #modal-content-elsol, #modal-content-after {
 		background: rgba(76,76,76,1);
 		background: -moz-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 10%, rgba(102,102,102,1) 20%, rgba(71,71,71,1) 41%, rgba(44,44,44,1) 53%, rgba(0,0,0,1) 78%, rgba(17,17,17,1) 85%, rgba(19,19,19,1) 92%, rgba(28,28,28,1) 100%);
 		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(76,76,76,1)), color-stop(10%, rgba(89,89,89,1)), color-stop(20%, rgba(102,102,102,1)), color-stop(41%, rgba(71,71,71,1)), color-stop(53%, rgba(44,44,44,1)), color-stop(78%, rgba(0,0,0,1)), color-stop(85%, rgba(17,17,17,1)), color-stop(92%, rgba(19,19,19,1)), color-stop(100%, rgba(28,28,28,1)));
