@@ -253,35 +253,34 @@
 	#menu-inicio {
 		width: 100%;
 		height: 40px;
-/*		margin-left: 5px; */
 		margin: 0;
 		margin-top: 50px;
 		position: relative;
-/* 		background-color: rgba(129, 190, 247, 0.5); */
 		z-index: 3;
 	}
+
 	#menu-inicio-content {												/* para usar en menu fijo en pie de navegador */
 		position: relative;
 		z-index: 2;
 	}
+
 	#menu-inicio-items {												/* estilo de todos los items del menu-inicio */
 		position: relative;
 	}
+
 	.menu-inicio-item, .dropdown-menu-inicio-item {						/* estilo de cada item del menu-inicio y de cada item de los dropdown */
 		padding-top: 10px;
 		padding-bottom: 10px;
 	}
+
 	.menu-inicio-item a {
 		cursor: pointer;
 	}
 
-	.dropdown-menu-inicio {												/* estilo de los submenus del menu-inicio */
-
+	.dropdown-menu-inicio {												/* estilo de los dropdown del menu-inicio */
 		background-color: rgba(0, 0, 0, 0.8);
 		border: none;
 	}
-
-
 
 	.dropdown-menu-inicio-item {										/* estilo de cada item de los dropdown */
 		padding-left: 15px;
@@ -557,7 +556,7 @@
 		.dropdown-menu-inicio-item {
 			border-bottom: none;
 		}
-		
+
 		#logo-inicio {
 			top: 100px;
 			transform: scale(0.8);
