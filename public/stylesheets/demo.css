@@ -65,7 +65,7 @@ abbr,acronym { border:0;
 	overflow:hidden;
 }
 a{
-	color: #333;
+/*	color: #333; */
 	text-decoration: none;
 }
 .container{

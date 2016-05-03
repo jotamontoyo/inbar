@@ -26,10 +26,10 @@
     *zoom: 1;
 }
 
-a {
+/* a {
 	color: #555;
 	text-decoration: none;
-}
+} */
 
 .clr {
 	clear: both;
@@ -145,4 +145,3 @@ a {
 		clear: both;
 	}
 }
-
