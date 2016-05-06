@@ -310,7 +310,7 @@
 
 	.dropdown-menu-inicio-item {										/* estilo de cada item de los dropdown */
 		padding-left: 15px;
-		padding-right: 5px;
+		padding-right: 15px;
 		border-bottom: 1px solid #999999;
 	}
 
@@ -327,7 +327,7 @@
 	} */
 
 	.dropdown-menu-inicio-item img {
-		max-width: 25px;
+		width: 100%;
 		text-align: center;
 	}
 	/* ================================================================================================================ */
@@ -590,7 +590,7 @@
 
 		.menu-inicio-item {
 			margin-left: 0px;
-			padding-left: 10px;
+			padding-left: 0px;
 			background-color: rgba(0, 0, 0, 0.8);
 		}
 
@@ -612,6 +612,10 @@
 
 		.dropdown-menu-inicio-item {
 			border-bottom: none;
+		}
+
+		.dropdown-menu-inicio-item img {
+			transform: scale(0.8);
 		}
 
 		#logo-inicio {
