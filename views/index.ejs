@@ -1,4 +1,14 @@
 
+        <div class="row alerta text-center">
+            <div class="alert alert-warning alert-dismissible alerta-panel" name="alerta-panel" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <strong>Warning!</strong> Better check yourself, you're not looking too good.
+            </div>
+        </div>
+
+
+
+
         <!-- inicio =================================================================================================================== -->
         <div class="container-fluid text-center animated fadeIn" id="inicio">
 
@@ -104,17 +114,17 @@
                                     <ul class="dropdown-menu dropdown-menu-inicio normal-animated fadeIn">
                                         <a class="button" data-toggle="modal" data-target="#panel-elsol">
                                             <li class="dropdown-menu-inicio-item">
-					                            <img class="img animated fadeIn" src="/images/drops/drop-elsol.png" alt="Third slide">
+					                            <img class="img animated fadeIn" src="/images/drops/drop-elsol.png" alt="Third drop">
                                             </li>
                                         </a>
                                         <a class="button" data-toggle="modal" data-target="#panel-after">
                                             <li class="dropdown-menu-inicio-item">
-                                                <img class="img animated fadeIn" src="/images/drops/drop-elsol.png" alt="Third slide">
+                                                <img class="img animated fadeIn" src="/images/drops/drop-after.png" alt="Second drop">
                 						    </li>
                                         </a>
                                         <a class="button" data-toggle="modal" data-target="#panel-mediterraneo">
                                             <li class="dropdown-menu-inicio-item" style="border-bottom: none">
-                							    <img class="img animated fadeIn" src="/images/drops/drop-elsol.png" alt="Third slide">
+                							    <img class="img animated fadeIn" src="/images/drops/drop-med.png" alt="Third drop">
                 						    </li>
                                         </a>
                                     </ul>
@@ -146,7 +156,10 @@
                 </div>
             </div>
 
-           <div class="row" style="position:absolute; top:10px; width: auto; right:30px;">
+
+
+
+            <div class="row" style="position:absolute; top:10px; width: auto; right:30px;">
                 <li class="dropdown" style="list-style:none;">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-close-others="true">
                         <img id="img-pais" src="/images/flags/Spain-24.png"/>
@@ -168,7 +181,7 @@
 
 
     <!-- ELEGIR MODELO =================================================================================================================== -->
-<!--    <div class="container-fluid preload" name="elegir" id="elegir" onscroll="Animar(id)">
+    <div class="container-fluid preload" name="elegir" id="elegir" onscroll="Animar(id)">
         <div class="row img-logo-sm" style="margin-left: 0;">
             <br>
             <h3 class="text-center"><img class="img-circle" src="/images/floxy/logo-inbar.png" data-src="holder.js/100x100/auto" alt="Generic placeholder image"> Elije tu modelo</img></h3>
@@ -216,7 +229,7 @@
         <div class="row text-center">
             <nav role="navigation"> <a href="#servicios"><i class="fa fa-arrow-down fa-2x"></i></a></nav>
 
-        </div> -->
+        </div>
 
 <!--        <script type="text/javascript">
             $(elegir).show(function() {
@@ -225,7 +238,7 @@
         </script> -->
 
 
-<!--    </div> -->
+    </div>
 
 
     <!-- FRANQUICIAS ======================================================================================================================= -->
@@ -622,7 +635,7 @@
                     <div class="col-md-6 col-sm-6 col-xs-6">
                         <div class="form-group">
                             <label for="nombre">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" name="nombre" required placeholder="nombre"/>
+                            <input type="text" class="form-control" id="nombre" name="nombre" required placeholder=""/>
                         </div>
                     </div>
 <!--                    <div class="col-md-6 col-sm-6 col-xs-12">
@@ -634,7 +647,7 @@
                     <div class="col-md-6 col-sm-6 col-xs-6">
                         <div class="form-group">
                             <label for="inputEmail3">Email</label>
-                            <input type="email" class="form-control" id="email" name="email" required placeholder="eMail"/>
+                            <input type="email" class="form-control" id="email" name="email" required placeholder=""/>
                         </div>
 <!--                        <div class="form-group">
                             <label for="inputPassword3">Email</label>
@@ -644,7 +657,7 @@
                     <div class="col-md-6 col-sm-6 col-xs-6">
                         <div class="form-group">
                             <label for="inputEmail3">Teléfono</label>
-                            <input type="text" class="form-control" id="telf" name="telefono" pattern="[0-9]{9}" required placeholder="teléfono"/>
+                            <input type="text" class="form-control" id="telf" name="telefono" pattern="[0-9]{9}" required placeholder=""/>
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-6">
@@ -661,13 +674,13 @@
                     <div class="col-md-6 col-sm-6 col-xs-6">
                         <div class="form-group">
                             <label for="inputEmail3">Ciudad</label>
-                            <input type="text" class="form-control" id="ciudad" name="ciudad" required placeholder="ciudad"/>
+                            <input type="text" class="form-control" id="ciudad" name="ciudad" required placeholder=""/>
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-6">
                         <div class="form-group">
                             <label for="inputPassword3">Provincia</label>
-                            <input type="text" class="form-control" id="provincia" name="provincia" required placeholder="provincia"/>
+                            <input type="text" class="form-control" id="provincia" name="provincia" required placeholder=""/>
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-12">
@@ -685,13 +698,15 @@
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-12">
                         <div class="form-group text-center" style="margin-top:25px">
-                            <button type="submit" class="btn btn-info">Solicitar información</button>
+                            <button id="enviar" type="submit" class="btn btn-info">Solicitar información</button>
                         </div>
                     </div>
                 </div>
             </form>
         </div>
     </div>
+
+
 
     <script type="text/javascript" src="/js/autoscroll.js"></script>            <!-- carga la transicion scroll automatica despues renderizar todo el index.ejs -->
 

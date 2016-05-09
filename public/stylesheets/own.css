@@ -263,6 +263,21 @@
 		margin-right: auto;
 	}
 
+	.alerta {
+		width: 100%;
+		margin-top: 100px;
+		padding-left: auto;
+		padding-right: auto;
+		position: absolute;
+		visibility: hidden;
+	}
+
+	.alerta-panel {
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 	/* estilos de menu-inicio =================================================================================== */
 	#menu-inicio {
 		width: 100%;
@@ -283,23 +298,17 @@
 		margin-left: 10%;
 		padding: 0px;
 		position: relative;
-
 	}
 
 	.menu-inicio-item {
-
 		position: relative;
-/*		border: 1px solid #999999; */
 	}
 
 	.menu-inicio-item, .dropdown-menu-inicio-item {						/* estilo de cada item del menu-inicio y de cada item de los dropdown */
-
 		padding: 10px 0px 10px 0px;
-
 	}
 
 	.menu-inicio-item a {
-
 		cursor: pointer;
 	}
 
@@ -395,34 +404,21 @@
 	/* SERVICIOS ======================================================================= */
 
 	#servicios {
-/*		height: auto; */
 		height: 100vh;
-
-
-
 		position: relative;
-/*		background-color: #088A29; */
-/*		color: white; */
-/*		padding: 100px 20px 100px 20px; */
-/*		padding-bottom: 100px;
-		padding-left: 50px; */
-
-/*		background: url(/images/floxy/bg-contacto.jpg) no-repeat center center;*/
+		background-color: #088A29;
+		color: white;
 	}
 
 	#servicios-panel {
 		position: relative;
 		margin-top: 15%;
-
-
 	}
 
 	.servicios-contenido {
 		height: 120px;
-/*		padding: 0 15px; */
 		margin-top: 30px;
 		margin-bottom: 30px;
-/*		background-color: rgba(0, 0, 0, 0.4); */
 		border: 1px solid #999999;
 		border-radius: 5px 5px 5px 5px;
 	}
@@ -437,9 +433,8 @@
 		transition: all 0.3s;
 	}
 
-
-
 	/* SECCION MARKETING ================================================================================ */
+
 	#personas {
 		height: 100vh;
 		padding-top: 12%;
@@ -579,6 +574,10 @@
 			background-color: transparent;
 			border: none;
 			border-bottom: 1px solid #999999;
+		}
+
+		#menu-inicio {
+			margin-top: 30px;
 		}
 
 		#menu-inicio-items {

@@ -112,9 +112,11 @@
 			contacto 																// save: guarda en DB campos
 			.save({fields: ["nombre", "alias", "email", "emailok", "telefono", "marca", "ciudad", "provincia", "comentario", "lopd", "revisado"]})
 			.then(function() {
-				res.redirect('/contactos/enviado');
 
-//				res.redirect('/');
+//				res.redirect('/contactos/enviado');
+
+				res.redirect('/');
+
 			});
 		};
 	};
@@ -124,7 +126,7 @@
 	};
 
 	exports.enviado = function(req, res) {
-		res.redirect('/');
+//		res.redirect('/');
 		res.render('contactos/enviado.ejs', {errors: []});
 
 //		res.redirect('/');
