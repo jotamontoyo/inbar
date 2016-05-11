@@ -26,23 +26,37 @@
                 clearInterval(myInterval);
             };
             $(window).on('click', function() {
-                clearInterval(myInterval)
+                clearInterval(myInterval);
             });
             $(window).resize(function() {
-                clearInterval(myInterval)
+                clearInterval(myInterval);
             });
             $(window).on('wheel', function() {
-                clearInterval(myInterval)
+                clearInterval(myInterval);
             });
+
+
+
+            if ($(window).scrollTop() === 0) {
+                $('#btn-subir-inicio').css('visibility', 'hidden');
+            } else {
+                $('#btn-subir-inicio').css('visibility', 'visible');
+            };
+
+
         });
 
-        function Animar(id) {
+        $('a').on('click', function() {
+            clearInterval(myInterval);
+        });
+
+/*        function Animar(id) {
             alert('si');
             $('#elegir').fadeIn(3000, function() {
                 $( "span" ).fadeIn( 100 );
                 $('#elegir').css('visibility', 'visible');
             });
-        };
+        }; */
 
 
 
