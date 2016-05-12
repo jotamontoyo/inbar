@@ -35,12 +35,16 @@
                 clearInterval(myInterval);
             });
 
-
+            $('#subir-inicio-icon').css('opacity', '0.8');                               // control de opacity del icono subir
+            clearTimeout($.data(this, 'scrollTimer'));
+            $.data(this, 'scrollTimer', setTimeout(function() {
+                $('#subir-inicio-icon').css('opacity', '0.4');
+            }, 250));
 
             if ($(window).scrollTop() === 0) {
-                $('#btn-subir-inicio').css('visibility', 'hidden');
+                $('#subir-inicio').css('visibility', 'hidden');
             } else {
-                $('#btn-subir-inicio').css('visibility', 'visible');
+                $('#subir-inicio').css('visibility', 'visible');
             };
 
 
