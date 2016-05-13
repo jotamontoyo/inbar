@@ -24,7 +24,27 @@
 
             if (iScroll + $(window).height() == $(document).height()) {
                 clearInterval(myInterval);
+
+
+/*                clearTimeout($.data(this, 'inicioTimer'));
+                $.data(this, 'inicioTimer', setTimeout(function() {
+                    $(window).scrollTop(0);
+                }, 5000); */
+
+
+
+
+/*                clearTimeout($.data(this, 'inicioTimer'));
+                $.data(this, 'inicioTimer', setTimeout(function() {
+                    $('html, body').animate({
+                        scrollTop: $(window).scrollTop(0)
+                    }, 5000)
+
+                }, 5000)); */
+
+
             };
+
             $(window).on('click', function() {
                 clearInterval(myInterval);
             });

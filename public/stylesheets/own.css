@@ -34,7 +34,7 @@
 		width: 45px;
 		height: 45px;
 		background-color: rgba(256, 256, 256, 0.6);
-		right: 9px;
+		right: 25px;
 	}
 
 	.navbar-collapse, .navbar-collapse.collapse.in, .col-md-2 {
@@ -370,6 +370,28 @@
 	}
 
 
+
+	/* ====================================================================================== */
+	/* CONTRATA TU FRANQUICIA =============================================================== */
+	/* ====================================================================================== */
+
+	#contrata-franquicia {
+		width: 100%;
+		height: 100vh;
+
+	}
+
+	#header-contrata-franquicia {
+		margin-top: 12%;
+
+	}
+
+	.img-header-secciones {
+		vertical-align: bottom;
+
+	}
+
+
 	/* ELEGIR MODELO ======================================================================== */
 
 	#elegir {
@@ -628,6 +650,17 @@
 			background-color: transparent;
 			border: none;
 			border-bottom: 1px solid #999999;
+		}
+
+		#contrata-franquicia {
+
+
+
+		}
+
+		#header-contrata-franquicia {
+			margin-top: 0px;
+			transform: scale(0.8);
 		}
 
 		#personas h2 {
