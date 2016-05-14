@@ -101,7 +101,8 @@
 		min-height: 		500px;
 		padding-left: 		8%;
 		padding-right: 		5%;
-		color:		 		rgb(218, 165, 32);
+/*		color:		 		rgb(218, 165, 32); */
+		color: white;
 		position: 			relative;
 		overflow: 			hidden;
 		display: 			-webkit-flex;
@@ -110,8 +111,10 @@
 		flex-direction: 			column;
 		-webkit-justify-content: 	space-around;
 		justify-content: 			space-around;
-		border-bottom: 				2px solid #fff;
+/*		border-bottom: 				2px solid #fff; */
 	}
+
+	#contacto2 h1 {font-size: 36px;}
 
 
 
@@ -244,6 +247,11 @@
 	/* ================================================================================================ */
 	/* INICIO ========================================================================================= */
 	/* ================================================================================================ */
+
+	.bordes {
+		border-top: 	10px solid rgba(76, 76, 76, 1.0);
+		border-bottom: 	10px solid rgba(76, 76, 76, 1.0);
+	}
 
 	#inicio {
 		background: url(/images/floxy/inbarasset.png) no-repeat fixed center;
@@ -457,8 +465,12 @@
 		margin-left: 0px;
 		margin-right: 0px;
 		position: relative;
-		background-color: rgb(0, 191, 255);
-		color: white;
+		background-color: white;
+		color: rgb(0, 191, 255);
+	}
+
+	#header-servicios h1 {
+		margin-bottom: 40px;
 	}
 
 	#servicios-panel {
@@ -494,8 +506,12 @@
 		color: #000;
 	}
 
-	#personas h2 {
+	#personas h1 {
 		margin-bottom: 180px;
+	}
+
+	.persona-item a:hover {
+		cursor: pointer;
 	}
 
 	.img-persona {
@@ -629,12 +645,7 @@
 			margin-top: 0px;
 		}
 
-		#servicios-panel h2 {
-			margin-top: 10px;
-			margin-bottom: 0px;
-			font-size: 18px;
-			text-align: center;
-		}
+
 
 		#servicios-panel h4 {
 			font-size: 12px;
@@ -652,22 +663,19 @@
 			border-bottom: 1px solid #999999;
 		}
 
-		#contrata-franquicia {
 
-
-
-		}
 
 		#header-contrata-franquicia {
 			margin-top: 0px;
 			transform: scale(0.8);
 		}
 
-		#personas h2 {
-
-			margin-bottom: 30px;
-			font-size: 18px;
+		#header-personas h1, #header-servicios h1 {
+			margin-bottom: 20px;
+			transform: scale(0.8);
 		}
+
+
 
 		#personas h3 {
 			font-size: 12px;

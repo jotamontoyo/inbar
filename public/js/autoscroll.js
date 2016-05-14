@@ -26,6 +26,7 @@
                 clearInterval(myInterval);
 
 
+
 /*                clearTimeout($.data(this, 'inicioTimer'));
                 $.data(this, 'inicioTimer', setTimeout(function() {
                     $(window).scrollTop(0);
