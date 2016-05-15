@@ -249,8 +249,14 @@
 	/* ================================================================================================ */
 
 	.bordes {
-		border-top: 	10px solid rgba(76, 76, 76, 1.0);
-		border-bottom: 	10px solid rgba(76, 76, 76, 1.0);
+		border-top: 	10px inset rgba(256, 256, 256, 0.8);
+		border-bottom: 	10px groove rgba(256, 256, 256, 0.8);
+/*		border-style: 	outset; */
+	}
+
+	.img-header-secciones {
+		vertical-align: bottom;
+
 	}
 
 	#inicio {
@@ -394,10 +400,7 @@
 
 	}
 
-	.img-header-secciones {
-		vertical-align: bottom;
 
-	}
 
 
 	/* ELEGIR MODELO ======================================================================== */
