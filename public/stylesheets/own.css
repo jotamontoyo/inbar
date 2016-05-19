@@ -259,15 +259,19 @@
 
 	}
 
+
+
 	#inicio {
-		background: url(/images/floxy/inbarasset.png) no-repeat fixed center;
+/*		background: url(/images/floxy/inbarasset.png) no-repeat fixed center; */
 /*		background-color: #BDBDBD; */
 /*		height: 	720px; */
 		height: 	100vh;
-		min-height: 520px;
+/*		min-height: 520px; */
 /*		min-height: 100vh; */
 		overflow: 	hidden;
+
 	}
+
 	#logo-inicio {
 		width: 100%;
 		top: 190px;
@@ -275,12 +279,36 @@
 		position: absolute;
 		color: white;
 	}
+
 	#logo-inicio img {
 		max-width: 180px;
 		height: auto;
 /*		margin-left: auto;
 		margin-right: auto; */
 		margin: 0px auto 20px auto;
+	}
+
+	#wrap {
+		width: 100%;
+		height: auto;
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		background-color: black;
+		overflow: 	hidden;
+
+	}
+
+	#wrap img.bgfade {
+		position: absolute;
+/*		top: 0;
+		left: 0; */
+		display: none;
+		width: auto;
+/*		height: auto; */
+		min-height: 100vh;
+		z-index: -1;
 	}
 
 	.alerta {
@@ -556,9 +584,9 @@
 		background-color: 	rgba(0, 0, 0, 1);
 		width: 				100%;
 
-		height: 100vh;
+		height: 400px;
 
-		min-height: 		400px;
+/*		min-height: 		400px; */
 		padding-left: 		8%;
 		padding-right: 		5%;
 		color: 				white;
@@ -739,6 +767,12 @@
 		#logo-inicio {
 			top: 100px;
 			transform: scale(0.8);
+		}
+
+
+		#pie {
+			height: 100vh;
+
 		}
 
 
