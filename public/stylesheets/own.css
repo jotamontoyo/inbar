@@ -420,7 +420,7 @@
 	#contrata-franquicia {
 		width: 100%;
 		height: 100vh;
-
+/*		opacity: 0; */
 	}
 
 	#header-contrata-franquicia {
@@ -428,7 +428,9 @@
 
 	}
 
-
+	.ocultar {								/* a esta esta clase le cambio css desde autoscroll.js */
+    	opacity: 0;
+	}
 
 
 	/* ELEGIR MODELO ======================================================================== */
