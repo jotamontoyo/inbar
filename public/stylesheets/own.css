@@ -50,7 +50,7 @@
 		padding: 0px;
 	}
 
-	li nav a, .dropdown a{
+	li nav a, .dropdown a {
 
 		color: white;
 		font-size: 18px;
@@ -65,14 +65,14 @@
 	}
 
 
-	#contacto {
+/*	#contacto {
 		background-color: 	rgb(255, 153, 64);
 	/*	background: url(/images/floxy/bg-contacto.jpg) no-repeat center center; */
-		width: 				100%;
+/*		width: 				100%;
 		height: 			100%;
 
 	/*	max-height: 		80%; */
-		min-height: 		500px;
+/*		min-height: 		500px;
 		padding-left: 		8%;
 		padding-right: 		5%;
 		color:		 		#2E2E2E;
@@ -85,36 +85,9 @@
 		-webkit-justify-content: 	space-around;
 		justify-content: 			space-around;
 		border: 					none !important;
-	}
-
-	#contacto2 {
-/*		background-color: 	rgba(0, 0, 0, 1); */
-		background: url(/images/floxy/telefono.png) no-repeat center center;
-		width: 				100%;
-
-/*		height: 			100%; */
-		height: 			100vh;
+	} */
 
 
-		vertical-align: 	middle;
-	/*	max-height: 		80%; */
-		min-height: 		500px;
-		padding-left: 		8%;
-		padding-right: 		5%;
-/*		color:		 		rgb(218, 165, 32); */
-		color: white;
-		position: 			relative;
-		overflow: 			hidden;
-		display: 			-webkit-flex;
-		display: 			flex;
-		-webkit-flex-direction: 	column;
-		flex-direction: 			column;
-		-webkit-justify-content: 	space-around;
-		justify-content: 			space-around;
-/*		border-bottom: 				2px solid #fff; */
-	}
-
-	#contacto2 h1 {font-size: 36px;}
 
 
 
@@ -234,15 +207,15 @@
 		overflow: 	hidden;
 	} */
 
-	.preload * {
-/*		visibility: hidden;
+/*	.preload * {
+		visibility: hidden;
 		-webkit-transition: none !important;
 		-moz-transition: none !important;
 		-ms-transition: none !important;
-		-o-transition: none !important; */
+		-o-transition: none !important;
 
 
-	}
+	} */
 
 	/* ================================================================================================ */
 	/* INICIO ========================================================================================= */
@@ -311,7 +284,7 @@
 		z-index: -1;
 	}
 
-	.alerta {
+/*	.alerta {
 		width: 100%;
 		margin-top: 100px;
 		padding-left: auto;
@@ -324,7 +297,7 @@
 		width: 50%;
 		margin-left: auto;
 		margin-right: auto;
-	}
+	} */
 
 	/* estilos de menu-inicio =================================================================================== */
 	#menu-inicio {
@@ -420,12 +393,10 @@
 	#contrata-franquicia {
 		width: 100%;
 		height: 100vh;
-/*		opacity: 0; */
 	}
 
 	#header-contrata-franquicia {
 		margin-top: 12%;
-
 	}
 
 	.ocultar {								/* a esta esta clase le cambio css desde autoscroll.js */
@@ -515,8 +486,8 @@
 		height: 120px;
 		margin-top: 30px;
 		margin-bottom: 30px;
-/*		border: 1px solid #999999; */
-		border-radius: 5px 5px 5px 5px;
+/*		border: 1px solid #999999;
+		border-radius: 5px 5px 5px 5px; */
 	}
 
 /*	.servicios-contenido:hover {
@@ -535,7 +506,6 @@
 		height: 100vh;
 		padding-top: 2%;
 		position: relative;
-/*		background: url(/images/floxy/inbarasset.png) no-repeat center center; */
 		color: #000;
 	}
 
@@ -579,16 +549,85 @@
 	}
 
 
+	/* CONTACTO =================================================================================== */
+
+	#contacto2 {
+/*		background-color: 	rgba(0, 0, 0, 1); */
+		background: url(/images/floxy/telefono.png) no-repeat center center;
+		width: 				100%;
+		height: 			100vh;
+		vertical-align: 	middle;
+		min-height: 		500px;
+		padding-left: 		8%;
+		padding-right: 		5%;
+		color: white;
+		position: 			relative;
+		overflow: 			hidden;
+		display: 			-webkit-flex;
+		display: 			flex;
+		-webkit-flex-direction: 	column;
+		flex-direction: 			column;
+		-webkit-justify-content: 	space-around;
+		justify-content: 			space-around;
+	}
+
+	#contacto2 h1 {font-size: 36px;}
+
+
+	/* PAGINA WEBFORM CONTACTC ============================================================================== */
+	#webform-panel1 {
+		background: url(/images/calle.jpg) no-repeat fixed center;
+		height: 	100vh;
+		overflow: 	hidden;
+	}
+
+	#jumbo-contacto {
+		background-color: rgba(238, 238, 238, 0.3);
+		color           : black;
+		margin-top      : 20vh;
+		margin-left     : auto;
+		margin-right    : auto;
+		max-width       : 700px;
+		text-align      : center;
+	}
+
+
+	/* PARA PONER VIDEOS EN BACKGROUNDS ============================================================================== */
+
+	.fullscreen-bg {
+		position: 	absolute;
+		overflow: 	hidden;
+		z-index: 	-100;
+		height: 	100vh;
+	}
+
+	.fullscreen-bg__video {
+		position: 	relative;
+		width: 		100%;
+		height: 	100vh;
+	}
+
+	@media (min-aspect-ratio: 16/9) {
+		.fullscreen-bg__video {
+	    	height: 300%;
+	    	top: -100%;
+		}
+	}
+
+	@media (max-aspect-ratio: 16/9) {
+		.fullscreen-bg__video {
+    		width: 		300%;
+    		left: 		-100%;
+		}
+	}
+
 
 	/* PIE =================================================================================== */
 
 	#pie {
-		background-color: 	rgba(0, 0, 0, 1);
+		background-color: 	rgba(0, 0, 0, 0.9);
 		width: 				100%;
-
 		height: 400px;
-
-/*		min-height: 		400px; */
 		padding-left: 		8%;
 		padding-right: 		5%;
 		color: 				white;
@@ -603,17 +642,8 @@
 		border: 					none !important;
 	}
 
-	.fullscreen-bg {
-		position: 	absolute;
-		overflow: 	hidden;
-  		z-index: 	-100;
-  		height: 	100vh;
-	}
-
-	.fullscreen-bg__video {
-  		position: 	relative;
-  		width: 		100%;
-  		height: 	100vh;
+	#pie h4 {
+		margin-bottom: 20px;
 	}
 
 	.img-logo-sm {
@@ -636,38 +666,10 @@
 		margin-top: 0;
 	}
 
-	#webform-panel1 {
-		background: url(/images/calle.jpg) no-repeat fixed center;
-		height: 	100vh;
-		overflow: 	hidden;
-	}
 
-	#jumbo-contacto {
-		background-color: rgba(238, 238, 238, 0.3);
-		color           : black;
-		margin-top      : 20vh;
-		margin-left     : auto;
-		margin-right    : auto;
-		max-width       : 700px;
-		text-align      : center;
-
-	}
-
-	@media (min-aspect-ratio: 16/9) {
-  		.fullscreen-bg__video {
-	    	height: 300%;
-	    	top: -100%;
-  		}
-	}
-
-	@media (max-aspect-ratio: 16/9) {
-  		.fullscreen-bg__video {
-    		width: 		300%;
-    		left: 		-100%;
-  		}
- 	}
 
 	/* CONTROL FORMATO PANTALLA ================================================================================= */
+
 	@media handheld, only screen and (max-width: 767px) {			/* movil */
 
 		.ocultar-movil{
@@ -677,7 +679,6 @@
 		#servicios-panel {
 			margin-top: 0px;
 		}
-
 
 
 		#servicios-panel h4 {
@@ -703,7 +704,12 @@
 			transform: scale(0.8);
 		}
 
-		#header-personas h1, #header-servicios h1 {
+		#header-personas h1 {
+			margin-bottom: 50px;
+			transform: scale(0.8);
+		}
+
+		#header-servicios {
 			margin-bottom: 20px;
 			transform: scale(0.8);
 		}
@@ -774,8 +780,20 @@
 
 		#pie {
 			height: 100vh;
-
+			padding-left: 0%;
+			padding-right: 0%;
 		}
+
+		#pie h4 {
+			margin-bottom: 10px;
+			font-size: 13px;
+		}
+
+		#pie h6 {
+			font-size: 11px;
+		}
+
+
 
 
 		#menu-inbar .col-md-1 a:hover {

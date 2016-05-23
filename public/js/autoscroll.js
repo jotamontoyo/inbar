@@ -30,33 +30,31 @@
                 clearInterval(myInterval);
             }); */
 
-/*            $('#contrata-franquicia').scroll(function() {
-                $('#contrata-franquicia').animate({'opacity':'1'}, 2000);
-            }); */
-
-
 
             $('.ocultar').each(function(i) {                                           /* Check the location of each desired element .ocultar */
                 var bottom_of_object = $(this).offset().top + $(this).outerHeight();
                 var bottom_of_window = $(window).scrollTop() + $(window).height();
                 if (bottom_of_window > bottom_of_object) {                             /* If the object is completely visible in the window, fade it it */
-                    $(this).animate({'opacity': '1'}, 1200);
+                    $(this).animate({
+                        'opacity': '1'
+                    }, 1000);
+/*                    $('#header-contrata-franquicia').transition({
+                        marginLeft: '50%'
+                    }); */
                 }
             });
-
 
 
             $('#subir-inicio-icon').css('opacity', '0.8');                               // control de opacity del icono subir
             clearTimeout($.data(this, 'scrollTimer'));
             $.data(this, 'scrollTimer', setTimeout(function() {
-                $('#subir-inicio-icon').css('opacity', '0.4');
+                $('#subir-inicio-icon').css('opacity', '0.3');
             }, 250));
 
             if ($(window).scrollTop() === 0) {
                 $('#subir-inicio').css('visibility', 'hidden');
             } else {
                 $('#subir-inicio').css('visibility', 'visible');
-//                $('#contrata-franquicia').animate({'opacity':'1'}, 2000);
             };
 
         });
