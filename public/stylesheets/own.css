@@ -261,6 +261,14 @@
 		margin: 0px auto 20px auto;
 	}
 
+	#logo-inicio h1 {
+		font-size: 42px;
+	}
+
+	#logo-inicio h5 {
+		font-size: 22px;
+	}
+
 	#wrap {
 		width: 100%;
 		height: auto;
@@ -649,6 +657,7 @@
 	.img-logo-sm {
 		margin-left: 15%;
 		margin-bottom: 15px;
+
 	}
 
 	.img-logo-sm img {
@@ -656,6 +665,11 @@
 		height:        100%;
 		align-content: middle;
 	}
+
+	.img-logo-sm a {
+		cursor: pointer;
+	}
+
 
 	.rrss-pie{
 		display: inline-block;
