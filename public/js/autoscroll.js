@@ -39,7 +39,7 @@
                         'opacity': '1'
                     }, 1000);
 /*                    $('#header-contrata-franquicia').transition({
-                        marginLeft: '50%'
+                        x: '50px'
                     }); */
                 }
             });

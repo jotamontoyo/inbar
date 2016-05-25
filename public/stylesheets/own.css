@@ -128,7 +128,7 @@
 
 	#modal-elsol, #modal-mediterraneo, #modal-after {
 		max-width: 800px;
-		color:	rgb(218, 165, 32);
+		color:	rgb(255, 255, 255);
 	}
 
 	/* ESTILOS DEL MODAL-MENU ABRE TU FRANQUICIA ======================================================= */
@@ -405,6 +405,7 @@
 
 	#header-contrata-franquicia {
 		margin-top: 12%;
+
 	}
 
 	.ocultar {								/* a esta esta clase le cambio css desde autoscroll.js */
@@ -800,11 +801,11 @@
 
 		#pie h4 {
 			margin-bottom: 10px;
-			font-size: 13px;
+			font-size: 15px;
 		}
 
 		#pie h6 {
-			font-size: 11px;
+			font-size: 13px;
 		}
 
 
