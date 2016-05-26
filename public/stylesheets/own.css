@@ -1,5 +1,17 @@
 
-	@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+/*	@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700); */
+
+	@font-face {
+		font-family: 'Marguerite';
+		src: url('/fonts/marguerite.ttf');
+	}
+
+	@font-face {
+		font-family: 'Honey';
+		src: url('/fonts/HoneyScript-SemiBold.ttf');
+	}
+
+
 
 	body {
 /*		font-family     : 'Lato', Calibri, Arial, sans-serif; */
@@ -39,7 +51,7 @@
 
 	.navbar-collapse, .navbar-collapse.collapse.in, .col-md-2 {
 		margin: 0px;
-		padding-right: 0px;
+/*		padding-right: 0px; */
 	}
 
 	.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {		/* cambia color de las opciones del menu-inicio despues del click */
@@ -232,6 +244,12 @@
 
 	}
 
+	.titulo-secciones {
+
+		color: #eb9837;
+		background-color: #000;
+	}
+
 
 
 	#inicio {
@@ -269,6 +287,18 @@
 		font-size: 22px;
 	}
 
+	#calma {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		position: absolute;
+		bottom: 0;
+		font: bold 25px Honey, verdana, sans-serif;
+		text-shadow: rgba(0,0,0,0.5) 3px 3px 5px;
+/*		color: hsla(240, 100%, 50%, 0.5); */
+		color: #fff;
+	}
+
 	#wrap {
 		width: 100%;
 		height: auto;
@@ -276,7 +306,7 @@
 		z-index: -1;
 		top: 0;
 		left: 0;
-		background-color: black;
+/*		background-color: black; */
 		overflow: 	hidden;
 
 	}
@@ -308,14 +338,24 @@
 	} */
 
 	/* estilos de menu-inicio =================================================================================== */
+
 	#menu-inicio {
 		width: 100%;
-		height: 40px;
-		margin-top: 50px;
+		height: 94px;
+		top: 0;
+		left: 0;
+		margin-top: 0px;
 		margin-right: auto;
 		margin-left: auto;
-		position: relative;
+		position: fixed;
 		z-index: 3;
+		background: url(/images/bg-menu-inicio/fondo-menu-completo.png) no-repeat center center;
+/*		background-color: rgba(255, 255, 255, 0.8); */
+		-moz-transition: all 0.3s;
+		-o-transition: all 0.3s;
+		-webkit-transition: all 0.3s;
+		transition: all 0.3s;
+
 	}
 
 	#menu-inicio-content {												/* para usar en menu fijo en pie de navegador */
@@ -325,20 +365,30 @@
 
 	#menu-inicio-items {												/* estilo de todos los items del menu-inicio */
 		margin-left: 10%;
-		padding: 0px;
+/*		padding: 0px; */
 		position: relative;
+
 	}
 
 	.menu-inicio-item {
 		position: relative;
+		-moz-transition: all 0.3s;
+		-o-transition: all 0.3s;
+		-webkit-transition: all 0.3s;
+		transition: all 0.3s;
 	}
 
 	.menu-inicio-item, .dropdown-menu-inicio-item {						/* estilo de cada item del menu-inicio y de cada item de los dropdown */
-		padding: 10px 0px 10px 0px;
+		padding: 28px 0px 10px 0px;
 	}
 
 	.menu-inicio-item a {
 		cursor: pointer;
+		color: #000;
+	}
+
+	.menu-inicio-item a:hover {
+		color: #eb9837;
 	}
 
 	.dropdown-menu-inicio {												/* estilo de los dropdown del menu-inicio */
@@ -479,7 +529,7 @@
 		margin-right: 0px;
 		position: relative;
 		background-color: white;
-		color: rgb(0, 191, 255);
+
 	}
 
 	#header-servicios h1 {
@@ -495,19 +545,24 @@
 		height: 120px;
 		margin-top: 30px;
 		margin-bottom: 30px;
+		color: #000;
 /*		border: 1px solid #999999;
 		border-radius: 5px 5px 5px 5px; */
 	}
 
-/*	.servicios-contenido:hover {
-		background-color: rgba(0, 0, 0, 0.1);
+	.servicios-item a {
+		color: #000;
+	}
+
+	.servicios-item a:hover {
+		color: #eb9837;
 		cursor: pointer;
 		transform: scale(1.05);
 		-moz-transition: all 0.3s;
 		-o-transition: all 0.3s;
 		-webkit-transition: all 0.3s;
 		transition: all 0.3s;
-	} */
+	}
 
 	/* SECCION MARKETING ================================================================================ */
 
@@ -748,10 +803,13 @@
 
 		#menu-inicio {
 			margin-top: 30px;
+			position: relative;
+			background: none;
 		}
 
 		#menu-inicio-items {
 			margin-left: 0px;
+
 /*			background-color: rgba(0, 0, 0, 1);
 /*			border-top: 1px solid #999999;
 			border-bottom: 1px solid #999999; */
@@ -760,6 +818,7 @@
 		.menu-inicio-item {
 			margin-left: 0px;
 			padding-left: 0px;
+			padding-top: 10px;
 			background-color: rgba(0, 0, 0, 0.8);
 		}
 
@@ -779,6 +838,10 @@
 			border-bottom: 1px solid #999999;
 		}
 
+		.menu-inicio-item:nth-child(6) {
+			border-bottom: 1px solid #999999;
+		}
+
 		.dropdown-menu-inicio-item {
 			border-bottom: none;
 		}
@@ -792,6 +855,9 @@
 			transform: scale(0.8);
 		}
 
+		#calma {
+			font-size: 18px;
+		}
 
 		#pie {
 			height: 100vh;

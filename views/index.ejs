@@ -11,9 +11,13 @@
     	</div>
 
         <div id="wrap">
-            <img class="bgfade" src="/images/floxy/inbarasset.png">
-            <img class="bgfade" src="/images/floxy/inbarasset2.png">
-            <img class="bgfade" src="/images/floxy/inbarasset3.png">
+            <img class="bgfade" src="/images/bg-inicio/img-1b.jpg">
+            <img class="bgfade" src="/images/bg-inicio/img-2b.jpg">
+            <img class="bgfade" src="/images/bg-inicio/img-3b.jpg">
+            <img class="bgfade" src="/images/bg-inicio/img-4b.jpg">
+            <img class="bgfade" src="/images/bg-inicio/img-5b.jpg">
+            <img class="bgfade" src="/images/bg-inicio/img-6b.jpg">
+
 
 
         </div>
@@ -34,14 +38,14 @@
 
 
 
-            <div class="row center-block" style="position:relative; top:0px; width: 100%;">
+<!--            <div class="row center-block" style="position:relative; top:0px; width: 100%;">
                 <% if (!session.user) { %>
                     <a href="/login" style="color: white"><i class="fa fa-sign-in"></i> Login&nbsp;</a>
                 <%}%>
-            </div>
+            </div> -->
 
             <div class="row text-center navbar" id="menu-inicio" >
-                <div class="container-fluid">
+<!--                <div class="container-fluid"> -->
 
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-inicio-items">
@@ -80,7 +84,7 @@
                             </div> -->
 
                             <div class="col-md-2 col-sm-2 menu-inicio-item animated fadeIn">
-                                <li><nav role="navigation"> <a href="#contrata-franquicia">Contrata tu franquicia</a></nav></li>
+                                <li><nav role="navigation"> <a href="#contrata-franquicia">Abre tu franquicia</a></nav></li>
                             </div>
 
                             <div class="col-md-2 col-sm-2 menu-inicio-item animated fadeIn">
@@ -88,12 +92,14 @@
                             </div>
 
                             <div class="col-md-2 col-sm-2 menu-inicio-item animated fadeIn">
-                                <li><nav role="navigation"> <a href="#servicios">Preguntas</a></nav></li>
+                                <li><nav role="navigation"> <a data-toggle="modal" data-target="#panel-elegir-franquicia">Quiénes somos</a></nav></li>
                             </div>
 
                             <div class="col-md-2 col-sm-2 menu-inicio-item animated fadeIn">
-                                <li><nav role="navigation"> <a data-toggle="modal" data-target="#panel-elegir-franquicia">Tienes un local?</a></nav></li>
+                                <li><nav role="navigation"> <a href="#servicios">Preguntas</a></nav></li>
                             </div>
+
+
 
                             <div class="col-md-2 col-sm-2 menu-inicio-item animated fadeIn">
                                 <li><nav role="navigation"> <a href="#contacto2">Contáctanos</a></nav></li>
@@ -103,14 +109,30 @@
                                 <li><nav role="navigation"> <a href="https://elsecretodelexitodelosbares.wordpress.com">Blog</a></nav></li>
                             </div>
 
+                            <div class="col-md-1 col-sm-1 menu-inicio-item animated fadeIn">
+
+                                    <li class="dropdown" style="list-style:none;">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-close-others="true">
+                                            <img id="img-pais" src="/images/flags/Spain-24.png"/>
+                                        </a>
+                                         <ul class="dropdown-menu pull-right animated fadeIn" id="lista-idiomas" style="max-width: 100px">
+                                            <li class="disabled" id="sp"><a href="#"><img src="/images/flags/Spain-24.png"/> Spanish</a></li>
+                                            <li id="en"><a href="/languages/en"><img src="/images/flags/United-Kingdom-24.png"/> English</a></li>
+                                            <li id="fr"><a href="#"><img src="/images/flags/France-24.png"/> François</a></li>
+                                            <li id="gr"><a href="#"><img src="/images/flags/Germany-24.png" /> German</a></li>
+                                        </ul>
+                                    </li>
+
+                            </div>
+
 
 
                         </ul>
                     </div> <!-- /.navbar-collapse -->
-                </div>
+            <!--    </div> -->
             </div>
 
-            <div class="row" style="position:absolute; top:10px; width: auto; right:30px;">
+<!--            <div class="row" style="position:absolute; top:10px; width: auto; right:30px;">
                 <li class="dropdown" style="list-style:none;">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-close-others="true">
                         <img id="img-pais" src="/images/flags/Spain-24.png"/>
@@ -122,14 +144,24 @@
                         <li id="gr"><a href="#"><img src="/images/flags/Germany-24.png" /> German</a></li>
                     </ul>
                 </li>
-            </div>
+            </div> -->
 
-            <div class="row center-block" id="logo-inicio">
+<!--            <div class="row center-block" id="logo-inicio">
                 <img class="img" src="images/floxy/logo-inbar8.png" alt="Generic placeholder image">
                 <h1><strong>IN</strong><span style="color: rgb(249, 196, 1)">BAR</span></h1>
                 <h1>ASSET</h1>
                 <h5>NEOFRANQUICIAS</h5>
+            </div> -->
+
+            <div class="row center-block" id="logo-inicio">
+                <img class="img" src="images/logos/inbaar1.png" alt="Generic placeholder image">
             </div>
+
+            <div class="row" id="calma">
+
+                <h1> BARES CON ALMA</h1>
+            </div>
+
 
         </div>
 
@@ -139,7 +171,7 @@
         <div class="container-fluid bordes" id="contrata-franquicia">
 
             <div class="row text-center" id="header-contrata-franquicia">
-                <h1 class="ocultar"><img class="img-header-secciones" src="/images/logos/logo.png"> Contrata tu franquicia</h1>
+                <h1 class="ocultar"><img class="img-header-secciones" src="/images/logos/logo.png"> ABRE TU <span class="titulo-secciones">&nbsp;FRANQUICIA&nbsp;</span></h1>
                 <pre class="ocultar">aqui el texto  asdf  sdfasdfasdfsdfasd sdfasdfs sdfsdf
                     sdfsdf  sdf
 
@@ -348,39 +380,51 @@
 
                 <div class="col-md-4 col-sm-6">
                     <div class="servicios-item ocultar">
-                        <h4><strong> Abre tu franquicia</strong></h4>
-                        <p>Cras justo odio, daszvfdzasdf asdf sd sfasd sfsdfsdfsdfs pibus ac facilisis in</p>
+                        <a href="#">
+                            <h4><strong> Abre tu franquicia</strong></h4>
+                            <p>Cras justo odio, daszvfdzasdf asdf sd sfasd sfsdfsdfsdfs pibus ac facilisis in</p>
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="servicios-item ocultar">
-                        <h4><strong> Tienes un local</strong></h4>
-                        <p>Cras justo odio, dapzasdasdasasas asdasd as dad as ibus ac facilisis in</p>
-                        <p>Cras justo odio, dapibus ac facilisis in</p>
+                        <a href="#">
+                            <h4><strong> Tienes un local</strong></h4>
+                            <p>Cras justo odio, dapzasdasdasasas asdasd as dad as ibus ac facilisis in</p>
+                            <p>Cras justo odio, dapibus ac facilisis in</p>
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="servicios-item ocultar">
-                        <h4><strong> Quiénes somos</strong></h4>
-                        <p>Cras justo odidfgdfgsd sdfgf sdfg  dfgdfgdfgdf o, dapibus ac facilisis in</p>
+                        <a href="#">
+                            <h4><strong> Quiénes somos</strong></h4>
+                            <p>Cras justo odidfgdfgsd sdfgf sdfg  dfgdfgdfgdf o, dapibus ac facilisis in</p>
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="servicios-item ocultar">
-                        <h4><strong> Branding</strong></h4>
-                        <p>Cras justo odio, dapibus ac facilisis in</p>
+                        <a href="#">
+                            <h4><strong> Branding</strong></h4>
+                            <p>Cras justo odio, dapibus ac facilisis in</p>
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="servicios-item ocultar">
-                        <h4><strong> Digital marketing</strong></h4>
-                        <p>Cras justo odio, dapibus ac facilisis in</p>
+                        <a href="#">
+                            <h4><strong> Digital marketing</strong></h4>
+                            <p>Cras justo odio, dapibus ac facilisis in</p>
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="servicios-item ocultar">
-                        <h4><strong> Promotion material</strong></h4>
-                        <p>Cras justo odio, dapibus ac facilisis in</p>
+                        <a href="#">
+                            <h4><strong> Promotion material</strong></h4>
+                            <p>Cras justo odio, dapibus ac facilisis in</p>
+                        </a>
                     </div>
                 </div>
             </div>

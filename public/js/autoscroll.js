@@ -45,17 +45,26 @@
             });
 
 
-            $('#subir-inicio-icon').css('opacity', '0.8');                               // control de opacity del icono subir
+            $('#subir-inicio-icon').css('opacity', '0.8');                               // control de opacity/visibility del icono subir
             clearTimeout($.data(this, 'scrollTimer'));
             $.data(this, 'scrollTimer', setTimeout(function() {
                 $('#subir-inicio-icon').css('opacity', '0.3');
             }, 250));
-
             if ($(window).scrollTop() === 0) {
                 $('#subir-inicio').css('visibility', 'hidden');
             } else {
                 $('#subir-inicio').css('visibility', 'visible');
             };
+
+            if ($(window).scrollTop() === 0) {                                          // control aspecto menu-inicio
+                $('#menu-inicio').css('height', '94px');
+//                $('#menu-inicio').css('opacity', '0.8');
+                $('.menu-inicio-item').css('padding-top', '28px');
+            } else {
+                $('#menu-inicio').css('height', '50px');
+//                $('#menu-inicio').css('opacity', '1');
+                $('.menu-inicio-item').css('padding-top', '12px');
+            }
 
         });
 
