@@ -57,9 +57,9 @@
             };
 
             if ($(window).scrollTop() === 0) {                                          // control aspecto menu-inicio
-                $('#menu-inicio').css('height', '94px');
+                $('#menu-inicio').css('height', '70px');
 //                $('#menu-inicio').css('opacity', '0.8');
-                $('.menu-inicio-item').css('padding-top', '28px');
+                $('.menu-inicio-item').css('padding-top', '20px');
             } else {
                 $('#menu-inicio').css('height', '50px');
 //                $('#menu-inicio').css('opacity', '1');
