@@ -263,7 +263,7 @@
 /*		background-color: #BDBDBD; */
 /*		height: 	720px; */
 		height: 	100vh;
-		min-height: 520px;
+		min-height: 620px;					/* si cambias este parametro, tambien el  #wrap */
 /*		min-height: 100vh; */
 		overflow: 	hidden;
 
@@ -308,7 +308,7 @@
 	#wrap {
 		width: 100%;
 		height: auto;
-		min-height: 520px;
+		min-height: 620px;						/* si cambias este parametro, tambien el  #inicio */
 		position: absolute;
 		z-index: -1;
 		top: 0;
@@ -319,13 +319,26 @@
 	}
 
 	#wrap img.bgfade {
-		width: auto;
+		width: 100%;
+		min-width: 1200px;
+		height: 100%;
+/*		min-height: 100vh; */
+
+		margin: 0;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+
+
 		position: absolute;
-		margin-left: -800px;			/* centrado x */
-		margin-top: -450px;				/* centrado y */
-		left: 50%;						/* centrado x */
-		top: 50%;						/* centrado y */
-		min-height: 100vh;
+
+/*		margin-left: -800px;			/* centrado x */
+/*		margin-top: -450px;				/* centrado y */
+/*		left: 50%;						/* centrado x */
+/*		top: 50%;						/* centrado y */
+
+
 		z-index: -1;
 	}
 
@@ -348,7 +361,7 @@
 
 	#menu-inicio {
 		width: 100%;
-		height: 94px;
+		height: 70px;				/* lo modifica autoscroll.js */
 		top: 0;
 		left: 0;
 		margin-top: 0px;
@@ -356,7 +369,7 @@
 		margin-left: auto;
 		position: fixed;
 		z-index: 3;
-		background: url(/images/bg-menu-inicio/fondo-menu-completo.png) no-repeat center center;
+		background: url(/images/bg-menu-inicio/fondo-menu-completo-negro.png) no-repeat center center;
 /*		background-color: rgba(255, 255, 255, 0.8); */
 		-moz-transition: all 0.3s;
 		-o-transition: all 0.3s;
@@ -386,12 +399,12 @@
 	}
 
 	.menu-inicio-item, .dropdown-menu-inicio-item {						/* estilo de cada item del menu-inicio y de cada item de los dropdown */
-		padding: 28px 0px 10px 0px;
+		padding: 20px 0px 10px 0px;										/* modifica autoscroll.js */
 	}
 
 	.menu-inicio-item a {
 		cursor: pointer;
-		color: #000;
+		color: #fff;
 	}
 
 	.menu-inicio-item a:hover {
@@ -479,12 +492,16 @@
 	#contrata-franquicia {
 		width: 100%;
 		height: 100vh;
-		min-height: 680px;
+		min-height: 500px;
 	}
 
 	#header-contrata-franquicia {
 		margin-top: 2%;
 		margin-bottom: 2%;
+	}
+
+	#textos-contrata-franquicia {
+		padding: 0px 80px 40px 80px;
 	}
 
 	.texto-contrata-franquicia {
@@ -944,6 +961,27 @@
 		#calma {
 			font-size: 18px;
 		}
+
+
+
+		/* ====================================================================================== */
+		/* CONTRATA TU FRANQUICIA =============================================================== */
+		/* ====================================================================================== */
+
+		#textos-contrata-franquicia {
+			padding: 0px 10px 0px 10px;
+		}
+
+		.texto-contrata-franquicia {
+			padding: 0px 20px 0px 20px;
+		}
+
+		.texto-contrata-franquicia p, .texto-quienes-somos p {
+			line-height: 12px;
+		}
+
+
+
 
 		#contacto2 h1 {
 			font-size: 30px;
