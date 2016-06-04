@@ -492,7 +492,7 @@
 	#contrata-franquicia {
 		width: 100%;
 		height: 100vh;
-		min-height: 500px;
+		min-height: 720px;
 	}
 
 	#header-contrata-franquicia {
@@ -539,7 +539,7 @@
 
 
 	/* ================================================================================= */
-	/* SERVICIOS ======================================================================= */
+	/* PREGUNTAS FRECUENTES ============================================================ */
 	/* ================================================================================= */
 
 	#servicios {
@@ -625,14 +625,28 @@
 	#logo-marcas {
 		max-width: 400px;
 		height: auto;
-		padding-left: 50px;
-		padding-right: 50px;
+		padding-left: 60px;
+		padding-right: 60px;
 	}
 
 	#logo-marcas img {
 		width: 100%;
 /*		margin-left: 50px;
 		margin-right: 50px;*/
+	}
+
+
+	.texto-modelo {
+		width: auto;
+		cursor: pointer;
+	}
+
+	.texto-modelo a {
+		color: #000;
+	}
+
+	.texto-modelo a:hover {
+		color: #eb9837;
 	}
 
 
@@ -986,26 +1000,7 @@
 			display: none;
 		}
 
-		#servicios-panel {
-			margin-top: 0px;
-		}
 
-
-		#servicios-panel h4 {
-			font-size: 12px;
-		}
-
-		.servicios-item {
-			margin-top: 5px;
-			margin-bottom: 5px;
-		}
-
-		.col-pie, .servicios-item {
-			height: auto;
-			background-color: transparent;
-			border: none;
-			border-bottom: 1px solid #999999;
-		}
 
 
 
@@ -1025,21 +1020,6 @@
 		}
 
 
-
-		#personas h3 {
-			font-size: 12px;
-		}
-
-		.persona-item {
-			margin-bottom: 20px;
-			border-bottom: 1px solid #999999;
-		}
-
-		.img-persona {
-			width: 50px;
-			height: 50px;
-/*			transform: scale(0.5); */
-		}
 
 		#menu-inicio {
 			margin-top: 30px;
@@ -1105,6 +1085,10 @@
 		/* CONTRATA TU FRANQUICIA =============================================================== */
 		/* ====================================================================================== */
 
+		#contrata-franquicia {
+			min-height: 100vh;
+		}
+
 		#textos-contrata-franquicia {
 			padding: 0px 10px 0px 10px;
 		}
@@ -1133,8 +1117,64 @@
 		/* NUESTRAS MARCAS ========================================================== */
 		/* ========================================================================== */
 
-		.texto-modelo {
-			transform: scale(0.5);
+		#personas {
+			min-height: 100vh;
+		}
+
+		#personas h3 {
+			font-size: 15px;
+		}
+
+		.persona-item {
+			margin-bottom: 20px;
+			border-bottom: 1px solid #999999;
+		}
+
+		.img-persona {
+			width: 50px;
+			height: 50px;
+/*			transform: scale(0.5); */
+		}
+
+		.modelo h1 {
+			font-size: 12px;
+/*			transform: scale(0.3); */
+		}
+
+		.modelo img {
+			height: 30px;
+		}
+
+
+
+
+		/* ========================================================================== */
+		/* PREGUNTAS FRECUENTES ===================================================== */
+		/* ========================================================================== */
+
+		#servicios {
+			min-height: 100vh;
+		}
+
+		#servicios-panel {
+			margin-top: 0px;
+		}
+
+
+		#servicios-panel h4 {
+			font-size: 12px;
+		}
+
+		.servicios-item {
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+
+		.servicios-item {
+			height: auto;
+			background-color: transparent;
+			border: none;
+			border-bottom: 1px solid #999999;
 		}
 
 
