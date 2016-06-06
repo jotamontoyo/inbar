@@ -239,9 +239,14 @@
 	/* ================================================================================================ */
 
 	.bordes {
-		border-top: 	10px inset rgba(256, 256, 256, 0.8);
-		border-bottom: 	10px groove rgba(256, 256, 256, 0.8);
-/*		border-style: 	outset; */
+/*		border-top: 	10px inset rgba(256, 256, 256, 0.8);
+		border-bottom: 	10px groove rgba(256, 256, 256, 0.8); */
+/*		border-top: 2px solid rgba(256, 256, 256, 0.8); */
+		width: 80%
+		border-top: 1px solid #999999;
+		border-bottom: 1px solid #999999;
+
+
 	}
 
 	.img-header-secciones {
@@ -255,6 +260,10 @@
 
 	.ocultar {																/* a esta esta clase le cambio css desde autoscroll.js */
     	opacity: 0;
+	}
+
+	.ocultar-pc {
+		display: none;
 	}
 
 
@@ -305,6 +314,12 @@
 		color: #fff;
 	}
 
+	#calma h1 {
+		padding-left: 22px;
+	}
+
+
+
 	#wrap {
 		width: 100%;
 		height: auto;
@@ -323,15 +338,16 @@
 		min-width: 1200px;
 		height: 100%;
 /*		min-height: 100vh; */
+		position: absolute;
 
-		margin: 0;
+/*		margin: 0;
 	    top: 0;
 	    left: 0;
 	    right: 0;
-	    bottom: 0;
+	    bottom: 0; */
 
 
-		position: absolute;
+
 
 /*		margin-left: -800px;			/* centrado x */
 /*		margin-top: -450px;				/* centrado y */
@@ -378,14 +394,9 @@
 
 	}
 
-	#menu-inicio-content {												/* para usar en menu fijo en pie de navegador */
-		position: relative;
-		z-index: 2;
-	}
-
 	#menu-inicio-items {												/* estilo de todos los items del menu-inicio */
-		margin-left: 10%;
-/*		padding: 0px; */
+/*		margin-left: 0%;
+		padding: 0px; */
 		position: relative;
 
 	}
@@ -623,8 +634,9 @@
 
 
 	#logo-marcas {
-		max-width: 400px;
+		max-width: 350px;
 		height: auto;
+		margin-top: 50px;
 		padding-left: 60px;
 		padding-right: 60px;
 	}
@@ -1000,6 +1012,9 @@
 			display: none;
 		}
 
+		.ocultar-pc {
+			display: block;
+		}
 
 
 
@@ -1010,7 +1025,7 @@
 		}
 
 		#header-personas h1 {
-			margin-bottom: 50px;
+			margin-bottom: 30px;
 			transform: scale(0.8);
 		}
 
@@ -1134,6 +1149,10 @@
 			width: 50px;
 			height: 50px;
 /*			transform: scale(0.5); */
+		}
+
+		#logo-marcas {
+			margin-top: 25px;
 		}
 
 		.modelo h1 {
