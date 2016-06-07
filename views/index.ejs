@@ -190,16 +190,16 @@
         <div class="container-fluid text-center bordes" id="personas">
 
             <div id="header-personas">
-                <h1>NUESTRAS <span class="titulo-secciones">&nbsp;MARCAS&nbsp;</span></h1>
+                <h1 class="ocultar">NUESTRAS <span class="titulo-secciones">&nbsp;MARCAS&nbsp;</span></h1>
             </div>
 
-            <div class="row">
+            <div class="row ocultar ocultar-pc">
                 <div class="center-block" id="logo-marcas">
                     <img src="/images/logos/el-sol-marcas.jpg" alt="" />
                 </div>
 
                 <br>
-                <h3 class="ocultar-pc">Elige tu modelo de bar</h3>
+                <h3>Elige tu modelo de bar</h3>
             </div>
 
             <div class="row center-block" id="elegir-modelo">
@@ -213,21 +213,31 @@
                         </a>
                     </div>
                     <br>
-                    <div class="texto-modelo">
+                    <div class="texto-modelo ocultar">
                         <a class="button"
                             data-toggle="modal"
                             data-target="#panel-mediterraneo">
                             <div class="modelo">
-                                <h1><img src="/images/logos/logo.png"/><strong>Med</strong>iterráneo</h1>
+                                <h3><img src="/images/logos/logo.png"/><strong>Med</strong>iterráneo</h3>
                             </div>
 
                         </a>
                     </div>
                 </div>
 
-                <div class="col-md-4 col-sm-6 ocultar-movil">
+                <div class="col-md-4 col-sm-6 ocultar ocultar-movil">
+                    <div class="center-block" id="logo-marcas">
+                        <img src="/images/logos/el-sol-marcas.jpg" alt="" />
+                    </div>
+
+                    <br>
                     <h3>Elige tu modelo de bar</h3>
                 </div>
+
+
+<!--                <div class="col-md-4 col-sm-6 ocultar ocultar-movil">
+                    <h3>Elige tu modelo de bar</h3>
+                </div> -->
 
                 <div class="col-md-4 col-sm-6 col-xs-6">
                     <div class="img-modelo center-block">
@@ -238,12 +248,12 @@
                         </a>
                     </div>
                     <br>
-                    <div class="texto-modelo">
+                    <div class="texto-modelo ocultar">
                         <a type="button"
                             data-toggle="modal"
                             data-target="#panel-after">
                             <div class="modelo">
-                                <h1><img src="/images/logos/logo.png"/>AFTERWORK<strong>DRINKS</strong></h1>
+                                <h3><img src="/images/logos/logo.png"/>AFTERWORK<strong>DRINKS</strong></h3>
                             </div>
                         </a>
                     </div>
@@ -377,6 +387,13 @@
         <!-- FORMULARIO CONTACTO2 =============================================================================== -->
 
         <div class="container-fluid" id="contacto2" name="contacto2">
+
+<!--            <div class="row no-padding" id="img-bg-contacto2">
+                <img class="img-responsive" src="/images/bg/fondo-contacto.jpg" />
+
+            </div> -->
+
+
             <div class="row" id="header-contacto2 ocultar">
                 <h1 class="text-center">FORMULARIO <span class="titulo-secciones">&nbsp;CONTACTO&nbsp;</span></h1>
             </div>
@@ -384,8 +401,8 @@
 
                 <form class="form-horizontal" method="post" action="/contactos/webcreate">
 
-                    <div class="col-md-6 col-sm-6 col-xs-12 text-center">
-                        <h2>¿Necesitas <br> más <br> información?</h2>
+                    <div class="col-md-6 col-sm-6 col-xs-12 texto-contacto text-center">
+                        <h2>¿NECESITAS <br> MAS <br> INFORMACIÓN?</h2>
     <!--                    <nav role="navigation"><a href="#inicio">
                             <img class="img-circle center-block" src="/images/floxy/logo-inbar.png" data-src="holder.js/100x100/auto" alt="Generic placeholder image" width="100" height="auto">
                         </a></nav>
@@ -446,24 +463,49 @@
                                 <input type="text" class="form-control" id="provincia" name="provincia" required placeholder=""/>
                             </div>
                         </div>
+
+
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="form-group ocultar text-center" style="margin-top:30px">
+
+                            <div class="form-group ocultar" style="margin-top:25px">
+                                <button id="enviar" type="submit" class="btn btn-warning">Solicitar información</button>
+                            </div>
+
+                            <div class="form-group ocultar" id="check-lopd">
                                 <label>
-                                    <input type="checkbox" id="lopd" name="lopd" required><small> Acepto la
-                                        <button type="button"
+                                    <input type="checkbox" id="lopd" name="lopd" required> Acepto la
+                                        <a class="button"
+                                            data-toggle="modal"
+                                            data-target="#panel-lopd">
+                                            <span> política de privacidad</span>
+
+
+                                        </a>
+
+
+
+<!--                                        <button type="button"
                                             class="btn btn-primary btn-xs"
                                             data-toggle="modal"
                                             data-target="#panel-lopd">política de privacidad
-                                        </button></small>
+                                        </button></small> -->
+
+
                                     </input>
                                 </label>
                             </div>
+
+
+
                         </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
+
+<!--                        <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="form-group ocultar text-center" style="margin-top:25px">
                                 <button id="enviar" type="submit" class="btn btn-info">Solicitar información</button>
                             </div>
-                        </div>
+                        </div> -->
+
+
                     </div>
                 </form>
             </div>

@@ -16,10 +16,15 @@
 		src: url('/fonts/TrashHand.TTF');
 	}
 
+	@font-face {
+		font-family: 'Kalinga';
+		src: url('/fonts/Kalinga.ttf');
+	}
+
 
 
 	body {
-/*		font-family     : 'Lato', Calibri, Arial, sans-serif; */
+		font-family     : 'Kalinga', Calibri, Arial, sans-serif;
 /*		text-shadow     : 0 1px 0 rgba(255, 255, 255, 0.8); */
 		padding-bottom  : 0;
 	}
@@ -34,6 +39,7 @@
 
 	.navbar {
 		margin-bottom: 0;
+		border-radius: 0;
 	}
 
 	.form-group input, select {
@@ -422,6 +428,17 @@
 		color: #eb9837;
 	}
 
+/*	.menu-inicio-item li a:active {
+		color: yellow;
+		background-color: yellow;
+	}
+
+	.menu-inicio-item li.selected a {
+		color: yellow;
+		background-color: yellow;
+	} */
+
+
 	.dropdown-menu-inicio {												/* estilo de los dropdown del menu-inicio */
 		background-color: rgba(0, 0, 0, 0.8);
 		border: none;
@@ -507,7 +524,7 @@
 	}
 
 	#header-contrata-franquicia {
-		margin-top: 2%;
+		margin-top: 50px;
 		margin-bottom: 2%;
 	}
 
@@ -536,7 +553,7 @@
 	}
 
 	#header-quienes-somos {
-		margin-top: 2%;
+		margin-top: 50px;
 		margin-bottom: 2%;
 	}
 
@@ -555,7 +572,7 @@
 
 	#servicios {
 		height: 100vh;
-		min-height: 780px;
+/*		min-height: 780px; */
 		margin-left: 0px;
 		margin-right: 0px;
 		position: relative;
@@ -563,14 +580,17 @@
 
 	}
 
+	#servicios-panel {
+		position: relative;
+		margin-top: 50px;
+	}
+
+
 	#header-servicios h1 {
 		margin-bottom: 10px;
 	}
 
-	#servicios-panel {
-		position: relative;
-		margin-top: 20px;
-	}
+
 
 	.servicios-item {
 		height: 40px;
@@ -622,13 +642,14 @@
 
 	#personas {
 		height: 100vh;
-		min-height: 820px;
-		padding-top: 2%;
+		padding-top: 90px;
+/*		min-height: 820px; */
 		position: relative;
 		color: #000;
 	}
 
 	#header-personas {
+
 		text-align:  center;
 	}
 
@@ -636,7 +657,7 @@
 	#logo-marcas {
 		max-width: 350px;
 		height: auto;
-		margin-top: 50px;
+		margin-top: 10px;
 		padding-left: 60px;
 		padding-right: 60px;
 	}
@@ -659,6 +680,10 @@
 
 	.texto-modelo a:hover {
 		color: #eb9837;
+		-moz-transition: all 0.3s;
+		-o-transition: all 0.3s;
+		-webkit-transition: all 0.3s;
+		transition: all 0.3s;
 	}
 
 
@@ -669,6 +694,7 @@
 	#elegir-modelo {
 		max-width: 1200px;
 		min-height: 75vh;
+		margin-top: 55px;
 		margin-bottom: 50px;
 		position: relative;
 
@@ -910,6 +936,16 @@
 
 	/* CONTACTO2 =================================================================================== */
 
+/*	#img-bg-contacto2 {
+		max-width: 100%;
+		height: auto;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	} */
+
 	#contacto2 {
 /*		background-color: 	rgba(0, 0, 0, 1); */
 		background: url(/images/bg/fondo-contacto.jpg) no-repeat center center;
@@ -931,17 +967,28 @@
 	}
 
 	#header-contacto2 {
-		position: relative;
+		position: absolute;
 		top: 20px;
 		margin-bottom: 0px;
 	}
 
 	#contacto2 h1 {
-		font-size: 36px;
+		font-size: 32px;
 	}
 
 	#contacto2 h2 {
-		font-size: 40px;
+		font-size: 38px;
+		line-height: 75px;
+	}
+
+	#check-lopd {
+		margin-top:30px;
+	}
+
+	#check-lopd a span {
+		color: #eb9837;
+		cursor: pointer;
+		text-decoration: underline;
 	}
 
 
@@ -1134,10 +1181,15 @@
 
 		#personas {
 			min-height: 100vh;
+			padding-top: 10px;
+		}
+
+		#personas h1 {
+			font-size: 22px;
 		}
 
 		#personas h3 {
-			font-size: 15px;
+			font-size: 12px;
 		}
 
 		.persona-item {
@@ -1153,6 +1205,11 @@
 
 		#logo-marcas {
 			margin-top: 25px;
+			transform: scale(0.8);
+		}
+
+		#elegir-modelo {
+			margin-top: 20px;
 		}
 
 		.modelo h1 {
