@@ -542,6 +542,110 @@
 
 
 
+	/* ================================================================================================ */
+	/* NUESTRAS MARCAS ================================================================================ */
+	/* ================================================================================================ */
+
+	#elegir {
+		background-color: #fff;
+		color: #000;
+		height: 100vh;
+		position: absolute;
+	}
+
+	#personas {
+		height: 100vh;
+		padding-top: 90px;
+		position: relative;
+		color: #000;
+	}
+
+	#header-personas {
+		text-align:  center;
+	}
+
+	#logo-marcas {
+		max-width: 350px;
+		height: auto;
+		margin-top: 10px;
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+
+	#logo-marcas img {
+		width: 100%;
+	}
+
+	.texto-modelo {
+		width: auto;
+		cursor: pointer;
+	}
+
+	.texto-modelo a {
+		color: #000;
+	}
+
+	.texto-modelo a:hover {
+		color: #eb9837;
+		-moz-transition: all 0.3s;
+		-o-transition: all 0.3s;
+		-webkit-transition: all 0.3s;
+		transition: all 0.3s;
+	}
+
+	.modelo img {
+		vertical-align: bottom;
+	}
+
+	#elegir-modelo {
+		max-width: 1200px;
+		min-height: 75vh;
+		margin-top: 55px;
+		margin-bottom: 50px;
+		position: relative;
+	}
+
+	.img-modelo img {
+		width: 100%;
+		height: auto;
+		position: relative;
+		cursor: pointer;
+	}
+
+	.img-modelo {
+		max-width: 600px;
+	}
+
+/*	#elegir_modelo img:hover {
+		transform: scale(0.9);
+		opacity: 0.9;
+		-webkit-transition: all 0.4s ease-in-out 0.5s;
+		-moz-transition   : all 0.4s ease-in-out 0.5s;
+		-o-transition     : all 0.4s ease-in-out 0.5s;
+		-ms-transition    : all 0.4s ease-in-out 0.5s;
+		transition        : all 0.4s ease-in-out 0.5s;
+
+	} */
+
+	.persona-item {
+		max-width: 447px;
+	}
+
+	#personas h1 {
+		margin-bottom: 20px;
+	}
+
+	.persona-item a:hover {
+		cursor: pointer;
+	}
+
+	.img-persona {
+		width: 100%;
+		height: auto;
+	}
+
+
+
 	/* ====================================================================================== */
 	/* QUIENES SOMOS ======================================================================== */
 	/* ====================================================================================== */
@@ -549,7 +653,7 @@
 	#quienes-somos {
 		width: 100%;
 		height: 100vh;
-		min-height: 770px;
+/*		min-height: 770px; */
 	}
 
 	#header-quienes-somos {
@@ -563,6 +667,14 @@
 
 	.texto-quienes-somos p {
 		line-height: 35px;
+	}
+
+	#logo-quienes-somos {
+		max-width: 400px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 70px;
+		padding-right: 70px;
 	}
 
 
@@ -586,16 +698,19 @@
 	}
 
 
+
+
 	#header-servicios h1 {
 		margin-bottom: 10px;
+
 	}
 
 
 
 	.servicios-item {
 		height: 40px;
-		margin-top: 30px;
-		margin-bottom: 30px;
+		margin-top: 25px;
+		margin-bottom: 25px;
 		color: #000;
 /*		border: 1px solid #999999;
 		border-radius: 5px 5px 5px 5px; */
@@ -618,146 +733,6 @@
 
 
 
-	/* ================================================================================================ */
-	/* NUESTRAS MARCAS ================================================================================ */
-	/* ================================================================================================ */
-
-	#elegir {
-		background-color: #fff;
-		color: #000;
-
-/*		height: auto; */
-		height: 100vh;
-		position: absolute;
-/*		visibility: hidden; */
-
-	}
-
-
-
-
-	/* ================================================================================================ */
-	/* NUESTRAS MARCAS ================================================================================ */
-	/* ================================================================================================ */
-
-	#personas {
-		height: 100vh;
-		padding-top: 90px;
-/*		min-height: 820px; */
-		position: relative;
-		color: #000;
-	}
-
-	#header-personas {
-
-		text-align:  center;
-	}
-
-
-	#logo-marcas {
-		max-width: 350px;
-		height: auto;
-		margin-top: 10px;
-		padding-left: 60px;
-		padding-right: 60px;
-	}
-
-	#logo-marcas img {
-		width: 100%;
-/*		margin-left: 50px;
-		margin-right: 50px;*/
-	}
-
-
-	.texto-modelo {
-		width: auto;
-		cursor: pointer;
-	}
-
-	.texto-modelo a {
-		color: #000;
-	}
-
-	.texto-modelo a:hover {
-		color: #eb9837;
-		-moz-transition: all 0.3s;
-		-o-transition: all 0.3s;
-		-webkit-transition: all 0.3s;
-		transition: all 0.3s;
-	}
-
-
-	.modelo img {
-		vertical-align: bottom;
-	}
-
-	#elegir-modelo {
-		max-width: 1200px;
-		min-height: 75vh;
-		margin-top: 55px;
-		margin-bottom: 50px;
-		position: relative;
-
-
-
-
-/*		-webkit-transition: all 0.4s ease-in-out 0.5s;
-		-moz-transition   : all 0.4s ease-in-out 0.5s;
-		-o-transition     : all 0.4s ease-in-out 0.5s;
-		-ms-transition    : all 0.4s ease-in-out 0.5s;
-		transition        : all 0.4s ease-in-out 0.5s; */
-
-	}
-
-	.img-modelo img {
-		width: 100%;
-		height: auto;
-
-		position: relative;
-		cursor: pointer;
-
-	}
-
-	.img-modelo {
-		max-width: 600px;
-/*		padding-left: 20px;
-		padding-right: 20px; */
-
-
-	}
-
-/*	#elegir_modelo img:hover {
-		transform: scale(0.9);
-		opacity: 0.9;
-		-webkit-transition: all 0.4s ease-in-out 0.5s;
-		-moz-transition   : all 0.4s ease-in-out 0.5s;
-		-o-transition     : all 0.4s ease-in-out 0.5s;
-		-ms-transition    : all 0.4s ease-in-out 0.5s;
-		transition        : all 0.4s ease-in-out 0.5s;
-
-	} */
-
-
-
-
-
-	.persona-item {
-		max-width: 447px;
-	}
-
-	#personas h1 {
-
-		margin-bottom: 20px;
-	}
-
-	.persona-item a:hover {
-		cursor: pointer;
-	}
-
-	.img-persona {
-		width: 100%;
-		height: auto;
-	}
 
 
 
@@ -1066,12 +1041,9 @@
 
 
 
-		#header-contrata-franquicia {
-			margin-top: 0px;
-			transform: scale(0.8);
-		}
 
-		#header-personas h1 {
+
+/*		#header-personas h1 {
 			margin-bottom: 30px;
 			transform: scale(0.8);
 		}
@@ -1079,7 +1051,7 @@
 		#header-servicios {
 			margin-bottom: 20px;
 			transform: scale(0.8);
-		}
+		} */
 
 
 
@@ -1151,6 +1123,11 @@
 			min-height: 100vh;
 		}
 
+		#header-contrata-franquicia {
+			margin-top: 0px;
+			transform: scale(0.8);
+		}
+
 		#textos-contrata-franquicia {
 			padding: 0px 10px 0px 10px;
 		}
@@ -1159,7 +1136,7 @@
 			padding: 0px 20px 0px 20px;
 		}
 
-		.texto-contrata-franquicia p, .texto-quienes-somos p {
+		.texto-contrata-franquicia p {
 			line-height: 12px;
 		}
 
@@ -1223,6 +1200,32 @@
 
 
 
+		/* ========================================================================== */
+		/* QUIENES SOMOS ============================================================ */
+		/* ========================================================================== */
+
+
+		#header-quienes-somos {
+			margin-top: 10px;
+		}
+
+		#header-quienes-somos h1 {
+			font-size: 20px;
+		}
+
+		#textos-quienes-somos {
+			padding: 0px;
+		}
+
+		.texto-quienes-somos {
+			padding: 0px 20px 0px 20px;
+		}
+
+		.texto-quienes-somos p {
+			line-height: 12px;
+		}
+
+
 
 		/* ========================================================================== */
 		/* PREGUNTAS FRECUENTES ===================================================== */
@@ -1233,24 +1236,41 @@
 		}
 
 		#servicios-panel {
-			margin-top: 0px;
+			margin-top: 10px;
 		}
 
+		#servicios-panel h1 {
+			margin-bottom: 40px;
+			font-size: 20px;
+		}
 
 		#servicios-panel h4 {
 			font-size: 12px;
 		}
 
 		.servicios-item {
+			height: auto;
 			margin-top: 5px;
 			margin-bottom: 5px;
-		}
-
-		.servicios-item {
-			height: auto;
 			background-color: transparent;
 			border: none;
 			border-bottom: 1px solid #999999;
+		}
+
+
+
+
+		/* ========================================================================== */
+		/* CONTACTO2 ================================================================ */
+		/* ========================================================================== */
+
+		#contacto2 h1 {
+			font-size: 22px;
+		}
+
+		#contacto2 h2 {
+			margin-bottom: 40px;
+			line-height: 20px;
 		}
 
 
