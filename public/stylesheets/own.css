@@ -791,32 +791,26 @@
 		padding-right: 		5%;
 		margin-top: 		40px;
 
-/*		vertical-align: top; */
 	}
 
 	#rrss-pie ul {
 		height: 100%;
-
 	}
 
 
 	.img-logo-sm {
 		width: auto;
-		margin-left:   10%;
+		margin-left:   11%;
 		display: inline-block;
-
 	}
 
 	.img-logo-sm img {
 		width: 40px;
 		height: auto;
 		vertical-align: middle;
-/*		align-content: middle; */
-
 	}
 
 	.img-logo-sm a {
-
 		cursor: pointer;
 	}
 
@@ -824,36 +818,44 @@
 
 	#marcas-pie {
 		width: 100%
-		margin-top: 80px;
-		margin-bottom: 84px;
-		padding-left: 13%;
-		padding-right: 10%;
+		margin-top: 70px;
+		margin-bottom: 65px;
+
 	}
 
 	.col-marca-pie {
+		height: auto;
+		display: flex;							/* necesario para alineacion */
+		align-items: center; 					/* alineacion vertical */
+		justify-content: center;				/* alineacion horizontal */
 
 	}
 
 	.img-marca-pie {
-
 		max-width: 250px;
-
 	}
 
 	.img-marca-pie img {
 		max-width: 100%;
 		height: auto;
-		margin-left: auto;
-		margin-right: auto;
 	}
 
 
 	#copyright {
 		width: 100%;
-		height: 60px;
+		min-height: 60px;
 		position: relative;
 		bottom: 0px;
 		background-color: #eb9837;
+		color: #fff;
+		display: flex;							/* necesario para alineacion */
+		align-items: center; 					/* alineacion vertical */
+		justify-content: center;				/* alineacion horizontal */
+	}
+
+	#copyright p {
+
+
 	}
 
 
@@ -1305,6 +1307,10 @@
 			padding-right: 		0%;
 
 
+		}
+
+		#copyright h4 {
+			font-size: 10px;
 		}
 
 
