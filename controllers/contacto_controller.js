@@ -95,7 +95,11 @@
 		contacto.alias = req.body.alias;
 		contacto.email = req.body.email;
 		contacto.emailok = req.body.emailok;
-		contacto.telefono = req.body.telefono;
+		if (req.body.telefono) {
+			contacto.telefono = req.body.telefono;
+		} else {
+			contacto.telefono = 0;
+		};
 		contacto.marca = req.body.marca;
 		contacto.ciudad = req.body.ciudad;
 		contacto.provincia = req.body.provincia;

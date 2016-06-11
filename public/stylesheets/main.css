@@ -283,12 +283,17 @@ ul li {
 	-webkit-transform: scale(1);
 	transform: scale(1);
 }
+
+
 .nav-toggle.close-nav span {
 	background-color: rgba(255, 255, 255, 0);
 }
 .nav-toggle.close-nav span:before, .nav-toggle.close-nav span:after {
 	background-color: #fff;
 }
+
+
+
 .nav-toggle.close-nav span:before {
 	-moz-transform: translateY(0) rotate(45deg);
 	-ms-transform: translateY(0) rotate(45deg);

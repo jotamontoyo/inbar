@@ -1,6 +1,7 @@
 
     $(document).ready(function() {
 
+
 /*        var myInterval = false;
         myInterval = setInterval(AutoScroll, 5000);
 
