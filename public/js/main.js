@@ -54,9 +54,8 @@ $(document).ready(function() {
 
 		$('.menu-inicio-item a').css('background-color', 'rgba(0, 0, 0, 0.9)');
 		$(this).css('text-decoration', 'none');
-		$(this).css('text-decoration', 'none');
 		$(this).css('background-color', '#eb9837');
-		$('#subir-inicio a').css('background-color', 'transparent'); 
+		$('#subir-inicio a').css('background-color', 'transparent');
 
 
 
