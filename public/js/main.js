@@ -52,17 +52,11 @@ $(document).ready(function() {
 
 
 
-		$('#menu-inicio a').css('color', 'white');
-
-/*		$('.menu-inicio-item a').hover(function() {
-			$(this).css('color', '#eb9837');
-		});
-		$('#menu-inicio a').on('mouseleave', function() {
-			$(this).css('color', 'white');
-		}); */
-
+		$('.menu-inicio-item a').css('background-color', 'rgba(0, 0, 0, 0.9)');
 		$(this).css('text-decoration', 'none');
-		$(this).css('color', '#eb9837');
+		$(this).css('text-decoration', 'none');
+		$(this).css('background-color', '#eb9837');
+		$('#subir-inicio a').css('background-color', 'transparent'); 
 
 
 

@@ -278,7 +278,7 @@
 /*		background-color: #BDBDBD; */
 /*		height: 	720px; */
 		height: 	100vh;
-		min-height: 620px;					/* si cambias este parametro, tambien el  #wrap */
+		min-height: 500px;					/* si cambias este parametro, tambien el  #wrap */
 /*		min-height: 100vh; */
 		overflow: 	hidden;
 
@@ -329,7 +329,7 @@
 	#wrap {
 		width: 100%;
 		height: auto;
-		min-height: 620px;						/* si cambias este parametro, tambien el  #inicio */
+		min-height: 500px;						/* si cambias este parametro, tambien el  #inicio */
 		position: absolute;
 		z-index: -1;
 		top: 0;
@@ -342,8 +342,8 @@
 	#wrap img.bgfade {
 		width: 100%;
 		min-width: 1200px;
-		height: 100%;
-/*		min-height: 100vh; */
+/*		height: 100%; */
+		min-height: 100%;
 		position: absolute;
 
 /*		margin: 0;
@@ -391,8 +391,8 @@
 		margin-left: auto;
 		position: fixed;
 		z-index: 3;
-		background: url(/images/bg-menu-inicio/fondo-menu-completo-negro.png) no-repeat center center;
-/*		background-color: rgba(255, 255, 255, 0.8); */
+/*		background: url(/images/bg-menu-inicio/fondo-menu-completo-negro.png) no-repeat center center; */
+		background-color: rgba(0, 0, 0, 0.9);
 		-moz-transition: all 0.3s;
 		-o-transition: all 0.3s;
 		-webkit-transition: all 0.3s;
@@ -426,6 +426,12 @@
 
 	.menu-inicio-item a:hover {
 		color: #eb9837;
+	}
+
+	.menu-inicio-item a:active, .menu-inicio-item a:focus,						/* elimina del dot alrededor */
+	.dropdown-menu-inicio-item a:hover, .dropdown-menu-inicio-item a:focus,
+	#subir-inicio a:hover, #subir-inicio a:focus {
+		outline: 0;
 	}
 
 /*	.menu-inicio-item li a:active {
@@ -479,6 +485,7 @@
 		visibility: hidden;
 		z-index: 2;
 
+
 		-moz-transition: all 0.3s;
 		-o-transition: all 0.3s;
 		-webkit-transition: all 0.3s;
@@ -486,6 +493,7 @@
 	}
 
 	#subir-inicio-icon {
+		background-color: transparent;
 		-moz-transition: all 0.3s;
 		-o-transition: all 0.3s;
 		-webkit-transition: all 0.3s;
