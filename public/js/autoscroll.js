@@ -79,9 +79,47 @@
 //        $('#wrap').css({'height':dg_H,'width':dg_W});
         $('#wrap').css({'height':'100vh','width':'100%'});
         function anim() {
-            $("#wrap img.bgfade").first().appendTo('#wrap').fadeOut(8000);
-            $("#wrap img").first().fadeIn(8000);
-            setTimeout(anim, 12000);
+
+//            $("#wrap img.bgfade").first().appendTo('#wrap').fadeOut(8000);
+
+
+            $("#wrap img.bgfade").first().appendTo('#wrap').fadeOut(function() {
+
+                $("#wrap").css({
+                    width: '110%',
+                    height: '110%',
+                    top: 0,
+
+//                    opacity: 0.3
+                })
+                .animate({
+                    width: '100%',
+                    height: '100%',
+                    top: 0,
+//                    opacity: 1
+                }, 14000)
+
+            });
+
+/*            $(function(){
+                $("#wrap").css({
+                    width: '400%',
+                    height: '400%',
+                    top: '-300%',
+                    opacity: 0
+                })
+                .animate({
+                    width: '100%',
+                    height: '100%',
+                    top: 0,
+                    opacity: 1
+                }, 3000)
+            }); */
+
+
+
+            $("#wrap img").first().fadeIn(3000);
+            setTimeout(anim, 18000);
         }
         anim();
 

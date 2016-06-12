@@ -282,6 +282,7 @@
 /*		min-height: 100vh; */
 		overflow: 	hidden;
 
+
 	}
 
 	#logo-inicio {
@@ -325,6 +326,12 @@
 	}
 
 
+	#inicio-animacion {
+
+		max-height: 100vh;
+		overflow: hidden;
+	}
+
 
 	#wrap {
 		width: 100%;
@@ -335,9 +342,15 @@
 		top: 0;
 		left: 0;
 /*		background-color: black; */
-		overflow: 	hidden;
+
+
 
 	}
+
+	body, html
+        {
+            overflow-x: hidden;
+        }
 
 	#wrap img.bgfade {
 		width: 100%;
@@ -345,6 +358,7 @@
 /*		height: 100%; */
 		min-height: 100%;
 		position: absolute;
+
 
 /*		margin: 0;
 	    top: 0;
@@ -529,6 +543,7 @@
 		width: 100%;
 		height: 100vh;
 		min-height: 720px;
+
 	}
 
 	#header-contrata-franquicia {
