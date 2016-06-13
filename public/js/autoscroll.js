@@ -1,7 +1,7 @@
 
     $(document).ready(function() {
 
-        $(window).screen.lockOrientation('portrait');
+//        $(window).screen.lockOrientation('portrait');
 
 /*        var myInterval = false;
         myInterval = setInterval(AutoScroll, 5000);
