@@ -3,7 +3,7 @@
 
 
 body { display:block; }
-@media only screen and (orientation:portrait){
+@media only screen and (orientation:landscape){
 body {
 height: 100vw;
 -webkit-transform: rotate(90deg);
@@ -13,8 +13,8 @@ height: 100vw;
 transform: rotate(90deg);
 }
 }
-@media only screen and (orientation:landscape){
-body {  
+@media only screen and (orientation:portrait){
+body {
  -webkit-transform: rotate(0deg);
  -moz-transform: rotate(0deg);
  -o-transform: rotate(0deg);
