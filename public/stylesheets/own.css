@@ -2,24 +2,24 @@
 /*	@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700); */
 
 
-body { display:block; }
-@media only screen and (orientation:landscape){
-body {
-height: 100vw;
--webkit-transform: rotate(90deg);
--moz-transform: rotate(90deg);
--o-transform: rotate(90deg);
--ms-transform: rotate(90deg);
-transform: rotate(90deg);
-}
-}
+
 @media only screen and (orientation:portrait){
 body {
- -webkit-transform: rotate(0deg);
- -moz-transform: rotate(0deg);
- -o-transform: rotate(0deg);
- -ms-transform: rotate(0deg);
- transform: rotate(0deg);
+height: 100vw;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+-ms-transform: rotate(0deg);
+transform: rotate(0deg);
+}
+}
+@media only screen and (orientation:landscape){
+body {
+ -webkit-transform: rotate(90deg);
+ -moz-transform: rotate(90deg);
+ -o-transform: rotate(90deg);
+ -ms-transform: rotate(90deg);
+ transform: rotate(90deg);
 }
 }
 
