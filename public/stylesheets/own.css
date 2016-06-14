@@ -3,9 +3,8 @@
 
 
 
-@media only screen and (orientation:portrait){
+/* @media only screen and (orientation:portrait){
 html {
-/* height: 100vw;*/
 -webkit-transform: rotate(0deg);
 -moz-transform: rotate(0deg);
 -o-transform: rotate(0deg);
@@ -21,6 +20,16 @@ html {
  -ms-transform: rotate(0deg);
  transform: rotate(0deg);
 }
+} */
+
+@media screen and (orientation:landscape) {
+  html {
+    -ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+
+    overflow: scroll;
+  }
 }
 
 	@font-face {
