@@ -1,25 +1,29 @@
 
 /*	@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700); */
 
-	#portrait {display: block}
-	@media only screen and (orientation:portrait){
-	#portrait {
-	-webkit-transform: rotate(0deg);
-	-moz-transform: rotate(0deg);
-	-o-transform: rotate(0deg);
-	-ms-transform: rotate(0deg);
-	transform: rotate(0deg);
+/*	#portrait {
+		display: block;
+		z-index: 1000;
 	}
+
+	@media only screen and (orientation:portrait){
+		#portrait {
+			-webkit-transform: rotate(90deg);
+			-moz-transform: rotate(90deg);
+			-o-transform: rotate(90deg);
+			-ms-transform: rotate(90deg);
+			transform: rotate(90deg);
+		}
 	}
 	@media only screen and (orientation:landscape){
-	#portrait {
-	 -webkit-transform: rotate(-90deg);
-	 -moz-transform: rotate(-90deg);
-	 -o-transform: rotate(-90deg);
-	 -ms-transform: rotate(-90deg);
-	 transform: rotate(-90deg);
-	}
-	}
+		#portrait {
+			-webkit-transform: rotate(0deg);
+			-moz-transform: rotate(0deg);
+			-o-transform: rotate(0deg);
+			-ms-transform: rotate(0deg);
+			transform: rotate(0deg);
+		}
+	} */
 
 
 	@font-face {
@@ -299,7 +303,7 @@
 /*		background-color: #BDBDBD; */
 /*		height: 	720px; */
 		height: 	100vh;
-		min-height: 500px;					/* si cambias este parametro, tambien el  #wrap */
+		min-height: 700px;					/* si cambias este parametro, tambien el  #wrap */
 /*		min-height: 100vh; */
 		overflow: 	hidden;
 
@@ -357,19 +361,19 @@
 	#wrap {
 		width: 100%;
 
-
 /*		height: auto; */
 		max-height: 100vh;
-
-
-		min-height: 500px;						/* si cambias este parametro, tambien el  #inicio */
+		min-height: 700px;						/* si cambias este parametro, tambien el  #inicio */
 		position: absolute;
 		z-index: -1;
-		top: 0;
+
+/*		top: 0; */
+		right: 0;
 		left: 0;
+
 /*		background-color: black; */
 
-
+		overflow: hidden;
 
 	}
 
@@ -380,11 +384,20 @@
 
 	#wrap img.bgfade {
 		width: 100%;
+
+
 		min-width: 1200px;
-		height: 100%;
-		min-height: 100%;
+
+		height: auto;
+		min-height: 100vh;
+
+
+
+/*		min-height: 100%;*/
+
 		position: absolute;
 
+		overflow: hidden;
 
 /*		margin: 0;
 	    top: 0;
@@ -399,6 +412,8 @@
 /*		margin-top: -450px;				/* centrado y */
 /*		left: 50%;						/* centrado x */
 /*		top: 50%;						/* centrado y */
+
+
 
 
 		z-index: -1;
@@ -1220,6 +1235,10 @@
 
 		#personas h3 {
 			font-size: 12px;
+		}
+
+		#personas h2 {
+			font-size: 18px;
 		}
 
 		.persona-item {

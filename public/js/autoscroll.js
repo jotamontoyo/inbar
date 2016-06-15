@@ -79,48 +79,50 @@
 //        var dg_W = $(window).width();
 //        $('#wrap').css({'height':dg_H,'width':dg_W});
         $('#wrap').css({'height':'100vh','width':'100%'});
+
         function anim() {
 
-//            $("#wrap img.bgfade").first().appendTo('#wrap').fadeOut(8000);
+            $("#wrap img.bgfade").first().appendTo('#wrap').fadeOut(000);
 
 
-            $("#wrap img.bgfade").first().appendTo('#wrap').fadeOut(function() {
 
-                $("#wrap").css({
+//            $("#wrap img.bgfade").first().appendTo('#wrap').fadeOut(2000, function()
+/*                $("#wrap").css({
                     width: '110%',
                     height: '110%',
-                    top: 0,
+//                    top: 0,
 
 //                    opacity: 0.3
                 })
                 .animate({
                     width: '100%',
                     height: '100%',
-                    top: 0,
+//                    top: 0,
 //                    opacity: 1
                 }, 14000)
 
-            });
+            }); */
 
-/*            $(function(){
+            $(function(){
                 $("#wrap").css({
-                    width: '400%',
-                    height: '400%',
-                    top: '-300%',
-                    opacity: 0
+                    width: '110%',
+                    height: '110%',
+//                    top: 0,
+
+//                    opacity: 0.3
                 })
                 .animate({
                     width: '100%',
                     height: '100%',
-                    top: 0,
-                    opacity: 1
-                }, 3000)
-            }); */
+//                    top: 0,
+//                    opacity: 1
+                }, 14000)
+            });
 
 
 
             $("#wrap img").first().fadeIn(3000);
-            setTimeout(anim, 18000);
+            setTimeout(anim, 16000);
         }
         anim();
 
