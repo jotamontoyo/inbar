@@ -560,6 +560,10 @@
 		height: 40px;
 	}
 
+	.boton-pie-seccion a:hover {
+		color: white;
+	}
+
 	.btn-info-gral {
 		width: 180px;
 
@@ -567,6 +571,7 @@
 		position: relative;
 /*		bottom: 0px; */
 		margin-top: 50px;
+		background-color: black;
 		color: #eb9837;
 		text-align: center;
 		border: 2px solid #000;
@@ -658,6 +663,7 @@
 	}
 
 	.modelo img {
+		max-width: 40px;
 		vertical-align: bottom;
 	}
 
