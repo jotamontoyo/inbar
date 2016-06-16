@@ -121,7 +121,7 @@
 
 
 
-            $("#wrap img").first().fadeIn(3000);
+            $("#wrap img").first().fadeIn(2000);
             setTimeout(anim, 16000);
         }
         anim();

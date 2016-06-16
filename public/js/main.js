@@ -47,7 +47,7 @@ $(document).ready(function() {
 
 		$('html, body').animate({
 			scrollTop: $(id).offset().top // +76
-		}, 500);
+		}, 800);
 
 
 
