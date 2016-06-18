@@ -303,7 +303,7 @@
 /*		background-color: #BDBDBD; */
 /*		height: 	720px; */
 		height: 	100vh;
-		min-height: 700px;					/* si cambias este parametro, tambien el  #wrap */
+		min-height: 550px;					/* si cambias este parametro, tambien el  #wrap */
 /*		min-height: 100vh; */
 		overflow: 	hidden;
 
@@ -363,7 +363,7 @@
 
 /*		height: auto; */
 		max-height: 100vh;
-		min-height: 700px;						/* si cambias este parametro, tambien el  #inicio */
+		min-height: 550px;						/* si cambias este parametro, tambien el  #inicio */
 		position: absolute;
 		z-index: -1;
 
@@ -588,7 +588,7 @@
 	#contrata-franquicia {
 		width: 100%;
 		height: 100vh;
-		min-height: 720px;
+		min-height: 550px;
 
 	}
 
@@ -624,6 +624,7 @@
 
 	#personas {
 		height: 100vh;
+		min-height: 550px;
 		padding-top: 90px;
 		position: relative;
 		color: #000;
@@ -683,7 +684,7 @@
 	}
 
 	.img-modelo {
-		max-width: 600px;
+		max-width: 300px;
 	}
 
 /*	#elegir_modelo img:hover {
@@ -723,7 +724,7 @@
 	#quienes-somos {
 		width: 100%;
 		height: 100vh;
-/*		min-height: 770px; */
+		min-height: 550px;
 	}
 
 	#header-quienes-somos {
@@ -740,7 +741,7 @@
 	}
 
 	#logo-quienes-somos {
-		max-width: 400px;
+		max-width: 350px;
 		margin-left: auto;
 		margin-right: auto;
 		padding-left: 70px;
@@ -754,7 +755,7 @@
 
 	#servicios {
 		height: 100vh;
-/*		min-height: 780px; */
+		min-height: 550px;
 		margin-left: 0px;
 		margin-right: 0px;
 		position: relative;
@@ -779,8 +780,8 @@
 
 	.servicios-item {
 		height: 40px;
-		margin-top: 25px;
-		margin-bottom: 25px;
+		margin-top: 20px;
+		margin-bottom: 20px;
 		color: #000;
 /*		border: 1px solid #999999;
 		border-radius: 5px 5px 5px 5px; */
