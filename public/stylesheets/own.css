@@ -52,6 +52,8 @@
 		font-family     : 'Kalinga', Calibri, Arial, sans-serif;
 /*		text-shadow     : 0 1px 0 rgba(255, 255, 255, 0.8); */
 		padding-bottom  : 0;
+		overflow-x: hidden;
+
 	}
 
 	ol, ul {
@@ -377,10 +379,6 @@
 
 	}
 
-	body, html
-        {
-            overflow-x: hidden;
-        }
 
 	#wrap img.bgfade {
 		width: 100%;
@@ -755,7 +753,7 @@
 
 	#servicios {
 		height: 100vh;
-		min-height: 550px;
+		min-height: 600px;
 		margin-left: 0px;
 		margin-right: 0px;
 		position: relative;
@@ -780,8 +778,8 @@
 
 	.servicios-item {
 		height: 40px;
-		margin-top: 20px;
-		margin-bottom: 20px;
+		margin-top: 15px;
+		margin-bottom: 15px;
 		color: #000;
 /*		border: 1px solid #999999;
 		border-radius: 5px 5px 5px 5px; */
@@ -984,19 +982,21 @@
 
 	/* CONTACTO2 =================================================================================== */
 
-/*	#img-bg-contacto2 {
+	#img-bg-contacto2 {
 		max-width: 100%;
 		height: auto;
+		min-height: 100vh;
+
 		position: absolute;
 		top: 0;
 		right: 0;
 		bottom: 0;
 		left: 0;
-	} */
+	}
 
 	#contacto2 {
 /*		background-color: 	rgba(0, 0, 0, 1); */
-		background: url(/images/bg/fondo-contacto.jpg) no-repeat center center;
+/*		background: url(/images/bg/fondo-contacto.jpg) no-repeat center center; */
 		width: 				100%;
 		height: 			100vh;
 		vertical-align: 	middle;
@@ -1015,9 +1015,11 @@
 	}
 
 	#header-contacto2 {
-		position: absolute;
-		top: 20px;
-		margin-bottom: 0px;
+		position: relative;
+		display: flex;							/* necesario para alineacion */
+		align-items: center; 					/* alineacion vertical */
+		justify-content: center;				/* alineacion horizontal */
+
 	}
 
 	#contacto2 h1 {
@@ -1100,7 +1102,6 @@
 	/* ========================================================================================================== */
 
 
-
 	@media handheld, only screen and (max-width: 767px) {			/* movil */
 
 
@@ -1114,20 +1115,23 @@
 		}
 
 
+		/* ================================================================== */
+		/* ANIMACION INICIO ================================================= */
+		/* ================================================================== */
 
 
 
+		.bgfade img {
+			width: 100%;
+			min-height: auto;
 
-/*		#header-personas h1 {
-			margin-bottom: 30px;
-			transform: scale(0.8);
 		}
 
-		#header-servicios {
-			margin-bottom: 20px;
-			transform: scale(0.8);
-		} */
 
+
+		/* ================================================================== */
+		/* MENU INICIO ====================================================== */
+		/* ================================================================== */
 
 
 		#menu-inicio {
@@ -1495,6 +1499,7 @@
 
 
 	}
+}
 
 
 
