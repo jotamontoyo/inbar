@@ -82,7 +82,7 @@
 
         function anim() {
 
-            $("#wrap img.bgfade").first().appendTo('#wrap').fadeOut(000);
+            $("#wrap img.bgfade").first().appendTo('#wrap').fadeOut(4000);
 
 
 
@@ -103,7 +103,7 @@
 
             }); */
 
-            $(function(){
+/*            $(function(){
                 $("#wrap").css({
                     width: '110%',
                     height: '110%',
@@ -117,12 +117,12 @@
 //                    top: 0,
 //                    opacity: 1
                 }, 14000)
-            });
+            }); */
 
 
 
-            $("#wrap img").first().fadeIn(2000);
-            setTimeout(anim, 16000);
+            $("#wrap img").first().fadeIn(4000);
+            setTimeout(anim, 14000);
         }
         anim();
 

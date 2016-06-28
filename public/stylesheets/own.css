@@ -354,47 +354,43 @@
 
 
 	#inicio-animacion {
-
-
 		overflow: hidden;
 	}
 
 
 	#wrap {
-		width: 100%;
+		max-width: 100%;
+		height: 100%;
 
-/*		height: auto; */
-		max-height: 100vh;
+/*		height: 100vh; */
 		min-height: 550px;						/* si cambias este parametro, tambien el  #inicio */
 		position: absolute;
 		z-index: -1;
 
 /*		top: 0; */
 		right: 0;
-		left: 0;
+/*		left: 0;
 
 /*		background-color: black; */
 
 		overflow: hidden;
 
+
+
+
 	}
 
 
 	#wrap img.bgfade {
+
 		width: 100%;
+		min-width: 700px;
 
-
-		min-width: 1200px;
-
-		height: auto;
+		height: 100%;
 		min-height: 100vh;
-
-
-
 /*		min-height: 100%;*/
 
-		position: absolute;
-
+		position: relative;
 		overflow: hidden;
 
 /*		margin: 0;
@@ -404,17 +400,15 @@
 	    bottom: 0; */
 
 
-
-
 /*		margin-left: -800px;			/* centrado x */
 /*		margin-top: -450px;				/* centrado y */
 /*		left: 50%;						/* centrado x */
 /*		top: 50%;						/* centrado y */
 
+		z-index: -1000;
 
 
 
-		z-index: -1;
 	}
 
 /*	.alerta {
@@ -443,7 +437,7 @@
 		margin-right: auto;
 		margin-left: auto;
 		position: fixed;
-		z-index: 3;
+		z-index: 10000;
 /*		background: url(/images/bg-menu-inicio/fondo-menu-completo-negro.png) no-repeat center center; */
 		background-color: rgba(0, 0, 0, 0.9);
 		-moz-transition: all 0.3s;
@@ -458,6 +452,7 @@
 		padding: 0px; */
 		position: relative;
 
+
 	}
 
 	.menu-inicio-item {
@@ -470,6 +465,7 @@
 
 	.menu-inicio-item, .dropdown-menu-inicio-item {						/* estilo de cada item del menu-inicio y de cada item de los dropdown */
 		padding: 20px 0px 10px 0px;										/* modifica autoscroll.js */
+
 	}
 
 	.menu-inicio-item a {
@@ -587,7 +583,7 @@
 		width: 100%;
 		height: 100vh;
 		min-height: 550px;
-
+		z-index: -1000;
 	}
 
 	#header-contrata-franquicia {
@@ -601,6 +597,7 @@
 
 	.texto-contrata-franquicia {
 		padding: 0px 40px 0px 40px;
+		z-index: -1000;
 	}
 
 	.texto-contrata-franquicia p {
@@ -618,6 +615,8 @@
 		color: #000;
 		height: 100vh;
 		position: absolute;
+
+
 	}
 
 	#personas {
@@ -626,10 +625,12 @@
 		padding-top: 90px;
 		position: relative;
 		color: #000;
+		z-index: -1000;
 	}
 
 	#header-personas {
 		text-align:  center;
+
 	}
 
 	#logo-marcas {
@@ -638,6 +639,7 @@
 		margin-top: 10px;
 		padding-left: 60px;
 		padding-right: 60px;
+
 	}
 
 	#logo-marcas img {
@@ -758,7 +760,7 @@
 		margin-right: 0px;
 		position: relative;
 		background-color: white;
-
+		z-index: -1000;
 	}
 
 	#servicios-panel {
@@ -1005,6 +1007,7 @@
 		padding-right: 		5%;
 		color: white;
 		position: 			relative;
+		z-index: -1000;
 		overflow: 			hidden;
 		display: 			-webkit-flex;
 		display: 			flex;
@@ -1119,11 +1122,20 @@
 		/* ANIMACION INICIO ================================================= */
 		/* ================================================================== */
 
+		#wrap {
+			max-width: 100%;
+			min-width: 100%;
+			height: auto;
+			margin-left: -150px;
+/*			max-height: 100vh;
+			min-height: 550px;						/* si cambias este parametro, tambien el  #inicio */
 
+		}
 
-		.bgfade img {
-			width: 100%;
-			min-height: auto;
+		#wrap img.bgfade {
+			max-width: 100%;
+			margin-left: -100px;
+
 
 		}
 
