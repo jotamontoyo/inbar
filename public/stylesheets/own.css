@@ -175,10 +175,14 @@
 	}
 
 
+
+
 	#modal-elsol, #modal-mediterraneo, #modal-after {
-		max-width: 800px;
+		width: 80%;
 		color:	rgb(255, 255, 255);
 	}
+
+
 
 	/* ESTILOS DEL MODAL-MENU ABRE TU FRANQUICIA ======================================================= */
 	#modal-elegir-franquicia {
@@ -995,9 +999,9 @@
 	/* CONTACTO2 =================================================================================== */
 
 	#img-bg-contacto2 {
-		max-width: 100%;
-		height: auto;
-		min-height: 100vh;
+		min-width: 100vw;
+
+		height: 100%;
 
 		position: absolute;
 		top: 0;
@@ -1123,6 +1127,7 @@
 		}
 
 		.ocultar-pc {
+
 			display: block;
 		}
 
@@ -1267,7 +1272,7 @@
 		}
 
 		#personas h3 {
-			font-size: 12px;
+			font-size: 18px;
 		}
 
 		#personas h2 {
@@ -1296,8 +1301,10 @@
 
 		.texto-modelo {
 			margin-top: 10px;
+			margin-bottom: 50px;
 
 		}
+
 
 /*		.modelo h1 {
 			font-size: 12px;
