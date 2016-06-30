@@ -52,9 +52,10 @@ $(document).ready(function() {
 
 
 
-		$('.menu-inicio-item a').css('background-color', 'rgba(0, 0, 0, 0.9)');
+		$('.menu-inicio-item a').css('color', 'white');
 		$(this).css('text-decoration', 'none');
-		$(this).css('background-color', '#eb9837');
+//		$(this).css('background-color', '#eb9837');
+		$(this).css('color', '#eb9837');
 		$('#subir-inicio a').css('background-color', 'transparent');
 
 
