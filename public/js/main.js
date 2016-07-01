@@ -65,7 +65,6 @@ $(document).ready(function() {
 
 
 
-
 	// Mobile Navigation
 	$('.nav-toggle').on('click', function() {
 		$(this).toggleClass('close-nav');

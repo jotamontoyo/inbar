@@ -74,11 +74,44 @@
         $('img.bgfade').hide();
         $('#wrap').css({'height':'100vh','width':'100%'});
         function anim() {
-            $("#wrap img.bgfade").first().appendTo('#wrap').fadeOut(6000);
+            $("#wrap img.bgfade").first().appendTo('#wrap').fadeOut(4000);
             $("#wrap img").first().fadeIn(2000);
             setTimeout(anim, 10000);
         }
         anim();
+
+
+        $('.persona a img').hover(
+            function() {
+                $(this).attr("src", "/images/btn/btn-ver-mas-a-over.jpg");
+            },
+            function() {
+                $(this).attr("src","/images/btn/btn-ver-mas-a.jpg");
+            });
+
+        $('#persona-1').hover(
+            function() {
+                $(this).attr("src", "/images/rrhh/antonio-mazon-pastor-color.jpg").delay(6000);
+            },
+            function() {
+                $(this).attr("src","/images/rrhh/antonio-mazon-pastor-BN.jpg");
+            });
+
+        $('#persona-2').hover(
+            function() {
+                $(this).attr("src", "/images/rrhh/rodrigo-ramirez-herrera-color.jpg").delay(6000);
+            },
+            function() {
+                $(this).attr("src","/images/rrhh/rodrigo-ramirez-herrera-BN.jpg");
+            });
+
+        $('#persona-3').hover(
+            function() {
+                $(this).attr("src", "/images/rrhh/antonio-mazon-pastor-color.jpg").delay(6000);
+            },
+            function() {
+                $(this).attr("src","/images/rrhh/antonio-mazon-pastor-BN.jpg");
+            });
 
     });
 
