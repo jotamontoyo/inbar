@@ -831,9 +831,6 @@
 		position: relative;
 		margin-top: 50px;
 
-
-
-
 	}
 
 
@@ -853,12 +850,25 @@
 		padding-right: 15px;
 	}
 
-
-	.faq {
+	.panel-group .panel {
 		margin-top: 7vh;
 		margin-bottom: 7vh;
 
-		border-bottom: 1px solid #c6c7cc;
+		border: none;
+		border-radius: 0;
+		box-shadow: none;
+		border-bottom: 1px solid #c6c7cc ;
+
+	}
+
+	.panel-default > .panel-heading {
+		background-color: transparent;
+		background-image: none;
+
+	}
+
+	.faq {
+
 
 	}
 
@@ -1461,10 +1471,15 @@
 			font-size: 12px;
 		}
 
-
-		.faq {
+		.panel-group .panel {
 			margin-top: 2vh;
 			margin-bottom: 2vh;
+
+
+		}
+
+
+		.faq {
 
 		}
 
