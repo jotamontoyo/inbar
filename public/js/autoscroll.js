@@ -71,7 +71,7 @@
         });
 
 
-        $('img.bgfade').hide();
+        $('img.bgfade').hide();                                                     // transicion inico
         $('#wrap').css({'height':'100vh','width':'100%'});
         function anim() {
             $("#wrap img.bgfade").first().appendTo('#wrap').fadeOut(4000);
@@ -81,7 +81,7 @@
         anim();
 
 
-        $('.persona a img').hover(
+        $('.persona a img').hover(                                                  // boton e imagen de perfiles rrhh
             function() {
                 $(this).attr("src", "/images/btn/btn-ver-mas-a-over.jpg");
             },
@@ -112,6 +112,19 @@
             function() {
                 $(this).attr("src","/images/rrhh/antonio-mazon-pastor-BN.jpg");
             });
+
+
+
+/*        $('.faq a').on('click', function() {
+            $('.faq a').css('color', 'black');
+
+            $(this).css('color', '#eb9837');
+            $(this).on('collapse', function() {
+                $(this).css('color', 'black');
+            };
+
+        }) */
+
 
     });
 

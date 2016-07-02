@@ -169,7 +169,7 @@
 
 	/* MODALS ==================================================================== */
 
-	#panel-elegir-franquicia, #panel-mediterraneo, #panel-elsol, #panel-after {
+	#panel-elegir-franquicia, #panel-mediterraneo, #panel-elsol, #panel-after, #panel-mas-preguntas {
 		padding-left: 0px;
 
 	}
@@ -177,11 +177,15 @@
 
 
 
-	#modal-elsol, #modal-mediterraneo, #modal-after {
+	#modal-elsol, #modal-mediterraneo, #modal-after, #modal-mas-preguntas {
 		width: 80%;
 		color:	rgb(255, 255, 255);
 	}
 
+
+	#modal-content-mas-preguntas .modal-header, .modal-footer {
+		border: none;
+	}
 
 
 	/* ESTILOS DEL MODAL-MENU ABRE TU FRANQUICIA ======================================================= */
@@ -204,7 +208,7 @@
 	/* ====================================================================================================*/
 
 
-	#modal-content-menu-franquicia, #modal-content-mediterraneo, #modal-content-elsol, #modal-content-after {
+	#modal-content-menu-franquicia, #modal-content-mediterraneo, #modal-content-elsol, #modal-content-after, #modal-content-mas-preguntas {
 
 		background: rgba(76,76,76,1);
 		background: -moz-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 10%, rgba(102,102,102,1) 20%, rgba(71,71,71,1) 41%, rgba(44,44,44,1) 53%, rgba(0,0,0,1) 78%, rgba(17,17,17,1) 85%, rgba(19,19,19,1) 92%, rgba(28,28,28,1) 100%);
@@ -559,6 +563,7 @@
 	.boton-pie-seccion {
 		width: 180px;
 		height: 40px;
+		margin-top: 10vh;
 	}
 
 	.boton-pie-seccion a:hover {
@@ -571,7 +576,11 @@
 
 		position: relative;
 /*		bottom: 0px; */
-		margin-top: 50px;
+
+
+/*		margin-top: 50px; */
+
+
 /*		background-color: black; */
 		color: #eb9837;
 		text-align: center;
@@ -809,8 +818,8 @@
 	/* ================================================================================= */
 
 	#servicios {
-		height: 100vh;
-		min-height: 600px;
+		height: auto;
+		min-height: 100vh;
 		margin-left: 0px;
 		margin-right: 0px;
 		position: relative;
@@ -821,6 +830,10 @@
 	#servicios-panel {
 		position: relative;
 		margin-top: 50px;
+
+
+
+
 	}
 
 
@@ -833,10 +846,42 @@
 
 
 
+
+
+	#faq-panel {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+
+	.faq {
+		margin-top: 7vh;
+		margin-bottom: 7vh;
+
+		border-bottom: 1px solid #c6c7cc;
+
+	}
+
+	.faq a:hover {
+		color: #eb9837;
+
+	}
+
+	.faq a:active, .faq a:focus {
+		color: #eb9837;
+		text-decoration: none;
+		outline: none;
+	}
+
+
+
+
+
 	.servicios-item {
 		height: 40px;
 		margin-top: 15px;
 		margin-bottom: 15px;
+
 		color: #000;
 /*		border: 1px solid #999999;
 		border-radius: 5px 5px 5px 5px; */
@@ -1399,6 +1444,7 @@
 		/* ========================================================================== */
 
 		#servicios {
+			height: auto;
 			min-height: 100vh;
 		}
 
@@ -1413,6 +1459,13 @@
 
 		#servicios-panel h4 {
 			font-size: 12px;
+		}
+
+
+		.faq {
+			margin-top: 2vh;
+			margin-bottom: 2vh;
+
 		}
 
 		.servicios-item {
