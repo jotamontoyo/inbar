@@ -88,6 +88,9 @@
 	};
 
 	exports.webcreate = function(req, res) {											// POST /contacto/webcreate
+
+		var aviso = req.body.aviso;
+
 		var contacto = models.Contacto.build( 											// crea el objeto contacto, lo construye con buid() metodo de sequilize
 			{nombre: "Nombre", alias: "Alias", email: "eMail", emailok: "eMailok", telefono: "Teléfono", marca: "Marca", ciudad: "Ciudad", provincia: "Provincia", comentario: "Comentario", lopd: false, revisado: false}		// asigna literales a los campos para que se vea el texto en el <input> cuando creemos el formulario
 		);
@@ -118,6 +121,8 @@
 			.then(function() {
 
 //				res.redirect('/contactos/enviado');
+
+//				res.aviso.className = 'show';
 
 				res.redirect('/');
 
