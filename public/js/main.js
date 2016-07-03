@@ -59,7 +59,7 @@
 		});
 
 		// Mobile Navigation
-		$('.nav-toggle').on('click', function() {
+/*		$('.nav-toggle').on('click', function() {
 			$(this).toggleClass('close-nav');
 			nav.toggleClass('open');
 			return false;
@@ -68,6 +68,11 @@
 		nav.find('a').on('click', function() {
 			$('.nav-toggle').toggleClass('close-nav');
 			nav.toggleClass('open');
+		}); */
+
+		$('.nav a').on('click', function(){										// cierra .nav cuando click
+    		$('.btn-navbar').click();
+    		$('.navbar-toggle').click(); 
 		});
 
 /*		$('#enviar').on('click', function() {

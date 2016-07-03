@@ -447,9 +447,9 @@
 
 		position: fixed;
 
- 		z-index: 3;
+		z-index: 3;
 
-/*		background: url(/images/bg-menu-inicio/fondo-menu-completo-negro.png) no-repeat center center; */
+/*		background: url(/images/logos/inbaar-pie.jpg) no-repeat center center; */
 		background-color: rgba(0, 0, 0, 0.8);
 		-moz-transition: all 0.3s;
 		-o-transition: all 0.3s;
@@ -1272,7 +1272,8 @@
 		#menu-inicio {
 			margin-top: 30px;
 			position: absolute;
-			background: ;
+/*			background: url(/images/logos/inbaar-pie.jpg) no-repeat center center; */
+			background: transparent;
 
 		}
 
