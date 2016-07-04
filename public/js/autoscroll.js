@@ -115,17 +115,6 @@
 
 
 
-/*        $('.faq a').on('click', function() {
-            $('.faq a').css('color', 'black');
-
-            $(this).css('color', '#eb9837');
-            $(this).on('collapse', function() {
-                $(this).css('color', 'black');
-            };
-
-        }) */
-
-
     });
 
 

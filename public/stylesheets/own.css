@@ -82,8 +82,8 @@
 	.navbar-toggle {									/* estilos boton toggle del menu-inicio */
 		width: 45px;
 		height: 45px;
-		background-color: rgba(256, 256, 256, 0.6);
-		right: 25px;
+		background-color: rgba(0, 0, 0, 1);
+
 	}
 
 	.navbar-collapse, .navbar-collapse.collapse.in, .col-md-2 {
@@ -481,6 +481,7 @@
 
 	.menu-inicio-item a {
 		cursor: pointer;
+		text-decoration: none;
 /*		color: #fff; */
 	}
 
@@ -488,9 +489,10 @@
 		color: #eb9837;
 	}
 
-	.menu-inicio-item a:active, .menu-inicio-item a:focus,						/* elimina del dot alrededor */
+	.menu-inicio-item a:active, .menu-inicio-item a:focus,						/* elimina del dot alrededor y activa color */
 	.dropdown-menu-inicio-item a:hover, .dropdown-menu-inicio-item a:focus,
 	#subir-inicio a:hover, #subir-inicio a:focus {
+		color: #eb9837;
 		outline: 0;
 	}
 
@@ -618,7 +620,7 @@
 	}
 
 	.texto-contrata-franquicia p {
-		line-height: 35px;
+		line-height: 5vh;
 	}
 
 
@@ -627,14 +629,12 @@
 	/* NUESTRAS MARCAS ================================================================================ */
 	/* ================================================================================================ */
 
-	#elegir {
+/*	#elegir {
 		background-color: #fff;
 		color: #000;
-		height: 100vh;
+		height: auto;
 		position: absolute;
-
-
-	}
+	} */
 
 	#personas {
 		height: 100vh;
@@ -1011,6 +1011,12 @@
 
 	}
 
+	.centrado-v-h {
+		display: flex;							/* necesario para alineacion */
+		align-items: center; 					/* alineacion vertical */
+		justify-content: center;				/* alineacion horizontal */
+	}
+
 	.img-marca-pie {
 		max-width: 250px;
 	}
@@ -1241,6 +1247,10 @@
 		}
 
 
+		#inicio {
+			min-height: 450px;						/* si cambias este parametro, tambien el  #wrap */
+		}
+
 		/* ================================================================== */
 		/* ANIMACION INICIO ================================================= */
 		/* ================================================================== */
@@ -1250,15 +1260,15 @@
 			min-width: 100%;
 			height: auto;
 			margin-left: -150px;
-/*			max-height: 100vh;
-			min-height: 550px;						/* si cambias este parametro, tambien el  #inicio */
+/*			max-height: 100vh; */
+			min-height: 450px;					/* si cambias este parametro, tambien el  #inicio */
 
 		}
 
 		#wrap img.bgfade {
 			max-width: 100%;
 			margin-left: -100px;
-
+			top: 70px;
 
 		}
 
@@ -1270,10 +1280,10 @@
 
 
 		#menu-inicio {
-			margin-top: 30px;
+
 			position: absolute;
-/*			background: url(/images/logos/inbaar-pie.jpg) no-repeat center center; */
-			background: transparent;
+			background: url(/images/logos/inbaar-pie.jpg) no-repeat center center;
+/*			background: transparent; */
 
 		}
 
@@ -1624,9 +1634,10 @@
 			border-bottom: 1px solid #999999; */
 		}
 
-		.menu-inicio-item {
+		.menu-inicio-item a {
 /*			margin-left: 0px; */
 /*			padding-left: 0px; */
+			font-size: 12px;
 		}
 
 

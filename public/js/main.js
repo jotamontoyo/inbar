@@ -49,10 +49,10 @@
 				scrollTop: $(id).offset().top // +76
 			}, 800);
 
-			$('.menu-inicio-item a').css('color', 'white');
+/*			$('.menu-inicio-item a').css('color', 'white');
 			$(this).css('text-decoration', 'none');
 	//		$(this).css('background-color', '#eb9837');
-			$(this).css('color', '#eb9837');
+			$(this).css('color', '#eb9837'); */
 			$('#subir-inicio a').css('background-color', 'transparent');
 
 			return false;
@@ -72,7 +72,7 @@
 
 		$('.nav a').on('click', function(){										// cierra .nav cuando click
     		$('.btn-navbar').click();
-    		$('.navbar-toggle').click(); 
+    		$('.navbar-toggle').click();
 		});
 
 /*		$('#enviar').on('click', function() {
