@@ -79,7 +79,7 @@
             setTimeout(anim, 10000);
         }
         anim();
-
+        
 
         $('.persona a img').hover(                                                  // boton e imagen de perfiles rrhh
             function() {

@@ -756,7 +756,6 @@
 		margin-top: 50px;
 		margin-bottom: 10px;
 
-		font-size: 2vw;
 		font-size: 2vh;
 	}
 
@@ -766,7 +765,7 @@
 
 	.texto-quienes-somos p {
 		line-height: 35px;
-		font-size: 2vw;
+
 		font-size: 2vh;
 	}
 
@@ -1252,7 +1251,7 @@
 		}
 
 		/* ================================================================== */
-		/* ANIMACION INICIO ================================================= */
+		/* ANIMACION INICIO MOVIL =========================================== */
 		/* ================================================================== */
 
 		#wrap {
@@ -1263,12 +1262,17 @@
 /*			max-height: 100vh; */
 			min-height: 450px;					/* si cambias este parametro, tambien el  #inicio */
 
+			margin-top: 70px;					/* empuja div hacia abajo */
+
 		}
 
 		#wrap img.bgfade {
+
 			max-width: 100%;
 			margin-left: -100px;
-			top: 70px;
+			padding-bottom: 70px;				/* comprime div hacia arriba */
+
+
 
 		}
 
