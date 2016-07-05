@@ -1,6 +1,14 @@
 
     $(document).ready(function() {
 
+/*        $('.barlittle').removeClass('stop');
+    	$('.triggerBar').click(function() {
+    		$('.barlittle').toggleClass('stop');
+    	}); */
+
+
+
+
 //        $(window).screen.lockOrientation('portrait');
 
 /*        var myInterval = false;
@@ -74,12 +82,12 @@
         $('img.bgfade').hide();                                                     // transicion inico
         $('#wrap').css({'height':'100vh','width':'100%'});
         function anim() {
-            $("#wrap img.bgfade").first().appendTo('#wrap').fadeOut(4000);
-            $("#wrap img").first().fadeIn(2000);
-            setTimeout(anim, 10000);
+            $("#wrap img.bgfade").first().appendTo('#wrap').fadeOut(8000);
+            $("#wrap img").first().fadeIn(8000);
+            setTimeout(anim, 14000);
         }
         anim();
-        
+
 
         $('.persona a img').hover(                                                  // boton e imagen de perfiles rrhh
             function() {
