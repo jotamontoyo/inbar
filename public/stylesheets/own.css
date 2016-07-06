@@ -296,6 +296,7 @@
 	}
 
 	.titulo-secciones {
+		padding-top: 5px;
 		color: #eb9837;
 		background-color: #000;
 	}
@@ -324,9 +325,9 @@
 
 	#logo-inicio {
 		width: 100%;
-		top: 190px;
+		margin-top: 25vh;
 		margin-left: 15px;
-		position: absolute;
+		position: relative;
 		color: white;
 	}
 
@@ -350,8 +351,8 @@
 		min-width: 100%;
 		margin-left: auto;
 		margin-right: auto;
-		position: absolute;
-		bottom: 0;
+		position: relative;
+
 		font: bold 25px TrashHand, verdana, sans-serif;
 		text-shadow: rgba(0,0,0,0.5) 3px 3px 5px;
 /*		color: hsla(240, 100%, 50%, 0.5); */
@@ -360,11 +361,6 @@
 
 	#calma h1 {
 		padding-left: 22px;
-	}
-
-
-	#inicio-animacion {
-		overflow: hidden;
 	}
 
 
@@ -1263,7 +1259,8 @@
 
 
 		#inicio {
-			min-height: 450px;						/* si cambias este parametro, tambien el  #wrap */
+			min-height: 500px;						/* si cambias este parametro, tambien el  #wrap */
+
 		}
 
 		/* ================================================================== */
@@ -1276,7 +1273,7 @@
 			height: auto;
 			margin-left: -150px;
 /*			max-height: 100vh; */
-			min-height: 450px;					/* si cambias este parametro, tambien el  #inicio */
+			min-height: 500px;					/* si cambias este parametro, tambien el  #inicio */
 
 			margin-top: 70px;					/* empuja div hacia abajo */
 
@@ -1357,7 +1354,7 @@
 		}
 
 		#logo-inicio {
-			top: 100px;
+			margin-top: 20vh;
 			transform: scale(0.8);
 		}
 

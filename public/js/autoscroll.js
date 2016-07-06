@@ -1,18 +1,6 @@
 
     $(document).ready(function() {
 
-/*        $('.barlittle').removeClass('stop');
-    	$('.triggerBar').click(function() {
-    		$('.barlittle').toggleClass('stop');
-    	}); */
-        for (var i=0; i < 100; i++) {
-
-            $('#barra').css('width', i + '%');
-
-        }
-//        $('#barra').css('display', 'none');
-
-
 //        $(window).screen.lockOrientation('portrait');
 
 /*        var myInterval = false;

@@ -70,9 +70,13 @@
 			nav.toggleClass('open');
 		}); */
 
-		$('.nav a').on('click', function(){										// cierra .nav cuando click
-    		$('.btn-navbar').click();
-    		$('.navbar-toggle').click();
+		$('.nav a').on('click', function() {							// cierra .nav cuando click
+			var $el = $(this),
+		    	id = $el.attr('id');
+			if (id !== 'pais-selecionado') {							// evita cierre si id='pais-selecionado'
+    			$('.btn-navbar').click();
+    			$('.navbar-toggle').click();
+			}
 		});
 
 /*		$('#enviar').on('click', function() {

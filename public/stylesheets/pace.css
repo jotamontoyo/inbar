@@ -15,7 +15,7 @@
       background-color: #eb9837;
       position: fixed;
       z-index: 2000;
-      top: 100;
+      top: 0;
       left: 0;
       height: 2px;
       overflow: hidden;
