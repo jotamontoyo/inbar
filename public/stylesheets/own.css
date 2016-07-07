@@ -639,7 +639,9 @@
 
 	#personas {
 		height: 100vh;
+
 		min-height: 670px;
+
 		padding-top: 50px;
 		position: relative;
 		color: #000;
@@ -691,10 +693,7 @@
 
 	#elegir-modelo {
 		max-width: 1200px;
-
-
-
-		min-height: 75vh;
+/* 		min-height: 75vh;*/
 		margin-top: 55px;
 		margin-bottom: 50px;
 		position: relative;
@@ -702,23 +701,16 @@
 	}
 
 	.img-modelo img {
-/*		width: 100%;
-		height: auto; */
-
-
-		width: auto;
+		width: 100%;
 		height: auto;
-
-
-
 		position: relative;
 		cursor: pointer;
 
 	}
 
 	.img-modelo {
-		max-width: 400px;
 
+		max-width: 400px;
 
 	}
 
@@ -1270,11 +1262,13 @@
 		#wrap {
 			max-width: 100%;
 			min-width: 100%;
-			height: auto;
+
+/*			height: auto; */
+			height: 100%;
+
 			margin-left: -150px;
 /*			max-height: 100vh; */
 			min-height: 500px;					/* si cambias este parametro, tambien el  #inicio */
-
 			margin-top: 70px;					/* empuja div hacia abajo */
 
 		}
@@ -1369,7 +1363,7 @@
 		/* ====================================================================================== */
 
 		#contrata-franquicia {
-			min-height: 100vh;
+			height: 100%;
 		}
 
 		#header-contrata-franquicia {
@@ -1546,6 +1540,10 @@
 		/* ========================================================================== */
 		/* CONTACTO2 ================================================================ */
 		/* ========================================================================== */
+
+		#contacto2 {
+			height: auto;
+		}
 
 		#contacto2 h1 {
 			font-size: 22px;
