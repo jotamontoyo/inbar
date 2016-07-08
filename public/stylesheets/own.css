@@ -84,7 +84,10 @@
 		height: 45px;
 		background-color: rgba(0, 0, 0, 1);
 		top: 4px;
+
 	}
+
+
 
 	.navbar-collapse, .navbar-collapse.collapse.in, .col-md-2 {
 		margin: 0px;
@@ -1274,7 +1277,7 @@
 		#menu-inicio {
 
 			position: absolute;
-			background: url(/images/logos/inbaar-menu.png) no-repeat center center;
+			background: url(/images/logos/inbaar-menu.png) no-repeat left center;
 /*			background: transparent; */
 
 		}
