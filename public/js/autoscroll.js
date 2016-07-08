@@ -58,14 +58,16 @@
                 $('#subir-inicio').css('visibility', 'visible');
             };
 
-            if ($(window).scrollTop() === 0) {                                          // control aspecto menu-inicio
+            if (($(window).scrollTop() === 0) && ($(window).width() > 768)) {                                          // control aspecto menu-inicio
                 $('#menu-inicio').css('height', '70px');
 //                $('#menu-inicio').css('opacity', '0.8');
                 $('.menu-inicio-item').css('padding-top', '20px');
             } else {
-                $('#menu-inicio').css('height', '50px');
-//                $('#menu-inicio').css('opacity', '1');
-                $('.menu-inicio-item').css('padding-top', '12px');
+                if ($(window).width() > 768) {
+                    $('#menu-inicio').css('height', '50px');
+    //                $('#menu-inicio').css('opacity', '1');
+                    $('.menu-inicio-item').css('padding-top', '12px');
+                }
             }
 
         });

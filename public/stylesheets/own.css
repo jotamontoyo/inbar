@@ -1276,8 +1276,10 @@
 
 		#menu-inicio {
 
+
 			position: absolute;
 			background: url(/images/logos/inbaar-menu.png) no-repeat left center;
+
 /*			background: transparent; */
 
 		}
@@ -1293,7 +1295,7 @@
 		.menu-inicio-item {
 			margin-left: 0px;
 			padding-left: 0px;
-			padding-top: 10px;
+			padding-top: 12px;
 			background-color: rgba(0, 0, 0, 0.8);
 		}
 
