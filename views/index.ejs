@@ -89,9 +89,9 @@
                                     <li id="fr"><a href="#"><img src="/images/flags/France-24.png"/> François</a></li>
                                     <li id="gr"><a href="#"><img src="/images/flags/Germany-24.png" /> German</a></li>
                                 </ul>
-                                <% if (!session.user) { %>
+<!--                                <% if (!session.user) { %>
                                     <a href="/login" style="color: white; font-size: 12px;">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-sign-in"></i> Login&nbsp;</a>
-                                <%}%>
+                                <%}%> -->
                             </li>
                         </div>
 
@@ -105,7 +105,7 @@
 
 <!--        <div class="contanine-fluid" id="inicio-animacion"> -->
 
-            <div id="wrap">
+            <div class="animated fadeIn" id="wrap">
     <!--            <img class="bgfade" src="/images/bg/img1.jpg">
                 <img class="bgfade" src="/images/bg/img2.jpg">
                 <img class="bgfade" src="/images/bg/img3.jpg">
@@ -129,11 +129,12 @@
         <div class="container-fluid text-center animated fadeIn" id="inicio">
 
 
-            <div class="row center-block" id="logo-inicio">
-                <img class="img" src="images/logos/inbaar1.png" alt="Generic placeholder image">
+            <div class="row animated fadeIn center-block" id="logo-inicio">
+                <img class="img" src="images/logos/logo-inbaar.png" alt="Generic placeholder image"> <br>
+                <img class="img ocultar-movil" src="images/logos/texto-inbaar.png" alt="Generic placeholder image">
             </div>
 
-            <div class="row" id="calma">
+            <div class="row animated fadeIn" id="calma">
                 <h1> BARES CON ALMA</h1>
             </div>
 
