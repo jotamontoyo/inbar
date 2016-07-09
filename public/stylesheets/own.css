@@ -373,6 +373,7 @@
 		min-height: 550px;						/* si cambias este parametro, tambien el  #inicio */
 		position: absolute;
 		z-index: -1;
+		overflow: hidden;
 		background-color: rgba(0, 0, 0, 1);
 /*		top: 0; */
 		right: 0;
