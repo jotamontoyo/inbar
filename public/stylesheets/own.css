@@ -401,12 +401,13 @@
 		z-index: -1;
 	}
 
-/*	.alerta {
+	.alerta {
 		width: 100%;
 		margin-top: 100px;
 		padding-left: auto;
 		padding-right: auto;
 		position: absolute;
+		z-index: 10000;
 		visibility: hidden;
 	}
 
@@ -414,7 +415,7 @@
 		width: 50%;
 		margin-left: auto;
 		margin-right: auto;
-	} */
+	}
 
 	/* estilos de menu-inicio =================================================================================== */
 
@@ -1089,6 +1090,12 @@
 	} */
 
 	/* CONTACTO2 =================================================================================== */
+
+	.trampa {display: none};
+
+	#enviar {}
+
+
 
 	#img-bg-contacto2 {
 		min-width: 100vw;
