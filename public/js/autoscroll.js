@@ -93,10 +93,10 @@
 
         $('#persona-1').hover(
             function() {
-                $(this).attr("src", "/images/rrhh/antonio-mazon-pastor-color.jpg").delay(6000);
+                $(this).attr("src", "/images/rrhh/antonio-mazon-pastor-color.jpg").fadeIn(6000);
             },
             function() {
-                $(this).attr("src","/images/rrhh/antonio-mazon-pastor-BN.jpg");
+                $(this).attr("src","/images/rrhh/antonio-mazon-pastor-BN.jpg").fadeIn(6000);
             });
 
         $('#persona-2').hover(

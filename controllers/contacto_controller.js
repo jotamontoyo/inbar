@@ -123,7 +123,21 @@
 //				res.redirect('/contactos/enviado');
 
 //				res.aviso.className = 'show';
-				var email = require('emailjs');
+
+				// Require
+				var postmark = require("postmark");
+
+				// Example request
+				var client = new postmark.Client("08f8257f-32bc-4a2c-8492-05a217b1705d");
+
+				client.sendEmail({
+					"From": "jotamontoyo@gmail.com",
+					"To": "jotamontoyo@hotmail.es",
+					"Subject": "Test",
+					"TextBody": "Hello from Postmark!"
+				});
+
+/*				var email = require('emailjs');
 
 				var server = email.server.connect({
 					user: 'jotamontoyo@gmail.com',
@@ -140,7 +154,7 @@
 					subject: 'El secreto del exito de los bares.'
 					}, function (err, message) {
 					console.log(err || message);
-				});
+				}); */
 
 				res.redirect('/');
 
@@ -156,6 +170,6 @@
 //		res.redirect('/');
 		res.render('contactos/enviado.ejs', {errors: []});
 
-		res.redirect('/');
+//		res.redirect('/');
 //		res.render('/', {errors: []});
 	};
