@@ -136,15 +136,20 @@
 		  }); */
 
 
-				// Require
-				var postmark = require("postmark");
-				// Example request
-				var client = new postmark.Client(process.env.POSTMARK_API_KEY);
-				client.sendEmail({
+				var postmark = require("postmark")(process.env.POSTMARK_API_TOKEN)
+
+				postmark.send({
 					"From": "jotamontoyo@gmail.com",
 					"To": "jotamontoyo@hotmail.es",
-					"Subject": "Test",
-					"TextBody": "Hello from Postmark!"
+					"Subject": "Hello from Postmark",
+					"TextBody": "Hello!",
+					"Tag": "big-bang"
+				}, function(error, success) {
+				if(error) {
+				  console.error("Unable to send via postmark: " + error.message);
+				 return;
+				}
+				console.info("Sent to postmark for delivery")
 				});
 
 /*				var email = require('emailjs');
