@@ -1,7 +1,10 @@
 
 	process.env.DATABASE_URL = "postgres://wkynqiclysfccj:iMCFhKF6YugPeZHlso97feJvPq@ec2-54-83-52-144.compute-1.amazonaws.com:5432/dbe85ilvgjskdq?ssl=true"; // URL HerokuPostgres
 	process.env.DATABASE_STORAGE = "quiz.sqlite";
-	process.env.PASSWORD_ENCRYPTION_KEY= "asdfghjklzxcvbnmqwertyuiop"
+	process.env.PASSWORD_ENCRYPTION_KEY= "asdfghjklzxcvbnmqwertyuiop";
+
+	process.env.SENDGRID_USERNAME = "app45984071@heroku.com";
+	process.env.SENDGRID_PASSWORD = "njky4noa4496";
 
 	var express = require('express');
 	var busboy = require('connect-busboy'); //middleware for form/file upload

@@ -124,8 +124,20 @@
 
 //				res.aviso.className = 'show';
 
+			var sendgrid  = require('sendgrid')(process.env.SENDGRID_USERNAME, process.env.SENDGRID_PASSWORD);
+			sendgrid.send({
+			  to:       'jotamontoyo@hotmail.es',
+			  from:     'jotamontoyo@gmail.com',
+			  subject:  'Hello World',
+			  text:     'My first email through SendGrid.'
+			}, function(err, json) {
+			  if (err) { return console.error(err); }
+			  console.log(json);
+			});
+
+
 				// Require
-				var postmark = require("postmark");
+/*				var postmark = require("postmark");
 
 				// Example request
 				var client = new postmark.Client("08f8257f-32bc-4a2c-8492-05a217b1705d");
@@ -135,7 +147,7 @@
 					"To": "jotamontoyo@hotmail.es",
 					"Subject": "Test",
 					"TextBody": "Hello from Postmark!"
-				});
+				}); */
 
 /*				var email = require('emailjs');
 
