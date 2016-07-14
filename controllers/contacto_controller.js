@@ -132,8 +132,8 @@
 				postmark.send({
 					"From": "contacto@inbarasset.es",
 					"To": "jotamontoyo@hotmail.es",
-					"Subject": "Hello from Postmark",
-					"TextBody": "Hello!",
+					"Subject": "Solicitud recibida",
+					"TextBody": "Gracias por tu solicitud, en breve nos pondremos en contacto.",
 					"Tag": "big-bang"
 				}, function(error, success) {
 				if (error) {
