@@ -8,9 +8,6 @@
 	process.env.POSTMARK_INBOUND_ADDRESS = "098657372d0170256a8050c00be5ae47@inbound.postmarkapp.com";
 	process.env.POSTMARK_SMTP_SERVER = "smtp.postmarkapp.com";
 
-	process.env.SENDGRID_USERNAME = "app45984071@heroku.com";
-	process.env.SENDGRID_PASSWORD = "njky4noa4496";
-
 	var express = require('express');
 	var busboy = require('connect-busboy'); //middleware for form/file upload
 	var path = require('path');

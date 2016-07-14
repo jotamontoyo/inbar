@@ -91,6 +91,9 @@
 
 //		var aviso = req.body.aviso;
 
+		var nombre_clase = req.body.aviso.class.name;
+		nombre_clase = 'show';
+
 		var contacto = models.Contacto.build( 											// crea el objeto contacto, lo construye con buid() metodo de sequilize
 			{nombre: "Nombre", alias: "Alias", email: "eMail", emailok: "eMailok", telefono: "Teléfono", marca: "Marca", ciudad: "Ciudad", provincia: "Provincia", comentario: "Comentario", lopd: false, revisado: false}		// asigna literales a los campos para que se vea el texto en el <input> cuando creemos el formulario
 		);
@@ -122,7 +125,7 @@
 
 //				res.redirect('/contactos/enviado');
 
-//				res.aviso.className = 'show';
+//				res.aviso.className('show');
 
 /*			var sendgrid  = require('sendgrid')(process.env.SENDGRID_USERNAME, process.env.SENDGRID_PASSWORD);
 			sendgrid.send({
@@ -136,40 +139,21 @@
 		  }); */
 
 
-				var postmark = require("postmark")(process.env.POSTMARK_API_TOKEN)
+				var postmark = require("postmark")(process.env.POSTMARK_API_TOKEN);
 
 				postmark.send({
-					"From": "jotamontoyo@gmail.com",
+					"From": "contacto@inbarasset.es",
 					"To": "jotamontoyo@hotmail.es",
 					"Subject": "Hello from Postmark",
 					"TextBody": "Hello!",
 					"Tag": "big-bang"
 				}, function(error, success) {
-				if(error) {
-				  console.error("Unable to send via postmark: " + error.message);
-				 return;
+				if (error) {
+					console.error("Unable to send via postmark: " + error.message);
+					return;
 				}
-				console.info("Sent to postmark for delivery")
+				console.info("Sent to postmark for delivery");
 				});
-
-/*				var email = require('emailjs');
-
-				var server = email.server.connect({
-					user: 'jotamontoyo@gmail.com',
-					password: 'tenerife2011',
-					host: 'smtp.gmail.com',
-					ssl: true
-				});
-
-				server.send({
-					text: 'Te agradecemos la solicitud de contacto. En breve nos comunicaremos contigo.',
-					from: 'Inbar Asset',
-					to: 'contacto.nombre' + '<' + contacto.email + '>',
-					cc: '',
-					subject: 'El secreto del exito de los bares.'
-					}, function (err, message) {
-					console.log(err || message);
-				}); */
 
 				res.redirect('/');
 
