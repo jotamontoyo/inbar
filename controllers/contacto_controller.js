@@ -91,8 +91,8 @@
 
 //		var aviso = req.body.aviso;
 
-		var nombre_clase = req.body.aviso.class.name;
-		nombre_clase = 'show';
+//		var nombre_clase = req.body.aviso.class.name;
+//		nombre_clase = 'show';
 
 		var contacto = models.Contacto.build( 											// crea el objeto contacto, lo construye con buid() metodo de sequilize
 			{nombre: "Nombre", alias: "Alias", email: "eMail", emailok: "eMailok", telefono: "Teléfono", marca: "Marca", ciudad: "Ciudad", provincia: "Provincia", comentario: "Comentario", lopd: false, revisado: false}		// asigna literales a los campos para que se vea el texto en el <input> cuando creemos el formulario
@@ -126,18 +126,6 @@
 //				res.redirect('/contactos/enviado');
 
 //				res.aviso.className('show');
-
-/*			var sendgrid  = require('sendgrid')(process.env.SENDGRID_USERNAME, process.env.SENDGRID_PASSWORD);
-			sendgrid.send({
-			  to:       'jotamontoyo@hotmail.es',
-			  from:     'jotamontoyo@gmail.com',
-			  subject:  'Hello World',
-			  text:     'My first email through SendGrid.'
-			}, function(err, json) {
-			  if (err) { return console.error(err); }
-			  console.log(json);
-		  }); */
-
 
 				var postmark = require("postmark")(process.env.POSTMARK_API_TOKEN);
 
