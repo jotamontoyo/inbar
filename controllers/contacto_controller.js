@@ -89,7 +89,8 @@
 
 	exports.webcreate = function(req, res) {											// POST /contacto/webcreate
 
-//		var aviso = req.body.aviso;
+		var aviso = req.body.aviso;
+//		console.log(aviso.className);
 
 //		var nombre_clase = req.body.aviso.class.name;
 //		nombre_clase = 'show';
@@ -122,6 +123,9 @@
 			contacto 																// save: guarda en DB campos
 			.save({fields: ["nombre", "alias", "email", "emailok", "telefono", "marca", "ciudad", "provincia", "comentario", "lopd", "revisado"]})
 			.then(function() {
+
+/*				var swal = require("sweetalert");
+				swal("Good job!", "You clicked the button!", "success"); */
 
 //				res.redirect('/contactos/enviado');
 
@@ -158,11 +162,11 @@
 					    "product_address_line2": "contacto@inbarasset.es"
 					}
 				}, function(error, success) {
-				if (error) {
-					console.error("Unable to send via postmark: " + error.message);
-					return;
-				}
-				console.info("Sent to postmark for delivery with template");
+					if (error) {
+						console.error("Unable to send via postmark: " + error.message);
+						return;
+					}
+					console.info("Sent to postmark for delivery with template");
 				});
 
 				res.redirect('/');
