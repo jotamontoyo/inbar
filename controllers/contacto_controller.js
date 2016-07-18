@@ -118,10 +118,10 @@
 			.save({fields: ["nombre", "alias", "email", "emailok", "telefono", "marca", "ciudad", "provincia", "comentario", "lopd", "revisado"]})
 			.then(function() {
 
-				var dialog = require('dialog');
+/*				var dialog = require('dialog');
 				dialog.info('Tu solicitud ha sido enviada correctamente', 'Inbar Asset', function(err) {
 				    if (!err) console.log('El usuario ha sido avisado del envio de la solicitud');
-				});
+				}); */
 
 				var postmark = require("postmark")(process.env.POSTMARK_API_TOKEN);
 
