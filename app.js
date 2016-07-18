@@ -11,7 +11,6 @@
 	var express = require('express');
 	var busboy = require('connect-busboy'); //middleware for form/file upload
 	var path = require('path');
-
 	var favicon = require('serve-favicon');
 	var logger = require('morgan');
 	var cookieParser = require('cookie-parser');
@@ -19,7 +18,6 @@
 	var partials = require('express-partials');             // paquete para manejar vistas parciales del layout.ejs
 	var methodOverride = require('method-override');
 	var session = require('express-session');
-//	var sa = require('sweetalert');
 
 	var routes = require('./routes/index');
 
@@ -28,7 +26,6 @@
 	// view engine setup
 	app.set('views', path.join(__dirname, 'views'));
 	app.set('view engine', 'ejs');
-
 	app.use(partials());                                    	// instala el middleware que da soporte a vistas parciales
 	app.use(favicon(__dirname + '/public/favicon.ico'));
 	app.use(logger('dev'));

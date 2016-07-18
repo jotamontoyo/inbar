@@ -83,7 +83,6 @@
 	router.get('/contactos/:contactoId(\\d+)/edit',			sessionController.loginRequired, contactoController.edit);				// carga formulario proveedores/proveedores:Id(\\d+)/edit y dispara el controlador edit de proveedorController
 	router.put('/contactos/:contactoId(\\d+)',				sessionController.loginRequired, contactoController.update);			// dispara controlador update cuando el boton <salvar> del formulario edit.js
 	router.delete('/contactos/:contactoId(\\d+)',			sessionController.loginRequired, contactoController.destroy);
-	router.get('/contactos/enviado',	 					contactoController.enviado);											// vista de formulario enviado
 
 	router.get('/languages/sp',	 							languageController.sp);													// vista del idioma en
 	router.get('/languages/en',	 							languageController.en);													// vista del idioma en

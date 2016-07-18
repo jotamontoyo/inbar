@@ -89,12 +89,6 @@
 
 	exports.webcreate = function(req, res) {											// POST /contacto/webcreate
 
-		var aviso = req.body.aviso;
-//		console.log(aviso.className);
-
-//		var nombre_clase = req.body.aviso.class.name;
-//		nombre_clase = 'show';
-
 		var contacto = models.Contacto.build( 											// crea el objeto contacto, lo construye con buid() metodo de sequilize
 			{nombre: "Nombre", alias: "Alias", email: "eMail", emailok: "eMailok", telefono: "Teléfono", marca: "Marca", ciudad: "Ciudad", provincia: "Provincia", comentario: "Comentario", lopd: false, revisado: false}		// asigna literales a los campos para que se vea el texto en el <input> cuando creemos el formulario
 		);
@@ -124,15 +118,12 @@
 			.save({fields: ["nombre", "alias", "email", "emailok", "telefono", "marca", "ciudad", "provincia", "comentario", "lopd", "revisado"]})
 			.then(function() {
 
-/*				var swal = require("sweetalert");
-				swal("Good job!", "You clicked the button!", "success"); */
-
-//				res.redirect('/contactos/enviado');
-
-//				res.aviso.className('show');
+				var dialog = require('dialog');
+				dialog.info('Tu solicitud ha sido enviada correctamente', 'Inbar Asset', function(err) {
+				    if (!err) console.log('El usuario ha sido avisado del envio de la solicitud');
+				});
 
 				var postmark = require("postmark")(process.env.POSTMARK_API_TOKEN);
-
 
 /*				postmark.send({
 					"From": "contacto@inbarasset.es",
@@ -177,12 +168,4 @@
 
 	exports.webform = function(req, res) {
 		res.render('contactos/webform.ejs', {errors: []});
-	};
-
-	exports.enviado = function(req, res) {
-//		res.redirect('/');
-		res.render('contactos/enviado.ejs', {errors: []});
-
-//		res.redirect('/');
-//		res.render('/', {errors: []});
 	};
