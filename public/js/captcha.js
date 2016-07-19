@@ -4,29 +4,16 @@
         $('#enviar').prop('disabled', true );
         $("#captcha-invisible").value = 0;
 
-        // Captcha invisible
-
-/*        $('#enviar').on('click', function() {
-//            $("#captcha-invisible").change(function () {
-                if ($("#captcha-invisible").length === 0) {
-                    console.log('No eres un robot. Has enviado correctamente la solicitud');
-                }
-
-        }); */
-
-        $("#captcha-invisible").change(function () {
+        $("#captcha-invisible").change(function () {                                // Captcha invisible
             if ($(this).length > 0){
                 //qué hacemos si un bot rellena el campo
                 $("#enviar").prop( "disabled", true );
             };
         });
 
-        var char = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        var char = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";          // captcha formulario
 
-
-
-        //Generates the captcha function
-        var a = Math.ceil(Math.random() * 9) + '';
+        var a = Math.ceil(Math.random() * 9) + '';                                  // genera caracteres
         var b = Math.ceil(Math.random() * 9) + '';
         var c = char[Math.ceil(Math.random() * 52)] +'';
         var d = Math.ceil(Math.random() * 9) + '';
@@ -37,7 +24,7 @@
 
         $('#codigo-captcha').text('Introduce: ' + code);
 
-        var textocaptcha = $('#texto-captcha').val();
+//        var textocaptcha = $('#texto-captcha').val();
 
         $('#texto-captcha').change(function() {
             $('#soy-persona').prop("disabled", false);          // deshabilita el boton soy-persona
@@ -48,6 +35,7 @@
             } else {
                 $("#enviar").prop("disabled", true);
                 swal({title: "No coincide", text: "Inténtalo de nuevo", timer: 2000, showConfirmButton: false });
+                $('#texto-captcha').text('');
             };
         });
 

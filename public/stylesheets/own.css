@@ -1095,7 +1095,9 @@
 
 	.trampa {display: none};
 
-	#enviar {}
+	#enviar {				/* no lo quites */
+
+	}
 
 
 
