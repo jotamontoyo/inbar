@@ -1160,6 +1160,17 @@
 		text-decoration: underline;
 	}
 
+	#texto-captcha {
+
+		background-color: transparent;
+
+	}
+
+	#recargar-captcha, #soy-persona {
+
+		cursor: pointer;
+	}
+
 
 	/* PAGINA WEBFORM CONTACTC ============================================================================== */
 	#webform-panel1 {
