@@ -1,16 +1,9 @@
 
-
-
 	$(document).ready(function() {
-
-		
-
-
 
 		// Header Scroll
 		$(window).on('scroll', function() {
 			var scroll = $(window).scrollTop();
-
 			if (scroll >= 50) {
 				$('#header').addClass('fixed');
 			} else {
@@ -83,12 +76,5 @@
     			$('.navbar-toggle').click();
 			}
 		});
-
-/*		$('#enviar').on('click', function() {
-			$('#aviso').removeClass('hidden');
-			$('#aviso').addClass('show').delay(8000);
-
-
-		}); */
 
 	});

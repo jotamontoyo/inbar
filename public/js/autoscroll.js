@@ -1,8 +1,6 @@
 
     $(document).ready(function() {
 
-//        $(window).screen.lockOrientation('portrait');
-
 /*        var myInterval = false;
         myInterval = setInterval(AutoScroll, 5000);
 
@@ -40,14 +38,11 @@
                     $(this).animate({
                         'opacity': '1'
                     }, 1000);
-/*                    $('#header-contrata-franquicia').transition({
-                        x: '50px'
-                    }); */
-                }
+                };
             });
 
 
-            $('#subir-inicio-icon').css('opacity', '0.8');                               // control de opacity/visibility del icono subir
+            $('#subir-inicio-icon').css('opacity', '0.8');                                  // control de opacity/visibility del icono subir
             clearTimeout($.data(this, 'scrollTimer'));
             $.data(this, 'scrollTimer', setTimeout(function() {
                 $('#subir-inicio-icon').css('opacity', '0.3');
@@ -58,7 +53,7 @@
                 $('#subir-inicio').css('visibility', 'visible');
             };
 
-            if (($(window).scrollTop() === 0) && ($(window).width() > 768)) {                                          // control aspecto menu-inicio
+            if (($(window).scrollTop() === 0) && ($(window).width() > 768)) {               // control aspecto menu-inicio
                 $('#menu-inicio').css('height', '70px');
 //                $('#menu-inicio').css('opacity', '0.8');
                 $('.menu-inicio-item').css('padding-top', '20px');
