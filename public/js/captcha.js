@@ -4,22 +4,19 @@
         $('#enviar').prop('disabled', true );
         $("#captcha-invisible").val('');
 
-
         $('#texto-captcha').prop('readonly', false);
         $('#texto-captcha').val('');
-        $('#codigo-captcha').bind('cut copy paste', function(e) {                  // anula funcion cut, copy y paste del elemento
+        $('#codigo-captcha').bind('cut copy paste', function(e) {                       // anula funcion cut, copy y paste del elemento
             e.preventDefault();
         });
 
-
-        $("#captcha-invisible").change(function() {                                // Captcha invisible
+        $("#captcha-invisible").change(function() {                                     // Captcha invisible
             if ($(this).length > 0){
                 $("#enviar").prop( "disabled", true );
             };
         });
 
-
-        var char = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",          // captcha formulario
+        var char = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",              // captcha formulario
             code = '',
             textocaptcha = '';
 
@@ -60,6 +57,44 @@
             $('#texto-captcha').prop('readonly', false);
             $('#texto-captcha').val('');
             obtenerChaptca();
+        });
+
+
+        var email = $('#email').val('');                        // control coinciden emails
+        var emailok = $('#emailok').val('');
+
+        $('#emailok').change(function() {
+            email = $('#email').val();
+            emailok = $('#emailok').val();
+            if ( email !== emailok ) {
+                $("label[for='emailok']").css('color', 'red');
+                $('#enviar').prop('disabled', true);
+                swal({title: "Los email no coinciden", text: "Inténtalo de nuevo", timer: 2000, showConfirmButton: false });
+            } else {
+                $("label[for='email']").css('color', 'white');
+                $("label[for='emailok']").css('color', 'white');
+                if (textocaptcha === code) {
+                    $('#enviar').prop('disabled', false);
+                };
+            };
+        });
+
+        $('#email').change(function() {
+            email = $('#email').val();
+            emailok = $('#emailok').val();
+            if (emailok.length) {
+                if ( email !== emailok ) {
+                    $("label[for='email']").css('color', 'red');
+                    $('#enviar').prop('disabled', true);
+                    swal({title: "Los email no coinciden", text: "Inténtalo de nuevo", timer: 2000, showConfirmButton: false });
+                } else {
+                    $("label[for='email']").css('color', 'white');
+                    $("label[for='emailok']").css('color', 'white');
+                    if (textocaptcha === code) {
+                        $('#enviar').prop('disabled', false);
+                    };
+                };
+            };
         });
 
     });
