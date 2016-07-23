@@ -297,11 +297,12 @@
 	/* ================================================================================================ */
 
 	.bordes {
-		border-top: 	2px inset black;
-		border-bottom: 	2px groove #c6c7cc;
+/*		border-top: 	2px inset black;
+		border-bottom: 	2px groove #c6c7cc; */
+
 /*		border-top: 2px solid rgba(256, 256, 256, 0.8); */
-/*		width: 80%;
-		border-top: 1px solid #c6c7cc;
+/*		width: 80%; */
+/*		border-top: 1px solid #c6c7cc; */
 		border-bottom: 1px solid #c6c7cc; */
 
 
