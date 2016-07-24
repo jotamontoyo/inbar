@@ -1,8 +1,14 @@
 
-        <div class="row alerta text-center">
-            <div class="alert alert-warning alert-dismissible alerta-panel" name="alerta-panel" role="alert">
+        <div class="row alerta animated bounceInLeft text-center">
+            <div class="alert alert-warning alert-dismissible alerta-panel" role="alert">
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <strong>Warning!</strong> Better check yourself, you're not looking too good.
+                <strong>¡Uso de cookies!</strong> Este sitio web utiliza cookies para que usted tenga la mejor experiencia de usuario. Si continúa navegando está dando su consentimiento para la aceptación de las mencionadas cookies y la aceptación de nuestra política de cookies, pinche el enlace para mayor información.
+                <a class="button"
+                    style="cursor: pointer"
+                    data-toggle="modal"
+                    data-target="#panel-lopd">
+                    <span> Política de privacidad</span>
+                </a>
             </div>
         </div>
 
@@ -80,8 +86,8 @@
                                 <ul class="dropdown-menu pull-right animated fadeIn" id="lista-idiomas" style="max-width: 100px">
                                     <li class="disabled" id="sp"><a href="#"><img src="/images/flags/Spain-24.png"/> Spanish</a></li>
                                     <li id="en"><a href="/languages/en"><img src="/images/flags/United-Kingdom-24.png"/> English</a></li>
-                                    <li id="fr"><a href="#"><img src="/images/flags/France-24.png"/> François</a></li>
-                                    <li id="gr"><a href="#"><img src="/images/flags/Germany-24.png" /> German</a></li>
+<!--                                    <li id="fr"><a href="#"><img src="/images/flags/France-24.png"/> François</a></li>
+                                    <li id="gr"><a href="#"><img src="/images/flags/Germany-24.png" /> German</a></li> -->
                                 </ul>
 <!--                                <% if (!session.user) { %>
                                     <a href="/login" style="color: white; font-size: 12px;">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-sign-in"></i> Login&nbsp;</a>
@@ -110,8 +116,8 @@
         <div class="container-fluid text-center animated fadeIn" id="inicio">
 
             <div class="row animated fadeIn center-block" id="logo-inicio">
-                <img class="img" src="images/logos/logo-inbaar.png" alt="Generic placeholder image"> <br>
-                <img class="img ocultar-movil" src="images/logos/texto-inbaar.png" alt="Generic placeholder image">
+                <img class="img" src="images/logos/logo-inbaar.png" data-src="/js/holder.js/180x500/auto" alt="Generic placeholder image"> <br>
+                <img class="img ocultar-movil" src="images/logos/texto-inbaar.png" data-src="/js/holder.js/180x500/auto" alt="Generic placeholder image">
             </div>
 
             <div class="row animated fadeIn" id="calma">
@@ -119,6 +125,7 @@
             </div>
 
         </div>
+
 
         <!-- CONTRATA TU FRANQUICIA ================================================================================================ -->
 
@@ -602,22 +609,13 @@
 
 
             <div class="row">
-
                 <form class="form-horizontal" method="post" action="/contactos/webcreate">
-
                     <h1 class="hidden" id="aviso" name="aviso" style="position: fixed; top: 60px;">AVISO</h1>
-
                     <div class="col-md-6 col-sm-6 col-xs-12 texto-contacto text-center">
                         <h2>¿NECESITAS <br> MÁS <br> INFORMACIÓN?</h2>
-    <!--                    <nav role="navigation"><a href="#inicio">
-                            <img class="img-circle center-block" src="/images/floxy/logo-inbar.png" data-src="holder.js/100x100/auto" alt="Generic placeholder image" width="100" height="auto">
-                        </a></nav>
-                        <h5>prueba</h5>
-                        <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </h5>
-    -->             </div>
-
+                    </div>
                     <div class="col-md-6 col-sm-6 col-xs-12">
-    <!--                    <h3>CONTACTO</h3> -->
+
                         <div class="col-md-6 col-sm-6 col-xs-6">
                             <div class="form-group ocultar">
                                 <label for="nombre">Nombre</label>
@@ -629,6 +627,7 @@
                                 <input type="email" class="form-control" id="email" name="email" required placeholder=""/>
                             </div>
                         </div>
+
                         <div class="col-md-6 col-sm-6 col-xs-6">
                             <div class="form-group ocultar">
                                 <label for="alias">Dirección (opcional)</label>
@@ -639,12 +638,14 @@
                                 <input type="email" class="form-control" id="emailok" name="emailok" required placeholder=""/>
                             </div>
                         </div>
+
                         <div class="col-md-6 col-sm-6 col-xs-6">
                             <div class="form-group ocultar">
                                 <label for="inputEmail3">Teléfono (opcional)</label>
                                 <input type="text" class="form-control" id="telf" name="telefono" pattern="[0-9]{9}" placeholder=""/>
                             </div>
                         </div>
+
                         <div class="col-md-6 col-sm-6 col-xs-6">
                             <div class="form-group ocultar">
                                 <label for="inputPassword3">Marca</label>
@@ -656,12 +657,14 @@
                         		</select>
                             </div>
                         </div>
+
                         <div class="col-md-6 col-sm-6 col-xs-6">
                             <div class="form-group ocultar">
                                 <label for="inputEmail3">Ciudad</label>
                                 <input type="text" class="form-control" id="ciudad" name="ciudad" required placeholder=""/>
                             </div>
                         </div>
+
                         <div class="col-md-6 col-sm-6 col-xs-6">
                             <div class="form-group ocultar">
                                 <label for="inputPassword3">Provincia</label>
@@ -669,60 +672,36 @@
                             </div>
                         </div>
 
-
-
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="form-group" style="margin-top: 25px">
                                 <div class="row">
-
                                     <div class="col-md-7 col-sm-7 col-xs-7">
                                         <h5 style="display: inline-block"><strong>Introduce:&nbsp;&nbsp;</strong></h5>
                                         <h4 id="codigo-captcha"</h4>
                                     </div>
-
                                     <div class="col-md-5 col-sm-5 col-xs-5" style="margin-top: 14px; margin-left: -8px; padding-left: 0px">
                                         <i class="fa fa-refresh" id="recargar-captcha" aria-hidden="true"></i>
                                     </div>
-
                                 </div>
-
                                 <div class="row">
-
                                     <div class="col-md-7 col-sm-7 col-xs-7">
                                         <input type="text" id="texto-captcha" name="texto-captcha">
                                     </div>
-
                                     <div class="col-md-5 col-sm-5 col-xs-5" style="margin-top: 5px; margin-left: -8px; padding-left: 0px">
                                         <i class="fa fa-check" id="soy-persona" aria-hidden="true"></i>
                                     </div>
-
                                 </div>
-
                             </div>
-
                         </div>
 
-
-
-
                         <div class="col-md-6 col-sm-6 col-xs-12">
-
                             <div class="form-group ocultar" style="margin-top:25px">
                                 <div class="form-group trampa">
                                     <label for="captcha-invisible"></label>
                                     <input type="text" class="form-control" id="captcha-invisible" >
                                 </div>
                                 <button id="enviar" type="submit" class="btn btn-warning">Solicitar información</button>
-<!--                                <script type="text/javascript">
-                                    function sendMail() {
-                                        emailjs.send("gmail","template_9Ae6OZg5",{name: "jotamontoyo", notes: "Check this out!"});
-                                    }
-                                </script> -->
-
-
-
                             </div>
-
                             <div class="form-group ocultar" id="check-lopd">
                                 <label>
                                     <input type="checkbox" id="lopd" name="lopd" required> Acepto la
@@ -734,15 +713,7 @@
                                     </input>
                                 </label>
                             </div>
-
                         </div>
-
-<!--                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="form-group ocultar text-center" style="margin-top:25px">
-                                <button id="enviar" type="submit" class="btn btn-info">Solicitar información</button>
-                            </div>
-                        </div> -->
-
 
                     </div>
                 </form>

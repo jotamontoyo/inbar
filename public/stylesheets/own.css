@@ -415,20 +415,21 @@
 		z-index: -1;
 	}
 
-	.alerta {
-		width: 100%;
-		margin-top: 100px;
-		padding-left: auto;
-		padding-right: auto;
-		position: absolute;
-		z-index: 10000;
-		visibility: hidden;
+	.alerta {													/* etilo aviso cookies */
+		max-width: 300px;
+		margin-left: 10vw;
+		margin-top: 30vh;
+		position: fixed;
+
+		z-index: 3;
+		visibility: visible;
 	}
 
 	.alerta-panel {
-		width: 50%;
-		margin-left: auto;
-		margin-right: auto;
+		background-image: none;
+		background-color: rgba(0, 0, 0, 0.8);
+
+
 	}
 
 	/* estilos de menu-inicio =================================================================================== */
@@ -1265,6 +1266,14 @@
 
 		}
 
+		.alerta {													/* etilo aviso cookies */
+
+
+			margin-left: 15vw;
+			margin-right: 13vw;
+			margin-top: 15vh;
+		}
+
 		/* ================================================================== */
 		/* ANIMACION INICIO MOVIL =========================================== */
 		/* ================================================================== */
@@ -1686,6 +1695,14 @@
 		#img-inicio {
 			visibility: hidden;
 		} */
+
+		.alerta {													/* etilo aviso cookies */
+
+			max-width: 700px;
+			margin-left: 15vw;
+			margin-right: 15vw;
+			margin-top: 18vh;
+		}
 
 
 		/* ========================================================================== */

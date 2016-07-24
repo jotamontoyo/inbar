@@ -1,8 +1,9 @@
 
     $(document).ready(function() {
 
-/*        var myInterval = false;
-        myInterval = setInterval(AutoScroll, 5000);
+/*        var myInterval = false; */
+
+/*        myInterval = setInterval(AutoScroll, 5000);
 
         function AutoScroll() {
             var iScroll = $(window).scrollTop();
@@ -11,6 +12,10 @@
                 scrollTop: iScroll
             }, 1000);
         }; */
+
+
+        var iScroll = $(window).scrollTop(),
+            aviso_cookies = true;
 
         $(window).scroll(function() {
 
@@ -29,6 +34,13 @@
             $(window).on('wheel', function() {
                 clearInterval(myInterval);
             }); */
+
+            iScroll = $(window).scrollTop();
+            if ((iScroll > 200) && (aviso_cookies)) {
+                $('.alerta').removeClass('animated bounceInLeft');
+                $('.alerta').toggleClass('animated bounceOutLeft');
+                aviso_cookies = false;
+            };
 
 
             $('.ocultar').each(function(i) {                                           /* Check the location of each desired element .ocultar */

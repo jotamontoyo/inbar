@@ -1,97 +1,763 @@
 
-    <!-- inicio =================================================================================================================== -->
-    <div class="container-fluid text-center" id="inicio">
-        <div id="page">
-
-            <ul class="cb-slideshow" id="img-inicio">
-                <li><span></span><div><h3>re·lax·a·tion</h3></div></li>
-                <li><span></span><div><h3>qui·e·tude</h3></div></li>
-                <li><span></span><div><h3>bal·ance</h3></div></li>
-                <li><span></span><div><h3>e·qua·nim·i·ty</h3></div></li>
-                <li><span></span><div><h3>com·po·sure</h3></div></li>
-                <li><span></span><div><h3>se·ren·i·ty</h3></div></li>
-            </ul>
-
-            <div class="row center-block" style="position:absolute; top:0px; width: 100%">
-                <% if (!session.user) { %>
-                    <a href="/login">Login&nbsp;</a>
-                <%}%>
+        <div class="row alerta text-center">
+            <div class="alert alert-warning alert-dismissible alerta-panel" name="alerta-panel" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <strong>Warning!</strong> Better check yourself, you're not looking too good.
             </div>
+        </div>
 
-           <div class="row" style="position:absolute; top:10px; width: auto; right:40px;">
+        <div class="row center-block animated fadeIn" id="subir-inicio">
+    		<nav role="navigation"><a href="#inicio"><i class="fa fa-arrow-circle-up fa-2x" id="subir-inicio-icon"></i></a></nav>
+    	</div>
 
-                <li class="dropdown" style="list-style:none">
+        <div class="row text-center navbar" id="menu-inicio" >
 
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-close-others="true">
-                       <img id="img-pais" src="/images/flags/United-Kingdom-32.png"/>
-                    </a>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-inicio-items" style="color: white">
+                        <i class="fa fa-bars fa-2x"></i>
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
 
-                     <ul class="dropdown-menu pull-right" id="lista-idiomas">
-                        <li id="sp">
-                            <a href="/languages/sp">
-                                <img src="/images/flags/Spain-32.png" />
-                                <span>Spanish</span>
-                            </a>
-                        </li>
-                        <li class="disabled" id="en">
-                            <a href="#">
-                                <img src="/images/flags/United-Kingdom-32.png" />
-                                <span>English</span>
-                            </a>
-                        </li>
-                        <li id="fr">
-                            <a href="#">
-                                <img src="/images/flags/France-32.png" />
-                                <span>François</span>
-                        </a>
-                        </li>
-                        <li id="gr">
-                            <a href="#">
-                                <img src="/images/flags/Germany-32.png" />
-                                <span>German</span>
-                        </a>
-                        </li>
+                <div class="collapse navbar-collapse" id="menu-inicio-items">
+                    <ul class="nav navbar-nav" style="width: 100%; margin-left: 0px;">
+
+<!--                            <div class="col-md-2 col-sm-2 menu-inicio-item animated fadeIn">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contrata tu franquicia <span class="caret"></span></a>
+                                <ul class="dropdown-menu dropdown-menu-inicio normal-animated fadeIn">
+                                    <a class="button" data-toggle="modal" data-target="#panel-elsol">
+                                        <li class="dropdown-menu-inicio-item">
+                                            <img class="img animated fadeIn" src="/images/drops/drop-elsol.png" alt="Third drop">
+                                        </li>
+                                    </a>
+                                    <a class="button" data-toggle="modal" data-target="#panel-after">
+                                        <li class="dropdown-menu-inicio-item">
+                                            <img class="img animated fadeIn" src="/images/drops/drop-after.png" alt="Second drop">
+                                        </li>
+                                    </a>
+                                    <a class="button" data-toggle="modal" data-target="#panel-mediterraneo">
+                                        <li class="dropdown-menu-inicio-item" style="border-bottom: none">
+                                            <img class="img animated fadeIn" src="/images/drops/drop-med.png" alt="Third drop">
+                                        </li>
+                                    </a>
+                                </ul>
+                            </li>
+                        </div> -->
+
+                        <div class="col-md-2 col-sm-2 menu-inicio-item animated fadeIn">
+                            <li><nav role="navigation"> <a href="#contrata-franquicia">&nbsp;Open your franchise&nbsp;</a></nav></li>
+                        </div>
+
+                        <div class="col-md-2 col-sm-2 menu-inicio-item animated fadeIn">
+                            <li><nav role="navigation"> <a href="#personas">&nbsp;Our brands&nbsp;</a></nav></li>
+                        </div>
+
+                        <div class="col-md-2 col-sm-2 menu-inicio-item animated fadeIn">
+                            <li><nav role="navigation"> <a href="#quienes-somos">&nbsp;About us&nbsp;</a></nav></li>
+                        </div>
+
+                        <div class="col-md-2 col-sm-2 menu-inicio-item animated fadeIn">
+                            <li><nav role="navigation"> <a href="#servicios">&nbsp;Frequent questions&nbsp;</a></nav></li>
+                        </div>
+
+                        <div class="col-md-2 col-sm-2 menu-inicio-item animated fadeIn">
+                            <li><nav role="navigation"> <a href="#contacto2">&nbsp;Contact us&nbsp;</a></nav></li>
+                        </div>
+
+                        <div class="col-md-1 col-sm-1 menu-inicio-item animated fadeIn">
+                            <li><nav role="navigation"> <a href="https://elsecretodelexitodelosbares.wordpress.com">&nbsp;Blog&nbsp;</a></nav></li>
+                        </div>
+
+                        <div class="col-md-1 col-sm-1 menu-inicio-item animated fadeIn">
+                            <li class="dropdown" style="list-style:none;">
+                                <a href="#" class="dropdown-toggle" id="pais-selecionado" data-toggle="dropdown" data-close-others="true">
+                                    <img id="img-pais" src="/images/flags/United-Kingdom-24.png"/>
+                                </a>
+                                <ul class="dropdown-menu pull-right animated fadeIn" id="lista-idiomas" style="max-width: 100px">
+                                    <li id="sp"><a href="/"><img src="/images/flags/Spain-24.png"/> Spanish</a></li>
+                                    <li class="disabled" id="en"><a href="#"><img src="/images/flags/United-Kingdom-24.png"/> English</a></li>
+<!--                                    <li id="fr"><a href="#"><img src="/images/flags/France-24.png"/> François</a></li>
+                                    <li id="gr"><a href="#"><img src="/images/flags/Germany-24.png" /> German</a></li> -->
+                                </ul>
+<!--                                <% if (!session.user) { %>
+                                    <a href="/login" style="color: white; font-size: 12px;">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-sign-in"></i> Login&nbsp;</a>
+                                <%}%> -->
+                            </li>
+                        </div>
+
                     </ul>
-                </li>
+
+                </div> <!-- /.navbar-collapse -->
+
+        </div>
+
+
+        <div class="animated fadeIn" id="wrap">
+            <img class="bgfade responsive" src="/images/bg/img-1b.jpg">
+            <img class="bgfade responsive" src="/images/bg/img-2b.jpg">
+            <img class="bgfade responsive" src="/images/bg/img-3b.jpg">
+            <img class="bgfade responsive" src="/images/bg/img-4b.jpg">
+            <img class="bgfade responsive" src="/images/bg/img-5b.jpg">
+            <img class="bgfade responsive" src="/images/bg/img-6b.jpg">
+        </div>
+
+        <!-- inicio =================================================================================================================== -->
+
+        <div class="container-fluid text-center animated fadeIn" id="inicio">
+
+            <div class="row animated fadeIn center-block" id="logo-inicio">
+                <img class="img" src="/images/logos/logo-inbaar.png" alt="Generic placeholder image"> <br>
+                <img class="img ocultar-movil" src="/images/logos/texto-inbaar.png" alt="Generic placeholder image">
             </div>
 
-            <div class="row center-block" style="position:absolute; top:100px; width: 100%">
-                <img src="/images/floxy/logo-inbar3.png" alt="Generic placeholder image" width="240">
-                <hr>
-            </div>
-
-            <div class="row text-center" style="position:absolute; top:620px; width: 100%">
-                <div class="col-md-2 menu-inicio">
-                    <nav role="navigation"> <a href="#inicio" class="banner-btn">Start</a></nav>
-                </div>
-                <div class="col-md-2 menu-inicio">
-                    <nav role="navigation"> <a href="#elegir" class="banner-btn">Open your business</a></nav>
-                </div>
-                <div class="col-md-2 menu-inicio">
-                    <nav role="navigation"> <a href="#elegir" class="banner-btn">Do you have a place?</a></nav>
-                </div>
-                <div class="col-md-2 menu-inicio">
-                    <nav role="navigation"> <a href="#contacto2" class="banner-btn">Contact us</a></nav>
-                </div>
-                <div class="col-md-2 menu-inicio">
-                    <nav role="navigation"> <a href="#personas" class="banner-btn">Who we are</a></nav>
-                </div>
-                <div class="col-md-2 menu-inicio">
-                    <nav role="navigation"> <a href="#elegir" class="banner-btn">Blog</a></nav>
-                </div>
+            <div class="row animated fadeIn" id="calma">
+                <h1> BARS WITH SOUL</h1>
             </div>
 
         </div>
-    </div>
+
+        <!-- CONTRATA TU FRANQUICIA ================================================================================================ -->
+
+        <div class="container bordes" id="contrata-franquicia">
+
+            <div class="row text-center" id="header-contrata-franquicia">
+                <h1 class="ocultar">OPEN YOUR <span class="titulo-secciones">&nbsp;FRANCHISE&nbsp;</span></h1>
+            </div>
+
+            <div class="row" id="textos-contrata-franquicia">
+                <div class="col-md-6 texto-contrata-franquicia">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="col-md-6 texto-contrata-franquicia">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+
+            <div class="boton-pie-seccion center-block">
+                <a href="#" class="btn btn-info-gral">
+                    futher information...
+                </a>
+            </div>
+
+        </div>
+
+        <!-- NUESTRAS MARCAS  =============================================================================== -->
+
+        <div class="container-fluid text-center bordes" id="personas">
+
+            <div id="header-personas">
+                <h1 class="ocultar">NUESTRAS <span class="titulo-secciones">&nbsp;MARCAS&nbsp;</span></h1>
+            </div>
+
+            <div class="row ocultar ocultar-pc">
+<!--                <div class="center-block" id="logo-marcas">
+                    <img src="/images/logos/el-sol-marcas.jpg" alt="" />
+                </div> -->
+
+                <br>
+                <h3>Elige tu modelo de bar</h3>
+            </div>
+
+            <div class="row center-block" id="elegir-modelo">
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="img-modelo center-block">
+                        <a class="button"
+                            data-toggle="modal"
+                            data-target="#panel-mediterraneo">
+                                <img class="img-responsive" src="/images/marcas/sol-mediterraneo.jpg" alt="">
+                        </a>
+                    </div>
+                    <br>
+                    <div class="texto-modelo ocultar">
+                        <a class="button"
+                            data-toggle="modal"
+                            data-target="#panel-mediterraneo">
+                                <img src="/images/logos/el-sol-mediterraneo.jpg"></img>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 ocultar ocultar-movil">
+                    <br>
+                    <h3>Elige tu modelo de bar</h3>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="img-modelo center-block">
+                        <a class="button"
+                            data-toggle="modal"
+                            data-target="#panel-after">
+                            <img class="img-responsive" src="/images/marcas/sol-afterworkdrinks.jpg" alt="">
+                        </a>
+                    </div>
+                    <br>
+                    <div class="texto-modelo ocultar">
+                        <a type="button"
+                            data-toggle="modal"
+                            data-target="#panel-after">
+                                <img src="/images/logos/el-sol-afterdrinks.jpg"/>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- QUIENES SOMOS ================================================================================================ -->
+
+        <div class="container bordes" id="quienes-somos">
+
+            <div class="row text-center" id="header-quienes-somos">
+                <h1 class="ocultar">QUIÉNES <span class="titulo-secciones">&nbsp;SOMOS&nbsp;</span></h1>
+            </div>
+
+            <h4 class="text-center"><strong>EMPRESA</strong></h4>
+
+            <div class="container-fluid">
+
+                <div class="container" id="textos-quienes-somos">
+
+                    <div class="col-md-6 texto-quienes-somos">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+
+                    <div class="col-md-6 texto-quienes-somos">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Marketing messaging and featurettes  ================================================== -->
+    		<div class="container-fluid marketing text-center" id="directorio-rrhh">
+                <!-- Three columns of text below the carousel -->
+                <h4><strong>EQUIPO DIRECTIVO</strong></h4>
+                <br>
+    			<div class="row">
+
+
+
+                    <div class="col-lg-4 col-sm-4 persona">
+                        <h4>Proyectos & Expansión</h4>
+                        <img class="img-circle" id="persona-1" src="/images/rrhh/antonio-mazon-pastor-BN.jpg" alt="Generic placeholder image" width="100" height="100"/>
+                        <br>
+                        <h4>Antonio Mazón Pastor<a class="button"
+                            data-toggle="modal"
+                            data-target="#panel-mediterraneo">
+                                <img src="/images/btn/btn-ver-mas-a.jpg"></img>
+                        </a></h4>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-4 persona">
+                        <h4>Proyectos & Expansión</h4>
+                        <img class="img-circle" id="persona-2" src="/images/rrhh/rodrigo-ramirez-herrera-BN.jpg" alt="Generic placeholder image" width="100" height="100"/>
+                        <br>
+                        <h4>Rodrigo Ramírez Herrera<a class="button"
+                            data-toggle="modal"
+                            data-target="#panel-mediterraneo">
+                                <img src="/images/btn/btn-ver-mas-a.jpg"></img>
+                        </a></h4>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-4 persona">
+                        <h4>Proyectos & Expansión</h4>
+                        <img class="img-circle" id="persona-3" src="/images/rrhh/antonio-mazon-pastor-BN.jpg" alt="Generic placeholder image" width="100" height="100"/>
+                        <br>
+                        <h4>Antonio Mazón Pastor<a class="button"
+                            data-toggle="modal"
+                            data-target="#panel-mediterraneo">
+                                <img src="/images/btn/btn-ver-mas-a.jpg"></img>
+                        </a></h4>
+                    </div>
+
+    			</div><!-- /.row -->
+            </div>
+
+            <div class="row text-center" id="logo-quienes-somos" style="">
+                <img class="img-responsive" src="/images/logos/inbaar-pie.jpg" alt="" />
+            </div>
+
+        </div>
+
+
+
+
+        <!-- PREGUNTAS FRECUENTES =============================================================================================== -->
+
+        <div class="container-fluid bordes" id="servicios">
+            <div class="container">
+                <div class="row no-margin" id="servicios-panel">
+
+                    <div id="header-servicios ocultar">
+                        <h1 class="text-center">PREGUNTAS <span class="titulo-secciones">&nbsp;FRECUENTES&nbsp;</span></h1>
+                    </div>
+
+<!--                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true"> -->
+
+                    <div class="col-md-6">
+
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+                            <div class="panel panel-default faq ocultar">
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            ¿Aquí la primera pregunta?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="panel-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default faq ocultar">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            ¿Aquí la segunda pregunta?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default faq ocultar">
+                                <div class="panel-heading" role="tab" id="headingThree">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Collapsible Group Item #3
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                    <div class="panel-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default faq ocultar">
+                                <div class="panel-heading" role="tab" id="headingFour">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                            Collapsible Group Item #3
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                    <div class="panel-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+
+                            <div class="panel panel-default faq ocultar">
+                                <div class="panel-heading" role="tab" id="headingFive">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive" aria-expanded="true" aria-controls="collapseOne">
+                                            Collapsible Group Item #1
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                    <div class="panel-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default faq ocultar">
+                                <div class="panel-heading" role="tab" id="headingSix">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseSix" aria-expanded="false" aria-controls="collapseTwo">
+                                            Collapsible Group Item #2
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                                    <div class="panel-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default faq ocultar">
+                                <div class="panel-heading" role="tab" id="headingSeve">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseSeven" aria-expanded="false" aria-controls="collapseThree">
+                                            Collapsible Group Item #3
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                                    <div class="panel-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default faq ocultar">
+                                <div class="panel-heading" role="tab" id="headingEight">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseEight" aria-expanded="false" aria-controls="collapseThree">
+                                            Collapsible Group Item #3
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+                                    <div class="panel-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+<!--                    </div> -->  <!-- .end accordion -->
+
+                </div>
+            </div>
+
+            <div class="boton-pie-seccion center-block">
+                <a class="btn btn-info-gral" data-toggle="modal" data-target="#panel-mas-preguntas">
+                        ver más preguntas...
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+<!--                    <div class="col-md-6 col-sm-6">
+                        <div class="servicios-item ocultar">
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading1">
+                                        <h4 class="panel-title">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                                Collapsible Group Item #1
+                                            </a>
+                                        </h4>
+                                    </div>
+                                <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+                                    <div class="panel-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-md-6 col-sm-6">
+                        <div class="servicios-item ocultar">
+                            <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading2">
+                                        <h4 class="panel-title">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapse2" aria-expanded="true" aria-controls="collapseTwo">
+                                                Collapsible Group Item #1
+                                            </a>
+                                        </h4>
+                                    </div>
+                                <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                                    <div class="panel-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-md-6 col-sm-6">
+                        <div class="servicios-item ocultar">
+                            <div class="panel-group" id="accordion3" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                        <h4 class="panel-title">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion3" href="#collapseThree" aria-expanded="true" aria-controls="collapseTwo">
+                                                Collapsible Group Item #1
+                                            </a>
+                                        </h4>
+                                    </div>
+                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-md-6 col-sm-6">
+                        <div class="servicios-item ocultar">
+                            <a href="#">
+                                <h4>¿Y aquí iría otra pregunta más?</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="servicios-item ocultar">
+                            <a href="#">
+                                <h4>¿Y aquí iría otra pregunta más?</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="servicios-item ocultar">
+                            <a href="#">
+                                <h4>¿Y aquí iría otra pregunta más?</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="servicios-item ocultar">
+                            <a href="#">
+                                <h4>¿Y aquí iría otra pregunta más? ¿otra pregunta más?</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="servicios-item ocultar">
+                            <a href="#">
+                                <h4>¿Y aquí iría otra pregunta más?</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="servicios-item ocultar">
+                            <a href="#">
+                                <h4>¿Y aquí iría otra pregunta más?</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="servicios-item ocultar">
+                            <a href="#">
+                                <h4>¿Y aquí iría otra pregunta más? ¿otra pregunta más?</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="boton-pie-seccion center-block">
+                <a href="#" class="btn btn-info-gral">
+                        ver más preguntas...
+                </a>
+            </div>
+
+        </div> -->
+
+
+        <!-- FORMULARIO CONTACTO2 =============================================================================== -->
+
+        <div class="container-fluid" id="contacto2" name="contacto2">
+
+
+
+<!--            <div class="row no-padding" id="img-bg-contacto2"> -->
+                <img class="img-responsive" id="img-bg-contacto2" src="/images/bg/fondo-contacto.jpg" />
+
+<!--            </div> -->
+
+
+            <div class="row" id="header-contacto2">
+                <h1>FORMULARIO <span class="titulo-secciones">&nbsp;CONTACTO&nbsp;</span></h1>
+            </div>
+
+
+            <div class="row">
+
+                <form class="form-horizontal" method="post" action="/contactos/webcreate">
+
+                    <h1 class="hidden" id="aviso" name="aviso" style="position: fixed; top: 60px;">AVISO</h1>
+
+                    <div class="col-md-6 col-sm-6 col-xs-12 texto-contacto text-center">
+                        <h2>¿NECESITAS <br> MÁS <br> INFORMACIÓN?</h2>
+    <!--                    <nav role="navigation"><a href="#inicio">
+                            <img class="img-circle center-block" src="/images/floxy/logo-inbar.png" data-src="holder.js/100x100/auto" alt="Generic placeholder image" width="100" height="auto">
+                        </a></nav>
+                        <h5>prueba</h5>
+                        <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </h5>
+    -->             </div>
+
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+    <!--                    <h3>CONTACTO</h3> -->
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <div class="form-group ocultar">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" required placeholder=""/>
+                            </div>
+
+                            <div class="form-group ocultar">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required placeholder=""/>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <div class="form-group ocultar">
+                                <label for="alias">Dirección (opcional)</label>
+                                <input type="text" class="form-control" id="alias" name="alias" placeholder=""/>
+                            </div>
+                            <div class="form-group ocultar">
+                                <label for="emailok">Repetir Email</label>
+                                <input type="email" class="form-control" id="emailok" name="emailok" required placeholder=""/>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <div class="form-group ocultar">
+                                <label for="inputEmail3">Teléfono (opcional)</label>
+                                <input type="text" class="form-control" id="telf" name="telefono" pattern="[0-9]{9}" placeholder=""/>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <div class="form-group ocultar">
+                                <label for="inputPassword3">Marca</label>
+                                <select class="form-control" name="marca">
+                                    <option value="Todas">Todas</option>
+                        			<option value="Sol">Sol</option>
+                        			<option value="Mediterráneo">Mediterráneo</option>
+
+                        		</select>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <div class="form-group ocultar">
+                                <label for="inputEmail3">Ciudad</label>
+                                <input type="text" class="form-control" id="ciudad" name="ciudad" required placeholder=""/>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <div class="form-group ocultar">
+                                <label for="inputPassword3">Provincia</label>
+                                <input type="text" class="form-control" id="provincia" name="provincia" required placeholder=""/>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="form-group" style="margin-top: 25px">
+                                <div class="row">
+
+                                    <div class="col-md-7 col-sm-7 col-xs-7">
+                                        <h5 style="display: inline-block"><strong>Introduce:&nbsp;&nbsp;</strong></h5>
+                                        <h4 id="codigo-captcha"</h4>
+                                    </div>
+
+                                    <div class="col-md-5 col-sm-5 col-xs-5" style="margin-top: 14px; margin-left: -8px; padding-left: 0px">
+                                        <i class="fa fa-refresh" id="recargar-captcha" aria-hidden="true"></i>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-md-7 col-sm-7 col-xs-7">
+                                        <input type="text" id="texto-captcha" name="texto-captcha">
+                                    </div>
+
+                                    <div class="col-md-5 col-sm-5 col-xs-5" style="margin-top: 5px; margin-left: -8px; padding-left: 0px">
+                                        <i class="fa fa-check" id="soy-persona" aria-hidden="true"></i>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+
+                            <div class="form-group ocultar" style="margin-top:25px">
+                                <div class="form-group trampa">
+                                    <label for="captcha-invisible"></label>
+                                    <input type="text" class="form-control" id="captcha-invisible" >
+                                </div>
+                                <button id="enviar" type="submit" class="btn btn-warning">Solicitar información</button>
+<!--                                <script type="text/javascript">
+                                    function sendMail() {
+                                        emailjs.send("gmail","template_9Ae6OZg5",{name: "jotamontoyo", notes: "Check this out!"});
+                                    }
+                                </script> -->
+
+
+
+                            </div>
+
+                            <div class="form-group ocultar" id="check-lopd">
+                                <label>
+                                    <input type="checkbox" id="lopd" name="lopd" required> Acepto la
+                                        <a class="button"
+                                            data-toggle="modal"
+                                            data-target="#panel-lopd">
+                                            <span> política de privacidad</span>
+                                        </a>
+                                    </input>
+                                </label>
+                            </div>
+
+                        </div>
+
+<!--                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="form-group ocultar text-center" style="margin-top:25px">
+                                <button id="enviar" type="submit" class="btn btn-info">Solicitar información</button>
+                            </div>
+                        </div> -->
+
+
+                    </div>
+                </form>
+            </div>
+        </div>
+
 
 
     <!-- ELEGIR MODELO =================================================================================================================== -->
-    <div class="container-fluid preload" name="elegir" id="elegir">
+<!--    <div class="container-fluid preload" name="elegir" id="elegir" onscroll="Animar(id)">
         <div class="row img-logo-sm" style="margin-left: 0;">
             <br>
-            <h3 class="text-center"><img class="img-circle" src="/images/floxy/logo-inbar.png" data-src="holder.js/100x100/auto" alt="Generic placeholder image"> Choose your model</img></h3>
+            <h3 class="text-center"><img class="img-circle" src="/images/floxy/logo-inbar.png" data-src="holder.js/100x100/auto" alt="Generic placeholder image"> Elije tu modelo</img></h3>
         </div>
-        <div class="row" id="elegir_modelo">
+        <div class="row" id="elegir-modelo">
             <div class="col-md-6 col-sm-6">
                 <h2 class="text-center">SOL</h2>
                 <h6 class="text-center">Afterwork drinks</h6>
@@ -119,7 +785,7 @@
                     <a class="button"
                         data-toggle="modal"
                         data-target="#panel-mediterraneo">
-                        <img class="img-responsive" src="/images/floxy/modelo-med.png" alt="">
+                        <img class="img-responsive" src="images/floxy/modelo-med.png" alt="">
                     </a>
                 </div>
                 <br>
@@ -134,7 +800,7 @@
         <div class="row text-center">
             <nav role="navigation"> <a href="#servicios"><i class="fa fa-arrow-down fa-2x"></i></a></nav>
 
-        </div>
+        </div> -->
 
 <!--        <script type="text/javascript">
             $(elegir).show(function() {
@@ -143,7 +809,7 @@
         </script> -->
 
 
-    </div>
+<!--    </div> -->
 
 
     <!-- FRANQUICIAS ======================================================================================================================= -->
@@ -227,81 +893,6 @@
         	</div>
         </div>
     </section> -->
-
-    <!-- SERVICIOS =============================================================================================== -->
-    <div class="container-fluid" id="servicios">
-        <div class="container">
-            <div class="col-md-4 col-sm-6"> <i class="fa fa-area-chart fa-2x"></i>
-                <div class="servicios-contenido">
-                    <h5>Strategy & Consulting</h5>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6"> <span class="fa fa-home fa-2x"></span>
-                <div class="servicios-contenido">
-                    <h5>corporate identity</h5>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6"> <span class="fa fa-cog fa-2x"></span>
-                <div class="servicios-contenido">
-                    <h5>web design and development</h5>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6"> <span class="fa fa-adn fa-2x"></span>
-                <div class="servicios-contenido">
-                    <h5>Branding</h5>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6"> <span class="fa fa-hashtag fa-2x"></span>
-                <div class="servicios-contenido">
-                    <h5>Digital marketing</h5>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6"> <span class="fa fa-gift fa-2x"></span>
-                <div class="servicios-contenido">
-                    <h5>Promotion material</h5>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Marketing messaging and featurettes  =============================================================================== -->
-    <div class="container center-block" id="personas" style="height:auto; padding-top:100px; padding-bottom:80px;">
-
-		<div class="marketing">
-			<!-- Three columns of text below the carousel -->
-			<div class="row">
-				<div class="col-lg-4">
-					<img class="img-circle animated tada" src="/images/floxy/masonet.jpg" alt="Generic placeholder image" width="140" height="140">
-					<h2>El lider</h2>
-					<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-					<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-				</div><!-- /.col-lg-4 -->
-			    <div class="col-lg-4">
-					<img class="img-circle animated tada" src="/images/tabano.jpg" alt="Generic placeholder image" width="140" height="140">
-					<h2>El tábano</h2>
-					<p>Estas son las prácticas que he ido realizando en diferentes cursos, tanto aquellos realizados online como los que he hecho por mi cuenta mediante manuales.</p>
-					<p><a class="btn btn-default" href="practicas.html" role="button">View details &raquo;</a></p>
-				</div><!-- /.col-lg-4 -->
-				<div class="col-lg-4">
-					<img class="img-circle animated tada" src="/images/floxy/mota.jpg" alt="Generic placeholder image" width="140" height="140">
-					<h2>El Fumi de Morata</h2>
-					<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-					<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-				</div><!-- /.col-lg-4 -->
-			</div><!-- /.row -->
-        </div>
-
-    </div>
-
-
-
 
 
 
@@ -519,97 +1110,7 @@
 </section>
 <!-- Testimonials section -->
 
-    <div class="container-fluid" id="contacto2" name="contacto2">
-
-        <div class="row">
-            <form class="form-horizontal" method="post" action="/contactos/webcreate">
-
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <nav role="navigation"><a href="#inicio">
-                        <img class="img-circle center-block" src="/images/floxy/logo-inbar.png" data-src="holder.js/100x100/auto" alt="Generic placeholder image" width="100" height="auto">
-                    </a></nav>
-                    <h5>prueba</h5>
-                    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </h5>
-                </div>
-
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <h3>CONTACTO</h3>
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="form-group">
-                            <label for="nombre">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" name="nombre" required placeholder="nombre"/>
-                        </div>
-                    </div>
-<!--                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="form-group">
-                            <label for="alias">Alias</label>
-                            <input type="text" class="form-control" id="alias" name="alias" placeholder="alias"/>
-                        </div>
-                    </div> -->
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="form-group">
-                            <label for="inputEmail3">Email</label>
-                            <input type="email" class="form-control" id="email" name="email" required placeholder="eMail"/>
-                        </div>
-<!--                        <div class="form-group">
-                            <label for="inputPassword3">Email</label>
-                            <input type="email" class="form-control" id="emailok" name="emailok" required placeholder="eMail confirm"/>
-                        </div> -->
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="form-group">
-                            <label for="inputEmail3">Teléfono</label>
-                            <input type="text" class="form-control" id="telf" name="telefono" pattern="[0-9]{9}" required placeholder="teléfono"/>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="form-group">
-                            <label for="inputPassword3">Marca</label>
-                            <select class="form-control" name="marca">
-                                <option value="Todas">Todas></option>
-                    			<option value="Sol">Sol</option>
-                    			<option value="Mediterráneo">Mediterráneo</option>
-
-                    		</select>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="form-group">
-                            <label for="inputEmail3">Ciudad</label>
-                            <input type="text" class="form-control" id="ciudad" name="ciudad" required placeholder="ciudad"/>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="form-group">
-                            <label for="inputPassword3">Provincia</label>
-                            <input type="text" class="form-control" id="provincia" name="provincia" required placeholder="provincia"/>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="form-group text-center" style="margin-top:30px">
-                            <label>
-                                <input type="checkbox" id="lopd" name="lopd" required><small> Acepto la
-                                    <button type="button"
-                                        class="btn btn-primary btn-xs"
-                                        data-toggle="modal"
-                                        data-target="#panel-lopd">política de privacidad
-                                    </button></small>
-                                </input>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="form-group text-center" style="margin-top:25px">
-                            <button type="submit" class="btn btn-info">Solicitar información</button>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-
-
-<!--
+    <!--
 
     <div class="container-fluid" id="contacto" name="contacto">
         <div class="row">
