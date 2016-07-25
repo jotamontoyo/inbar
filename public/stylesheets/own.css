@@ -1562,8 +1562,8 @@
 			font-size: 22px;
 		}
 
-		#contacto2 h2 {
-			margin-bottom: 40px;
+		#contacto2 h5 {
+			margin-bottom: 20px;
 			line-height: 20px;
 		}
 
@@ -1660,6 +1660,10 @@
 
 		.ocultar-movil{
 			display: none;
+		}
+
+		.ocultar-pc {
+			display: block;
 		}
 
 		.col-pie, .servicios-contenido {
@@ -1761,6 +1765,15 @@
 
 		}
 
+
+		/* =========================================================================================== */
+		/* ======= CONTACTO2 ========================================================================= */
+		/* =========================================================================================== */
+
+		.texto-contacto h5 {
+			margin-top: 100px;
+			font-size: 30px;
+		}
 
 	}
 }
