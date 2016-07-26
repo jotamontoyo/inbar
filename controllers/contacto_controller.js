@@ -30,7 +30,7 @@
 	};
 
 	exports.create = function(req, res) {											// POST /quizes/create
-		var contacto = models.Contacto.build( req.body.contacto );				// construccion de objeto quiz para luego introducir en la tabla
+		var contacto = models.Contacto.build( req.body.contacto );					// construccion de objeto quiz para luego introducir en la tabla
 		var errors = contacto.validate();											// objeto errors no tiene then(
 		if (errors) {
 			var i = 0;
@@ -122,6 +122,8 @@
 				dialog.info('Tu solicitud ha sido enviada correctamente', 'Inbar Asset', function(err) {
 				    if (!err) console.log('El usuario ha sido avisado del envio de la solicitud');
 				}); */
+
+//				res.send('');
 
 				var postmark = require("postmark")(process.env.POSTMARK_API_TOKEN);
 

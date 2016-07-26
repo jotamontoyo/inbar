@@ -935,23 +935,9 @@
 	/* ======================================================================================== */
 
 	#pie2 {
-/*		background-color: 	rgba(256, 256, 256, 1.0); */
 		background: url(/images/bg/img-bg-pie.jpg) repeat center center;
 		width: 				100%;
-/*		height: 			640px; */
 		height: 			auto;
-/*		padding-left: 		8%;
-/*		padding-right: 		5%;
-		color: 				white;
-		position: 			absolute;
-		overflow: 			hidden;
-/*		display: 			-webkit-flex;
-		display: 			flex;
-		-webkit-flex-direction: 	column;
-		flex-direction: 			column;
-		-webkit-justify-content: 	space-around;
-		justify-content: 			space-around;
-		border: 					none !important; */
 	}
 
 	#img-bg-pie {
@@ -960,16 +946,14 @@
 
 	#rrss-pie {
 		height: 100px;
-		padding-left: 		0%;
-		padding-right: 		5%;
-		margin-top: 		40px;
-
+		margin-top: 40px;
+		margin-left: -4vw;
+		padding-right: 7vw;
 	}
 
 	#rrss-pie ul {
 		height: 100%;
 	}
-
 
 	.img-logo-sm {
 		width: auto;
@@ -987,13 +971,10 @@
 		cursor: pointer;
 	}
 
-
-
 	#marcas-pie {
 		width: 100%
 		margin-top: 70px;
 		margin-bottom: 65px;
-
 	}
 
 	.col-marca-pie {
@@ -1001,7 +982,6 @@
 		display: flex;							/* necesario para alineacion */
 		align-items: center; 					/* alineacion vertical */
 		justify-content: center;				/* alineacion horizontal */
-
 	}
 
 	.img-marca-pie {
@@ -1012,7 +992,6 @@
 		max-width: 100%;
 		height: auto;
 	}
-
 
 	#copyright, #header-pie, #footer-pie {
 		width: 100%;
@@ -1031,16 +1010,12 @@
 	}
 
 	#header-pie {
-
 		text-align: center;
-
 	}
 
 	#copyright, #header-pie, #footer-pie h4 {
 		padding-top: 10px;
-
 	}
-
 
 	.fb-share-button {
 		margin-top: 0;

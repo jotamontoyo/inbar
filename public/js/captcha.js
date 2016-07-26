@@ -1,7 +1,7 @@
 
     $(document).ready(function() {
 
-        $('#enviar').prop('disabled', true );
+        $('#enviar').prop('disabled', true);
         $("#captcha-invisible").val('');
 
         $('#texto-captcha').prop('readonly', false);
@@ -12,7 +12,7 @@
 
         $("#captcha-invisible").change(function() {                                     // Captcha invisible
             if ($(this).length > 0){
-                $("#enviar").prop( "disabled", true );
+                $("#enviar").prop('disabled', true);
             };
         });
 
@@ -44,7 +44,7 @@
             } else {
                 $("#enviar").prop("disabled", true);
                 if (textocaptcha.length) {
-                    swal({title: "No coincide", text: "Inténtalo de nuevo", timer: 2000, showConfirmButton: false });
+                    swal({title: "El captcha no coincide", text: "Inténtalo de nuevo", timer: 2000, showConfirmButton: false });
                 };
                 $('#texto-captcha').val('');
             };
