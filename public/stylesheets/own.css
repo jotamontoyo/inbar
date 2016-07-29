@@ -128,6 +128,11 @@
 		justify-content: center;				/* alineacion horizontal */
 	}
 
+	.centrado-v {
+		display: flex;							/* necesario para alineacion */
+		align-items: center; 					/* alineacion vertical */
+	}
+
 
 
 /*	#contacto {
@@ -185,7 +190,8 @@
 
 	/* MODALS ==================================================================== */
 
-	#panel-elegir-franquicia, #panel-mediterraneo, #panel-elsol, #panel-after, #panel-mas-preguntas, #panel-modal-seguir-leyendo {
+	#panel-elegir-franquicia, #panel-mediterraneo, #panel-elsol, #panel-after,
+		#panel-mas-preguntas, #panel-modal-seguir-leyendo, #panel-perfil-1 {
 		padding-left: 0px;
 
 	}
@@ -193,15 +199,11 @@
 
 
 
-	#modal-elsol, #modal-mediterraneo, #modal-after, #modal-mas-preguntas, #modal-seguir-leyendo {
+	#modal-elsol, #modal-mediterraneo, #modal-after, #modal-mas-preguntas, #modal-seguir-leyendo, #modal-perfil-1 {
 		width: 95%;
 		color:	rgb(0, 0, 0);
 	}
 
-	#modal-seguir-leyendo {
-
-
-	}
 
 
 	#modal-content-mas-preguntas, .modal-header, .modal-footer {
@@ -219,6 +221,10 @@
 /*		padding: 5px; */
 	}
 
+	.modal-body .col-marca-pie img {			/* estilo logos pie del modal perfil de rrhh */
+		margin-top: 60px;
+		min-width: 60px;
+	}
 
 	/* ESTILOS DEL MODAL-MENU ABRE TU FRANQUICIA ======================================================= */
 	#modal-elegir-franquicia {
@@ -679,7 +685,7 @@
 	.texto-modelo {
 		width: auto;
 		margin-top: 20px;
-
+		margin-bottom: 20px;
 		cursor: pointer;
 	}
 
@@ -697,7 +703,8 @@
 	}
 
 	.texto-modelo img {
-		max-width: 200px;
+		width: 15vw;
+		min-width: 120px;
 		vertical-align: bottom;
 	}
 
@@ -743,6 +750,13 @@
 		margin-bottom: 20px;
 	}
 
+	#personas p {
+
+
+		line-height: 4vh;
+
+	}
+
 	.persona-item a:hover {
 		cursor: pointer;
 	}
@@ -760,8 +774,12 @@
 
 	#quienes-somos {
 		width: 100%;
-		height: 100vh;
-		min-height: 650px;
+/*		height: 100vh;
+		min-height: 650px; */
+
+		height: auto;
+		min-height: 100vh;
+
 		position: relative;
 
 	}
@@ -774,13 +792,13 @@
 	}
 
 	.texto-quienes-somos {
-		padding: 0px 40px 0px 40px;
+		padding: 0px 20px 0px 20px;
 	}
 
 	.texto-quienes-somos p {
-		line-height: 35px;
-
-		font-size: 2vh;
+		line-height: 3.5vh;
+		font-size: 2.2vh;
+		text-align: justify;
 	}
 
 
@@ -991,7 +1009,7 @@
 		cursor: pointer;
 	}
 
-	#marcas-pie {
+	.marcas-pie {
 		width: 100%
 		margin-top: 70px;
 		margin-bottom: 65px;
@@ -1005,7 +1023,7 @@
 	}
 
 	.img-marca-pie {
-		max-width: 250px;
+		max-width: 200px;
 	}
 
 	.img-marca-pie img {
@@ -1425,6 +1443,11 @@
 			font-size: 18px;
 		}
 
+		#personas p {
+			padding-left: 15vw;
+			padding-right: 15vw;
+		}
+
 		.persona-item {
 			margin-bottom: 20px;
 			border-bottom: 1px solid #999999;
@@ -1445,11 +1468,7 @@
 			margin-top: 10px;
 		}
 
-		.texto-modelo {
-			margin-top: 10px;
-			margin-bottom: 50px;
 
-		}
 
 
 /*		.modelo h1 {
@@ -1494,7 +1513,7 @@
 		}
 
 		.texto-quienes-somos p {
-			line-height: 12px;
+/*			line-height: 12px; */
 		}
 
 
@@ -1696,12 +1715,26 @@
 		} */
 
 		.alerta {													/* etilo aviso cookies */
-
 			max-width: 700px;
 			margin-left: 15vw;
 			margin-right: 15vw;
 			margin-top: 18vh;
 		}
+
+		/* ========================================================================== */
+		/* NUESTRAS MARCAS TABLET =================================================== */
+		/* ========================================================================== */
+
+		#personas {
+			height: auto;
+		}
+
+		#personas p {
+			padding-left: 10vw;
+			padding-right: 10vw;
+		}
+
+
 
 
 		/* ========================================================================== */
@@ -1735,7 +1768,7 @@
 		}
 
 		.texto-quienes-somos p {
-			line-height: 12px;
+/*			line-height: 12px; */
 		}
 
 
