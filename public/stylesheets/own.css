@@ -191,7 +191,7 @@
 	/* MODALS ==================================================================== */
 
 	#panel-elegir-franquicia, #panel-mediterraneo, #panel-elsol, #panel-after,
-		#panel-mas-preguntas, #panel-modal-seguir-leyendo, #panel-perfil-1 {
+		#panel-mas-preguntas, #panel-modal-seguir-leyendo, #panel-perfil-1, #panel-perfil-2, #panel-perfil-3 {
 		padding-left: 0px;
 
 	}
@@ -199,7 +199,8 @@
 
 
 
-	#modal-elsol, #modal-mediterraneo, #modal-after, #modal-mas-preguntas, #modal-seguir-leyendo, #modal-perfil-1 {
+	#modal-elsol, #modal-mediterraneo, #modal-after, #modal-mas-preguntas, #modal-seguir-leyendo,
+		#modal-perfil-1, #modal-perfil-2, #modal-perfil-3 {
 		width: 95%;
 		color:	rgb(0, 0, 0);
 	}
@@ -215,10 +216,6 @@
 		border-radius: 0;
 
 /*		border: 1px solid #000; */
-	}
-
-	.cuerpo-modal img {
-/*		padding: 5px; */
 	}
 
 	.modal-body .col-marca-pie img {			/* estilo logos pie del modal perfil de rrhh */
@@ -246,7 +243,7 @@
 	/* ====================================================================================================*/
 
 
-	#modal-content-menu-franquicia, #modal-content-mediterraneo, #modal-content-elsol, #modal-content-after, #modal-content-mas-preguntas {
+/*	#modal-content-menu-franquicia, #modal-content-mediterraneo, #modal-content-elsol, #modal-content-after, #modal-content-mas-preguntas {
 		background-color: rgb(255, 255, 255);
 /*		background: rgba(76,76,76,1);
 		background: -moz-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 10%, rgba(102,102,102,1) 20%, rgba(71,71,71,1) 41%, rgba(44,44,44,1) 53%, rgba(0,0,0,1) 78%, rgba(17,17,17,1) 85%, rgba(19,19,19,1) 92%, rgba(28,28,28,1) 100%);
@@ -256,7 +253,7 @@
 		background: -ms-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 10%, rgba(102,102,102,1) 20%, rgba(71,71,71,1) 41%, rgba(44,44,44,1) 53%, rgba(0,0,0,1) 78%, rgba(17,17,17,1) 85%, rgba(19,19,19,1) 92%, rgba(28,28,28,1) 100%);
 		background: linear-gradient(to bottom, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 10%, rgba(102,102,102,1) 20%, rgba(71,71,71,1) 41%, rgba(44,44,44,1) 53%, rgba(0,0,0,1) 78%, rgba(17,17,17,1) 85%, rgba(19,19,19,1) 92%, rgba(28,28,28,1) 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#1c1c1c', GradientType=0 ); */
-	}
+/*	} */
 
 /*	.item-bg-black:nth-child(1), .item-bg-black:nth-child(2)  {
 		border-bottom: 1px solid #999999;
@@ -809,12 +806,13 @@
 		max-height: 87vh;
 	}
 
+	.persona h4 {
 
+	}
 
 	.persona a img {											/* estilo del boton del perfil */
 		width: 35px;
 		vertical-align: bottom;
-
 		-moz-transition: all 0.3s;
 		-o-transition: all 0.3s;
 		-webkit-transition: all 0.3s;
@@ -822,11 +820,8 @@
 	}
 
 	.persona a img:hover {
-
 		cursor: pointer;
 	}
-
-
 
 	#logo-quienes-somos {
 		max-width: 10vw;
