@@ -806,7 +806,7 @@
 		max-height: 87vh;
 	}
 
-	.persona h4 {
+	.persona {
 
 	}
 
@@ -828,8 +828,6 @@
 		min-width: 80px;
 		max-height: 10vw;
 		min-height: 80px;
-
-
 		margin-left: auto;
 		margin-right: auto;
 /*		padding-left: 70px;
@@ -1400,20 +1398,9 @@
 			padding: 0px 20px 0px 20px;
 		}
 
-		.texto-contrata-franquicia p {
-			line-height: 12px;
-		}
 
 
 
-
-		#contacto2 h1 {
-			font-size: 30px;
-		}
-
-		#contacto2 h2 {
-			font-size: 20px;
-		}
 
 
 		/* ========================================================================== */
@@ -1582,6 +1569,9 @@
 
 		}
 
+		#contacto2 h2 {
+			font-size: 20px;
+		}
 
 
 		/* ========================================================================== */
@@ -1722,6 +1712,7 @@
 
 		#personas {
 			height: auto;
+
 		}
 
 		#personas p {
@@ -1731,14 +1722,13 @@
 
 
 
-
 		/* ========================================================================== */
 		/* QUIENES SOMOS ============================================================ */
 		/* ========================================================================== */
 
 		#quienes-somos {
 			height: auto;
-
+			min-height: 100vh;
 		}
 
 		#directorio-rrhh {
