@@ -14,6 +14,8 @@
         }; */
 
 
+        
+
         var iScroll = $(window).scrollTop(),
             aviso_cookies = true;
 
@@ -35,10 +37,10 @@
                 clearInterval(myInterval);
             }); */
 
-            iScroll = $(window).scrollTop();
+            iScroll = $(window).scrollTop();                                            /* animacion aviso cookies */
             if ((iScroll > 200) && (aviso_cookies)) {
-                $('.alerta').removeClass('animated bounceInLeft');
-                $('.alerta').toggleClass('animated bounceOutLeft');
+                $('.alerta-cookies').removeClass('animated bounceInLeft');
+                $('.alerta-cookies').toggleClass('animated bounceOutLeft');
                 aviso_cookies = false;
             };
 

@@ -1,5 +1,5 @@
 
-        <div class="row alerta animated bounceInLeft text-center">
+        <div class="row alerta-cookies animated bounceInLeft text-center">
             <div class="alert alert-warning alert-dismissible alerta-panel" role="alert">
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <strong>¡Uso de cookies!</strong> Este sitio web utiliza cookies para que usted tenga la mejor experiencia de usuario. Si continúa navegando está dando su consentimiento para la aceptación de las mencionadas cookies y la aceptación de nuestra política de cookies, pinche el enlace para mayor información.
@@ -11,6 +11,7 @@
                 </a>
             </div>
         </div>
+
 
         <div class="row center-block animated fadeIn" id="subir-inicio">
     		<nav role="navigation"><a href="#inicio"><i class="fa fa-arrow-circle-up fa-2x" id="subir-inicio-icon"></i></a></nav>
@@ -116,8 +117,8 @@
         <div class="container-fluid text-center animated fadeIn" id="inicio">
 
             <div class="row animated fadeIn center-block" id="logo-inicio">
-                <img class="img" src="images/logos/logo-inbaar.png" data-src="/js/holder.js/180x500/auto" alt="Generic placeholder image"> <br>
-                <img class="img ocultar-movil" src="images/logos/texto-inbaar.png" data-src="/js/holder.js/180x500/auto" alt="Generic placeholder image">
+                <img class="img" src="/images/logos/logo-inbaar.png" data-src="/js/holder.js/180x500/auto" alt="Generic placeholder image"> <br>
+                <img class="img ocultar-movil" src="/images/logos/texto-inbaar.png" data-src="/js/holder.js/180x500/auto" alt="Generic placeholder image">
             </div>
 
             <div class="row animated fadeIn" id="calma">
@@ -607,30 +608,35 @@
 
         <div class="container-fluid" id="contacto2" name="contacto2">
 
-
-
-<!--            <div class="row no-padding" id="img-bg-contacto2"> -->
-                <img class="img-responsive" id="img-bg-contacto2" src="/images/bg/fondo-contacto.jpg" />
-
-<!--            </div> -->
-
+            <img class="img-responsive" id="img-bg-contacto2" src="/images/bg/fondo-contacto.jpg" />
 
             <div class="row" id="header-contacto2">
                 <h1>FORMULARIO <span class="titulo-secciones">&nbsp;CONTACTO&nbsp;</span></h1>
             </div>
 
-
             <div class="row">
-                <form class="form-horizontal" method="post" action="/contactos/webcreate">
+                <form class="form-horizontal" method="post" action="/contactos/webcreate" id="formulario_contacto">
+
+                    <div class="row hidden animated bounceInLeft text-center" name="alertaformulario">
+                        <div class="alert alert-warning alert-dismissible alerta-panel" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <strong>¡Formulario enviado!</strong> Has enviado el formulario correctamente
+                            <a class="button"
+                                style="cursor: pointer"
+                                data-toggle="modal"
+                                data-target="#panel-lopd">
+                                <span> Política de privacidad</span>
+                            </a>
+                        </div>
+                    </div>
 
                     <div class="col-md-6 col-sm-6 col-xs-12 texto-contacto text-center ocultar-movil">
                         <h2>¿NECESITAS <br> MÁS <br> INFORMACIÓN?</h2>
                     </div>
+
                     <div class="col-md-6 col-sm-6 col-xs-12 texto-contacto text-center ocultar-pc">
                         <h5>¿NECESITAS MÁS INFORMACIÓN?</h5>
                     </div>
-
-
 
                     <div class="col-md-6 col-sm-6 col-xs-12">
 
@@ -736,9 +742,7 @@
                                     <option value="Valladolid">Valladolid</option>
                         			<option value="Vizcaya">Vizcaya</option>
                         			<option value="Zamora">Zamora</option>
-                        			<option value="Zaragoza">Zaragoza</option>
-
-
+    		                        <option value="Zaragoza">Zaragoza</option>
                         		</select>
                             </div>
                         </div>

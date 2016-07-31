@@ -1,4 +1,8 @@
 
+// Control de captcha
+// Control de email y emailok
+// Aviso formunario enviado cuando submit()
+
     $(document).ready(function() {
 
         $('#enviar').prop('disabled', true);
@@ -14,6 +18,17 @@
             if ($(this).length > 0){
                 $("#enviar").prop('disabled', true);
             };
+        });
+
+        $('#formulario_contacto').submit(function() {                                   // sweetalert cuando submit() correcto
+            swal({
+                title: "Tu solicitud se ha enviado correctamente!",
+                text: "Gracias",
+                imageUrl: "/images/logos/inbaar-pie.png",
+                timer: 4000,
+                showConfirmButton: false
+            });
+            event.preventDefault();
         });
 
         var char = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",              // captcha formulario

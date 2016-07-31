@@ -18,7 +18,6 @@
 	var partials = require('express-partials');             // paquete para manejar vistas parciales del layout.ejs
 	var methodOverride = require('method-override');
 	var session = require('express-session');
-
 	var routes = require('./routes/index');
 
 	var app = express();
