@@ -13,9 +13,7 @@
             }, 1000);
         }; */
 
-
         
-
         var iScroll = $(window).scrollTop(),
             aviso_cookies = true;
 
