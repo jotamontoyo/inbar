@@ -28,7 +28,6 @@
                 timer: 4000,
                 showConfirmButton: false
             });
-//            e.preventDefault();
         });
 
         var char = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",              // captcha formulario
