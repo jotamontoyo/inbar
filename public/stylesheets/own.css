@@ -444,6 +444,15 @@
 		visibility: visible;
 	}
 
+/*	.alerta-formulario {													/* etilo aviso formulario enviado */
+/*		max-width: 300px;
+		margin-left: 10vw;
+		margin-top: 30vh;
+		position: relative;
+		z-index: 3;
+		visibility: visible;
+	} */
+
 	.alerta-panel {
 		background-image: none;
 		background-color: rgba(0, 0, 0, 0.8);

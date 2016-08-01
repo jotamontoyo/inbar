@@ -21,13 +21,15 @@
         });
 
         $('#formulario_contacto').submit(function() {                                   // sweetalert cuando submit() correcto
-            swal({
+            swal("Formulario enviado!", "Gracias por tu solicitud!", "success");
+/*            swal({
                 title: "Tu solicitud se ha enviado correctamente!",
                 text: "Gracias",
                 imageUrl: "/images/logos/inbaar-pie.png",
                 timer: 4000,
                 showConfirmButton: false
-            });
+            }); */
+//            $('.alerta-formulario').removeClass('hidden');
         });
 
         var char = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",              // captcha formulario
@@ -37,7 +39,7 @@
         function obtenerChaptca() {
             var a = Math.ceil(Math.random() * 9) + '';                                  // genera caracteres
             var b = Math.ceil(Math.random() * 9) + '';
-            var c = char[Math.ceil(Math.random() * 51)] +'';
+            var c = char[Math.ceil(Math.random() * 51)] + '';
             var d = Math.ceil(Math.random() * 9) + '';
             var e = Math.ceil(Math.random() * 9) + '';
             var f = char[Math.ceil(Math.random() * 51)];

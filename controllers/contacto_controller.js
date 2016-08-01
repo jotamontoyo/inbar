@@ -118,8 +118,6 @@
 			.save({fields: ["nombre", "alias", "email", "emailok", "telefono", "marca", "ciudad", "provincia", "comentario", "lopd", "revisado"]})
 			.then(function() {
 
-//				res.send('');
-
 				var postmark = require("postmark")(process.env.POSTMARK_API_TOKEN);
 
 /*				postmark.send({
