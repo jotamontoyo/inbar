@@ -7,6 +7,4 @@ quiz.sqlite
 .env-keys
 commands_to_generate_keys.txt
 public/images
-certs/
-
-
+certs

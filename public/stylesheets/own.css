@@ -643,7 +643,14 @@
 
 	.texto-contrata-franquicia p {
 		margin-bottom: 3vh;
+		font-size: 2.2vh;
 		line-height: 4vh;
+		text-align: justify;
+	}
+
+	.texto-contrata-franquicia img {
+		width: 60px;
+		margin-bottom: 11px;
 	}
 
 
@@ -660,13 +667,16 @@
 	} */
 
 	#personas {
-		height: 100vh;
+		height: auto;
 
-		min-height: 670px;
+		min-height: 100vh;
 
 		padding-top: 50px;
 		position: relative;
 		color: #000;
+
+		font-size: 2.2vh;
+		line-height: 4vh;
 
 	}
 
@@ -690,8 +700,8 @@
 
 	.texto-modelo {
 		width: auto;
-		margin-top: 20px;
-		margin-bottom: 20px;
+		margin-top: 5px;
+		margin-bottom: 5px;
 		cursor: pointer;
 	}
 
@@ -709,16 +719,16 @@
 	}
 
 	.texto-modelo img {
-		width: 15vw;
+		width: 12vw;
 		min-width: 120px;
 		vertical-align: bottom;
 	}
 
 	#elegir-modelo {
-		max-width: 1200px;
+		max-width: 1350px;
 /* 		min-height: 75vh;*/
-		margin-top: 55px;
-		margin-bottom: 50px;
+		margin-top: 5vh;
+		margin-bottom: 0px;
 		position: relative;
 
 	}
@@ -733,7 +743,7 @@
 
 	.img-modelo {
 
-		max-width: 400px;
+		max-width: 500px;
 
 	}
 
