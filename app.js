@@ -1,13 +1,4 @@
 
-	process.env.DATABASE_URL = "postgres://wkynqiclysfccj:iMCFhKF6YugPeZHlso97feJvPq@ec2-54-83-52-144.compute-1.amazonaws.com:5432/dbe85ilvgjskdq?ssl=true"; // URL HerokuPostgres
-	process.env.DATABASE_STORAGE = "quiz.sqlite";
-	process.env.PASSWORD_ENCRYPTION_KEY= "asdfghjklzxcvbnmqwertyuiop";
-
-	process.env.POSTMARK_API_KEY = "08f8257f-32bc-4a2c-8492-05a217b1705d";
-	process.env.POSTMARK_API_TOKEN = "08f8257f-32bc-4a2c-8492-05a217b1705d";
-	process.env.POSTMARK_INBOUND_ADDRESS = "098657372d0170256a8050c00be5ae47@inbound.postmarkapp.com";
-	process.env.POSTMARK_SMTP_SERVER = "smtp.postmarkapp.com";
-
 	var express = require('express');
 	var busboy = require('connect-busboy'); //middleware for form/file upload
 	var path = require('path');

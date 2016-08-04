@@ -2,6 +2,11 @@
 node_modules
 npm-debug.log
 quiz.sqlite
-public/media
 .settings/settings.json
 .env
+.env-keys
+commands_to_generate_keys.txt
+public/images
+certs/
+
+

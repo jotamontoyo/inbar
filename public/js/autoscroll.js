@@ -13,7 +13,7 @@
             }, 1000);
         }; */
 
-        
+
         var iScroll = $(window).scrollTop(),
             aviso_cookies = true;
 
@@ -116,10 +116,10 @@
 
         $('#persona-3').hover(
             function() {
-                $(this).attr("src", "/images/rrhh/antonio-mazon-pastor-color.jpg").delay(6000);
+                $(this).attr("src", "/images/rrhh/francisco-color.jpg").delay(6000);
             },
             function() {
-                $(this).attr("src","/images/rrhh/antonio-mazon-pastor-BN.jpg");
+                $(this).attr("src","/images/rrhh/francisco-BN.jpg");
             });
 
 
