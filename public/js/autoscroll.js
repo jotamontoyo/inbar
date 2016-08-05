@@ -100,18 +100,18 @@
 
         $('#persona-1').hover(
             function() {
-                $(this).attr("src", "/images/rrhh/antonio-mazon-pastor-color.jpg").fadeIn(6000);
+                $(this).attr("src", "/images/rrhh/antonio.jpg").fadeIn(6000);
             },
             function() {
-                $(this).attr("src","/images/rrhh/antonio-mazon-pastor-BN.jpg").fadeIn(6000);
+                $(this).attr("src","/images/rrhh/antonio-ByN.jpg").fadeIn(6000);
             });
 
         $('#persona-2').hover(
             function() {
-                $(this).attr("src", "/images/rrhh/rodrigo-ramirez-herrera-color.jpg").delay(6000);
+                $(this).attr("src", "/images/rrhh/rodrigo.jpg").delay(6000);
             },
             function() {
-                $(this).attr("src","/images/rrhh/rodrigo-ramirez-herrera-BN.jpg");
+                $(this).attr("src","/images/rrhh/rodrigo-ByN.jpg");
             });
 
         $('#persona-3').hover(

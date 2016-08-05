@@ -668,21 +668,35 @@
 
 	#personas {
 		height: auto;
-
 		min-height: 100vh;
-
 		padding-top: 50px;
 		position: relative;
 		color: #000;
+		font-size: 2.1vh;
 
-		font-size: 2.2vh;
-		line-height: 4vh;
 
 	}
 
+	#personas p {
+
+	}
+
+	.separador {					/* separador de parrafos centro seccion */
+		text-align: center;
+	}
+
+	.separador ul li {
+		display: inline-block;
+	}
+
+	.separador ul li img {
+		width: 22px;
+		margin-bottom: 10px;
+	}
+
+
 	#header-personas {
 		text-align:  center;
-
 	}
 
 	#logo-marcas {
@@ -733,6 +747,11 @@
 
 	}
 
+	#elegir-modelo h3, h4 {					/* margenes de los titulos del centro seccion */
+		margin-top: 10px;
+		margin-bottom: 12px;
+	}
+
 	.img-modelo img {
 		width: 100%;
 		height: auto;
@@ -766,12 +785,7 @@
 		margin-bottom: 20px;
 	}
 
-	#personas p {
 
-
-		line-height: 4vh;
-
-	}
 
 	.persona-item a:hover {
 		cursor: pointer;
