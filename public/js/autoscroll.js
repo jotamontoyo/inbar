@@ -17,6 +17,7 @@
         var iScroll = $(window).scrollTop(),
             aviso_cookies = true;
 
+
         $(window).scroll(function() {
 
 /*            var iScroll = $(window).scrollTop();
@@ -52,6 +53,18 @@
                     }, 1000);
                 };
             });
+
+/*            $('.separador').each(function(i) {                                           /* Check the location of each desired element .separador */
+/*                var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                var bottom_of_window = $(window).scrollTop() + $(window).height();
+                if (bottom_of_window > bottom_of_object) {                             /* If the object is completely visible in the window, fade it it */
+
+/*                    $(this).animate({
+                        'width': '+=50px'
+                    }, 1000);
+
+                };
+            }); */
 
 
             $('#subir-inicio-icon').css('opacity', '0.8');                                  // control de opacity/visibility del icono subir
@@ -100,15 +113,15 @@
 
         $('#persona-1').hover(
             function() {
-                $(this).attr("src", "/images/rrhh/antonio.jpg").fadeIn(6000);
+                $(this).attr("src", "/images/rrhh/antonio.jpg");
             },
             function() {
-                $(this).attr("src","/images/rrhh/antonio-ByN.jpg").fadeIn(6000);
+                $(this).attr("src","/images/rrhh/antonio-ByN.jpg");
             });
 
         $('#persona-2').hover(
             function() {
-                $(this).attr("src", "/images/rrhh/rodrigo.jpg").delay(6000);
+                $(this).attr("src", "/images/rrhh/rodrigo.jpg");
             },
             function() {
                 $(this).attr("src","/images/rrhh/rodrigo-ByN.jpg");
@@ -116,7 +129,7 @@
 
         $('#persona-3').hover(
             function() {
-                $(this).attr("src", "/images/rrhh/francisco-color.jpg").delay(6000);
+                $(this).attr("src", "/images/rrhh/francisco-color.jpg");
             },
             function() {
                 $(this).attr("src","/images/rrhh/francisco-BN.jpg");
