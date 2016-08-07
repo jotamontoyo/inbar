@@ -672,7 +672,7 @@
 		padding-top: 50px;
 		position: relative;
 		color: #000;
-		font-size: 2.1vh;
+		font-size: 2vh;
 
 
 	}
@@ -682,7 +682,7 @@
 	}
 
 	.separador {					/* separador de parrafos centro seccion */
-
+		visibility: hidden;			/* po mazon */
 		text-align: center;
 	}
 
@@ -713,10 +713,11 @@
 		width: 100%;
 	}
 
-	.texto-modelo {
+	.texto-modelo {								/* logo bajo imagen marca */
 		width: auto;
 		margin-top: 5px;
 		margin-bottom: 5px;
+
 		cursor: pointer;
 	}
 
@@ -740,7 +741,7 @@
 	}
 
 	#elegir-modelo {
-		max-width: 1350px;
+		max-width: 1400px;					/* ancho que ocupa el row central */
 /* 		min-height: 75vh;*/
 		margin-top: 5vh;
 		margin-bottom: 0px;
@@ -749,8 +750,17 @@
 	}
 
 	#elegir-modelo h3, h4 {					/* margenes de los titulos del centro seccion */
-		margin-top: 10px;
-		margin-bottom: 12px;
+		margin-top: 1vh;
+		margin-bottom: 2vh;
+	}
+
+
+	.img-modelo {							/* imagen de la marca  */
+
+		max-width: 400px;					/* ancho maximo de las imagenes */
+		margin-left: auto;
+		margin-right: auto;
+
 	}
 
 	.img-modelo img {
@@ -761,11 +771,7 @@
 
 	}
 
-	.img-modelo {
 
-		max-width: 500px;
-
-	}
 
 /*	#elegir_modelo img:hover {
 		transform: scale(0.9);
@@ -836,6 +842,7 @@
 
 
 	#directorio-rrhh {
+		margin-top: 6vh;
 		max-width: 87vw;
 		max-height: 87vh;
 	}
@@ -855,6 +862,11 @@
 
 	.persona a img:hover {
 		cursor: pointer;
+	}
+
+	.cargo {
+
+
 	}
 
 	#logo-quienes-somos {
