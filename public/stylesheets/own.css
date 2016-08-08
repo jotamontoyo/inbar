@@ -1453,6 +1453,7 @@
 /*			min-height: 100vh; */
 			height: auto;
 			padding-top: 10px;
+			font-size: 2.3vh;
 		}
 
 		#personas h1 {
@@ -1754,7 +1755,7 @@
 
 		#personas {
 			height: auto;
-
+			font-size: 2.3vh;
 		}
 
 		#personas p {
