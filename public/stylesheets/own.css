@@ -1425,6 +1425,7 @@
 
 		#contrata-franquicia {
 			height: 100%;
+
 		}
 
 		#header-contrata-franquicia {
@@ -1437,7 +1438,12 @@
 		}
 
 		.texto-contrata-franquicia {
+
 			padding: 0px 20px 0px 20px;
+		}
+
+		.texto-contrata-franquicia p {
+			font-size: 2.5vh;
 		}
 
 
@@ -1453,7 +1459,7 @@
 /*			min-height: 100vh; */
 			height: auto;
 			padding-top: 10px;
-			font-size: 2.3vh;
+			font-size: 2.5vh;
 		}
 
 		#personas h1 {
@@ -1461,7 +1467,7 @@
 		}
 
 		#personas h3 {
-			font-size: 18px;
+			font-size: 22px;
 		}
 
 		#personas h2 {
@@ -1514,6 +1520,7 @@
 		#quienes-somos {
 			height: auto;
 
+
 		}
 
 		#directorio-rrhh {
@@ -1538,6 +1545,7 @@
 		}
 
 		.texto-quienes-somos p {
+			font-size: 2.5vh;
 /*			line-height: 12px; */
 		}
 
@@ -1749,13 +1757,25 @@
 			margin-top: 18vh;
 		}
 
+
+		/* ========================================================================== */
+		/* CONTRATA TU FRANQUICIA =================================================== */
+		/* ========================================================================== */
+
+		.texto-contrata-franquicia p {
+			font-size: 2.5vh;
+		}
+
+
+		
+
 		/* ========================================================================== */
 		/* NUESTRAS MARCAS TABLET =================================================== */
 		/* ========================================================================== */
 
 		#personas {
 			height: auto;
-			font-size: 2.3vh;
+			font-size: 2.5vh;
 		}
 
 		#personas p {
@@ -1796,6 +1816,7 @@
 		}
 
 		.texto-quienes-somos p {
+			font-size: 2.5vh;
 /*			line-height: 12px; */
 		}
 
