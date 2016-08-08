@@ -672,7 +672,10 @@
 		padding-top: 50px;
 		position: relative;
 		color: #000;
-		font-size: 2vh;
+		font-size: 1.8vh;
+
+
+
 
 
 	}
@@ -681,27 +684,24 @@
 
 	}
 
-	.separador {					/* separador de parrafos centro seccion */
-		visibility: hidden;			/* po mazon */
-		text-align: center;
+
+/*	.separador {					/* separador de parrafos centro seccion */
+/*		visibility: hidden;			/* po mazon */
+/*		text-align: center;
 	}
 
 	.separador ul li {
 		display: inline-block;
-	}
+	} */
 
-	.separador ul li img {
-		width: 22px;
-		margin-bottom: 10px;
-	}
 
 
 	#header-personas {
 		text-align:  center;
 	}
 
-	#logo-marcas {
-		max-width: 350px;
+/*	#logo-marcas {
+		max-width: 30px;
 		height: auto;
 		margin-top: 10px;
 		padding-left: 60px;
@@ -711,7 +711,7 @@
 
 	#logo-marcas img {
 		width: 100%;
-	}
+	} */
 
 	.texto-modelo {								/* logo bajo imagen marca */
 		width: auto;
@@ -743,7 +743,7 @@
 	#elegir-modelo {
 		max-width: 1400px;					/* ancho que ocupa el row central */
 /* 		min-height: 75vh;*/
-		margin-top: 5vh;
+		margin-top: 6vh;
 		margin-bottom: 0px;
 		position: relative;
 
@@ -757,7 +757,7 @@
 
 	.img-modelo {							/* imagen de la marca  */
 
-		max-width: 400px;					/* ancho maximo de las imagenes */
+		max-width: 350px;					/* ancho maximo de las imagenes */
 		margin-left: auto;
 		margin-right: auto;
 
