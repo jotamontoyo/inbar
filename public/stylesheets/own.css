@@ -811,20 +811,14 @@
 
 	#quienes-somos {
 		width: 100%;
-/*		height: 100vh;
-		min-height: 650px; */
-
 		height: auto;
 		min-height: 100vh;
-
 		position: relative;
-
 	}
 
 	#header-quienes-somos {
 		margin-top: 50px;
 		margin-bottom: 10px;
-
 		font-size: 2vh;
 	}
 
@@ -1767,7 +1761,7 @@
 		}
 
 
-		
+
 
 		/* ========================================================================== */
 		/* NUESTRAS MARCAS TABLET =================================================== */
