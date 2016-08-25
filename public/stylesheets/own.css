@@ -201,7 +201,7 @@
 
 	#modal-elsol, #modal-mediterraneo, #modal-after, #modal-mas-preguntas, #modal-seguir-leyendo,
 		#modal-perfil-1, #modal-perfil-2, #modal-perfil-3 {
-		width: 95%;
+		width: 65%;
 		color:	rgb(0, 0, 0);
 	}
 
@@ -243,71 +243,6 @@
 	/* ====================================================================================================*/
 
 
-/*	#modal-content-menu-franquicia, #modal-content-mediterraneo, #modal-content-elsol, #modal-content-after, #modal-content-mas-preguntas {
-		background-color: rgb(255, 255, 255);
-/*		background: rgba(76,76,76,1);
-		background: -moz-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 10%, rgba(102,102,102,1) 20%, rgba(71,71,71,1) 41%, rgba(44,44,44,1) 53%, rgba(0,0,0,1) 78%, rgba(17,17,17,1) 85%, rgba(19,19,19,1) 92%, rgba(28,28,28,1) 100%);
-		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(76,76,76,1)), color-stop(10%, rgba(89,89,89,1)), color-stop(20%, rgba(102,102,102,1)), color-stop(41%, rgba(71,71,71,1)), color-stop(53%, rgba(44,44,44,1)), color-stop(78%, rgba(0,0,0,1)), color-stop(85%, rgba(17,17,17,1)), color-stop(92%, rgba(19,19,19,1)), color-stop(100%, rgba(28,28,28,1)));
-		background: -webkit-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 10%, rgba(102,102,102,1) 20%, rgba(71,71,71,1) 41%, rgba(44,44,44,1) 53%, rgba(0,0,0,1) 78%, rgba(17,17,17,1) 85%, rgba(19,19,19,1) 92%, rgba(28,28,28,1) 100%);
-		background: -o-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 10%, rgba(102,102,102,1) 20%, rgba(71,71,71,1) 41%, rgba(44,44,44,1) 53%, rgba(0,0,0,1) 78%, rgba(17,17,17,1) 85%, rgba(19,19,19,1) 92%, rgba(28,28,28,1) 100%);
-		background: -ms-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 10%, rgba(102,102,102,1) 20%, rgba(71,71,71,1) 41%, rgba(44,44,44,1) 53%, rgba(0,0,0,1) 78%, rgba(17,17,17,1) 85%, rgba(19,19,19,1) 92%, rgba(28,28,28,1) 100%);
-		background: linear-gradient(to bottom, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 10%, rgba(102,102,102,1) 20%, rgba(71,71,71,1) 41%, rgba(44,44,44,1) 53%, rgba(0,0,0,1) 78%, rgba(17,17,17,1) 85%, rgba(19,19,19,1) 92%, rgba(28,28,28,1) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#1c1c1c', GradientType=0 ); */
-/*	} */
-
-/*	.item-bg-black:nth-child(1), .item-bg-black:nth-child(2)  {
-		border-bottom: 1px solid #999999;
-	} */
-
-
-
-
-
-/*	#panel1 {
-		background: url(/images/brooklyn.jpg) no-repeat fixed center;
-		height: 	100vh;
-		overflow: 	hidden;
-	}
-
-	#panel2 {
-		height: 	100vh;
-		overflow: 	hidden;
-	}
-
-	#panel3 {
-		background: url(/images/bigcitynight.jpg) no-repeat fixed center;
-		height: 	100vh;
-		overflow: 	hidden;
-	}
-
-	#panel4 {
-		height: 	100vh;
-		overflow:	hidden;
-	}
-
-	.banda {
-		position: relative;
-
-		width           : 100%;
-		height          : 100%;
-		background-color: rgba(46, 46, 46, 0.7);
-	}
-
-	#panel-franquicias {
-/*		background: url(/images/brooklyn.jpg) no-repeat fixed center; */
-/*		height: 	auto;
-		overflow: 	hidden;
-	} */
-
-/*	.preload * {
-		visibility: hidden;
-		-webkit-transition: none !important;
-		-moz-transition: none !important;
-		-ms-transition: none !important;
-		-o-transition: none !important;
-
-
-	} */
 
 
 
@@ -685,14 +620,14 @@
 	}
 
 
-/*	.separador {					/* separador de parrafos centro seccion */
+	.separador {					/* separador de parrafos centro seccion */
 /*		visibility: hidden;			/* po mazon */
-/*		text-align: center;
+		text-align: center;
 	}
 
 	.separador ul li {
 		display: inline-block;
-	} */
+	}
 
 
 
@@ -1303,6 +1238,12 @@
 		.ocultar-pc {
 
 			display: block;
+		}
+
+		#modal-elsol, #modal-mediterraneo, #modal-after, #modal-mas-preguntas, #modal-seguir-leyendo,
+			#modal-perfil-1, #modal-perfil-2, #modal-perfil-3 {
+			width: 95%;
+
 		}
 
 
