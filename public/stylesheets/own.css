@@ -1,30 +1,6 @@
 
 /*	@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700); */
 
-/*	#portrait {
-		display: block;
-		z-index: 1000;
-	}
-
-	@media only screen and (orientation:portrait){
-		#portrait {
-			-webkit-transform: rotate(90deg);
-			-moz-transform: rotate(90deg);
-			-o-transform: rotate(90deg);
-			-ms-transform: rotate(90deg);
-			transform: rotate(90deg);
-		}
-	}
-	@media only screen and (orientation:landscape){
-		#portrait {
-			-webkit-transform: rotate(0deg);
-			-moz-transform: rotate(0deg);
-			-o-transform: rotate(0deg);
-			-ms-transform: rotate(0deg);
-			transform: rotate(0deg);
-		}
-	} */
-
 
 	@font-face {
 		font-family: 'Marguerite';
@@ -134,44 +110,8 @@
 	}
 
 
-
-/*	#contacto {
-		background-color: 	rgb(255, 153, 64);
-	/*	background: url(/images/floxy/bg-contacto.jpg) no-repeat center center; */
-/*		width: 				100%;
-		height: 			100%;
-
-	/*	max-height: 		80%; */
-/*		min-height: 		500px;
-		padding-left: 		8%;
-		padding-right: 		5%;
-		color:		 		#2E2E2E;
-		position: 			relative;
-		overflow: 			hidden;
-		display: 			-webkit-flex;
-		display: 			flex;
-		-webkit-flex-direction: 	column;
-		flex-direction: 			column;
-		-webkit-justify-content: 	space-around;
-		justify-content: 			space-around;
-		border: 					none !important;
-	} */
-
-
-
-
-
-
 	#lista-idiomas {
 		background-color: rgba(0, 0, 0, 0.8);
-/*		background: rgba(212,228,239,1);
-		background: -moz-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
-		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(212,228,239,1)), color-stop(100%, rgba(134,174,204,1)));
-		background: -webkit-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
-		background: -o-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
-		background: -ms-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
-		background: linear-gradient(to bottom, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e4ef', endColorstr='#86aecc', GradientType=0 ); */
 	}
 
 	#lista-idiomas a {
@@ -379,14 +319,6 @@
 		visibility: visible;
 	}
 
-/*	.alerta-formulario {													/* etilo aviso formulario enviado */
-/*		max-width: 300px;
-		margin-left: 10vw;
-		margin-top: 30vh;
-		position: relative;
-		z-index: 3;
-		visibility: visible;
-	} */
 
 	.alerta-panel {
 		background-image: none;
@@ -793,6 +725,8 @@
 		cursor: pointer;
 	}
 
+
+
 	.cargo {
 
 
@@ -908,31 +842,6 @@
 		transition: all 0.3s;
 	}
 
-
-
-	/* MENU INBAR ======================================================================================= */
-
-	#menu-inbar  {
-		position     : relative;
-		width        : 100%;
-		margin-top   : 50px;
-		margin-bottom: 20px;
-	}
-
-
-	#menu-inbar .col-md-1 a {
-		position: relative;
-
-		font-size: 20px;
-		left: 50%;
-		padding-top: 30px;
-		text-decoration: none;
-
-	}
-
-	#menu-inbar .col-md-1 a:hover {
-		border-top: 2px solid #999999;
-	}
 
 
 
@@ -1483,6 +1392,16 @@
 			font-size: 2.5vh;
 /*			line-height: 12px; */
 		}
+
+		.img-marca-pie-modal {
+
+
+			max-width: 70px;
+
+
+		}
+
+
 
 
 
