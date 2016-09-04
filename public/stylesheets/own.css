@@ -782,8 +782,8 @@
 	}
 
 	.panel-group .panel {
-		margin-top: 7vh;
-		margin-bottom: 7vh;
+		margin-top: 4vh;
+		margin-bottom: 6vh;
 
 		border: none;
 		border-radius: 0;
@@ -793,6 +793,7 @@
 	}
 
 	.panel-default > .panel-heading {
+		min-height: 60px;
 		background-color: transparent;
 		background-image: none;
 
