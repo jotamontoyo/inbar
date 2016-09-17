@@ -110,6 +110,16 @@
 	}
 
 
+	.ir-a-contacto {							/* estilo del texto para ir al formulario*/
+		text-align: right;
+	}
+
+
+	.ir-a-contacto p, nav, a {
+		display: inline-block;
+	}
+
+
 	#lista-idiomas {
 		background-color: rgba(0, 0, 0, 0.8);
 	}

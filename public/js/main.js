@@ -77,4 +77,8 @@
 			}
 		});
 
+		$('.btn-ir-contacto').click(function() {						// cierra el modal cuando click
+			$('#panel-modal-seguir-leyendo').modal('hide');
+		});
+
 	});
