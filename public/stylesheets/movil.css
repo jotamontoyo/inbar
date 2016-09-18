@@ -179,7 +179,7 @@
     }
 
     .texto-contrata-franquicia p {
-        font-size: 2.5vh;
+        font-size: 15px;
     }
 
 
@@ -195,7 +195,7 @@
 /*			min-height: 100vh; */
         height: auto;
         padding-top: 10px;
-        font-size: 2.5vh;
+        font-size: 15px;
     }
 
     #personas h1 {
@@ -281,16 +281,12 @@
     }
 
     .texto-quienes-somos p {
-        font-size: 2.5vh;
+        font-size: 15px;
 /*			line-height: 12px; */
     }
 
     .img-marca-pie-modal {
-
-
         max-width: 70px;
-
-
     }
 
 
@@ -322,13 +318,10 @@
     .panel-group .panel {
         margin-top: 2vh;
         margin-bottom: 2vh;
-
-
     }
 
-
-    .faq {
-
+    .faq a {
+        font-size: 15px;
     }
 
     .servicios-item {
