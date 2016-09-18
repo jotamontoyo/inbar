@@ -21,6 +21,10 @@
         display: block;
     }
 
+    .boton-pie-seccion {
+		margin-top: 15px;
+	}
+
     #modal-elsol, #modal-mediterraneo, #modal-after, #modal-mas-preguntas, #modal-seguir-leyendo,
         #modal-perfil-1, #modal-perfil-2, #modal-perfil-3 {
         width: 95%;
@@ -166,6 +170,7 @@
 
     #header-contrata-franquicia {
         margin-top: 0px;
+        margin-bottom: 15px;
         transform: scale(0.8);
     }
 
@@ -264,6 +269,9 @@
 
     #directorio-rrhh {
         max-height: 100%;
+        margin-top: 15px;
+		max-width: 87vw;
+		max-height: 87%;
     }
 
 
