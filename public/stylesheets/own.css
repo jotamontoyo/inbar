@@ -112,11 +112,19 @@
 
 	.ir-a-contacto {							/* estilo del texto para ir al formulario*/
 		text-align: right;
+
 	}
 
 
 	.ir-a-contacto p, nav, a {
 		display: inline-block;
+
+
+	}
+
+	.ir-a-contacto a:active, .ir-a-contacto a:focus {
+		outline: 0;
+		text-decoration: none;
 	}
 
 
