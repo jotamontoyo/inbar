@@ -176,9 +176,11 @@
     .texto-contrata-franquicia {
 
         padding: 0px 20px 0px 20px;
+
     }
 
     .texto-contrata-franquicia p {
+        margin-bottom: 16px;
         font-size: 15px;
         line-height: 25px;
     }
