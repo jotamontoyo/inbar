@@ -180,6 +180,7 @@
 
     .texto-contrata-franquicia p {
         font-size: 15px;
+        line-height: 25px;
     }
 
 
@@ -282,7 +283,7 @@
 
     .texto-quienes-somos p {
         font-size: 15px;
-/*			line-height: 12px; */
+		line-height: 25px;
     }
 
     .img-marca-pie-modal {
