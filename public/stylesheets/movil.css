@@ -1,0 +1,438 @@
+
+/* ========================================================================================================== */
+/* ========================================================================================================== */
+/* ========================================================================================================== */
+/* CONTROL FORMATO PANTALLA MOVIL =========================================================================== */
+/* ========================================================================================================== */
+/* ========================================================================================================== */
+/* ========================================================================================================== */
+
+
+@media handheld, only screen and (max-width: 767px) {			/* movil */
+
+
+
+    .ocultar-movil{
+        display: none;
+    }
+
+    .ocultar-pc {
+
+        display: block;
+    }
+
+    #modal-elsol, #modal-mediterraneo, #modal-after, #modal-mas-preguntas, #modal-seguir-leyendo,
+        #modal-perfil-1, #modal-perfil-2, #modal-perfil-3 {
+        width: 95%;
+
+    }
+
+
+    #inicio {
+        height: 100%;
+/*        min-height: 500px;						/* si cambias este parametro, tambien el  #wrap */
+
+
+
+/*        max-height: 100%;
+        min-height: 500px;						/* si cambias este parametro, tambien el  #wrap */
+    }
+
+    .alerta {													/* etilo aviso cookies */
+        margin-left: 15vw;
+        margin-right: 13vw;
+        margin-top: 15vh;
+    }
+
+    /* ================================================================== */
+    /* ANIMACION INICIO MOVIL =========================================== */
+    /* ================================================================== */
+
+    #wrap {
+        height: 100%;
+/*        min-height: 500px;					/* si cambias este parametro, tambien el  #inicio */
+        padding-top: 70px;					/* empuja contenido div hacia abajo */
+        background-color: transparent;
+    }
+
+    #wrap img.bgfade {
+        max-width: 100%;
+        margin-left: -100px;
+        padding-bottom: 70px;				/* comprime contenido div hacia arriba */
+    }
+
+/*    #wrap {
+        max-width: 100%;
+        min-width: 100%;
+        max-height: 100%;
+        min-height: 500px;					/* si cambias este parametro, tambien el  #inicio */
+/*        padding-top: 70px;					/* empuja contenido div hacia abajo */
+/*        background-color: transparent;
+    }
+
+    #wrap img.bgfade {
+        max-width: 100%;
+        margin-left: -100px;
+        padding-bottom: 70px;				/* comprime contenido div hacia arriba */
+/*    } */
+
+
+
+    /* ================================================================== */
+    /* MENU INICIO ====================================================== */
+    /* ================================================================== */
+
+
+    #menu-inicio {
+
+
+        position: absolute;
+        background: url(/images/logos/inbaar-menu.png) no-repeat left center;
+
+/*			background: transparent; */
+
+    }
+
+    #menu-inicio-items {
+        margin-left: 0px;
+
+/*			background-color: rgba(0, 0, 0, 1);
+/*			border-top: 1px solid #999999;
+        border-bottom: 1px solid #999999; */
+    }
+
+    .menu-inicio-item {
+        margin-left: 0px;
+        padding-left: 0px;
+        padding-top: 12px;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .menu-inicio-item a {
+
+        font-size: 16px;
+
+    }
+
+    .menu-inicio-item:nth-child(1) {
+        border-bottom: 1px solid #999999;
+    }
+    .menu-inicio-item:nth-child(2) {
+        border-bottom: 1px solid #999999;
+    }
+    .menu-inicio-item:nth-child(3) {
+        border-bottom: 1px solid #999999;
+    }
+    .menu-inicio-item:nth-child(4) {
+        border-bottom: 1px solid #999999;
+    }
+    .menu-inicio-item:nth-child(5) {
+        border-bottom: 1px solid #999999;
+    }
+
+    .menu-inicio-item:nth-child(6) {
+        border-bottom: 1px solid #999999;
+    }
+
+    .dropdown-menu-inicio-item {
+        border-bottom: none;
+    }
+
+    .dropdown-menu-inicio-item img {
+        transform: scale(0.8);
+    }
+
+    #logo-inicio {
+        margin-top: 30vh;
+        transform: scale(0.7);
+    }
+
+    #calma {
+        font-size: 24px;
+    }
+
+
+
+    /* ====================================================================================== */
+    /* CONTRATA TU FRANQUICIA =============================================================== */
+    /* ====================================================================================== */
+
+    #contrata-franquicia {
+        height: 100%;
+
+    }
+
+    #header-contrata-franquicia {
+        margin-top: 0px;
+        transform: scale(0.8);
+    }
+
+    #textos-contrata-franquicia {
+        padding: 0px 10px 0px 10px;
+    }
+
+    .texto-contrata-franquicia {
+
+        padding: 0px 20px 0px 20px;
+    }
+
+    .texto-contrata-franquicia p {
+        font-size: 2.5vh;
+    }
+
+
+
+
+
+
+    /* ========================================================================== */
+    /* NUESTRAS MARCAS ========================================================== */
+    /* ========================================================================== */
+
+    #personas {
+/*			min-height: 100vh; */
+        height: auto;
+        padding-top: 10px;
+        font-size: 2.5vh;
+    }
+
+    #personas h1 {
+        font-size: 22px;
+    }
+
+    #personas h3 {
+        font-size: 22px;
+    }
+
+    #personas h2 {
+        font-size: 18px;
+    }
+
+    #personas p {
+        padding-left: 15vw;
+        padding-right: 15vw;
+    }
+
+    .persona-item {
+        margin-bottom: 20px;
+        border-bottom: 1px solid #999999;
+    }
+
+    .img-persona {
+        width: 50px;
+        height: 50px;
+/*			transform: scale(0.5); */
+    }
+
+    #logo-marcas {
+        margin-top: 25px;
+        transform: scale(0.8);
+    }
+
+    #elegir-modelo {
+        margin-top: 10px;
+    }
+
+
+
+
+/*		.modelo h1 {
+        font-size: 12px;
+/*			transform: scale(0.3); */
+/*		}
+
+    .modelo img {
+        height: 30px;
+    }  */
+
+
+
+    /* ========================================================================== */
+    /* QUIENES SOMOS ============================================================ */
+    /* ========================================================================== */
+
+    #quienes-somos {
+        height: auto;
+
+
+    }
+
+    #directorio-rrhh {
+        max-height: 100%;
+    }
+
+
+    #header-quienes-somos {
+        margin-top: 10px;
+    }
+
+    #header-quienes-somos h1 {
+        font-size: 20px;
+    }
+
+    #textos-quienes-somos {
+        padding: 0px;
+    }
+
+    .texto-quienes-somos {
+        padding: 0px 20px 0px 20px;
+    }
+
+    .texto-quienes-somos p {
+        font-size: 2.5vh;
+/*			line-height: 12px; */
+    }
+
+    .img-marca-pie-modal {
+
+
+        max-width: 70px;
+
+
+    }
+
+
+
+
+
+    /* ========================================================================== */
+    /* PREGUNTAS FRECUENTES ===================================================== */
+    /* ========================================================================== */
+
+    #servicios {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    #servicios-panel {
+        margin-top: 10px;
+    }
+
+    #servicios-panel h1 {
+        margin-bottom: 40px;
+        font-size: 20px;
+    }
+
+    #servicios-panel h4 {
+        font-size: 12px;
+    }
+
+    .panel-group .panel {
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+
+
+    }
+
+
+    .faq {
+
+    }
+
+    .servicios-item {
+        height: auto;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #999999;
+    }
+
+
+
+
+    /* ========================================================================== */
+    /* CONTACTO2 ================================================================ */
+    /* ========================================================================== */
+
+    #contacto2 {
+        height: auto;
+    }
+
+    #contacto2 h1 {
+        font-size: 22px;
+    }
+
+    #contacto2 h5 {
+        margin-bottom: 20px;
+        line-height: 20px;
+    }
+
+    #recargar-captcha, #soy-persona {
+
+        transform: scale(1.2);
+
+    }
+
+    #contacto2 h2 {
+        font-size: 20px;
+    }
+
+
+    /* ========================================================================== */
+    /* PIE2 MOVIL =============================================================== */
+    /* ========================================================================== */
+
+
+
+    .img-logo-sm {
+        transform: scale(0.8);
+        margin-left: 0%;
+    }
+
+    .img-logo-sm img {
+        padding-top: 5px;
+        margin-left: 0%;
+    }
+
+
+
+    #rrss-pie {
+        padding-left: 		0%;
+        padding-right: 		0%;
+
+
+    }
+
+    #copyright h4 {
+        font-size: 10px;
+    }
+
+
+
+
+/*		.img-marca-pie {
+        transform: scale(0.8);
+    } */
+
+
+
+/*		#pie {
+        height: 100vh;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+    #pie h4 {
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+
+    #pie h6 {
+        font-size: 13px;
+    } */
+
+
+
+
+    #menu-inbar .col-md-1 a:hover {
+        border-top: none;
+    }
+/*		#inicio {
+        height: auto;
+        background: url(/images/floxy/inbarasset.png) no-repeat fixed center;
+    }
+    #img-inicio {
+        visibility: hidden;
+    } */
+}
