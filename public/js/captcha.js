@@ -76,8 +76,9 @@
         });
 
 
-        var email = $('#email').val('');                        // control coinciden emails
-        var emailok = $('#emailok').val('');
+        // anulado para no borrar los campos del formulario edit/contacto
+//        var email = $('#email').val('');                        // control coinciden emails
+//        var emailok = $('#emailok').val('');
 
         $('#emailok').change(function() {
             email = $('#email').val();
