@@ -10,6 +10,7 @@
 
         var iScroll = $(window).scrollTop(),
             aviso_cookies = true,
+            sections = $('section'),
             nav = $('nav[role="navigation"]');
 
         $(window).scroll(function() {
@@ -54,8 +55,8 @@
 
         });
 
-        nav.find('a').on('click', function() {                         // control de la navegacion en pagina de cada <nav>
-			var $el = $(this)
+/*        nav.find('a').on('click', function() {                         // control de la navegacion en pagina de cada <nav>
+			var $el = $(this),
 		    	id = $el.attr('href');
 			$('html, body').animate({
 				scrollTop: $(id).offset().top // +76
@@ -75,7 +76,7 @@
 
 		$('.btn-ir-contacto').click(function() {						// cierra el modal cuando click
 			$('#panel-modal-seguir-leyendo').modal('hide');
-		});
+		}); */
 
         $('img.bgfade').hide();                                         // transicion inico
         $('#wrap').css({'height':'100vh','width':'100%'});
