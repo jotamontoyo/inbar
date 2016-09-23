@@ -819,43 +819,14 @@
 
 
 
-
-
-/*	.servicios-item {
-		height: 40px;
-		margin-top: 15px;
-		margin-bottom: 15px;
-
-		color: #000;
-/*		border: 1px solid #999999;
-		border-radius: 5px 5px 5px 5px; */
-	}
-
-/*	.servicios-item a {
-		color: #000;
-	}
-
-	.servicios-item a:hover {
-		color: #eb9837;
-		cursor: pointer;
-		transform: scale(1.05);
-		-moz-transition: all 0.3s;
-		-o-transition: all 0.3s;
-		-webkit-transition: all 0.3s;
-		transition: all 0.3s;
-	} */
-
-
-
-
 	/* ======================================================================================== */
 	/* PIE2 =================================================================================== */
 	/* ======================================================================================== */
 
 	#pie2 {
 		background: url(/images/bg/img-bg-pie.jpg) repeat center center;
-		width: 				100%;
-		height: 			auto;
+		width: 100%;
+		height: auto;
 	}
 
 	#img-bg-pie {

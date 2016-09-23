@@ -2,7 +2,7 @@
 	var models = require('../models/models.js');
 //	var sa = require('sweetalert');
 
-	exports.load = function(req, res, next, contactoId) {			// autoload. solo se ejecuta si en la peticion GET existe un :proveedorId. ayuda a factorizar el codigo del resto de controladores
+	exports.load = function(req, res, next, contactoId) {			// autoload. solo se ejecuta si en la peticion GET existe un :contactoId. ayuda a factorizar el codigo del resto de controladores
 		models.Contacto.find({										// carga de registro proveedorId
 			where: 		{id: Number(contactoId)}					// where indice principal id <-- proveedorId recibido del GET
 			}).then(function(contacto) {

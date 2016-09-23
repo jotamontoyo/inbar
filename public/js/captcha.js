@@ -22,14 +22,6 @@
 
         $('#formulario_contacto').submit(function() {                                   // sweetalert cuando submit() correcto
             swal("Formulario enviado!", "Gracias por tu solicitud!", "success");
-/*            swal({
-                title: "Tu solicitud se ha enviado correctamente!",
-                text: "Gracias",
-                imageUrl: "/images/logos/inbaar-pie.png",
-                timer: 4000,
-                showConfirmButton: false
-            }); */
-//            $('.alerta-formulario').removeClass('hidden');
         });
 
         var char = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",              // captcha formulario
