@@ -392,24 +392,27 @@
 
 
     .img-logo-sm {
+        margin-left: 0vw;
+        margin-right: 0vw;
+        padding-left: 1vw;
+        padding-right: 1vw;
         transform: scale(0.8);
-        margin-left: 0%;
+/*        margin-left: 0%; */
     }
 
     .img-logo-sm img {
-        padding-top: 5px;
-        margin-left: 0%;
+
     }
 
 
 
-    #rrss-pie {
-        margin-left: -40px;
+/*    #rrss-pie {
+        margin-left:        -40px;
         padding-left: 		0%;
         padding-right: 		0%;
 
 
-    }
+    } */
 
     #copyright h4 {
         font-size: 10px;
@@ -442,9 +445,6 @@
 
 
 
-    #menu-inbar .col-md-1 a:hover {
-        border-top: none;
-    }
 /*		#inicio {
         height: auto;
         background: url(/images/floxy/inbarasset.png) no-repeat fixed center;

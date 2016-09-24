@@ -836,24 +836,22 @@
 	#rrss-pie {
 		height: 100px;
 		margin-top: 40px;
-		margin-left: -5vw;
-		padding-right: 9vw;
 	}
 
-	#rrss-pie ul {
+/*	#rrss-pie ul {
 		height: 100%;
-	}
+	} */
 
 	.img-logo-sm {
 		width: auto;
-		margin-left:   11%;
-		display: inline-block;
+		margin-left: 5vw;
+		margin-right: 5vw;
+
 	}
 
 	.img-logo-sm img {
 		width: 40px;
 		height: auto;
-		vertical-align: middle;
 	}
 
 	.img-logo-sm a {

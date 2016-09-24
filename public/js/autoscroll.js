@@ -9,9 +9,7 @@
     $(document).ready(function() {
 
         var iScroll = $(window).scrollTop(),
-            aviso_cookies = true,
-            sections = $('section'),
-            nav = $('nav[role="navigation"]');
+            aviso_cookies = true;
 
         $(window).scroll(function() {
 
@@ -54,29 +52,6 @@
             }
 
         });
-
-/*        nav.find('a').on('click', function() {                         // control de la navegacion en pagina de cada <nav>
-			var $el = $(this),
-		    	id = $el.attr('href');
-			$('html, body').animate({
-				scrollTop: $(id).offset().top // +76
-			}, 800);
-			$('#subir-inicio a').css('background-color', 'transparent');
-			return false;
-		});
-
-        $('.nav a').on('click', function() {							// cierra .nav cuando click
-			var $el = $(this),
-		    	id = $el.attr('id');
-			if (id !== 'pais-selecionado') {							// evita cierre si id='pais-selecionado'
-    			$('.btn-navbar').click();
-    			$('.navbar-toggle').click();
-			}
-		});
-
-		$('.btn-ir-contacto').click(function() {						// cierra el modal cuando click
-			$('#panel-modal-seguir-leyendo').modal('hide');
-		}); */
 
         $('img.bgfade').hide();                                         // transicion inico
         $('#wrap').css({'height':'100vh','width':'100%'});
