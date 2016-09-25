@@ -51,6 +51,7 @@
 
 	.form-group input, select {
 		max-width: 90%;
+		border-radius: 0;
 	}
 
 	.container-fluid {
@@ -913,7 +914,7 @@
 
 	/* CONTACTO2 =================================================================================== */
 
-	.trampa {display: none};
+/*	.trampa {display: none}; */
 
 	#enviar {				/* no lo quites */
 
@@ -968,6 +969,10 @@
 	#contacto2 h2 {
 		font-size: 38px;
 		line-height: 75px;
+	}
+
+	input {
+		border-radius: 0;
 	}
 
 	#check-lopd {

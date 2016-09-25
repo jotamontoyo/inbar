@@ -21,7 +21,7 @@
 		}); */
 
 		// Page Scroll
-		var sections = $('section')
+		var sections = $('section'),
 			nav = $('nav[role="navigation"]');
 
 
@@ -41,7 +41,7 @@
 
 		nav.find('a').on('click', function() {
 
-			var $el = $(this)
+			var $el = $(this),
 		    	id = $el.attr('href');
 
 			$('html, body').animate({
