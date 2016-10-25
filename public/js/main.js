@@ -1,4 +1,6 @@
 
+/* SCROLL Y NAVEGACION EN PAGINA ************************************************** */
+
 	$(document).ready(function() {
 
 		// Header Scroll

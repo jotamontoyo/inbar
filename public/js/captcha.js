@@ -73,8 +73,8 @@
 //        var emailok = $('#emailok').val('');
 
         $('#emailok').change(function() {
-            email = $('#email').val();
-            emailok = $('#emailok').val();
+            var email = $('#email').val();
+            var emailok = $('#emailok').val();
             if ( email !== emailok ) {
                 $("label[for='emailok']").css('color', 'red');
                 $('#enviar').prop('disabled', true);
@@ -89,8 +89,8 @@
         });
 
         $('#email').change(function() {
-            email = $('#email').val();
-            emailok = $('#emailok').val();
+            var email = $('#email').val();
+            var emailok = $('#emailok').val();
             if (emailok.length) {
                 if ( email !== emailok ) {
                     $("label[for='email']").css('color', 'red');
