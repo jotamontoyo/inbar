@@ -136,9 +136,9 @@
 
 				postmark.send({										// email al portal
 					"From": "no-reply@inbarasset.es",
-					"To": "no-reply@inbarasset.es",
-					"Subject": "Petición de contacto recibida",
-					"TextBody": "Tienes una peticion pendiente de revisar",
+					"To": "contacto@inbarasset.es",
+					"Subject": "Petición de contacto recibida del portal inbarasset.es",
+					"TextBody": "Tienes una peticion pendiente de revisar. Entra en el portal www.inbarasset.es/login",
 					"Tag": "big-bang"
 				}, function(error, success) {
 					if (error) {
@@ -159,7 +159,7 @@
 //					    "username": "username_Value",
 					    "sender_name": "sender_name_Value",
 					    "product_address_line1": "Teléfono +34 601 23 79 19",
-					    "product_address_line2": "no-reply@inbarasset.es"
+					    "product_address_line2": "contacto@inbarasset.es"
 					}
 				}, function(error, success) {
 					if (error) {
