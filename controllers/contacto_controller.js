@@ -120,21 +120,7 @@
 
 				var postmark = require("postmark")(process.env.POSTMARK_API_TOKEN);
 
-/*				postmark.send({
-					"From": "contacto@inbarasset.es",
-					"To": contacto.email,
-					"Subject": "Solicitud recibida",
-					"TextBody": "Gracias por tu solicitud, en breve nos pondremos en contacto.",
-					"Tag": "big-bang"
-				}, function(error, success) {
-				if (error) {
-					console.error("Unable to send via postmark: " + error.message);
-					return;
-				}
-				console.info("Sent to postmark for delivery");
-			}); */
-
-				postmark.send({										// email al portal
+				postmark.send({														// email al portal
 					"From": "no-reply@inbarasset.es",
 					"To": "contacto@inbarasset.es",
 					"Subject": "Petición de contacto recibida del portal inbarasset.es",
@@ -148,15 +134,13 @@
 					console.info("Sent to postmark for delivery");
 				});
 
-				postmark.sendEmailWithTemplate({					// email al cliente
+				postmark.sendEmailWithTemplate({									// email al cliente
 					"From": "no-reply@inbarasset.es",
 					"To": contacto.email,
 					"TemplateId": 772821,
 					"TemplateModel": {
 					    "product_name": "Inbar Asset",
 					    "name": contacto.nombre,
-//					    "action_url": "action_url_Value",
-//					    "username": "username_Value",
 					    "sender_name": "sender_name_Value",
 					    "product_address_line1": "Teléfono +34 601 23 79 19",
 					    "product_address_line2": "contacto@inbarasset.es"
