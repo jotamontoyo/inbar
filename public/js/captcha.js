@@ -6,6 +6,9 @@
     $(document).ready(function() {
 
         $('#enviar').prop('disabled', true);
+        $('.subir-fichero').attr('disabled', 'disabled');
+        $('.subir-fichero').text('Adjuntar');
+
         $("#captcha-invisible").val('');
 
         $('#texto-captcha').prop('readonly', false);
@@ -17,6 +20,7 @@
         $("#captcha-invisible").change(function() {                                     // Captcha invisible
             if ($(this).length > 0){
                 $("#enviar").prop('disabled', true);
+                $('.subir-fichero').attr('disabled', 'disabled');
             };
         });
 
@@ -46,11 +50,13 @@
             textocaptcha = $('#texto-captcha').val();                   // captura el valor introducido
             if (textocaptcha === code) {
                 $("#enviar").prop("disabled", false);                   // si coincide habilita el boton enviar
+                $('.subir-fichero').removeAttr('disabled');
                 $('#soy-persona').css('color', 'green');
                 $('#soy-persona').prop("disabled", true);               // deshabilita el boton soy-persona
                 $('#texto-captcha').prop('readonly', true);
             } else {
                 $("#enviar").prop("disabled", true);
+                $('.subir-fichero').attr('disabled', 'disabled');
                 if (textocaptcha.length) {
                     swal({title: "El captcha no coincide", text: "Inténtalo de nuevo", timer: 2000, showConfirmButton: false });
                 };
@@ -60,6 +66,7 @@
 
         $('#recargar-captcha').click(function() {
             $("#enviar").prop("disabled", true);
+            $('.subir-fichero').attr('disabled', 'disabled');
             $('#soy-persona').css('color', 'white');
             $('#soy-persona').prop("disabled", false);          // habilita el boton soy-persona
             $('#texto-captcha').prop('readonly', false);
@@ -78,12 +85,14 @@
             if ( email !== emailok ) {
                 $("label[for='emailok']").css('color', 'red');
                 $('#enviar').prop('disabled', true);
+                $('.subir-fichero').attr('disabled', 'disabled');
                 swal({title: "Los email no coinciden", text: "Inténtalo de nuevo", timer: 2000, showConfirmButton: false });
             } else {
                 $("label[for='email']").css('color', 'white');
                 $("label[for='emailok']").css('color', 'white');
                 if (textocaptcha === code) {
                     $('#enviar').prop('disabled', false);
+                    $('.subir-fichero').removeAttr('disabled');
                 };
             };
         });
@@ -95,12 +104,14 @@
                 if ( email !== emailok ) {
                     $("label[for='email']").css('color', 'red');
                     $('#enviar').prop('disabled', true);
+                    $('.subir-fichero').attr('disabled', 'disabled');
                     swal({title: "Los email no coinciden", text: "Inténtalo de nuevo", timer: 2000, showConfirmButton: false });
                 } else {
                     $("label[for='email']").css('color', 'white');
                     $("label[for='emailok']").css('color', 'white');
                     if (textocaptcha === code) {
                         $('#enviar').prop('disabled', false);
+                        $('.subir-fichero').removeAttr('disabled');
                     };
                 };
             };
