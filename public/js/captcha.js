@@ -30,7 +30,7 @@
         });
 
         $('#formulario_contacto').submit(function() {                                   // sweetalert cuando submit() correcto
-//            swal("Formulario enviado!", "Gracias por tu solicitud!", "success");
+            swal("Formulario enviado!", "Gracias por tu solicitud!", "success");
         });
 
         var char = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",              // captcha formulario
