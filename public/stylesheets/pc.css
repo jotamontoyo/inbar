@@ -123,7 +123,7 @@
 
 	}
 
-	.ir-a-contacto a:active, .ir-a-contacto a:focus {
+	.ir-a-contacto a:active, .ir-a-contacto a:focus, #adjuntar a:active, #adjuntar a:focus, {
 		outline: 0;
 		text-decoration: none;
 	}
@@ -150,7 +150,7 @@
 	/* MODALS ==================================================================== */
 
 	#panel-elegir-franquicia, #panel-mediterraneo, #panel-elsol, #panel-after,
-		#panel-mas-preguntas, #panel-modal-seguir-leyendo, #panel-perfil-1, #panel-perfil-2, #panel-perfil-3 {
+		#panel-mas-preguntas, #panel-modal-seguir-leyendo, #panel-perfil-1, #panel-perfil-2, #panel-perfil-3, #panel-modal-adjuntar {
 		padding-left: 0px;
 
 	}
@@ -159,7 +159,7 @@
 
 
 	#modal-elsol, #modal-mediterraneo, #modal-after, #modal-mas-preguntas, #modal-seguir-leyendo,
-		#modal-perfil-1, #modal-perfil-2, #modal-perfil-3 {
+		#modal-perfil-1, #modal-perfil-2, #modal-perfil-3, #modal-adjuntar {
 		width: 75%;
 		color:	rgb(0, 0, 0);
 	}

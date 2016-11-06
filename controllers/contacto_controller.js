@@ -123,9 +123,9 @@
 				postmark.send({														// email al portal
 					"From": "no-reply@inbarasset.es",
 					"To": "contacto@inbarasset.es",
-					"Subject": "Petición de contacto recibida del portal inbarasset.es",
-					"TextBody": "Tienes una peticion pendiente de revisar. Entra en el portal www.inbarasset.es/login",
-					"Tag": "big-bang"
+					"Subject": "Solicitud de información recibida en el portal inbarasset.es",
+					"TextBody": "Tienes una solicitud pendiente de revisar. Entra en el portal www.inbarasset.es/login",
+					"Tag": "Solicitudes de informanción"
 				}, function(error, success) {
 					if (error) {
 						console.error("Unable to send via postmark: " + error.message);
@@ -153,7 +153,7 @@
 					console.info("Sent to postmark for delivery with template");
 				});
 
-				res.redirect('/');
+//				res.redirect('/');
 
 			});
 		};

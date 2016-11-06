@@ -1,13 +1,18 @@
 
 // Control de captcha
 // Control de email y emailok
+// filepicker
 // Aviso formunario enviado cuando submit()
 
     $(document).ready(function() {
 
         $('#enviar').prop('disabled', true);
-        $('.subir-fichero').attr('disabled', 'disabled');
-        $('.subir-fichero').text('Adjuntar');
+        $('.subir-fichero').attr('disabled', 'disabled');               // boton filepicker
+        $('.subir-fichero').text('Seleccionar archivo');
+        $('.subir-fichero').click(function() {
+            $('#panel-modal-adjuntar').modal('hide');
+//            $('#formulario_contacto').submit();
+        });
 
         $("#captcha-invisible").val('');
 
@@ -25,7 +30,7 @@
         });
 
         $('#formulario_contacto').submit(function() {                                   // sweetalert cuando submit() correcto
-            swal("Formulario enviado!", "Gracias por tu solicitud!", "success");
+//            swal("Formulario enviado!", "Gracias por tu solicitud!", "success");
         });
 
         var char = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",              // captcha formulario

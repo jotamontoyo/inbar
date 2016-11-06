@@ -793,22 +793,78 @@
                                 </label>
                             </div>
 
-                            <button id="enviar" type="submit" value="Submit" class="btn btn-warning">Solicitar información</button>
 
-                            <input id="subir-fichero"
-                                class="btn btn-warning subir-fichero"
-                                type="filepicker"
-                                data-fp-apikey="AnAkszHBrThaxYEr11obUz"
-                                data-fp-mimetypes="*/*"
-                                data-fp-container="modal"
-                                onchange="alert(event.fpfile.url)">
+                            <button id="adjuntar"
+                                class="btn btn-warning"
+                                name="adjuntar"
+                                type="button"
+                                data-toggle="modal"
+                                data-target="#panel-modal-adjuntar">Adjuntar
+                            </button>
+
+
+                            <button id="enviar" type="submit" value="Submit" class="btn btn-warning">Solicitar información</button>
 
                         </div>
 
                     </div>
+
+
+
+                    <!-- MODAL ADJUNTAR INFORMACION ===================================================================================== -->
+                	<div class="modal fade" id="panel-modal-adjuntar" tabindex="-1" role="dialog" aria-labelledby="adjuntar" aria-hidden="true">
+                		<div class="modal-dialog center-block" id="modal-adjuntar">
+                			<div class="modal-content" id="modal-content-adjuntar">
+
+                				<div class="modal-header">
+                					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                					<div class="row text-center" id="header-contrata-franquicia">
+                		                <h4>ADJUNTAR <span class="titulo-secciones">&nbsp;INFORMACIÓN&nbsp;</span></h4>
+                		            </div>
+                				</div>
+
+                				<div class="modal-body">
+
+                                    <h4>Adjunta información</h4>
+                                    <p>Puedes enviarnos cualquier tipo de archivo, fotos, planos, pdf,...</p>
+                                    <p>Para poder adjuntar archivos has de tener el formulario de contacto correctamente cumplimentado.</p>
+                                    <input id="subir-fichero"
+                                        class="btn btn-warning subir-fichero"
+                                        type="filepicker"
+                                        data-fp-apikey="AnAkszHBrThaxYEr11obUz"
+                                        data-fp-mimetypes="*/*"
+                                        data-fp-container="modal"
+                                        onchange="alert(event.fpfile.url)">
+
+
+
+                				</div>
+
+
+                				<div class="modal-footer">
+                					<button type="btn btn-small" class="btn btn-warning btn-xs" data-dismiss="modal">
+                						Close
+                					</button>
+                				</div>
+
+
+                			</div>
+                		</div>
+                	</div>
+
+
+
+
+
+
+
+
                 </form>
             </div>
         </div>
+
+
+
 
 
 
