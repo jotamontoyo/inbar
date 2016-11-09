@@ -153,7 +153,13 @@
 					console.info("Sent to postmark for delivery with template");
 				});
 
+				res.render('adjuntar/', {errors: []});
+
 //				res.redirect('/');
+
+/*				res.render('adjuntar/', { soypersona: true }, function(err, html) {
+					res.send(html);
+				}); */
 
 			});
 		};

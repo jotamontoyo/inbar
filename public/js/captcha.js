@@ -2,16 +2,20 @@
 // Control de captcha
 // Control de email y emailok
 // filepicker
-// Aviso formunario enviado cuando submit()
 
     $(document).ready(function() {
 
         $('#enviar').prop('disabled', true);
-        $('.subir-fichero').attr('disabled', 'disabled');               // boton filepicker
-        $('.subir-fichero').text('Seleccionar archivo');
-        $('.subir-fichero').click(function() {
-            $('#panel-modal-adjuntar').modal('hide');
-//            $('#formulario_contacto').submit();
+
+        $('.subir-fichero').text('Seleccionar archivo');            // boton filepicker
+
+/*        $('.subir-fichero').click(function() {
+            $('#panel-modal-adjuntar').removeClass('show');
+            $('#panel-modal-adjuntar').toggleClass('fade');
+        }); */
+
+        $('.cerrar-modal').click(function() {                       // se usa para cerrar el modal adjuntar
+            window.location = '/';
         });
 
         $("#captcha-invisible").val('');
@@ -25,13 +29,10 @@
         $("#captcha-invisible").change(function() {                                     // Captcha invisible
             if ($(this).length > 0){
                 $("#enviar").prop('disabled', true);
-                $('.subir-fichero').attr('disabled', 'disabled');
+
             };
         });
 
-        $('#formulario_contacto').submit(function() {                                   // sweetalert cuando submit() correcto
-            swal("Formulario enviado!", "Gracias por tu solicitud!", "success");
-        });
 
         var char = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",              // captcha formulario
             code = '',
@@ -55,13 +56,11 @@
             textocaptcha = $('#texto-captcha').val();                   // captura el valor introducido
             if (textocaptcha === code) {
                 $("#enviar").prop("disabled", false);                   // si coincide habilita el boton enviar
-                $('.subir-fichero').removeAttr('disabled');
                 $('#soy-persona').css('color', 'green');
                 $('#soy-persona').prop("disabled", true);               // deshabilita el boton soy-persona
                 $('#texto-captcha').prop('readonly', true);
             } else {
                 $("#enviar").prop("disabled", true);
-                $('.subir-fichero').attr('disabled', 'disabled');
                 if (textocaptcha.length) {
                     swal({title: "El captcha no coincide", text: "Inténtalo de nuevo", timer: 2000, showConfirmButton: false });
                 };
@@ -71,7 +70,6 @@
 
         $('#recargar-captcha').click(function() {
             $("#enviar").prop("disabled", true);
-            $('.subir-fichero').attr('disabled', 'disabled');
             $('#soy-persona').css('color', 'white');
             $('#soy-persona').prop("disabled", false);          // habilita el boton soy-persona
             $('#texto-captcha').prop('readonly', false);
@@ -90,14 +88,12 @@
             if ( email !== emailok ) {
                 $("label[for='emailok']").css('color', 'red');
                 $('#enviar').prop('disabled', true);
-                $('.subir-fichero').attr('disabled', 'disabled');
                 swal({title: "Los email no coinciden", text: "Inténtalo de nuevo", timer: 2000, showConfirmButton: false });
             } else {
                 $("label[for='email']").css('color', 'white');
                 $("label[for='emailok']").css('color', 'white');
                 if (textocaptcha === code) {
                     $('#enviar').prop('disabled', false);
-                    $('.subir-fichero').removeAttr('disabled');
                 };
             };
         });
@@ -109,14 +105,12 @@
                 if ( email !== emailok ) {
                     $("label[for='email']").css('color', 'red');
                     $('#enviar').prop('disabled', true);
-                    $('.subir-fichero').attr('disabled', 'disabled');
                     swal({title: "Los email no coinciden", text: "Inténtalo de nuevo", timer: 2000, showConfirmButton: false });
                 } else {
                     $("label[for='email']").css('color', 'white');
                     $("label[for='emailok']").css('color', 'white');
                     if (textocaptcha === code) {
                         $('#enviar').prop('disabled', false);
-                        $('.subir-fichero').removeAttr('disabled');
                     };
                 };
             };

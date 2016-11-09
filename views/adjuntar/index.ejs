@@ -1,0 +1,43 @@
+
+    <!-- MODAL ADJUNTAR INFORMACION ===================================================================================== -->
+
+     <div class="modal show" id="panel-modal-adjuntar" name="panel-modal-adjuntar" style="z-index: 4" tabindex="-1" role="dialog" aria-labelledby="adjuntar" aria-hidden="true">
+        <div class="modal-dialog center-block" id="modal-adjuntar">
+            <div class="modal-content" id="modal-content-adjuntar">
+
+                <div class="modal-header">
+                    <button type="button" class="close cerrar-modal" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <div class="row text-center" id="header-contrata-franquicia">
+                        <h4>RESUMEN DE <span class="titulo-secciones">&nbsp;ACTIVIDAD&nbsp;</span></h4>
+                    </div>
+                </div>
+
+                <div class="modal-body">
+
+                    <h4>Has enviado correctamente el formulario de contacto. Te lo hemos comfirmado con un email a tu cuenta.</h4>
+                    <p>Ahora si quieres puedes enviar a <strong>IN</strong>BAR <span style="color: #eb9837">ASSET</span> cualquier tipo de archivo, fotos, planos, pdf,... con un máximo de 6MB.</p>
+                    <p>Te agradecemos la confianza.</p>
+                    <input id="subir-fichero"
+                        class="btn btn-warning subir-fichero"
+                        type="filepicker"
+                        data-fp-apikey="AnAkszHBrThaxYEr11obUz"
+                        data-fp-mimetypes="*/*"
+                        data-fp-container="modal"
+                        onchange="alert(event.fpfile.url)">
+
+                    <button type="button" class="btn btn-warning cerrar-modal" data-dismiss="modal">
+                        Volver
+                    </button>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="btn btn-small" class="btn btn-warning btn-xs cerrar-modal" data-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
