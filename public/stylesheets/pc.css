@@ -1013,6 +1013,14 @@
 	}
 
 
+	#comentario {
+
+		max-width: 250px;
+		margin-top: 30px;
+
+	}
+
+
 	/* PAGINA WEBFORM CONTACTC ============================================================================== */
 	#webform-panel1 {
 		background: url(/images/calle.jpg) no-repeat fixed center;
