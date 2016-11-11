@@ -116,4 +116,22 @@
             };
         });
 
+
+
+        var arrow = 'down';                                             // control del icono del link añadir comentario
+        $('#ver-textaera').click(function() {
+            if(arrow == 'down') {
+                $('#ver-textaera i').removeClass('fa-arrow-down');
+                $('#ver-textaera i').toggleClass('fa-arrow-up');
+                arrow = 'up';
+//                $('#ver-textaera').prop('text', 'Ocultar comentarios');
+            } else if(arrow == 'up') {
+                $('#ver-textaera i').removeClass('fa-arrow-up');
+                $('#ver-textaera i').toggleClass('fa-arrow-down');
+                arrow = 'down';
+//                $('#ver-textaera').prop('text', 'Añadir comentarios');
+            };
+        });
+
+
     });

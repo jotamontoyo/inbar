@@ -374,6 +374,12 @@
         line-height: 20px;
     }
 
+    #grupo-capcha {
+		margin-top: 15px;
+		margin-left: 0px;
+
+	}
+
     #recargar-captcha, #soy-persona {
 
         transform: scale(1.2);
@@ -384,8 +390,16 @@
         font-size: 20px;
     }
 
+    #agregar-comentario {
+		position: relative;
+		max-width: 95%;
+
+
+
+	}
+
     #comentario {
-        width: 300px;
+        max-width: 100%;
         margin-top: 10px;
     }
 

@@ -948,7 +948,7 @@
 		width: 				100%;
 		height: 			100vh;
 		vertical-align: 	middle;
-		min-height: 		500px;
+		min-height: 		650px;
 		padding-left: 		8%;
 		padding-right: 		5%;
 		color: white;
@@ -985,13 +985,19 @@
 
 	#check-lopd {
 		margin-top:30px;
-		margin-left: 5px;
+		margin-left: 0px;
 	}
 
 	#check-lopd a span {
 		color: #eb9837;
 		cursor: pointer;
 		text-decoration: underline;
+	}
+
+	#grupo-capcha {
+		margin-top: 15px;
+		margin-left: 15px;
+
 	}
 
 	#codigo-captcha {
@@ -1012,10 +1018,18 @@
 		transition: all 0.3s;
 	}
 
+	#agregar-comentario {
+		position: absolute;
+		max-width: 80%;
+
+
+
+	}
+
 
 	#comentario {
 
-		max-width: 250px;
+		max-width: 100%;
 		margin-top: 30px;
 
 	}
