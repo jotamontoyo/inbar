@@ -20,7 +20,6 @@
 	var session = require('express-session');
 	var routes = require('./routes/index');
 
-
 	var app = express();
 
 	// view engine setup
