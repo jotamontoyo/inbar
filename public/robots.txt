@@ -1,2 +1,3 @@
-user-agent: *
-disallow:
+Sitemap: http://www.inbarasset.es
+User-agent: *
+Disallow:
