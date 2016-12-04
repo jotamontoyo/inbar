@@ -994,12 +994,16 @@
 		text-decoration: underline;
 	}
 
-	#panel-captcha, #recaptcha, .rc-anchor {
+	#recaptcha, iframe {
 
-		width: 19vw;
+		max-width: 19vw;
+
 		margin-top: 15px;
+		margin-left: -15px;
+
 
 	}
+
 
 /*	#grupo-captcha {
 
