@@ -9,22 +9,17 @@
 
         $('.subir-fichero').text('Seleccionar archivo');            // boton filepicker
 
-/*        $('.subir-fichero').click(function() {
-            $('#panel-modal-adjuntar').removeClass('show');
-            $('#panel-modal-adjuntar').toggleClass('fade');
-        }); */
-
         $('.cerrar-modal').click(function() {                       // se usa para cerrar el modal adjuntar
             window.location = '/';
         });
 
         $("#captcha-invisible").val('');
 
-        $('#texto-captcha').prop('readonly', false);
+/*        $('#texto-captcha').prop('readonly', false);
         $('#texto-captcha').val('');
         $('#codigo-captcha').bind('cut copy paste', function(e) {                       // anula funcion cut, copy y paste del elemento
             e.preventDefault();
-        });
+        }); */
 
         $("#captcha-invisible").change(function() {                                     // Captcha invisible
             if ($(this).length > 0){
@@ -34,7 +29,7 @@
         });
 
 
-        var char = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",              // captcha formulario
+/*        var char = "abcdefghijklmnopqrstuvwxyz",                                      // captcha formulario
             code = '',
             textocaptcha = '';
 
@@ -46,6 +41,18 @@
             var e = Math.ceil(Math.random() * 9) + '';
             var f = char[Math.ceil(Math.random() * 51)];
             code = a + b + c + d + e + f;
+            $('#codigo-captcha').text(code);
+            return code;
+        };
+
+        function obtenerChaptca() {
+            var a = Math.ceil(Math.random() * 9) + '';                                  // genera caracteres
+            var b = Math.ceil(Math.random() * 9) + '';
+            var c = char[Math.ceil(Math.random() * 25)] + '';
+            var d = Math.ceil(Math.random() * 9) + '';
+            var e = Math.ceil(Math.random() * 9) + '';
+
+            code = a + b + c + d + e;
             $('#codigo-captcha').text(code);
             return code;
         };
@@ -75,7 +82,7 @@
             $('#texto-captcha').prop('readonly', false);
             $('#texto-captcha').val('');
             obtenerChaptca();
-        });
+        }); */
 
 
         // anulado para no borrar los campos del formulario edit/contacto

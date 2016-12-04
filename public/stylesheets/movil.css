@@ -374,6 +374,12 @@
         line-height: 20px;
     }
 
+    #panel-captcha {
+
+		width: 85vw;
+
+	}
+
     #grupo-capcha {
 		margin-top: 15px;
 		margin-left: 0px;
@@ -393,8 +399,6 @@
     #agregar-comentario {
 		position: relative;
 		max-width: 95%;
-
-
 
 	}
 
