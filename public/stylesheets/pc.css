@@ -17,10 +17,11 @@
 		src: url('/fonts/TrashHand.TTF');
 	}
 
-	@font-face {
+/*	desativada por mucho peso
+ 	@font-face {
 		font-family: 'Kalinga';
 		src: url('/fonts/Kalinga.ttf');
-	}
+	} */
 
 	@font-face {
 		font-family: 'Conman';
@@ -30,8 +31,7 @@
 
 
 	body {
-		font-family     : 'Kalinga', Calibri, Arial, sans-serif;
-/*		text-shadow     : 0 1px 0 rgba(255, 255, 255, 0.8); */
+/*		font-family     : 'Kalinga', Calibri, Arial, sans-serif; */
 		padding-bottom  : 0;
 		overflow-x: hidden;
 	}
@@ -228,7 +228,7 @@
 	}
 
 	.titulo-secciones {
-		padding-top: 5px;
+/*		padding-top: 5px;        activar si fuente Kalinga    */
 		color: #eb9837;
 		background-color: #000;
 	}
