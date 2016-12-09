@@ -227,11 +227,21 @@
 		vertical-align: bottom;
 	}
 
+
+
 	.titulo-secciones {
+
 /*		padding-top: 5px;        activar si fuente Kalinga    */
 		color: #eb9837;
 		background-color: #000;
+
+
+
 	}
+
+
+
+
 
 	.ocultar {																/* a esta esta clase le cambio css desde autoscroll.js */
     	opacity: 0;
@@ -263,13 +273,13 @@
 		margin: 0px auto 20px auto;
 	}
 
-	#logo-inicio h1 {
+/*	#logo-inicio h1 {
 		font-size: 42px;
 	}
 
 	#logo-inicio h5 {
 		font-size: 22px;
-	}
+	} */
 
 	#calma {
 		min-width: 100%;
@@ -277,13 +287,14 @@
 		margin-right: auto;
 		position: absolute;
 
-		font: bold 5vh TrashHand, verdana, sans-serif;
+		font: bold 50px TrashHand, verdana, sans-serif;
 		text-shadow: rgba(0,0,0,0.5) 3px 3px 5px;
 /*		color: hsla(240, 100%, 50%, 0.5); */
 		color: #fff;
 	}
 
-	#calma h1 {
+	#calma h2 {
+		font-size: 10vh;
 		padding-left: 22px;
 	}
 
@@ -495,7 +506,7 @@
 	/* CONTRATA TU FRANQUICIA =============================================================== */
 	/* ====================================================================================== */
 
-	#contrata-franquicia {
+	#abrir-un-bar {
 		width: 100%;
 /*		height: 100vh;
 		min-height: 550px; */
@@ -569,9 +580,14 @@
 
 
 
-	#header-personas {
+	#header-personas h2 {
+		margin-top: 60px;
+		font-size: 4vh;
 		text-align:  center;
 	}
+
+
+
 
 /*	#logo-marcas {
 		max-width: 30px;
@@ -689,10 +705,10 @@
 		position: relative;
 	}
 
-	#header-quienes-somos {
-		margin-top: 50px;
+	#header-quienes-somos h2 {
+		margin-top: 65px;
 		margin-bottom: 10px;
-		font-size: 2vh;
+		font-size: 4vh;
 	}
 
 	.texto-quienes-somos {
@@ -773,8 +789,10 @@
 
 
 
-	#header-servicios h1 {
+	#header-servicios h2 {
+		margin-top: 20px;
 		margin-bottom: 10px;
+		font-size: 4vh;
 
 	}
 
@@ -968,11 +986,12 @@
 
 	}
 
-	#contacto2 h1 {
-		font-size: 32px;
+	#contacto2 h2 {
+		margin-top: 60px;
+		font-size: 4vh;
 	}
 
-	#contacto2 h2 {
+	#contacto2 h3 {
 		font-size: 38px;
 		line-height: 75px;
 	}
