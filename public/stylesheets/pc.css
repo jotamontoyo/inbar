@@ -230,8 +230,9 @@
 
 
 	.titulo-secciones {
-
+		padding: 8px 5px 8px 5px;
 /*		padding-top: 5px;        activar si fuente Kalinga    */
+
 		color: #eb9837;
 		background-color: #000;
 
