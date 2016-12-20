@@ -673,6 +673,7 @@
 	.img-modelo {							/* imagen de la marca  */
 
 		max-width: 350px;					/* ancho maximo de las imagenes */
+
 		margin-left: auto;
 		margin-right: auto;
 
@@ -683,6 +684,7 @@
 		height: auto;
 		position: relative;
 		cursor: pointer;
+
 
 	}
 
