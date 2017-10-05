@@ -1,12 +1,16 @@
 
-	process.env.DATABASE_URL = "postgres://wkynqiclysfccj:iMCFhKF6YugPeZHlso97feJvPq@ec2-54-83-52-144.compute-1.amazonaws.com:5432/dbe85ilvgjskdq?ssl=true"; // URL HerokuPostgres
-	process.env.DATABASE_STORAGE = "quiz.sqlite";
+	process.env.DATABASE_URL = "postgres://wlxaswwmwxdple:b3c62b4f55ea23051fabf49fd1064d405b767cd25911fe400a29fac79a77a14d@ec2-54-204-41-80.compute-1.amazonaws.com:5432/d6jokjas00e0sa?ssl=true"; // URL HerokuPostgres
+//	process.env.DATABASE_STORAGE = "quiz.sqlite";
 	process.env.PASSWORD_ENCRYPTION_KEY= "asdfghjklzxcvbnmqwertyuiop";
 
-	process.env.POSTMARK_API_KEY = "08f8257f-32bc-4a2c-8492-05a217b1705d";
-	process.env.POSTMARK_API_TOKEN = "08f8257f-32bc-4a2c-8492-05a217b1705d";
-	process.env.POSTMARK_INBOUND_ADDRESS = "098657372d0170256a8050c00be5ae47@inbound.postmarkapp.com";
-	process.env.POSTMARK_SMTP_SERVER = "smtp.postmarkapp.com";
+	process.env.MAILGUN_API_KEY = "key-db0413b3afe5e3cd793112e0cb4afb33";
+	process.env.MAILGUN_DOMAIN = "inbarasset.es";
+	process.env.MAILGUN_PUBLIC_KEY = "pubkey-c4122fd1237ed9a25032acb322a8114d";
+	process.env.MAILGUN_SMTP_LOGIN = "postmaster@sandbox856d043fe05c4b488ad63ac2197c";
+	process.env.MAILGUN_SMTP_PASSWORD = "ceebda42005ae8440121baa581d25ed0";
+	process.env.MAILGUN_SMTP_PORT = "587";
+	process.env.MAILGUN_SMTP_SERVER = "smtp.mailgun.org";
+
 
 	var express = require('express');
 	var busboy = require('connect-busboy'); //middleware for form/file upload
