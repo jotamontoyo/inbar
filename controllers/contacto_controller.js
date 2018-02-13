@@ -118,42 +118,6 @@
 			.save({fields: ["nombre", "alias", "email", "emailok", "telefono", "marca", "ciudad", "provincia", "comentario", "lopd", "revisado"]})
 			.then(function() {
 
-				// var postmark = require("postmark")(process.env.POSTMARK_API_TOKEN);
-				//
-				// postmark.send({														// email al portal
-				// 	"From": "no-reply@inbarasset.es",
-				// 	"To": "contacto@inbarasset.es",
-				// 	"Subject": "Solicitud de información recibida en el portal inbarasset.es",
-				// 	"TextBody": "Tienes una solicitud pendiente de revisar. Entra en el portal www.inbarasset.es/login",
-				// 	"Tag": "Solicitudes de informanción"
-				// }, function(error, success) {
-				// 	if (error) {
-				// 		console.error("Unable to send via postmark: " + error.message);
-				// 		return;
-				// 	}
-				// 	console.info("Sent to postmark for delivery");
-				// });
-				//
-				// postmark.sendEmailWithTemplate({									// email al cliente
-				// 	"From": "no-reply@inbarasset.es",
-				// 	"To": contacto.email,
-				// 	"TemplateId": 772821,
-				// 	"TemplateModel": {
-				// 	    "product_name": "Inbar Asset",
-				// 	    "name": contacto.nombre,
-				// 	    "sender_name": "sender_name_Value",
-				// 	    "product_address_line1": "Teléfono +34 601 23 79 19",
-				// 	    "product_address_line2": "contacto@inbarasset.es"
-				// 	}
-				// }, function(error, success) {
-				// 	if (error) {
-				// 		console.error("Unable to send via postmark: " + error.message);
-				// 		return;
-				// 	}
-				// 	console.info("Sent to postmark for delivery with template");
-				// });
-
-
 				var mailgun = require("mailgun-js");
 				var api_key = process.env.MAILGUN_API_KEY;
 				var DOMAIN = process.env.MAILGUN_DOMAIN;
